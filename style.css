@@ -1,0 +1,59 @@
+#mainTitle1{
+  color:#6568E6;
+  font-size:500%;
+  text-align: center;
+  margin-top:10%;
+  font-family: 'Lora', serif;
+}
+
+#mainTitle2{
+  color:#6568E6;
+  font-size:450%;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+#mainTitle3{
+  color:#6568E6;
+  font-size:450%;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+#mainSub{
+  font-size:100%;
+  text-align: center;
+  margin:5%;
+  font-family: 'Lora', serif;
+}
+
+#entireBody{
+  font-family: 'Lora', serif;
+}
+
+body{
+  background-color: #E69E7C;
+}
+
+#links{
+text-align: center;
+margin: 2%;
+}
+
+#states{
+text-align:center;
+color:#6568E6;
+font-family: 'Lora', serif;
+}
+
+#linkyLarger{
+font-size: 150%;
+text-align:center;
+margin: 2%;
+}
+
+#callInfo{
+  margin: 2%;
+  text-align:center;
+  font-size: 140%;
+}
