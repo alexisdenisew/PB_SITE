@@ -27,12 +27,21 @@
   font-family: 'Lora', serif;
 }
 
+#mainSub2{
+  font-size:75%;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
 #entireBody{
   font-family: 'Lora', serif;
 }
 
 body{
   background-color: #E69E7C;
+  text-align: center;
+  
+
 }
 
 #links{
