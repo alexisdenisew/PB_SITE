@@ -26,10 +26,10 @@
 }
 
 #mainTitle3{
-  color:#6568E6;
+  color:black;
   font-size:450%;
   text-align: center;
-  font-family: 'Lora', serif;
+  font-family: 'Calistoga', cursive;
 }
 
 #mainSub{
@@ -41,6 +41,12 @@
 
 #mainSub2{
   font-size:75%;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+#mainSub3{
+  font-size:100%;
   text-align: center;
   font-family: 'Lora', serif;
 }
@@ -63,12 +69,12 @@ margin: 2%;
 
 #states{
 text-align:center;
-color:#6568E6;
+color:#ff75af;
 font-family: 'Lora', serif;
 }
 
 #linkyLarger{
-font-size: 150%;
+font-size: 120%;
 text-align:center;
 margin: 2%;
 }
