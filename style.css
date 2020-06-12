@@ -1,16 +1,28 @@
+
+#mainTitle{
+  color:black;
+  font-size:150%;
+  text-align: center;
+  margin-top:10%;
+  font-family: 'Calistoga', cursive;
+}
+
+#nameLinks{
+  text-decoration: none;
+}
+
 #mainTitle1{
-  color:#6568E6;
+  color:black;
   font-size:500%;
   text-align: center;
   margin-top:10%;
-  font-family: 'Lora', serif;
+  font-family: 'Calistoga', cursive;
 }
-
 #mainTitle2{
-  color:#6568E6;
+  color:black;
   font-size:450%;
   text-align: center;
-  font-family: 'Lora', serif;
+  font-family: 'Calistoga', cursive;
 }
 
 #mainTitle3{
@@ -38,7 +50,7 @@
 }
 
 body{
-  background-color: #E69E7C;
+  background-color: #fff;
   text-align: center;
   
 
