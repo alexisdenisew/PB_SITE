@@ -105,6 +105,22 @@ a:hover{
   background-image: linear-gradient(to right bottom, #f3e38c, #cbe593, #a2e5a4, #7ae2bb, #56dcd2, #44d6c6, #30cfba, #16c9ad, #5dbd6e, #93ab2d, #c58f00, #f06322);
 }
 
+.GradientA {
+  background-image: linear-gradient(to right bottom, #F88BC2, #F88BC2, #F88BC2);
+}
+
+.GradientB {
+  background-image: linear-gradient(to right bottom, #47A9FA, #47A9FA, #47A9FA);
+}
+
+.GradientC {
+  background-image: linear-gradient(to right bottom, #FFFFFF, #FFFFFF, #FFFFFF);
+}
+
+.GradientD {
+  background-image: linear-gradient(to right bottom, #fffacd, #fffacd, #fffacd);
+}
+
 .color span {
  text-align: center;
     margin-bottom: 10%;
