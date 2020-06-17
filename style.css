@@ -101,6 +101,13 @@ font-family: 'Lora', serif;
 color: black;
 }
 
+#linky4{
+text-align: center;
+font-family: 'Lora', serif;
+color: white;
+font-size: 200%;
+}
+
 #linky2{
   text-decoration: underline;
   color: black;
@@ -129,4 +136,11 @@ font-family: 'Lora', serif;
   margin: 2%;
   text-align:center;
   font-size: 140%;
+}
+
+#ickyCaros{
+  text-align: center;
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
 }

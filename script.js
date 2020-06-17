@@ -25,3 +25,10 @@
         if (callNow) func.apply(context, args);
       };
     }
+
+
+
+function secretGreeting(){
+  x = "hey"
+  return x;
+} 
