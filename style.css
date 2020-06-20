@@ -16,6 +16,8 @@ input{
   width: 27%;
 }
 
+
+
 #homeIcon{
   color: black;
   margin-top:0.6%;
@@ -132,6 +134,11 @@ margin: 2%;
 font-family: 'Lora', serif;
 }
 
+#linkyLarger2{
+text-align:center;
+font-family: 'Lora', serif;
+}
+
 #callInfo{
   margin: 2%;
   text-align:center;
@@ -143,4 +150,10 @@ font-family: 'Lora', serif;
   width: 70%;
   height: auto;
   margin-left: 15%;
+}
+
+#aboutBlurb{
+margin: 5%;
+font-family: 'Lora', serif;
+font-size: 150%;
 }
