@@ -16,7 +16,10 @@ input{
   width: 27%;
 }
 
-
+#map{
+margin-top: 75px;
+margin-bottom: 15%;
+}
 
 #homeIcon{
   color: black;
@@ -45,6 +48,13 @@ input{
 #mainTitle3{
   color:black;
   font-size:450%;
+  text-align: center;
+  font-family: 'Calistoga', cursive;
+}
+
+#mainTitle4{
+  color:black;
+  font-size: 150%;
   text-align: center;
   font-family: 'Calistoga', cursive;
 }

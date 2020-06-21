@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+	#map { position: absolute; top: 65px; bottom: 0; width: 90%; height: 100%; }
+</style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168123736-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168123736-1');
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+  </head>
+  <body>
+    <div id = "entireBody">
+    <div class="w3-container">
+  <div class="w3-bar">
+    <div class="w3-dropdown-hover ">
+      <a href = "index.html"><button id= "homeIcon" class="w3-button"><i class="fa fa-home fa-2x"></i></button></a>
+    </div>
+    <div class="w3-dropdown-hover ">
+      <button class="w3-button"><i class="fa fa-book fa-2x"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Podcasts</a>
+        <a href="books.html" class="w3-bar-item w3-button">Books</a>
+        <a href="movies.html" class="w3-bar-item w3-button">Movies</a>
+        <a href="media.html" class="w3-bar-item w3-button">Media</a>
+        <a href="profiles.html" class="w3-bar-item w3-button">Profiles</a>
+        <a href="live.html" class="w3-bar-item w3-button">Live</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button"><i class="fa fa-bullhorn fa-2x"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="petitions.html" class="w3-bar-item w3-button">Petitions</a>
+        <a href="phonecalls.html" class="w3-bar-item w3-button">Phone Calls</a>
+        <a href="emails.html" class="w3-bar-item w3-button">Emails</a>
+        <a href="tips.html" class="w3-bar-item w3-button">Tips for Protestors</a>
+        <a href="bail.html" class="w3-bar-item w3-button">Bail/ Arrest Resources</a>
+        <a href="pride.html" class="w3-bar-item w3-button">
+          <span style='color: red'>P</span>
+          <span style='color: orange'>R</span>
+          <span style='color: green'>I</span>
+          <span style='color: blue'>D</span>
+          <span style='color: violet'>E</span>
+        </a>
+        <a id "BTL" href="blacktranslives.html" class="w3-bar-item w3-button">
+          <span style='color: #47A9FA'>Black</span>
+          <span style='color: Pink'>Trans</span>
+          <span style='color: Gray'>Lives</span>
+        </a>
+        <a href="actother.html" class="w3-bar-item w3-button">Other</a>
+        <a href="cites.html" class="w3-bar-item w3-button">Cites</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button"><i class="fa fa-money fa-2x"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="bailFunds.html" class="w3-bar-item w3-button">Bail Funds</a>
+        <a href="directAction.html" class="w3-bar-item w3-button">Direct Action</a>
+        <a href="memorialFunds.html" class="w3-bar-item w3-button">Memorial Funds</a>
+        <a href="blackbusiness.html" class="w3-bar-item w3-button">Black Business</a>
+        <a href="otherFunds.html" class="w3-bar-item w3-button">Other</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <h1 id = "mainTitle4">Black Business Locations</h1>
+     <h1 id = "mainSub2">Included Cities: New York</h1>
+
+
+
+<style>
+.mapboxgl-popup {
+max-width: 400px;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+</style>
+<div id="map"></div>
+<script>
+	// TO MAKE THE MAP APPEAR YOU MUST
+	// ADD YOUR ACCESS TOKEN FROM
+	// https://account.mapbox.com
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleGlzZGVuaXNldyIsImEiOiJja2JvZDNxbzEyMWUwMzFteWd1eGc3MjY1In0.gWB4JlKeOCTa8a6LVUmFSQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-73.965355, 40.782864],
+zoom: 11.00
+});
+ 
+map.on('load', function() {
+map.addSource('places', {
+'type': 'geojson',
+'data': {
+'type': 'FeatureCollection',
+'features': [
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Abyssinia</strong><p><a href="https://abyssinianyc.com/" target="_blank" title="Opens in a new window">Abyssinia</a> serves traditional Ethiopian fare like stews & injera served up in casual, compact environs.</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.946550, 40.816450]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Famous Fish Market</strong><p> Head to the <a href="https://www.yelp.com/biz/famous-fish-market-new-york" target="_blank" title="Opens in a new window">Famous Fish Market</a> to try their fish and chips or fried clams and chips!</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.944790, 40.823560]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Cove Lounge</strong><p> The <a href="https://www.covelounge.com/events" target="_blank" title="Opens in a new window">Cove Lounge</a>  is a Carribean inspired restaurant and lounge in Harlem. Attracting an array of business professionals, entrepreneurs, and celebrities.</p>',
+'icon': 'bar'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.945183, 40.808830]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Pikine</strong><p><a href="https://www.theinfatuation.com/new-york/reviews/pikine" target="_blank" title="Opens in a new window">Pikine</a> is an intimate African restaurant with just 6 tables plating generous portions of Senegalese cuisine.</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.9543571, 40.8042875]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Harlem Shake</strong><p><a href="https://www.harlemshakenyc.com/" target="_blank" title="Opens in a new window">Harlem Shake</a> is a casual spot for burgers, shakes & more in a modern, dinerlike setting with retro Harlem photos.</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.9463524, 40.8071119]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Ponty Bistro</strong><p><a href="http://www.pontybistroharlem.com/" target="_blank" title="Opens in a new window">Ponty Bistro</a> serves French & West African cuisine are served alongside house cocktails in a warm, dark-wood bistro.</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.9416508, 40.8176235]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Red Rooster</strong><p><a href="https://www.redroosterharlem.com/" target="_blank" title="Opens in a new window">Red Rooster</a> is a popular, stylish comfort food eatery with creative cooking from celeb chef Marcus Samuelsson.</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.9449106, 40.807966]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Urban Vegan Kitchen</strong><p><a href="https://urbanvegankitchen.com/" target="_blank" title="Opens in a new window">Urban Vegan Kitchen</a> serves organic vegan comfort food, along with cocktails & mocktails in an intimate West Village setting.</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-74.0036228, 40.7301804]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Sweet Chick</strong><p><a href="https://www.sweetchick.com/" target="_blank">Sweet Chick</a> is a rustic-chic eatery with American comfort food, such as chicken & waffles, plus cocktails & brunch.</p>',
+'icon': 'restaurant'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.987391, 40.7217365]
+}
+}
+]
+}
+});
+// Add a layer showing the places.
+map.addLayer({
+'id': 'places',
+'type': 'symbol',
+'source': 'places',
+'layout': {
+'icon-image': '{icon}-15',
+'icon-allow-overlap': true
+}
+});
+ 
+// When a click event occurs on a feature in the places layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click', 'places', function(e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'places', function() {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'places', function() {
+map.getCanvas().style.cursor = '';
+});
+});
+</script>
+      
+
+
+
+
+
+    </div>
+  </body>
+</html>
