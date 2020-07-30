@@ -29,6 +29,10 @@
 
 
 function secretGreeting(){
-  x = "hey"
+  x = "hey";
   return x;
 } 
+
+
+// Social widget js
+

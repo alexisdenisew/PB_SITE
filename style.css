@@ -12,6 +12,12 @@
   color: green;
 }
 
+#hotTopics{
+  background-color: #F35151;
+  margin: 5%;
+  border-radius: 25px;
+}
+
 input{
   width: 27%;
 }
@@ -58,6 +64,18 @@ margin-bottom: 15%;
   font-size: 150%;
   text-align: center;
   font-family: 'Calistoga', cursive;
+}
+
+#mainTitle5{
+  color:black;
+  font-size: 350%;
+  text-align: center;
+  font-family: 'Calistoga', cursive;
+}
+
+#noLinky{
+  text-decoration: none;
+  color: black;
 }
 
 #mainSub{
@@ -138,6 +156,12 @@ color:#ff75af;
 font-family: 'Lora', serif;
 }
 
+#states2{
+text-align: left;
+color:#ff75af;
+font-family: 'Lora', serif;
+}
+
 #linkyLarger{
 font-size: 120%;
 text-align:center;
@@ -145,9 +169,20 @@ margin: 2%;
 font-family: 'Lora', serif;
 }
 
+#overRule{
+text-align: left;
+margin: 5%;
+}
+
 #linkyLarger2{
 text-align:center;
 font-family: 'Lora', serif;
+}
+
+#linkyLarger4{
+text-align:left;
+font-family: 'Lora', serif;
+margin: 2%;
 }
 
 #callInfo{
@@ -167,4 +202,75 @@ font-family: 'Lora', serif;
 margin: 5%;
 font-family: 'Lora', serif;
 font-size: 150%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#container {
+  color:#000;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+#colorBlock{
+  background-color:rgba(196, 196, 196, 0.432)
+}
+
+#colorBlock2{
+  background-color:rgba(196, 196, 196, 0.232)
+}
+
+#colorBlock3{
+  background-color:rgba(196, 196, 196, 0.102)
 }
