@@ -194,6 +194,7 @@ font-family: 'Lora', serif;
 margin: 2%;
 }
 
+
 #callInfo{
   margin: 2%;
   text-align:center;
@@ -282,4 +283,12 @@ body {
 
 #colorBlock3{
   background-color:rgba(196, 196, 196, 0.102)
+}
+
+#imgStyle{
+  text-align: center;
+}
+
+#aligned{
+  text-align: left;
 }
