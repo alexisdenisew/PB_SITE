@@ -1,10 +1,60 @@
+#topImg{
+margin-top:5%;
+text-align: center;
+}
+
+#topImgAs{
+  width: 90%;
+  height: auto;
+}
+
+#divDeck1{
+  background-image: url("assets/whitehouse.jpg");
+  width: auto;
+  height: 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+}
+
+#divDeck2{
+  background-image: url("https://media.gq.com/photos/5c7ea3819a924d3a52681086/1:1/w_2306,h_2306,c_limit/jeremy-o-harris-gq-april-2019-04.jpg");
+  width: auto;
+  height: 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+}
+#divDeck3{
+  background-image: url("assets/action.jpg");
+  width: auto;
+  height: 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+}
+
+#divDeck4{
+  background-image: url("assets/nourish.png");
+  width: auto;
+  height: 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+}
+
+#insides{
+  
+  text-align: center;
+}
+
 
 #mainTitle{
   color:black;
   font-size:150%;
   text-align: center;
   margin-top:10%;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 #myDIV{
@@ -13,9 +63,9 @@
 }
 
 #hotTopics{
-  background-color: #F35151;
-  margin: 5%;
-  border-radius: 25px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
 }
 
 input{
@@ -43,34 +93,42 @@ margin-bottom: 15%;
   font-size:500%;
   text-align: center;
   margin-top:10%;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 #mainTitle2{
   color:black;
   font-size:450%;
   text-align: center;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 #mainTitle3{
-  color:black;
-  font-size:450%;
+  color:red;
+  font-size:350%;
   text-align: center;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 #mainTitle4{
   color:black;
   font-size: 150%;
   text-align: center;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 #mainTitle5{
-  color:black;
-  font-size: 350%;
+  color:red;
+  font-size: 100%;
   text-align: center;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+#mainTitle6{
+  color:red;
+  font-size: 200%;
+  
+  text-align: center;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 #noLinky{
@@ -92,13 +150,14 @@ margin-bottom: 15%;
 }
 
 #mainSub3{
-  font-size:100%;
+  font-size:130%;
   text-align: center;
+  margin:5%;
   font-family: 'Lora', serif;
 }
 
 #entireBody{
-  font-family: 'Lora', serif;
+  font-family: 'Archivo Narrow', sans-serif;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -161,21 +220,21 @@ margin: 2%;
 
 #states{
 text-align:center;
-color:#ff75af;
-font-family: 'Lora', serif;
+color:red;
+font-family: 'Archivo Narrow', sans-serif;
 }
 
 #states2{
 text-align: left;
-color:#ff75af;
-font-family: 'Lora', serif;
+color:red;
+font-family: 'Archivo Narrow', sans-serif;
 }
 
 #linkyLarger{
 font-size: 120%;
 text-align:center;
 margin: 2%;
-font-family: 'Lora', serif;
+font-family: 'Archivo Narrow', sans-serif;
 }
 
 #overRule{
