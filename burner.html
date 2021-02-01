@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery With Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script type="text/javascript">
+    let currentDay = (new Date).getDate()
+    if (currentDay == 29){
+      var help = "here"
+    }
+
+    var myObject = {
+      
+      firstName: help,
+      lastName: "Doe",
+      fullName: function() {
+        return this.firstName + " " + this.lastName;
+      }
+    }
+    x = myObject.fullName();
+    document.getElementById("demo").innerHTML = x; 
+  </script>
+
+  
+</body>
+</html>

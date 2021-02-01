@@ -8,6 +8,15 @@ text-align: center;
   height: auto;
 }
 
+#divDeck0{
+  background-image: url("assets/bhm.jpg");
+  width: auto;
+  height: 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+}
+
 #divDeck1{
   background-image: url("assets/whitehouse.jpg");
   width: auto;
@@ -351,3 +360,5 @@ body {
 #aligned{
   text-align: left;
 }
+
+
