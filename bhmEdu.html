@@ -31,6 +31,7 @@
 
       <div class="scrollmenu">
         <a class= "inactiveLink" href="bhm.html">Home</a>
+        <a class= "inactiveLink" id = "story" href="" download>Daily IG Graphic</a>
         <a class= "inactiveLink" href="bhmOrgs.html">Organizations</a>
         <a class= "activeLink" href="bhmEdu.html">Education</a>
         <a class= "inactiveLink" href="bhmAction.html">Action</a>
@@ -293,6 +294,57 @@
       <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt2334649/" target = "_blank">29. Fruitvale Station</a>
       <br>
 </div>
+
+<script type="text/javascript">
+  let currentDay = (new Date).getDate()
+  if (currentDay == 1 || currentDay == 31){
+    var storyLink = "A.PNG"
+
+  }
+  if (currentDay == 2){
+    var storyLink = "B.PNG"
+
+  }
+  if (currentDay == 3){
+    var storyLink = "C.PNG"
+
+  }
+  if (currentDay == 4){
+    var storyLink = "D.PNG"
+
+  }
+  if (currentDay == 5){
+    var storyLink = "E.PNG"
+
+  }
+  if (currentDay == 6){
+    var storyLink = "F.PNG"
+
+  }
+  if (currentDay == 7){
+    var storyLink = "G.PNG"
+
+  }
+
+  var myStory = {
+            path: "bhmAssets/stories/",
+            storyName: storyLink,
+            fullStory: function() {
+              return this.path + this.storyName;
+            }
+          }
+
+  a = myStory.fullStory();
+  document.getElementById("story").href = a;
+
+</script>
+
+    
+
+
+
+
+
 
     </div>
   </body>

@@ -31,6 +31,7 @@
 
       <div class="scrollmenu">
         <a class= "inactiveLink" href="bhm.html">Home</a>
+        <a class= "inactiveLink" id = "story" href="" download>Daily IG Graphic</a>
         <a class= "activeLink" href="#">Organizations</a>
         <a class= "inactiveLink" href="bhmEdu.html">Education</a>
         <a class= "inactiveLink" href="bhmAction.html">Action</a>
@@ -165,6 +166,50 @@ We work to place Black women and girls’ lives, as well as their particular str
 Founded in 2013, BYP100 (Black Youth Project 100) is a member-based organization of Black youth activists creating justice and freedom for all Black people. BYP100 was, at one point, just a hashtag for the 2013 “Beyond November Movement Convening” developed through the vision and leadership of Cathy Cohen. In 2012, Dr. Cathy Cohen was working with a Black Youth Project advisory council in Chicago and was advised to hold a national convening with young Black activists from across the country. Throughout the year, Dr. Cohen worked with the National Black Justice Coalition (NBJC) to gather resources for the convening and make sure there was a strong representation from the Black queer and trans community along with artists and labor unions. In July 2013 she held the “Beyond November Movement Convening” outside of Chicago. One day during the convening, the group gathered in the main holding room to dismiss for an open mic night, but before they left, someone learned that the George Zimmerman verdict in the killing of Trayvon Martin would be announced shortly. The energy in the room completely shifted, and folks sat there prepared for whatever was going to happen. After George Zimmerman was found ‘not guilty’ in the murder of Trayvon Martin, everyone in the room was outraged. Some folk cried. Some folks screamed. Some people left the room. A few folks stayed and in that moment, they decided that they had to make a decision: were they gonna do/be something or would they just hold in their anger and not put that anger into action? Hence, BYP100 was born. At the 50th anniversary of the March on Washington, a second convening was held. It was through this convening that 30 members of the collective later known as “BYP100” drafted the organizational vision, mission, and core value statements. BYP100 became a national collective that emphasizes building chapters throughout the country to hone in on grassroots organizing and community mobilization on local levels.
 </p>
 </div>
+
+<script type="text/javascript">
+  let currentDay = (new Date).getDate()
+  if (currentDay == 1 || currentDay == 31){
+    var storyLink = "A.PNG"
+
+  }
+  if (currentDay == 2){
+    var storyLink = "B.PNG"
+
+  }
+  if (currentDay == 3){
+    var storyLink = "C.PNG"
+
+  }
+  if (currentDay == 4){
+    var storyLink = "D.PNG"
+
+  }
+  if (currentDay == 5){
+    var storyLink = "E.PNG"
+
+  }
+  if (currentDay == 6){
+    var storyLink = "F.PNG"
+
+  }
+  if (currentDay == 7){
+    var storyLink = "G.PNG"
+
+  }
+
+  var myStory = {
+            path: "bhmAssets/stories/",
+            storyName: storyLink,
+            fullStory: function() {
+              return this.path + this.storyName;
+            }
+          }
+
+  a = myStory.fullStory();
+  document.getElementById("story").href = a;
+
+</script>
 
     </div>
   </body>

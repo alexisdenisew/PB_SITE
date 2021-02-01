@@ -31,6 +31,7 @@
 
       <div class="scrollmenu">
         <a class= "inactiveLink" href="bhm.html">Home</a>
+        <a class= "inactiveLink" id = "story" href="" download>Daily IG Graphic</a>
         <a class= "inactiveLink" href="bhmOrgs.html">Organizations</a>
         <a class= "inactiveLink" href="bhmEdu.html">Education</a>
         <a class= "inactiveLink" href="bhmAction.html">Action</a>
@@ -233,6 +234,50 @@ Ava DuVernay is a writer, producer, director and distributor of independent film
 Rose was a  high jumper from Chicago. She was a member of the Congress of Racial Equality. But as an athlete, once the Cold War kicks off and she understands that the United States government is using her as a black person to say something about democracy that's essentially not true, she pulls away from the system. So in 1959, when the United States and Soviets agree to have track meets, these type of goodwill games to promote peace, she qualifies to go but refuses to go. Rose is hyper-critical of these trips and she’s loud about it. She’s giving interviews to 'The Defender'.' She’s giving interviews to Jet and she says, 'I’m not going to be a pawn. I’m not going to be a tool in this propaganda effort. And I’m not going to use my tax dollars to support this war machine. I’m not doing it. You’re not going to use my body to do that.' She also - it's noted in the press that during the Pan Am Games in America, she doesn't stand up for the national anthem. And then in 1960, she is actually arrested for refusing to pay taxes. And she goes on a hunger strike. This is what starts getting a lot of coverage. If you look at some pictures of her, she has to be carried into the courtroom, carried to her jail cell, because she’s become so frail. Very soon some pacifist groups—American Friends, some of the anti-war groups—start picketing on her behalf, in front of the courthouse, amplifying her hunger strike. So certainly, a lot of the times, as she’s remembered, is as a pacifist. She’s in jail for a long time because every time they bring her in front of the judge, they say, 'OK, stop your hunger strike, pay your fine, go home.' And she refuses to capitulate at all, which is why she keeps ending up in the jail cell. And when she finally gets released from jail, she doesn’t stop being vocal and active, but her athletic career definitely wanes. Part of it is that she physically is greatly diminished from her protest. Then she fully steps away from sport. How she’s remembered, is as a pacifist; we actually kind of lose all sense of her athletic career, at all (via The Nation, Rose Robinson).
 </p>
 </div>
+
+<script type="text/javascript">
+  let currentDay = (new Date).getDate()
+  if (currentDay == 1 || currentDay == 31){
+    var storyLink = "A.PNG"
+
+  }
+  if (currentDay == 2){
+    var storyLink = "B.PNG"
+
+  }
+  if (currentDay == 3){
+    var storyLink = "C.PNG"
+
+  }
+  if (currentDay == 4){
+    var storyLink = "D.PNG"
+
+  }
+  if (currentDay == 5){
+    var storyLink = "E.PNG"
+
+  }
+  if (currentDay == 6){
+    var storyLink = "F.PNG"
+
+  }
+  if (currentDay == 7){
+    var storyLink = "G.PNG"
+
+  }
+
+  var myStory = {
+            path: "bhmAssets/stories/",
+            storyName: storyLink,
+            fullStory: function() {
+              return this.path + this.storyName;
+            }
+          }
+
+  a = myStory.fullStory();
+  document.getElementById("story").href = a;
+
+</script>
 
     </div>
   </body>

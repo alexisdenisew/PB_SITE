@@ -31,6 +31,7 @@
 
       <div class="scrollmenu">
         <a class= "activeLink" href="#home">Home</a>
+        <a class= "inactiveLink" id = "story" href="" download>Daily IG Graphic</a>
         <a class= "inactiveLink" href="bhmOrgs.html">Organizations</a>
         <a class= "inactiveLink" href="bhmEdu.html">Education</a>
         <a class= "inactiveLink" href="">Action</a>
@@ -40,28 +41,43 @@
       </div>
       <br>
 
+      
+
       <p id="name2">Figure of the Day</p>
+      
 
-      <img id="pic" src ="">
-      <br>
-      <p id="name"></p>
-      <div id = "blurbContainer">
-      <p id="text"></p>
-      <button id = "theButt" class = "daButt" onclick="myFunction()">More</button>
+
+      <div>
+
+        <img id="pic" src ="">
+        <br>
+        <p id="name"></p>
+        <div id = "blurbContainer">
+        <p id="text"></p>
+        <button id = "theButt" class = "daButt" onclick="myFunction()">More</button>
+        </div>
+        <br>
+
+        <p id="name2">Event of the Day</p>
+
+        <img id="evenPic" src ="">
+        <br>
+        <p id="evenName"></p>
+        <div id = "blurbContainer">
+        <p id="evenText"></p>
+        <button id = "theButt2" class = "daButt" onclick="myFunction2()">More</button>
+        </div>
+        <br>
+
       </div>
+
+      <a class= "inactiveLink" id = "story" href="" download>Download daily IG story graphic</a>
+
       <br>
-
-      <p id="name2">Event of the Day</p>
-
-
-
-      <img id="evenPic" src ="">
       <br>
-      <p id="evenName"></p>
-      <div id = "blurbContainer">
-      <p id="evenText"></p>
-      <button id = "theButt2" class = "daButt" onclick="myFunction2()">More</button>
-      </div>
+      <br>
+      <br>
+      <br>
       <br>
 
 
@@ -71,6 +87,7 @@
       <script type="text/javascript">
         let currentDay = (new Date).getDate()
         if (currentDay == 1 || currentDay == 31){
+          var storyLink = "A.PNG"
           var first = "Ella"
           var last = "Baker"
           var photo = "ella.jpg"
@@ -85,6 +102,7 @@
           evenEvenmore = ''
         }
         if (currentDay == 2){
+          var storyLink = "B.PNG"
           var first = "Fred"
           var last = "Hampton"
           var photo = "fred.jpg"
@@ -100,6 +118,7 @@
 
         }
         if (currentDay == 3){
+          var storyLink = "C.PNG"
           var first = "Dorothy"
           var last = "Vaughan"
           var photo = "dorothy.jpg"
@@ -115,6 +134,7 @@
 
         }
         if (currentDay == 4){
+          var storyLink = "D.PNG"
           var first = "Amanda"
           var last = "Gorman"
           var photo = "amanda.jpg"
@@ -130,6 +150,7 @@
 
         }
         if (currentDay == 5){
+          var storyLink = "E.PNG"
           var first = "Mary"
           var last = "Hamilton"
           var photo = "mary.jpg"
@@ -146,6 +167,7 @@
 
         }
         if (currentDay == 6){
+          var storyLink = "F.PNG"
           var first = "Angela"
           var last = "Davis"
           var photo = "angela.jpg"
@@ -161,6 +183,7 @@
 
         }
         if (currentDay == 7){
+          var storyLink = "G.PNG"
           var first = "Compton"
           var last = "Cowboys"
           var photo = "compton.jpg"
@@ -511,6 +534,14 @@
           }
         }
 
+        var myStory = {
+          path: "bhmAssets/stories/",
+          storyName: storyLink,
+          fullStory: function() {
+            return this.path + this.storyName;
+          }
+        }
+
         var myText = {
           blurb: para,
           fullText: function() {
@@ -546,6 +577,7 @@
           }
         }
 
+        a = myStory.fullStory();
         x = myObject.fullName();
         y = myPic.fullPic();
         z = myText.fullText();
@@ -555,6 +587,7 @@
         zz = myEvenText.fullEvenText();
 
         document.getElementById("name").innerHTML = x;
+        document.getElementById("story").href = a;
         document.getElementById("pic").src = y;
         document.getElementById("text").innerHTML = z;
         document.getElementById("evenName").innerHTML = xx;

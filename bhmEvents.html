@@ -31,6 +31,7 @@
 
       <div class="scrollmenu">
         <a class= "inactiveLink" href="bhm.html">Home</a>
+        <a class= "inactiveLink" id = "story" href="" download>Daily IG Graphic</a>
         <a class= "inactiveLink" href="bhmOrgs.html">Organizations</a>
         <a class= "inactiveLink" href="bhmEdu.html">Education</a>
         <a class= "inactiveLink" href="bhmAction.html">Action</a>
@@ -334,6 +335,50 @@ Excerpts from the NYT Opinion Piece: Waiting for a Perfect Protest: Even mainstr
 <p id ="nameBlurb">A 1963 poll showed that 60 percent had an unfavorable feeling toward the planned March on Washington, where Dr. King gave his “I Have a Dream” speech. A year later, 74 percent said that since black people had made some progress, they should stop their demonstrations; and by 1969, 74 percent said that marching, picketing and demonstrations were hurting the civil rights cause. As for Dr. King personally, the figure who current moderates most readily point to as a model, 50 percent of people polled in 1966 thought that he was hurting the civil rights movement; only 36 percent believed he was helping. The civil rights movement was messy, disorderly, confrontational and yes, sometimes violent. Those standing on the sidelines of the current racial-justice movement, waiting for a pristine or flawless exercise of righteous protest, will have a long wait. They, we suspect, will be this generation’s version of the millions who claim that they were one of the thousands who marched with Dr. King. Each of us should realize that what we do now is most likely what we would have done during those celebrated protests 50 years ago. Rather than critique from afar, come out of your homes, follow those who are closest to the pain, and help us to redeem this country, and yourselves, in the process (read the full opinion piece at NYT, Waiting for a Perfect Protest).
 </p>
 </div>
+
+<script type="text/javascript">
+  let currentDay = (new Date).getDate()
+  if (currentDay == 1 || currentDay == 31){
+    var storyLink = "A.PNG"
+
+  }
+  if (currentDay == 2){
+    var storyLink = "B.PNG"
+
+  }
+  if (currentDay == 3){
+    var storyLink = "C.PNG"
+
+  }
+  if (currentDay == 4){
+    var storyLink = "D.PNG"
+
+  }
+  if (currentDay == 5){
+    var storyLink = "E.PNG"
+
+  }
+  if (currentDay == 6){
+    var storyLink = "F.PNG"
+
+  }
+  if (currentDay == 7){
+    var storyLink = "G.PNG"
+
+  }
+
+  var myStory = {
+            path: "bhmAssets/stories/",
+            storyName: storyLink,
+            fullStory: function() {
+              return this.path + this.storyName;
+            }
+          }
+
+  a = myStory.fullStory();
+  document.getElementById("story").href = a;
+
+</script>
 
     </div>
   </body>
