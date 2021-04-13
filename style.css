@@ -8,6 +8,15 @@ text-align: center;
   height: auto;
 }
 
+#divDeck00{
+  background-image: url("assets/daunte.jpg");
+  width: auto;
+  height: 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+}
+
 #divDeck0{
   background-image: url("assets/bhm.jpg");
   width: auto;
@@ -359,6 +368,23 @@ body {
 
 #aligned{
   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  #mainTitle3 {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+  #daunte{
+    width: 70%;
+    height: auto;
+  }
+  #states{
+    font-size: 17px;
+  }
+  #callInfo{
+    font-size: 15px;
+  }
 }
 
 
