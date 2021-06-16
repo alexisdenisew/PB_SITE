@@ -3,9 +3,29 @@ margin-top:5%;
 text-align: center;
 }
 
-#topImgAs{
-  width: 90%;
-  height: auto;
+
+
+@media screen and (min-width: 601px) {
+  #topImgAs{
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #topImgAs{
+    width: 90%;
+    height: auto;
+  }
+}
+
+#divDeck000{
+  background-image: url("https://cdn.britannica.com/s:800x450,c:crop/88/217388-138-83657F66/Juneteenth-Independence-Day-Emancipation-Day-holiday-commemorating-end-of-slavery-United-States.jpg");
+  width: auto;
+  height: 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
 }
 
 #divDeck00{
@@ -183,8 +203,6 @@ margin-bottom: 15%;
 body{
   background-color: #fff;
   text-align: center;
-  
-
 }
 
 #subButton{

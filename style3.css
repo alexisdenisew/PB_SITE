@@ -27,3 +27,149 @@ html {
     background-size: 10%;
   }
 }
+
+
+/* Juneteenth */
+
+@media screen and (min-width: 601px) {
+  #topImgAs2{
+    width: 80%;
+    height: auto;
+  }
+  .light{
+    font-size: 250%;
+    margin-top: 5%;
+  }
+  #dark{
+    font-size: 145%;
+  } 
+  .helper{
+    font-size: 75%;
+  }
+  #specialSet{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #insides{
+    margin: 5%;
+  }
+  #selector, #state{
+    font-size: 80%;
+  }
+  #state{
+    color: black;
+  }
+  #subButton{
+    font-size: 65%;
+    border-radius: 12px;
+  }
+  .beans{
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #topImgAs2{
+    width: 90%;
+    height: auto;
+  }
+.light{
+    font-size: 150%;
+    margin-top: 7%;
+  }
+  #dark{
+    font-size: 115%;
+  }
+  .helper{
+    font-size: 35%;
+  } 
+  #specialSet{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  #insides{
+    margin: 10%;
+  }
+  #light2, #info{
+    font-size: 50%;
+    margin-top: 7%;
+  }
+  #selector{
+    font-size: 60%;
+  }
+  #state{
+    font-size: 50%;
+    color: white;
+  }
+  #subButton{
+    font-size: 50%;
+    border-radius: 12px;
+  }
+  .beans{
+    font-size: 30%;
+  }
+  
+}
+
+#topImg{
+  margin-top:5%;
+  text-align: center;
+}
+
+.light{
+  font-family: 'Bree Serif', serif;
+  text-align: left;
+  margin-left: 7%;
+  color: #772f1a; 
+}
+
+
+#dark, .helper{
+  margin-left: 7%;
+  margin-right: 7%;
+  color: white;
+  font-family: 'Signika', sans-serif; 
+}
+
+.beans {
+  color: #772f1a;
+  font-family: 'Signika', sans-serif;
+  margin-left: 7%;
+}
+
+#specialSet{
+  background-color: #f58549;
+  border-radius: 12px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#invisible{
+  color: #f58549;
+  font-size: 10%;
+}
+
+#light2, #info{
+  font-family: 'Bree Serif', serif;
+  text-align: left;
+  color: #eec170; 
+}
+
+#selector{
+  font-family: 'Signika', sans-serif;
+  color: white;
+}
+
+#states{
+  font-family: 'Signika', sans-serif;
+}
+
+#subButton{
+  color: #585123;
+}
+
+#left{
+  text-align: center;
+}
+
+
