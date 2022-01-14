@@ -19,6 +19,15 @@ text-align: center;
   }
 }
 
+#divDeck0000{
+  background-image: url("MLKDay/assets/mlkday.png");
+  width: auto;
+  height: 700px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+}
+
 #divDeck000{
   background-image: url("juneteenth/logo.png");
   width: auto;
