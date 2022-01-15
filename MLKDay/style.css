@@ -1,0 +1,187 @@
+body, #stopIt{
+  background-color: #ffeedd;
+}
+#mainT{
+  font-family: 'Staatliches', cursive;
+}
+
+#mainP, #mainStage{
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#mainB, #subButton{
+  background-color: #390099;
+  color: white;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+}
+
+#mainBA{
+  background-color: #ffd8be;
+  color: white;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+}
+
+#startB{
+  color: #390099;
+  font-family: 'Staatliches', cursive;
+}
+
+#miniSec{
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#textSec{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-decoration: none;
+  }
+
+#spec, #name1, #phone1, #name2, #phone2{
+  text-decoration: none;
+  color: #390099;
+}
+
+.row{
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  #topIMG {
+    width: 70%;
+    height: auto;
+    margin-top: 5%;
+  }
+  #mainT{
+    margin-top: 5%;
+    font-size: 400%;
+    margin-left: 2%;
+  }
+  #mainP{
+    font-size: 150%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  #mainB, #mainBA, #subButton{
+    font-size: 150%;
+    padding: 10px 10px;
+    border-radius: 12px;
+  }
+  #startB{
+    font-size: 300%;
+  }
+  #margins{
+    margin-top: 5%;
+  }
+  #marginss{
+    margin-right: 5%;
+  }
+  #marginsss{
+    margin-left: 5%;
+  }
+  #miniSec{
+    font-size: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #secIMG{
+    width: 40%;
+    height: auto;
+  }
+  #blocks{
+    width: 30%;
+    margin-left: 7%;
+  }
+  #textSec{
+    margin-left: 3%;
+  }
+  #img1, #img2{
+    width: 50%;
+    height: auto;
+  }
+  #spec, #name1, #phone1, #name2, #phone2{
+    font-size: 150%;
+  }
+  #stories{
+    width: 20%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #topIMG {
+    width: 95%;
+    height: auto;
+    margin-top: 5%;
+  }
+  #mainT{
+    margin-top: 7%;
+    font-size: 200%;
+    margin-right: 5%;
+    margin-left: 3%;
+  }
+  #mainP{
+    font-size: 80%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  #mainB, #mainBA{
+    font-size: 110%;
+    padding: 10px 10px;
+    border-radius: 12px;
+  }
+  #startB{
+    margin-top: 5%;
+    font-size: 200%;
+  }
+  #margins{
+    margin-top: 10%;
+  }
+  #marginss{
+    margin-right: 5%;
+  }
+  #marginsss{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #miniSec{
+    font-size: 70%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #secIMG{
+    width: 70%;
+    height: auto;
+  }
+  #blocks{
+    width: 65%;
+    margin-left: 5%;
+  }
+  #textSec{
+    margin-left: 3%;
+  }
+  #img1, #img2{
+    width: 30%;
+    height: auto;
+  }
+  #spec, #name1, #phone1, #name2, #phone2{
+    size: 120%;
+  }
+  #spacerSmol{
+    height: 10px;
+  }
+  #stories{
+    width: 40%;
+    height: auto;
+  }
+}
+
+#center{
+  text-align: center;
+}
+
+#spacer{
+  height: 50px;
+}
