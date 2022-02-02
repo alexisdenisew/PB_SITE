@@ -225,3 +225,65 @@ div.scrollmenu a {
 
   }
 }
+
+#deco{
+  font-family: 'Londrina Outline', cursive;
+}
+
+.miniSec{
+  font-family: 'Poppins', sans-serif;
+}
+
+.miniName{
+  font-family: 'Bodoni Moda', serif;
+}
+
+.miniTitle{
+  font-family: 'Fraunces', serif;
+}
+
+@media screen and (min-width: 601px) {
+  #deco {
+    font-size: 500%;
+  }
+  #starPic{
+    width: 35%;
+    height: auto;
+  }
+  #newTopper{
+    margin: 5%;
+  }
+  .miniTitle{
+    font-size: 400%;
+  }
+  .miniName{
+    font-size: 400%;
+  }
+  .miniSec{
+    font-size: 130%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #deco {
+    font-size: 270%;
+  }
+  #starPic{
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+  }
+  #newTopper{
+    margin: 5%;
+  }
+  .miniTitle{
+    font-size: 250%;
+  }
+  .miniName{
+    font-size: 200%;
+  }
+  .miniSec{
+    font-size: 100%;
+  }
+}
+
