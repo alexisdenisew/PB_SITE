@@ -3,6 +3,7 @@
   <head>
     <script src="accScript.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -41,12 +42,35 @@
       </div>
       <br>
 
+      <div id = "newTopper">
+        <h1 id = "deco">Black History is more than oppression.</h1>
+        <p class = "miniSec">This year we have devoted a protion of our Black History Month Portal to Black people and organizations that have dedicated their time and resources to uplifting the Black communities, as well as our nation at large. We want to remind our supporters that <span>Black History is being made right now.<span></p>
+      </div>
+        <h1 class = "miniTitle">Spotlight of the Week</h1>
+        <img id="starPic" src ="">
+        <br><br>
+        <p class = "miniName" id="starName"></p>
+        <div id = "blurbContainer">
+        <p class = "miniSec" id="starBlurb"></p>
+        </div>
+
+        <h1 class = "miniTitle">Black Organization of the Week</h1>
+        <img id="orgPic" src ="">
+        <br><br>
+        <p class = "miniName" id="orgName"></p>
+        <div id = "blurbContainer">
+        <p class = "miniSec" id="orgBlurb"></p>
+        </div>
+
+        <a class= "inactiveLink" id = "donateStory" href="" download>Download an IG Story graphic to collect donations</a>
+      <div>
+
+        <br><br>
+
       
 
       <p id="name2">Figure of the Day</p>
       
-
-
       <div>
 
         <img id="pic" src ="">
@@ -86,6 +110,17 @@
 
       <script type="text/javascript">
         let currentDay = (new Date).getDate()
+        if (currentDay >= 1 && currentDay <= 31){
+          var starPhoto = "zalia.png"
+          var starName = "Zalia Avant-garde"
+          var starBlurb = "Zaila Avant-garde (born February 9, 2007) is an American speller, basketball player, and juggler. She won the 2021 Scripps National Spelling Bee. She is the first African-American contestant to win the bee and the second Black winner, after Jamaica's Jody-Anne Maxwell. In the 2021 competition, she won the title by correctly spelling murraya. She is the first African American contestant to win the competition, and was preceded by MacNolia Cox, who reached the finals in the 1936 edition."
+          var orgName = "The Okra Project"
+          var orgPhoto = "okra.png"
+          var orgBlurb = "The Okra Project is a collective that seeks to address the global crisis faced by Black Trans people by bringing home cooked, healthy, and culturally specific meals and resources to Black Trans People."
+          var orgLink = "donation1.png"
+        }
+
+
         if (currentDay == 1 || currentDay == 31){
           var storyLink = "A.PNG"
           var first = "Ella"
@@ -547,6 +582,7 @@
           evenEvenmore = " A 1961 Gallup poll revealed that 57 percent of the public thought that lunch counter sit-ins and other demonstrations would hurt integration efforts. A 1963 poll showed that 60 percent had an unfavorable feeling toward the planned March on Washington, where Dr. King gave his “I Have a Dream” speech. A year later, 74 percent said that since black people had made some progress, they should stop their demonstrations; and by 1969, 74 percent said that marching, picketing and demonstrations were hurting the civil rights cause. As for Dr. King personally, the figure who current moderates most readily point to as a model, 50 percent of people polled in 1966 thought that he was hurting the civil rights movement; only 36 percent believed he was helping. The civil rights movement was messy, disorderly, confrontational and yes, sometimes violent. Those standing on the sidelines of the current racial-justice movement, waiting for a pristine or flawless exercise of righteous protest, will have a long wait. They, we suspect, will be this generation’s version of the millions who claim that they were one of the thousands who marched with Dr. King. Each of us should realize that what we do now is most likely what we would have done during those celebrated protests 50 years ago. Rather than critique from afar, come out of your homes, follow those who are closest to the pain, and help us to redeem this country, and yourselves, in the process (read the full opinion piece at NYT, Waiting for a Perfect Protest)."
         }
 
+
         var myObject = {
           firstName: first,
           lastName: last,
@@ -590,11 +626,64 @@
             return this.blurb;
           }
         }
+
         var myEvenPic = { 
           path: "bhmAssets/eventPhotos/",
           picName: evenPhoto,
           fullEvenPic: function() {
             return this.path + this.picName;
+          }
+        }
+
+        var spotlight = {
+          spotlight: starName,
+          fullSpotlight: function() {
+            return this.spotlight;
+          }
+        }
+
+        var myStar = { 
+          path: "bhmAssets/stars/",
+          stars: starPhoto,
+          fullStar: function() {
+            return this.path + this.stars;
+          }
+        }
+
+        var mystarBlurb = { 
+          starBlurb: starBlurb,
+          fullStarBlurb: function() {
+            return this.starBlurb;
+          }
+        }
+
+        var orgNamer = {
+          orgName: orgName,
+          fullOrgName: function() {
+            return this.orgName;
+          }
+        }
+
+        var myOrg = { 
+          path: "bhmAssets/orgs/",
+          orgPhoto: orgPhoto,
+          fullOrg: function() {
+            return this.path + this.orgPhoto;
+          }
+        }
+
+        var myOrgBlurb = { 
+          orgBlurb: orgBlurb,
+          fullOrgBlurb: function() {
+            return this.orgBlurb;
+          }
+        }
+
+        var myOrgStories = { 
+          path: "bhmAssets/orgStories/",
+          orgLink: orgLink,
+          fullOrgStory: function() {
+            return this.path + this.orgLink;
           }
         }
 
@@ -607,6 +696,14 @@
         yy = myEvenPic.fullEvenPic();
         zz = myEvenText.fullEvenText();
 
+        b = spotlight.fullSpotlight();
+        c = myStar.fullStar();
+        d = mystarBlurb.fullStarBlurb();
+        e = orgNamer.fullOrgName();
+        f = myOrg.fullOrg();
+        g = myOrgBlurb.fullOrgBlurb();
+        h = myOrgStories.fullOrgStory();
+
         document.getElementById("name").innerHTML = x;
         document.getElementById("story").href = a;
         document.getElementById("story2").href = a;
@@ -615,6 +712,14 @@
         document.getElementById("evenName").innerHTML = xx;
         document.getElementById("evenPic").src = yy;
         document.getElementById("evenText").innerHTML = zz; 
+
+        document.getElementById("starName").innerHTML = b;
+        document.getElementById("starPic").src = c;
+        document.getElementById("starBlurb").innerHTML = d;
+        document.getElementById("orgName").innerHTML = e;
+        document.getElementById("orgPic").src = f;
+        document.getElementById("orgBlurb").innerHTML = g;
+        document.getElementById("donateStory").href = h;
 
         function myFunction() {
           
