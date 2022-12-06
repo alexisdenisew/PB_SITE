@@ -1,0 +1,289 @@
+/* BHM Styling */
+#insides{
+  text-align: center;
+}
+
+#bhmTit{
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+}
+
+#pic, #evenPic{
+  width: 80%;
+  height: auto;
+  max-width: 900px;
+}
+
+div.scrollmenu {
+  color: black;
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.activeLink{
+  color:#ff0000;
+  font-family: 'Bodoni Moda', serif;
+}
+
+.inactiveLink{
+  color: black;
+  font-family: 'Bodoni Moda', serif;  
+}
+
+.activeLink:hover{
+  color:#d40000;
+}
+
+.inactiveLink:hover{
+  color: #d40000;  
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#admins{
+  width: 120%;
+  height: auto;
+  max-width: 250px;
+}
+
+#alignPics{
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 601px) {
+  .daButt {
+    box-shadow: 0px 10px 14px -7px #91199c;
+    background:linear-gradient(to bottom, #f3c7f5 5%, #e07bb1 100%);
+    background-color:#f3c7f5;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:4px 14px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #c006b4;
+    outline: none;
+    border: none;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .daButt {
+    box-shadow: 0px 10px 14px -7px #91199c;
+    background:linear-gradient(to bottom, #f3c7f5 5%, #e07bb1 100%);
+    background-color:#f3c7f5;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 14px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #c006b4;
+    outline: none;
+    border: none;
+  }
+}
+
+.daButt:hover {
+	background:linear-gradient(to bottom, #e07bb1 5%, #f3c7f5 100%);
+	background-color:#e07bb1;
+}
+.daButt:active {
+	position:relative;
+	top:1px;
+}
+
+@media screen and (min-width: 601px) {
+  #name2{
+    font-size: 40px;
+  }
+  #name, #evenName{
+    margin-top: 3%;
+    font-size: 35px;
+  }
+  #text, #evenText{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #name2{
+    font-size: 20px;
+  }
+  #name, #evenName{
+    margin-top: 3%;
+    font-size: 17px;
+  }
+  #text, #evenText{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+#blurbContainer{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+#t1TXT, #t2TXT{
+  font-family: 'Bodoni Moda', serif;
+}
+
+#name, #evenName{
+  font-family: 'Bodoni Moda', serif;
+}
+
+#name2{
+  font-family: 'Fraunces', serif;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+#gridPic{
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+#exp{
+  text-align: left;
+  margin: 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+#archiveSet{
+  margin: 5%;
+  text-align: left;
+}
+
+@media screen and (min-width: 601px) {
+  #namePlaque{
+    font-size: 30px;
+    font-family: 'Bodoni Moda', serif;
+  }
+  #namePlaqueLink{
+    font-size: 30px;
+    font-family: 'Bodoni Moda', serif;
+    color: black;
+    text-decoration: underline;
+  }
+  #nameBlurb{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #namePlaque{
+    font-size: 20px;
+    font-family: 'Bodoni Moda', serif;
+  }
+  #namePlaqueLink{
+    font-size: 25px;
+    font-family: 'Bodoni Moda', serif;
+    color: black;
+    text-decoration: underline;
+  }
+  #nameBlurb{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+}
+
+#deco{
+  font-family: 'Londrina Outline', cursive;
+}
+
+.miniSec{
+  font-family: 'Poppins', sans-serif;
+}
+
+.miniName{
+  font-family: 'Bodoni Moda', serif;
+}
+
+.miniTitle{
+  font-family: 'Fraunces', serif;
+}
+
+@media screen and (min-width: 601px) {
+  #deco {
+    font-size: 500%;
+  }
+  #starPic{
+    width: 35%;
+    height: auto;
+  }
+  #newTopper{
+    margin: 5%;
+  }
+  .miniTitle{
+    font-size: 400%;
+  }
+  .miniName{
+    font-size: 400%;
+  }
+  .miniSec{
+    font-size: 130%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #deco {
+    font-size: 270%;
+  }
+  #starPic{
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+  }
+  #newTopper{
+    margin: 5%;
+  }
+  .miniTitle{
+    font-size: 250%;
+  }
+  .miniName{
+    font-size: 200%;
+  }
+  .miniSec{
+    font-size: 100%;
+  }
+}
+

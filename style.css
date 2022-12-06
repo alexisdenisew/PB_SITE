@@ -1,417 +1,294 @@
-#topImg{
-margin-top:5%;
-text-align: center;
+@font-face {
+  font-family: roundGothic;
+  src: url(assets/allRoundGothicDemi.ttf);
+}
+
+.nav-link:hover{
+  color: #e85d04;
+}
+
+.nav-link:active{
+  color: #e85d04;
+}
+
+#pageTitle{
+  color: black;
+}
+
+#center{
+  text-align: center;
+  font-family: roundGothic;
+}
+
+#red{
+  color: red;
+}
+
+#portalOne{
+  background-color: rgba(249, 195, 71, 0.7);
+}
+
+#portalTwo{
+  background-color: rgba(245, 153, 60, 0.7);
+}
+
+#portalThree{
+  background-color: rgba(242, 124, 54, 0.7);
+}
+
+#portalFour{
+  background-color: rgba(238, 86, 43, 0.7);
+}
+
+#portalFive{
+  background-color: rgba(233, 52, 35, 0.7);
+}
+
+#portalSix{
+  background-color: rgba(230, 50, 30, 0.7);
+}
+
+#portalSeven{
+  background-color: rgba(184, 25, 7, 0.7);
+}
+
+#portalLink{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+#portalTitle, #offcanvasNavbarLabel{
+  font-family: roundGothic;
+}
+
+#portalText, .dropdown-item, .nav-link, #def, #midText{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.midTitle{
+  color: #6a040f;
+  font-family: roundGothic;
+}
+
+#def{
+  color: #6a040f;
+}
+
+#remove{
+  text-decoration: none; 
+}
+
+.midText{
+  color: black;
+}
+
+.midText:hover{
+  color: black;
+}
+
+#topInfo{
+  font-family: roundGothic;
+}
+
+#orangeLink{
+  color: #e85d04;
+  text-decoration-color: #e85d04;
 }
 
 
-
-@media screen and (min-width: 601px) {
-  #topImgAs{
-    width: 90%;
+/* Responsive */
+@media screen and (min-width: 1001px) {
+  #topInfo{
+    font-size: 160%;
+    text-decoration: none;
+  }
+  #offcanvasNavbarLabel{
+    font-size: 300%;
+  }
+  .dropdown-item, .nav-link{
+    font-size: 150%;
+  }
+  #bigImg {
+    width: 60%;
+    height: auto;
+    margin-top: 7%;
+  }
+  #spacer{
+    margin: 7%;
+  }
+  .portal{
+    height: 190px;
+    border-radius: 215px;
+  }
+  #portalTitle{
+    font-size: 250%;
+  }
+  #portalText{
+    font-size: 150%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .specialSpace{
+     height: 80px; 
+  }
+  .space{
+    height: 50px;
+  }
+  .spaceShort{
+    height: 45px;
+  }
+  #pageTitle{
+    margin-top: 5%;
+    font-size: 400%;
+  }
+  .midTitle{
+    font-size: 300%;
+  }
+  #def{
+    font-size: 150%;
+  }
+  .midText{
+    font-size: 120%;
+  }
+  #bar{
+    width: 20%;
+    height: auto;
+  }
+  #posterImg{
+    width: 80%;
     height: auto;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #topImgAs{
-    width: 90%;
-    height: auto;
+@media screen and (max-width: 1000px) and (min-width: 601px) {
+  body{
+    background-color: red;
   }
-}
-
-#divDeck0000{
-  background-image: url("MLKDay/assets/mlkday.png");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-
-#divDeck000{
-  background-image: url("juneteenth/logo.png");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-
-#divDeck00{
-  background-image: url("assets/daunte.jpg");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-
-#divDeck0{
-  background-image: url("assets/bhm.jpg");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-
-#divDeck1{
-  background-image: url("assets/whitehouse.jpg");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-
-#divDeck2{
-  background-image: url("https://media.gq.com/photos/5c7ea3819a924d3a52681086/1:1/w_2306,h_2306,c_limit/jeremy-o-harris-gq-april-2019-04.jpg");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-#divDeck3{
-  background-image: url("assets/action.jpg");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-
-#divDeck4{
-  background-image: url("assets/nourish.png");
-  width: auto;
-  height: 300px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
-}
-
-#insides{
-  
-  text-align: center;
-}
-
-
-#mainTitle{
-  color:black;
-  font-size:150%;
-  text-align: center;
-  margin-top:10%;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-
-#myDIV{
-  display: none;
-  color: green;
-}
-
-#hotTopics{
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 5%;
-}
-
-input{
-  width: 27%;
-}
-
-#map{
-margin-top: 75px;
-margin-bottom: 15%;
-}
-
-#homeIcon{
-  color: black;
-  margin-top:0.6%;
-  background-color:#fff;
-}
-
-#nameLinks{
-  text-decoration: none;
-  color: black;
-}
-
-#mainTitle1{
-  color:black;
-  font-size:500%;
-  text-align: center;
-  margin-top:10%;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-#mainTitle2{
-  color:black;
-  font-size:450%;
-  text-align: center;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-
-#mainTitle3{
-  color:red;
-  font-size:350%;
-  text-align: center;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-
-#mainTitle4{
-  color:black;
-  font-size: 150%;
-  text-align: center;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-
-#mainTitle5{
-  color:red;
-  font-size: 100%;
-  text-align: center;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-
-#mainTitle6{
-  color:red;
-  font-size: 200%;
-  
-  text-align: center;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-
-#noLinky{
-  text-decoration: none;
-  color: black;
-}
-
-#mainSub{
-  font-size:100%;
-  text-align: center;
-  margin:5%;
-  font-family: 'Lora', serif;
-}
-
-#mainSub2{
-  font-size:75%;
-  text-align: center;
-  font-family: 'Lora', serif;
-}
-
-#mainSub3{
-  font-size:130%;
-  text-align: center;
-  margin:5%;
-  font-family: 'Lora', serif;
-}
-
-#entireBody{
-  font-family: 'Archivo Narrow', sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-body{
-  background-color: #fff;
-  text-align: center;
-}
-
-#subButton{
-  background-color: #ff75af; /* Green */
-  border: none;
-  color: white;
-  padding: 1% 1%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 100%;
-}
-#contList{
-  Background-color: rgba(255, 255, 255, 0);
-  margin-right: 4%;
-  margin-left: 4%;
-}
-
-#linky{
-text-align: center;
-font-family: 'Lora', serif;
-color: black;
-}
-
-#linkyNEW{
-text-align: center;
-font-family: 'Lora', serif;
-color: black;
-background-color: #fcffb0
-}
-
-
-
-#linky4{
-text-align: center;
-font-family: 'Lora', serif;
-color: white;
-font-size: 200%;
-}
-
-#linky2{
-  text-decoration: underline;
-  color: black;
-  font-family: 'Lora', serif;
-}
-
-#links{
-text-align: center;
-margin: 2%;
-}
-
-#states{
-text-align:center;
-color:red;
-font-family: 'Archivo Narrow', sans-serif;
-}
-
-#states2{
-text-align: left;
-color:red;
-font-family: 'Archivo Narrow', sans-serif;
-}
-
-#linkyLarger{
-font-size: 120%;
-text-align:center;
-margin: 2%;
-font-family: 'Archivo Narrow', sans-serif;
-}
-
-#overRule{
-text-align: left;
-margin: 5%;
-}
-
-#linkyLarger2{
-text-align:center;
-font-family: 'Lora', serif;
-}
-
-#linkyLarger4{
-text-align:left;
-font-family: 'Lora', serif;
-margin: 2%;
-}
-
-
-#callInfo{
-  margin: 2%;
-  text-align:center;
-  font-size: 140%;
-}
-
-#ickyCaros{
-  text-align: center;
-  width: 70%;
-  height: auto;
-  margin-left: 15%;
-}
-
-#aboutBlurb{
-margin: 5%;
-font-family: 'Lora', serif;
-font-size: 150%;
-}
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-body {
-  margin:0px;
-  font-family:'Roboto';
-  text-align:center;
-}
-
-#container {
-  color:#000;
-  text-transform: uppercase;
-  font-size:36px;
-  font-weight:bold;
-  padding-top:200px;
-  width:100%;
-  bottom:45%;
-  display:block;
-}
-
-#flip {
-  height:50px;
-  overflow:hidden;
-}
-
-#flip > div > div {
-  color:#fff;
-  height:45px;
-  margin-bottom:45px;
-  display:inline-block;
-}
-
-#flip div:first-child {
-  animation: show 5s linear infinite;
-}
-
-#flip div div {
-  background:#42c58a;
-}
-#flip div:first-child div {
-  background:#4ec7f3;
-}
-#flip div:last-child div {
-  background:#DC143C;
-}
-
-@keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-}
-
-
-#colorBlock{
-  background-color:rgba(196, 196, 196, 0.432)
-}
-
-#colorBlock2{
-  background-color:rgba(196, 196, 196, 0.232)
-}
-
-#colorBlock3{
-  background-color:rgba(196, 196, 196, 0.102)
-}
-
-#imgStyle{
-  text-align: center;
-}
-
-#aligned{
-  text-align: left;
-}
-
-@media screen and (max-width: 600px) {
-  #mainTitle3 {
-    font-size: 20px;
-    margin-top: 10%;
+ #topInfo{
+    font-size: 110%;
+    text-decoration: none;
   }
-  #daunte{
+  #offcanvasNavbarLabel{
+    font-size: 500%;
+  }
+  .dropdown-item, .nav-link{
+    font-size: 150%;
+  }
+  #bigImg {
     width: 70%;
     height: auto;
+    margin-top: 10%;
   }
-  #states{
-    font-size: 17px;
+  #spacer{
+    margin: 10%;
   }
-  #callInfo{
-    font-size: 15px;
+  .portal{
+    height: 135px;
+    border-radius: 215px;
+  }
+  #portalTitle{
+    font-size: 200%;
+  }
+  #portalText{
+    font-size: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .space{
+    height: 35px;
+  }
+  .specialSpace{
+     height: 45px; 
+  }
+  .spaceShort{
+    height: 30px;
+  }
+  #pageTitle{
+    margin-top: 15%;
+    font-size: 400%;
+  }
+  .midTitle{
+    font-size: 250%;
+  }
+  #def{
+    font-size: 135%;
+  }
+  .midText{
+    font-size: 120%;
+  }
+  #bar{
+    width: 20%;
+    height: auto;
+  }
+  #posterImg{
+    width: 80%;
+    height: auto;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #topInfo{
+    font-size: 95%;
+    text-decoration: none;
+  }
+  #offcanvasNavbarLabel{
+    font-size: 300%;
+  }
+  .dropdown-item, .nav-link{
+    font-size: 150%;
+  }
+  #bigImg {
+    width: 90%;
+    height: auto;
+    margin-top: 20%;
+  }
+  #spacer{
+    margin: 7%;
+  }
+  .portal{
+    height: 100px;
+    margin-top: 10%;
+    border-radius: 215px;
+  }
+  #portalTitle{
+    font-size: 180%;
+  }
+  #portalText{
+    font-size: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .specialSpace{
+     height: 30px; 
+  }
+  .space{
+    height: 25px;
+  }
+  .spaceShort{
+    height: 10px;
+  }
+  #pageTitle{
+    margin-top: 25%;
+    font-size: 300%;
+  }
+  .midTitle{
+    font-size: 200%;
+  }
+  #def{
+    font-size: 100%;
+  }
+  .midText{
+    font-size: 90%;
+  }
+  #bar{
+    width: 50%;
+    height: auto;
+  }
+  #posterImg{
+    width: 80%;
+    height: auto;
+  }
+}
+
 
 
