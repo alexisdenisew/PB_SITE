@@ -161,9 +161,7 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 601px) {
-  body{
-    background-color: red;
-  }
+
  #topInfo{
     font-size: 110%;
     text-decoration: none;
