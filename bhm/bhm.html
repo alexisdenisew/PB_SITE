@@ -1,771 +1,145 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="../accScript.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <title>Black History Month</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bhmStyle.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  
 
-  <body>
-    <div id = "insides">
+<head>
+
+  <!--   favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest"> 
+  
+<!--   Script -->
+  <script src="script.js" defer></script>
+  
+<!--   Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+<!--   General -->
+  <meta charset="UTF-8">
+  <title>Black History Month</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bhmStyle.css" rel="stylesheet" type="text/css" />
+
+<!--   Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind+Madurai&display=swap"  rel="stylesheet">
+  
+</head>
+
+
+<body>
+  <div id="ent">
+    <div class="center">
       <br>
-      <img id ="bhmTit" src ="bhmAssets/bigTit.png">
+      <img id="bhmTit" src="bhmAssets/bigTit.png">
       <br>
       <br>
 
       <div class="scrollmenu">
-        <a class= "activeLink" href="#home">Home</a>
-        <a class= "inactiveLink" id = "story" href="" download>Daily IG Graphic</a>
-        <a class= "inactiveLink" href="bhmOrgs.html">Organizations</a>
-        <a class= "inactiveLink" href="bhmEdu.html">Education</a>
-        <a class= "inactiveLink" href="bhmAction.html">Action</a>
-        <a class= "inactiveLink" href="bhmFigures.html">Figures Archive</a>
-        <a class= "inactiveLink" href="bhmEvents.html">Events Archive</a>
-        <a class= "inactiveLink" href="index.html">PB Resources</a>
+        <a class="activeLink" href="#home">Home</a>
+        <a class="inactiveLink" id="story" href="" download>Daily IG Graphic</a>
+        <a class="inactiveLink" href="bhmOrgs.html">Organizations</a>
+        <a class="inactiveLink" href="bhmEdu.html">Education</a>
+        <a class="inactiveLink" href="bhmAction.html">Action</a>
+        <a class="inactiveLink" href="bhmFigures.html">Figures Archive</a>
+        <a class="inactiveLink" href="bhmEvents.html">Events Archive</a>
+        <a class="inactiveLink" href="../index.html">PB Resources</a>
       </div>
       <br>
 
-      <div id = "newTopper">
-        <h1 id = "deco">Black History is more than oppression.</h1>
-        <p class = "miniSec">This year we have devoted a protion of our Black History Month Portal to Black people and organizations that have dedicated their time and resources to uplifting the Black communities, as well as our nation at large. We want to remind our supporters that <span>Black History is being made right now.<span></p>
+      <div id = "smallSpace"></div>
+      <div id="newTopper">
+        <h1 id="regTitle">Black History is more than oppression.</h1>
+        <div id = "smallSpace"></div>
+        <p class="regText">This year we have devoted a protion of our Black History Month Portal to Black people and
+          organizations that have dedicated their time and resources to uplifting the Black communities, as well as our
+          nation at large. We want to remind our supporters that Black History is being made right now.</p>
       </div>
-        <h1 class = "miniTitle">Spotlight of the Week</h1>
-        <img id="starPic" src ="">
-        <br><br>
-        <p class = "miniName" id="starName"></p>
-        <div id = "blurbContainer">
-        <p class = "miniSec" id="starBlurb"></p>
-        </div>
 
-        <h1 class = "miniTitle">Black Organization of the Week</h1>
-        <img id="orgPic" src ="">
-        <br><br>
-        <p class = "miniName" id="orgName"></p>
-        <div id = "blurbContainer">
-        <p class = "miniSec" id="orgBlurb"></p>
-        </div>
+      <div id = "space"></div>
 
-        <a class= "inactiveLink" id = "donateStory" href="" download>Download an IG Story graphic to collect donations</a>
+      <h1 id="regTitle">Spotlight of the Week</h1>
+      <div id = "smallSpace"></div>
       <div>
-
+        <img id="starPic" src="">
         <br><br>
-
-      
-
-      <p id="name2">Figure of the Day</p>
-      
-      <div>
-
-        <img id="pic" src ="">
-        <br>
-        <p id="name"></p>
-        <div id = "blurbContainer">
-        <p id="text"></p>
-        <button id = "theButt" class = "daButt" onclick="myFunction()">More</button>
-        </div>
-        <br>
-
-        <p id="name2">Event of the Day</p>
-
-        <img id="evenPic" src ="">
-        <br>
-        <p id="evenName"></p>
-        <div id = "blurbContainer">
-        <p id="evenText"></p>
-        <button id = "theButt2" class = "daButt" onclick="myFunction2()">More</button>
-        </div>
-        <br>
-
-      </div>
-
-      <a class= "inactiveLink" id = "story2" href="" download>Download daily IG story graphic</a>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
-
-
-      
-
-      <script type="text/javascript">
-        let currentDay = (new Date).getDate()
-        if (currentDay >= 1 && currentDay <= 6){
-          var starPhoto = "zalia.png"
-          var starName = "Zalia Avant-garde"
-          var starBlurb = "Zaila Avant-garde (born February 9, 2007) is an American speller, basketball player, and juggler. She won the 2021 Scripps National Spelling Bee. She is the first African-American contestant to win the bee and the second Black winner, after Jamaica's Jody-Anne Maxwell. In the 2021 competition, she won the title by correctly spelling murraya. She is the first African American contestant to win the competition, and was preceded by MacNolia Cox, who reached the finals in the 1936 edition."
-          var orgName = "The Okra Project"
-          var orgPhoto = "okra.png"
-          var orgBlurb = "The Okra Project is a collective that seeks to address the global crisis faced by Black Trans people by bringing home cooked, healthy, and culturally specific meals and resources to Black Trans People."
-          var orgLink = "donation1.png"
-        }
-
-        if (currentDay >= 7 && currentDay <= 13){
-          var starPhoto = "simone.jpg"
-          var starName = "Simone Biles"
-          var starBlurb = "Simone Arianne Biles, born March 14, 1997, is an American artistic gymnast. With a combined total of 32 Olympic and World Championship medals, Biles is tied as the most decorated gymnast of all time. "
-          var orgName = "The Black Aids Institute"
-          var orgPhoto = "BAI.png"
-          var orgBlurb = "Recognizing that health justice is a racial and social justice issue, BAI is deeply committed to exposing the systems and roots of oppression that marginalize Black people and exacerbate our health burden. We are revolutionizing the HIV response by centering Black experiences and perspectives to ensure that Black people can live their fullest, healthiest lives with dignity, care, and respect."
-          var orgLink = "donation2.png"
-        }
-
-
-        if (currentDay == 1 || currentDay == 31){
-          var storyLink = "A.PNG"
-          var first = "Ella"
-          var last = "Baker"
-          var photo = "ella.jpg"
-          var para = "Baker studied at Shaw University in Raleigh, North Carolina. As a student she challenged school policies that she thought were unfair. After graduating in 1927 as class valedictorian..."
-          var more = "Baker studied at Shaw University in Raleigh, North Carolina. As a student she challenged school policies that she thought were unfair. After graduating in 1927 as class valedictorian, she moved to New York City and began joining social activist organizations. In 1957, Baker moved to Atlanta to help organize Martin Luther King’s new organization, the Southern Christian Leadership Conference (SCLC). She also ran a voter registration campaign called the Crusade for Citizenship. On February 1, 1960, a group of black college students from North Carolina A&T University refused to leave a Woolworth’s lunch counter in Greensboro, North Carolina where they had been denied service. Baker left the SCLC after the Greensboro sit-ins. She wanted to assist the new student activists because she viewed young, emerging activists as a resource and an asset to the movement. Miss Baker organized a meeting at Shaw University for the student leaders of the sit-ins in April 1960. From that meeting, the Student Nonviolent Coordinating Committee — SNCC — was born. Adopting the Gandhian theory of nonviolent direct action, SNCC members joined with activists from the Congress of Racial Equality (CORE) to organize the 1961 Freedom Rides. In 1964 SNCC helped create Freedom Summer, an effort to focus national attention on Mississippi’s racism and to register black voters (via Ellabakercenter.org)."
-
-          var eventTit = "Chicago's Red Summer"
-          var evenPhoto = "chicago.jpg"
-          var evenPara = "On Sunday, July 27, 1919, thousands of Chicagoans sought relief from the brutal heat on the shores of Lake Michigan. Among them was Eugene Williams, a seventeen-year-old African American. When he and his friends..."
-          var evenMore = "On Sunday, July 27, 1919, thousands of Chicagoans sought relief from the brutal heat on the shores of Lake Michigan. Among them was Eugene Williams, a seventeen-year-old African American. When he and his friends inadvertently drifted across an invisible line that divided the waters by race, a group of whites, insulted by such an act, began throwing stones at them, one of which struck Williams, causing him to drown. In the racial powder keg that was Chicago, his murder was the spark that ignited it during what became the Red Summer of 1919. After the drowning of Eugene Williams, the police refused to arrest the white man who was considered responsible for his death. As the crowd grew, the tension escalated, and the fighting began. The police force, owing both to understaffing and the open sympathy of many officers with the white rioters, was ineffective. Only the long-delayed intervention of the Illinois National Guard brought the violence to a halt. After seven days of shootings, arson, and beatings, the Race Riot resulted in the deaths of 15 whites and 23 blacks with an additional 537 injured (195 white, 342 black). Since then, a century of African American activism has challenged the racism and social hypocrisy that allowed those responsible for Eugene Williams’s death to elude justice. Activists continue the fight against racial discrimination in Chicago and the United States (via Chicago History)."
-
-          evenEvenmore = ''
-        }
-        if (currentDay == 2){
-          var storyLink = "B.PNG"
-          var first = "Fred"
-          var last = "Hampton"
-          var photo = "fred.jpg"
-          var para = "Fred Hampton was an active leader in the National Association for the Advancement of Colored People (NAACP), leading their Youth Council of the organization’s West Suburban Branch. Hampton joined..."
-          var more = "Fred Hampton was an active leader in the National Association for the Advancement of Colored People (NAACP), leading their Youth Council of the organization’s West Suburban Branch. Hampton joined the Chicago chapter of the Black Panther Party (BPP) in November 1968. He quickly rose to a leadership position, becoming the deputy chairman of the Illinois chapter of the Party. In addition to challenging police brutality, the Black Panther Party launched more than 35 Survival Programs and provided community help, such as education, tuberculosis testing, legal aid, transportation assistance, ambulance service, and the manufacture and distribution of free shoes to poor people. Of particular note was the Free Breakfast for Children Program (begun in January 1969) that spread to every major American city with a Black Panther Party chapter. The federal government had introduced a similar pilot program in 1966 but, arguably in response to the Panthers’ initiative, extended the program and then made it permanent in 1975— He organized rallies, established a Free Breakfast program, and negotiated a peace pact among rival gangs. As a rising leader in the BPP, Hampton became the focus of an FBI investigation. On December 4, 1969, Hampton, along with fellow Black Panther Mark Clark, was murdered. On the evening of December 3, 1969, William O’Neal, who was employed by the FBI to infiltrate the BPP, slipped a powerful sleeping drug into Hampton’s drink then left.  Officers were dispatched to raid his apartment. They stormed in and opened fire, killing his security guard. Then they opened fire on Hampton’s bedroom where he laid unconscious from the drug with his sleeping, almost nine-month-pregnant fiancee. After the gunfire, he was found to only be wounded and not dead. Upon that discovery, an officer shot him twice in his head and killed him (via Archives.gov, Fred Hampton and Britannica, Black Panther Party)."
-
-          var eventTit = "The Story of Mine Mill"
-          var evenPhoto = "minemill.jpg"
-          var evenPara = "In 1907, middle of the banking crisis, U.S. Steel, this huge steel conglomerate from Pittsburgh, they buy TCI. TCI later becomes a subsidiary of U.S. Steel. Flash-forward to the 19-teens, World War I is ramping up, America needs steel, and they need that Birmingham..."
-          var evenMore = "In 1907, middle of the banking crisis, U.S. Steel, this huge steel conglomerate from Pittsburgh, they buy TCI. TCI later becomes a subsidiary of U.S. Steel. Flash-forward to the 19-teens, World War I is ramping up, America needs steel, and they need that Birmingham iron ore to make it. Those Birmingham iron ore miners are living in workers villages, and 80 percent of the iron ore miners were black. These workers saw labor movements happening all around them, including this union out west that had a lot of social justice ideas. It was called the International Union of Mine, Mill and Smelter Workers - Mine Mill. In 1918, the Birmingham workers get Mine Mill to come on down, help them organize. Among the organizers,a black man, Ulysses Hale; a white man, Edward Crough. The steel employers - not happy. A company-aligned vigilante group kidnapped both of the men, beat them up. They let Crough go, but they tarred and feathered Hale and told him to get out of town. Next time, they said, it will be a necktie affair. The vigilante group formed by the steel employers didn't just go away. The TCI and U.S. Steel created this vigilante group that then becomes the Jefferson County KKK. With the KKK around in the '20s, Birmingham unions are quiet. Organizing is under attack all over the country. But after the stock market crash in the 1930s, there's labor unrest, Roosevelt, the New Deal."
-          
-          evenEvenmore = "It's a new day for unions, and in 1933, a group of Birmingham iron ore miners say, we're going to give Mine Mill a try again. Pushing forward a kind of democratic vision, not just for workers but for all of Southern society and the nation, and that's what made them dangerous. These black and white miners met in stealth mode, up in the woods, up on Red Mountain, and they set forth this egalitarian agenda. That union designated in their charter that the officials of the union would be split between black workers and white workers. In Jim Crow Alabama, and in most of America at this time, this was not done. The steel employers were looking at this egalitarian union, and they were losing it. TCI fired more than 150 strikers. Things did not look good for the Mine Millers. But then the union got help from above - from the federal government. In '35, the Roosevelt administration passed the Wagner Act, created the National Labor Relations Board. So the Mine Millers, all have these issues with TCI. They petition this board in '38, they get their decision, and the board decided to force TCI to hire back the miners and give Mine Mill a collective bargaining agreement. And so this radical interracial union, in the middle of Jim Crow, became the official union (via NPR, The Story of Mine Mill)."
-
-        }
-        if (currentDay == 3){
-          var storyLink = "C.PNG"
-          var first = "Dorothy"
-          var last = "Vaughan"
-          var photo = "dorothy.jpg"
-          var para = "Dorothy Vaughan [went] to [NASA's] Langley Memorial Aeronautical Laboratory in 1943, during the height of World War II, leaving her position as the math teacher at Robert Russa Moton High School in Farmville..."
-          var more = "Dorothy Vaughan [went] to [NASA's] Langley Memorial Aeronautical Laboratory in 1943, during the height of World War II, leaving her position as the math teacher at Robert Russa Moton High School in Farmville, VA to take what she believed would be a temporary war job. Two years after President Roosevelt signed Executive Order 8802 into law, prohibiting racial, religious and ethnic discrimination in the country's defense industry, the Laboratory began hiring black women to meet the skyrocketing demand for processing aeronautical research data. Urgency and twenty-four hour shifts prevailed-- as did Jim Crow laws which required newly-hired 'colored' mathematicians to work separately from their white female counterparts. Dorothy Vaughan was assigned to the segregated 'West Area Computing' unit, an all-black group of female mathematicians, who were originally required to use separate dining and bathroom facilities. Over time, both individually and as a group, the West Computers distinguished themselves with contributions to virtually every area of research at Langley. The group's original section heads (first Margery Hannah, then Blanche Sponsler) were white. In 1949, Dorothy Vaughan was promoted to lead the group, making her the NACA's first black supervisor, and one of the NACA's few female supervisors. Dorothy Vaughan helmed West Computing for nearly a decade. In 1958, when the NACA made the transition to NASA, segregated facilities, including the West Computing office, were abolished. Dorothy Vaughan and many of the former West Computers joined the new Analysis and Computation Division (ACD), a racially and gender-integrated group on the frontier of electronic computing. Dorothy Vaughan became an expert FORTRAN programmer, and she also contributed to the Scout Launch Vehicle Program (via Nasa.gov, Dorothy Vaughan)."
-
-          var eventTit = "Rap on Trial"
-          var evenPhoto = "olutosin.jpg"
-          var evenPara = "According to the local authorities [ATF], here is how the story goes: A young man [Olutosin] attempts to purchase multiple guns over the Internet. He's described as agitated and anxious by a gun dealer involved in the transaction..."
-          var evenMore = "According to the local authorities [ATF], here is how the story goes: A young man [Olutosin] attempts to purchase multiple guns over the Internet. He's described as agitated and anxious by a gun dealer involved in the transaction. The ATF launches an investigation. The young man's car is found, apparently abandoned, on a campus side road. Inside it is a piece of paper with a threat on it, alluding to ransom and a possible massacre on a university campus. When the young man is arrested, a loaded gun is discovered in his dorm room. State's Attorney Tom Gibbons says police felt they had prevented a serious crime. On July 24, 2007, Olutosin Oduwole was formerly charged with storing a weapon in campus housing, and a far more serious crime, attempting to make a terrorist threat. In Oltosin's [Tosin] eyes, he's got a budding career as a rapper, an active social life and a commitment to community service. He's buying guns, but only, he says, to sell them and make a little extra cash for music equipment. This is not the picture of a would-be terrorist. But that brings us to that piece of paper that police found in Tosin's car."
-          
-          evenEvenmore = "It would be hard to explain away a note like this demanding ransom, threatening a campus massacre. But Tosin says the problem lies in one word, note. What the police found, he insists, was not a note. It was scribbled ideas for a rap song. This is how Tosin says it all unfolded. It began as an idea one night in the artist den. Tosin had just finished watching the TV show 'Law & Order.' The episode was about some bloggers who livestreamed their home on social media..Tosin was fascinated by the episode. He loved the way it played with viewers. All the way through, it kept people guessing. Were they watching an actual kidnapping take place online? Were they watching performance art? Tosin thought the premise might make a cool spoken introduction to a rap song. Sometimes rap songs start this way, with introductions that set a scene with lyrics that don't rhyme. That, says Tosin's friend Thomas, is what they were playing with. Tosin says no one in law enforcement wanted to hear his side of the story. There were lots of issues - race, culture, the fear of a mass shooting. And there was the music. In every dimension, rap lyrics are evaluated more negatively compared to when the lyrics were perceived to be country. Charis, professor in Criminology, was called as an expert for the defense in Tosin's case, in part because of some interesting research she's done. She was noticing a large number of prosecutions that were introducing rap lyrics in court. She had a basic question. Were violent lyrics perceived as more threatening, more dangerous, more literal, more in need of regulation when they are described as rap compared to other music genres? Because prosecutors are using rap lyrics as evidence in these criminal trials, this raises a whole host of questions about whether prosecutors, judges, jurors may be relying on perception and stereotype about rappers and rap music in their interpretation and evaluation of the lyrics (via NPR, Rap on Trial)."
-
-        }
-        if (currentDay == 4){
-          var storyLink = "D.PNG"
-          var first = "Amanda"
-          var last = "Gorman"
-          var photo = "amanda.jpg"
-          var para = "Amanda Gorman is the youngest inaugural poet in U.S. history, as well as an award-winning writer and cum laude graduate of Harvard University, where she studied Sociology. She has written for..."
-          var more = "Amanda Gorman is the youngest inaugural poet in U.S. history, as well as an award-winning writer and cum laude graduate of Harvard University, where she studied Sociology. She has written for the New York Times and has three books forthcoming with Penguin Random House. Born and raised in Los Angeles, she began writing at only a few years of age. Now her words have won her invitations to the Obama White House and to perform for Lin-Manuel Miranda, Al Gore, Secretary Hillary Clinton, Malala Yousafzai, and others. Amanda has performed multiple commissioned poems for CBS This Morning and she has spoken at events and venues across the country, including the Library of Congress and Lincoln Center. She has received a Genius Grant from OZY Media, as well as recognition from Scholastic Inc., YoungArts, the Glamour magazine College Women of the Year Awards, and the Webby Awards. She has written for the New York Times newsletter The Edit and penned the manifesto for Nike's 2020 Black History Month campaign. She is the recipient of the Poets & Writers Barnes & Noble Writers for Writers Award, and is the youngest board member of 826 National, the largest youth writing network in the United States (via Theamandagorman.com)."
-
-          var eventTit = "Black Wall Street"
-          var evenPhoto = "wallstreet.jpg"
-          var evenPara = "In 1921, Tulsa, Oklahoma’s Greenwood District, known as Black Wall Street, was one of the most prosperous African-American communities in the United States. But on May 31 of that year, the Tulsa Tribune reported that a black man, Dick Rowland..."
-          var evenMore = 'In 1921, Tulsa, Oklahoma’s Greenwood District, known as Black Wall Street, was one of the most prosperous African-American communities in the United States. But on May 31 of that year, the Tulsa Tribune reported that a black man, Dick Rowland, attempted to rape a white woman, Sarah Page. Whites in the area refused to wait for the investigative process to play out, sparking two days of unprecedented racial violence. Thirty-five city blocks went up in flames, 300 people died, and 800 were injured. Defense of white female virtue was the expressed motivation for the collective racial violence. Accounts vary on what happened between Page and Rowland in the elevator of the Drexel Building. Yet as a result of the Tulsa Tribune’s racially inflammatory report, black and white armed mobs arrived at the courthouse. Scuffles broke out, and shots were fired. Since the blacks were outnumbered, they headed back to Greenwood. But the enraged whites were not far behind, looting and burning businesses and homes along the way. Nine thousand people became homeless, Josie Pickens writes in Ebony. This “modern, majestic, sophisticated, and unapologetically black” community boasted of “banks, hotels, cafés, clothiers, movie theaters, and contemporary homes.” Not to mention luxuries, such as “indoor plumbing and a remarkable school system that superiorly educated black children.” Undoubtedly, less fortunate white neighbors resented their upper-class lifestyle. As a result of a jealous desire “to put progressive, high-achieving African-Americans in their place,” a wave of domestic white terrorism caused black dispossession (via JSTOR Daily, Black Wall Street.'
-
-          evenEvenmore= ""
-
-        }
-        if (currentDay == 5){
-          var storyLink = "E.PNG"
-          var first = "Mary"
-          var last = "Hamilton"
-          var photo = "mary.jpg"
-          var para = "Mary Hamilton was a teacher, a Freedom Rider and the first female field organizer in the South for the Congress of Racial Equality. Her roommate during this time, Sheila Michaels, says..."
-          var more = "Mary Hamilton was a teacher, a Freedom Rider and the first female field organizer in the South for the Congress of Racial Equality. Her roommate during this time, Sheila Michaels, says Hamilton was tough — brave — like the nuns of her Catholic school upbringing. Civil rights protests in Alabama hit a crescendo in the spring of 1963. In Gadsden, a factory town northeast of Birmingham, police arrested Hamilton and other demonstrators. At a hearing that June, the court referred to her as 'Mary'. She would not answer the judge until he called her 'Miss Hamilton.' And he refused. So he found her in contempt of court. So Mary Hamilton was thrown in jail and fined $50. The NAACP took the case that eventually appealed to the U.S. Supreme Court, which ruled the following year in Hamilton's favor. In other words, the ruling decided that everyone in court deserves titles of courtesy, regardless of race or ethnicity. Michaels says Hamilton was immensely proud of the case. It's a big deal for a person, but it's a footnote in the history books. And when it comes to civil rights history, it's the names of men such as Martin Luther King Jr. or Ralph Abernathy that are mostly remembered. Women don't get much billing beyond Rosa Parks and a few others. Titles command respect. Especially for Miss Mary Hamilton (reworked from NPR, Mary Hamilton, The Woman Who Put The 'Miss' In Court). "
-
-          var eventTit = "The Reverse Freedom Rides"
-          var evenPhoto = "reverse.jpg"
-          var evenPara = "The summer of 1961 was a pivotal moment in the civil rights movement. And that is when black and white activists known as the Freedom Riders set out to integrate bus travel and challenged Jim Crow laws. But what happened a year later has largely been forgotten..."
-          var evenMore = 'The summer of 1961 was a pivotal moment in the civil rights movement. And that is when black and white activists known as the Freedom Riders set out to integrate bus travel and challenged Jim Crow laws. But what happened a year later has largely been forgotten. That is when Southern segregationists fought back. Their victims were poor African Americans. Late on a Wednesday afternoon in May 1962, a Greyhound bus arrived in Hyannis, Mass. The doors opened at the bus stop closest to the summer White House, where President John Kennedy vacationed. The were lured to embark on the journey by a supposed message from the president promising jobs and permanent housing. The president did not come to meet them, but Margaret Moseley did. Moseley was part of the local NAACP. What she knew and the arrivals did nott was that there would be no presidential welcome, no jobs, no permanent housing. The Reverse Freedom Rides were a test - a test the North was meant to fail. In TV interviews, segregationists like George Singelmann, who came up with the original idea, claimed that the North had indeed flunked. Singleman said, "[The North] have been crying the sing song on behalf of the Negroes throughout the nation. And of course now when it comes time for them to put up or shut up, they have shut up." The cruelty and cynicism of the scheme helped turn public opinion against it, and the whole thing ended just months after it began. But still, riders were 1,500 miles away from everything they had ever known.'
-
-          evenEvenmore = ''
-
-
-        }
-        if (currentDay == 6){
-          var storyLink = "F.PNG"
-          var first = "Angela"
-          var last = "Davis"
-          var photo = "angela.jpg"
-          var para = "n activist. An author. A scholar. An abolitionist. A legend, as revered by my generation of millennials as she is her own. She is Angela Y. Davis. Davis opened 1971 with an American declaration of innocence..."
-          var more = "An activist. An author. A scholar. An abolitionist. A legend, as revered by my generation of millennials as she is her own. She is Angela Y. Davis. Davis opened 1971 with an American declaration of innocence heard around the country: 'I am innocent of all charges which have been leveled against me by the state of California.' The state, governed by Ronald Reagan, had charged Davis with capital crimes in connection with an armed courtroom takeover in August 1970 that left her friend Jonathan Jackson, two inmates and a judge dead in Marin County. Responding officers had shot these four people. But investigators accused Davis when they traced a gun used in the takeover to her. Davis smelled a setup and fled. She eluded would-be captors for two months before President Richard Nixon congratulated the FBI on its 'capture of the dangerous terrorist Angela Davis' in October 1970. In 1971, Davis became America’s most famous 'political prisoner' as she awaited trial. Defense committees in the U.S. and abroad shouted at demonstrations the chant of 1971, 'Free Angela.' The defense committees formed a broad interracial coalition of supporters who believed Nixon’s America, not Davis, was America’s Most Wanted. Her supporters charged that Nixon’s America was terrorizing, imprisoning and trying to kill the movement, the organizations of antiracist, anticapitalist, antisexist and antiwar activists. Their freedom struggle in 1971 became the struggle for freedom of Angela Y. Davis, an incarcerated body Nixon’s and Reagan’s law-and-order America wanted dead.  She was on trial for her life. Millions of progressive Americans defended her like they were on trial for theirs. After being acquitted of all charges in 1972, Davis moved from defended to defender, consistently resisting the structural causes of inequity and injustice as others took the bigoted way out and victim-blamed. For decades, she has unflinchingly defended black women, black prisoners, the black poor—and all women, all prisoners, all poor people—when few Americans would. She has defended America from the clutches of imperialism, exploitation, racism, sexism, poverty and incarceration when few Americans would (via Time, 100 Women of the Year: Angela Davis)."
-
-          var eventTit = "Atlanta's Washerwoman Strike"
-          var evenPhoto = "washerstrike.jpg"
-          var evenPara = "Atlanta in the early 1880s was just beginning to develop. Less than two decades had passed since the Civil War ended. The city had primitive water and sewer systems..."
-          var evenMore = "Atlanta in the early 1880s was just beginning to develop. Less than two decades had passed since the Civil War ended. The city had primitive water and sewer systems, and unsanitary trash lined the unpaved streets. Atlanta’s businessmen and politicians sought to paint a very different picture to lure northern businesses to the city, spotlighting it as the urban center of the New South with a large, subservient workforce. More than half of the city’s black residents—and half of the black wage earners—were women. Black women largely were responsible for sustaining not only their families but their communities as well. One-third of black women living in Atlanta, as in other cities, raised families alone. In the 1880s, more black women worked as laundresses than in any other type of domestic work. The city had more laundresses than male common laborers. In contrast, only a small portion of white women worked for pay, and the average white family could afford the services of at least a washerwoman. Laundry work was the most difficult of domestic jobs, and industrialization made the chore even more dreadful. Laundresses worked long, tiring hours and their wages ranged from $4 to $8 a month. These wages changed little over time and laundresses would increase their earnings by adding on clients or getting help from their children. "
-
-          evenEvenmore = "In July 1881, 20 laundresses met to form a trade organization, the Washing Society. They sought higher pay, respect and autonomy over their work and established a uniform rate at $1 per dozen pounds of wash. With the help of black ministers throughout the city, they held a mass meeting and called a strike to achieve higher pay at the uniform rate. In three weeks, the Washing Society grew from 20 to 3,000 strikers. By August, municipal authorities were taking direct action, arresting strikers, fining members and making house visits. The laundresses were not deterred. But the white establishment was so agitated that city politicians got involved. The City Council proposed that members of any washerwoman’s organization pay an annual fee of $25 and then offered nonprofit tax status to businesses that wanted to start commercial laundries. Even though the $25 fee would mean several months of wages, the strikers were not discouraged. These politically savvy women workers were willing to pay the fee in exchange for self-regulation. To them, self-regulation of their industry was about respect. In the end, the strike not only raised wages—it, more importantly, established laundresses—and all black women workers—as instrumental to the New South’s economy. The white establishment was forced to acknowledge that black women workers, who were former slaves, were not invisible (via America's Unions, Atlanta's Washerwoman Strike)."
-
-        }
-        if (currentDay == 7){
-          var storyLink = "G.PNG"
-          var first = "Compton"
-          var last = "Cowboys"
-          var photo = "compton.jpg"
-          var para = "In 1988, Mayisha Akbar created a horseback riding club for local Black youth to keep them away from gangs and violence. As members grew up, many kept riding, continuing a long and rich history of Black cowboys in the American West..."
-          var more = "In 1988, Mayisha Akbar created a horseback riding club for local Black youth to keep them away from gangs and violence. As members grew up, many kept riding, continuing a long and rich history of Black cowboys in the American West. Today, a close-knit group known as the Compton Cowboys celebrate this legacy on the very same ranch Akbar developed. Their motto: 'Streets raised us. Horses saved us.' Mayisha’s nephew, Randy Hook, who dreams of developing a sustainable business model that can inspire the creation of similar ranches elsewhere. 'We’re connected to Black cowboys in Philadelphia, cowboys in Chicago, and also with cowboys overseas,' he says at his aunt’s retirement party. 'We just need the resources to do this in a big way and put ranches like this one in inner-city environments where there’s a lack of nature, because we see that this model works.' These horses, he added, 'changed us, and we think they can have the same effect on at-risk youth everywhere. The Richland Farms property is clearly more than just a ranch.' It’s a place where the cowboys and community residents can go to feel free. There’s a lot of dangers outside—police violence, gangs—but inside the ranch, it feels like a sanctuary. People can ride horses and be at peace in a way that it doesn’t happen outside. More than anything, it serves as a therapeutic center. Studies have shown that equine therapy has an incredibly positive impact on people who have experienced trauma and stress (via Atlasobscura.com, please visit Comptoncowboys.com to support the mission)."
-
-          var eventTit = "The 1968 Strike at San Francisco State"
-          var evenPhoto = "sanfrancisco.jpg"
-          var evenPara = "One of the things that made San Francisco State unique as opposed to Berkeley or some other places is that it was a commuter school. The students were older, and it was a working-class school..."
-          var evenMore = "One of the things that made San Francisco State unique as opposed to Berkeley or some other places is that it was a commuter school. The students were older, and it was a working-class school. Among the type of students who went to San Francisco State, not only did many have work experience, but they also had political experience that they brought with them to the campus. The Black Panthers were a tremendous influence on what happened at San Francisco State, with many of the members of the Black Student Union (BSU) being early members of the party. So there’s an intimate relationship between the BSU and the Black Panther Party. The BSU students had been organizing for years, developing alternative educational experiences, within the Experimental College at first, and later the tutorial programs that connected them to the community. The BSU students ran this program and were tutoring hundreds of kids in the Mission and Fillmore, teaching them the basics, but also teaching them Black Power. Out of these diverse experiences, a unique and revolutionary Black Studies curriculum began to cohere. However, the administration was threatening to pull funding for these working programs. There was also an English instructor, George Murray, one of the Central Committee members of the Black Student Union, who was a longtime student at State and a graduate student by the late 1960s, but he was also Minister of Education for the Black Panther Party."
-
-          evenEvenmore = "In the spring of ’68, there was also a sit-in organized by student orgs where the goals were twofold: kicking the ROTC off campus and a set of demands around recruitment and retention of Third World students — not only Black students but also students from the Mission and from Chinatown. That sit-in didn’t get the ROTC off campus, but it did get special admissions for students of color. The SFSU campus president, liberal John Summerskill, made the promise, but as soon as he made it, he resigned. So the BSU wasn’t getting their Black Studies program as promised, and funding for the programs they were involved in with the community was being threatened by Sacramento and by the Board of Trustees. One of their prominent members, George Murray, was threatened with being fired. When the catalyst happened — with George Murray being fired from teaching — the BSU went out on strike. The BSU issued 10 demands, and other orgs added demands, going out on strike along with the BSU. THE BSU had a press conference about one week into the strike, and the cops came onto campus and just started beating people — members of BSU in particular. BSU leader Nesbit Crutchfield got hit over the head for everyone to see.The strike ended on March 20, 1969. The administration, in response to student demands, established a College of Ethnic Studies. The administration also agreed to accept virtually all students of color for the fall semester of 1969. And the student strikers did have lasting effects: Eventually, the SF State's creation of a College of Ethnic Studies gave rise to similar departments around the country (via The Socialist Worker and NPR, Strike at San Francisco State)."
-
-        }
-        if (currentDay == 8){
-          var first = "Kemp"
-          var last = "Powers"
-          var storyLink = "H.PNG"
-          var photo = "kemp.jpg"
-          var para = "The geniuses at Pixar had a problem, and this time, they would need to look beyond the walls of their esteemed studio for help. The movie in question was 'Soul,' a tuneful jazz tale that somehow didn’t..."
-          var more = "The geniuses at Pixar had a problem, and this time, they would need to look beyond the walls of their esteemed studio for help. The movie in question was 'Soul,' a tuneful jazz tale that somehow didn’t quite swing. Rather ironically, the movie’s main character, Joe, was lacking in texture and truth and, well, any depth of soul. What to do about a lead role that, in the words of Pixar chief and 'Soul' director Pete Docter, 'was kind of an empty shell'? The call went out to Kemp Powers, a rising playwright and 'Star Trek: Discovery' TV writer.' The writer wanted to see Joe, once envisioned as a White character, move through authentically Black spaces. 'When I came on board, Joe was absolutely the least interesting character there,' says Powers, who co-wrote the film with Docter and Mike Jones. 'There was nothing there. I think it might have come from this place of fear — people not knowing where to go with him. So I started asking lots of questions.' The filmmakers asked Powers to step into the co-director’s chair. It was not only a first for Powers, but also a milestone for the studio — the first Black director in Pixar’s three-decade history of feature filmmaking. 'It’s an embarrassing mantle,' Powers says from his Los Angeles area home, adding: 'Why did it take so damned long?' Powers, though, remains committed to amplifying Black voices in creative workspaces where they have been underrepresented, (via The Washington Post, Kemp Powers)."
-
-          var eventTit = "WNBA Activism for BLM"
-          var evenPhoto = "wmba.jpg"
-          var evenPara = "For WNBA players, activism has been a part of their DNA for a long time. They have been especially outspoken lately, dedicating the season -- which started in July..."
-          var evenMore = 'For WNBA players, activism has been a part of their DNA for a long time. They have been especially outspoken lately, dedicating the season -- which started in July -- to Breonna Taylor and the Say Her Name campaign. New this season, they introduced a Social Justice Council of players and activists to push conversations around social issues forward. And this week, one team wore shirts with seven bullet holes in the back, a testament to the fate that befell Jacob Blake in Wisconsin. From LGBTQ rights to racial justice, WNBA players have been vocal for years, since their inaugural season in 1997. Though Colin Kaepernick became the face of police brutality demonstrations in 2016, WNBA players actually began protesting before he did. Members of the Minnesota Lynx, then reigning WNBA champions, held a news conference before their game on July 9, 2016, to raise awareness of police violence after the killing of Philando Castile. They also wore shirts with the names of Alton Sterling and Castile on the back. At the news conference, Rebekkah Brunson, then a captain for the Lynx, spoke about the police shootings. "What is happening now is not new. Racism and unjust phobic fear of Black males and disregard of Black females is very real. When we look at the facts, it is hard to deny there is a real problem in our society," said Brunson, now a coach for the Lynx. "If we take this time to see that this is a human issue, and speak out together, we can greatly decrease fear and create change. Their actions were powerful, so much so that four off-duty cops working the game that night walked off. As the season wore on, players across the league continued to protest. Entire teams knelt during the anthem. Players wore black warmup shirts to show their solidarity. They went on, undeterred, even when the league threatened to fine them.'
-          
-          evenEvenmore = 'Elizabeth Williams, a player for the Atlanta Dream, was drafted into the league in 2015. She told CNN that it is easy to forget how unimaginable it was back then for athletes to say things like "Black Lives Matter" or to kneel, especially on national television. "For us to do that in 2016 -- to kneel, to walk out before the anthem before a Finals game -- that level of activism was kind of unheard of in sports in 2016," Williams said. She continued, "We [have] been doing this work, regardless of how much visibility we [have] had." (via CNN, Fighting for Social Justice is in WNBAs DNA)'
-
-        }
-        if (currentDay == 9){
-          var first = "Tom"
-          var last = "Burrell"
-          var storyLink = "I.PNG"
-          var photo = "tom.jpg"
-          var para = "Black people are not dark-skinned white people. Those words spoken by legendary ad man Tom Burrell seemed very obvious in 2015. In the '60s, though, the idea that blacks or other minorities..."
-          var more = "Black people are not dark-skinned white people. Those words spoken by legendary ad man Tom Burrell seemed very obvious in 2015. In the '60s, though, the idea that blacks or other minorities should be advertised to directly seemed very risky, to say the least. Tom Burrell convinced corporate America to change the face of advertising. Even today, Tom Burrell says he's used to being the only black guy in the room. Back in 1961, he was the only black guy in advertising in all of Chicago when he started in the mailroom at the Wade Advertising Agency. He says the way he got over was by using his sense of humor. Burrell worked his way up from the mailroom to ad writing. But in those days, ads were pretty generic - one-size-fits-all - and not a lot of black people. And when they did try to do ads focused at the black consumer, they often got them comically - sometimes insultingly - wrong. Burrell remembers an ad for Schafer Beer that hearkened back to the days before the Civil War. The line was 1856 - that was a very good year for beer. It was a very bad year for black people... And this ad is showing up in Ebony Magazine. And it just screamed insensitivity. Burrell had a better idea - ads designed with an understanding of black culture that were made by African-Americans. Eventually, Burrell started his own agency. It became known as Burrell Communications. Burrell Advertising grew to become the nation's largest African American-owned marketing firm (via NPR, How An African-American Ad Man Changed The Face Of Advertising)."
-
-          var eventTit = "Seneca Village"
-          var evenPhoto = "seneca.jpg"
-          var evenPara = "Before Central Park was created, the landscape along what is now the Park’s perimeter from West 82nd to West 89th Street was the site of Seneca Village, a community of predominantly..."
-          var evenMore = "Before Central Park was created, the landscape along what is now the Park’s perimeter from West 82nd to West 89th Street was the site of Seneca Village, a community of predominantly African-Americans, many of whom owned property. By 1855, the village consisted of approximately 225 residents, made up of roughly two-thirds African-Americans, one-third Irish immigrants, and a small number of individuals of German descent. One of few African-American enclaves at the time, Seneca Village allowed residents to live away from the more built-up sections of downtown Manhattan and escape the unhealthy conditions and racism they faced there. Seneca Village began in 1825, when landowners in the area, John and Elizabeth Whitehead, subdivided their land and sold it as 200 lots. Andrew Williams, a 25-year-old African-American shoeshiner, bought the first three lots for $125. Epiphany Davis, a store clerk, bought 12 lots for $578, and the AME Zion Church purchased another six lots. From there a community was born. From 1825 to 1832, the Whiteheads sold about half of their land parcels to other African-Americans. By the early 1830s, there were approximately 10 homes in the Village. Compared to other African-Americans living in New York, residents of Seneca Village seem to have been more stable and prosperous—by 1855, approximately half of them owned their own homes. With property ownership came other rights not commonly held by African-Americans in the City—namely, the right to vote. In 1821, New York State required African-American men to own at least $250 in property and hold residency for at least three years to be able to vote. Of the 100 black New Yorkers eligible to vote in 1845, 10 lived in Seneca Village."
-          
-          evenEvenmore = "During the early 1850s, the City began planning for a large municipal park to counter unhealthful urban conditions and provide space for recreation. In 1853, the New York State Legislature enacted a law that set aside 775 acres of land in Manhattan—from 59th to 106th Streets, between Fifth and Eighth Avenues—to create the country’s first major landscaped public park. The City acquired the land through eminent domain, the law that allows the government to take private land for public use with compensation paid to the landowner. This was a common practice in the 19th century, and had been used to build Manhattan’s grid of streets decades earlier. There were roughly 1,600 inhabitants displaced throughout the area. Although landowners were compensated, many argued that their land was undervalued. Ultimately, all residents had to leave by the end of 1857 (via Central Park NYC, The Story of Seneca Village)."
-
-
-        }
-        if (currentDay == 10){
-          var first = "Stacey"
-          var last = "Abrams"
-          var storyLink = "J.PNG"
-          var photo = "stacey.jpg"
-          var para = "Stacey Abrams and her five siblings grew up in Gulfport, Mississippi with three tenets: go to school, go to church, and take care of each other. Despite struggling to make ends meet for their..."
-          var more = "Stacey Abrams and her five siblings grew up in Gulfport, Mississippi with three tenets: go to school, go to church, and take care of each other. Despite struggling to make ends meet for their family, her parents made service a way of life for their children – if someone was less fortunate, it was their job to serve that person. This ethic – and her parents’ unwavering commitment to providing educational opportunity for their children – led the family to Georgia. She put her education to work to better the lives of Georgians through the government, nonprofit, and business sectors. Dedicated to civic engagement, she founded the New Georgia Project, which submitted more than 200,000 registrations for voters of color between 2014 and 2016. Under the pen name Selena Montgomery, Stacey is the award-winning author of eight romantic suspense novels, which have sold more than 100,000 copies. As co-founder of NOW Account – a financial services firm that helps small businesses grow – Stacey has helped create and retain jobs in Georgia. And through her various business ventures, Stacey has helped employ even more Georgians, including hundreds of young people starting out. In 2010, Stacey became the first woman to lead either party in the Georgia General Assembly and the first African American to lead in the House of Representatives. Abrams leads the organization Fair Fight that promotes fair elections in Georgia and around the country, encourage voter participation in elections, and educate voters about elections and their voting rights. Fair Fight brings awareness to the public on election reform, advocates for election reform at all levels, and engages in other voter education programs and communications. She was a fundamemtal part of reversing voter surpression and encouraging so many to vote in the 2020 election, and had a major role in turning Georgia blue for the first time since 1992 (via Stavey Abrams, Fair Fight, and some bias from Alexis Williams in the end portion)."
-
-          var eventTit = "The 1970 Racketeer Influenced and Corrupt Organizations Act"
-          var evenPhoto = "rico.jpg"
-          var evenPara = "In 1970, Congress enacted the Racketeer Influenced and Corrupt Organizations Act (RICO) to dismantle the Mafia and other bodies of organized crime with great economic influence..."
-          var evenMore = "In 1970, Congress enacted the Racketeer Influenced and Corrupt Organizations Act (RICO) to dismantle the Mafia and other bodies of organized crime with great economic influence. The U.S. government expanded the scope of RICO to include gangs in the 1980s. Since many states do not have laws specifically designed to dismantle gangs, RICO provides a federal avenue to target gangs within any jurisdiction of the United States. From a prosecutor's perspective, RICO's focus on the criminal activity of group enterprises, as opposed to the criminal activity of individuals, provides major advantages over other criminal laws to combat gangs. RICO's reliance upon enterprise theory enables prosecutors to introduce all aspects of a gang's history and criminal conduct into evidence. The scope of admissible evidence is thus not limited to the conduct of specific defendants. Punishment for participating in a RICO enterprise is also more severe than the penalties for the underlying predicate crimes. Sentences for the most serious RICO convictions are especially harsh and can result in mandatory life terms. For these reasons, some prosecutors praise RICO as the preferred weapon for dismantling gangs. Recently, legal scholars have focused on RICO's application to criminal street gangs specifically, questioning whether this application is justified. As a matter of statutory interpetation, some scholars posit that Congress intended for RICO to apply exclusively to highly organized enterprises that infiltrate legitimate businesses, and that criminal street gangs do not fit this description." 
-          
-          evenEvenmore = "Now we must focus on the troublesome consequences that RICO's application to gangs may have in terms of race. The breadth of the federal statutory definitions of RICO 'enterprise' and 'criminal street gang' subject a variety of criminal groups with members of any race to prosecution under RICO as criminal street gangs. But in the study, a strong majority (approximately 86%) of the prosecuted gangs was affiliated with one or more racial minority groups (Black, Latino, or Asian). A similarly large percent (approximately 83%) of the prosecuted individuals were tied to gangs affiliated with one or more racial minority groups. Some scholars and practitioners would argue that these findings substantiate the idea that gangs are comprised mostly of racial and ethnic minorities. This labeling may be driven by systemic racial biases that marginalize entire racial minority groups and privilege nonimmigrant White communities. These systemic biases are characterized by converging constructions of race and crime that fuse perceptions of gang-related crime with images of racial minorities. Conflating gang activity with racial minorities enables the government to rely upon denigrating racial stereotypes in order to engage in racial profiling and conduct sweeping arrests of racial minorities under RICO. Moreover, nonimmigrant White criminal offenders are shielded from being conceptualized as gang members or affiliates for RICO purposes, and mainstream White communities are protected from the stigma of having gang problems (via UMich Law, Systemic Racial Bias and RICO's Application to Criminal Street and Prison Gangs). "
-
-
-        }
-        if (currentDay == 11){
-          var first = "Alain Leroy"
-          var last = "Locke"
-          var storyLink = "K.PNG"
-          var photo = "alain.jpg"
-          var para = "Author and philosopher Alain Locke is widely known as the father of the Harlem Renaissance. He inspired Martin Luther King Jr., who praised him as an intellectual leader on par with Plato and Aristotle..."
-          var more = "Author and philosopher Alain Locke is widely known as the father of the Harlem Renaissance. He inspired Martin Luther King Jr., who praised him as an intellectual leader on par with Plato and Aristotle. Locke was among the most academically accomplished African-Americans of his time. He earned a Ph.D. from Harvard and is the first known gay Rhodes Scholar. He was also the first African-American Rhodes Scholar — there wouldn't be another for more than 50 years. He argues that race is a fabrication. That was shocking at the time. How can you claim that race is a construction, when all you see is segregation? Locke says it's culture that creates our visions of race. Locke was a key force in mentoring African-American artists and writers 'from a generation who were the first born out of slavery. Those individuals now said: Who are we? How do we choose to define ourselves?' Locke compiled many of the answers in an anthology called The New Negro. Published in 1925, it was an instant success and included work by Zora Neale Hurston, Langston Hughes and W.E.B. Du Bois. Locke was often criticized for not being much of an activist, but more of a protest person like Du Bois. Yet, Locke was saying that's fine, but there's something else that you have to do. There's a kind of decolonization of the mind that has to go on in Western culture, and also even in people of color, to clear out these notions that we are not beautiful, that we are inept, that we are not as talented as other people, because after all, all of that ideology was put together to control us. Before the Harlem Renaissance, black Americans had been depicted in popular culture through and by the white gaze as apes, caricatures and minstrels. Dr. Alain Locke was having none of that (via NPR, Alain Locke)."
-
-          var eventTit = "Juneteenth"
-          var evenPhoto = "juneteenth.jpg"
-          var evenPara = "The holiday recognizes the date when news of emancipation finally reached Galveston, Texas, on June 19, 1865, when Maj. Gen. Gordon Granger along with more than 1,800 federal troops..."
-          var evenMore = "The holiday recognizes the date when news of emancipation finally reached Galveston, Texas, on June 19, 1865, when Maj. Gen. Gordon Granger along with more than 1,800 federal troops arrived to take control of the state, nearly two months after the end of the Civil War, confirming the freedom of the last remaining slaves in the deepest parts of the South. Although the Emancipation Proclamation, an executive order declaring that “all persons held as slaves” would be free, was signed by President Abraham Lincoln in 1863 and Gen. Robert E. Lee’s surrender in Appomattox, Va., marked the end of the Civil War in April of 1865, news spread slowly and often met resistance from plantation owners. While the 13th Amendment was ratified in December 1865, enshrining a ban on slavery into the Constitution, the enslavement of African-Americans continued for several years. Texas became the first state, in 1980, to declare Juneteenth as a holiday. Forty-seven of the 50 states as well as the District of Columbia acknowledge or observe Juneteenth as a holiday. In 2019, New Hampshire became the most recent state to recognize Juneteenth as a state holiday. Hawaii, North Dakota and South Dakota haven’t formally approved Juneteenth as a state holiday. An increasing number of businesses have started to observe Juneteenth as a holiday. Twitter Inc., Square Inc. and Nike are among companies that said Juneteenth would be a paid day off for employees, while others have canceled corporate meetings that day or encouraged employees to engage in education or community work. Juneteenth serves as a reminder of how far we have come, and how far we need to go until we are all truly free (via WSJ, What is Juneteenth)."
-
-          evenEvenmore = ""
-
-
-        }
-        if (currentDay == 12){
-          var first = "LaTosha"
-          var last = "Brown"
-          var storyLink = "L.PNG"
-          var photo = "latosha.jpg"
-          var para = "LaTosha Brown is an award-winning organizer, philanthropic consultant, political strategist, Harvard Fellow, and jazz singer with over twenty years of experience working in the non-profit and philanthropy..."
-          var more = "LaTosha Brown is an award-winning organizer, philanthropic consultant, political strategist, Harvard Fellow, and jazz singer with over twenty years of experience working in the non-profit and philanthropy sectors on a wide variety of issues related to political empowerment, social justice, economic development, leadership development, wealth creation and civil rights. She is the co-founder of Black Voters Matter Fund, a power building southern based civic engagement organization that played an instrumental role in the 2017 Alabama U.S. Senate race. Ms. Brown is principal owner of TruthSpeaks Consulting, Inc., a philanthropy advisory consulting firm in Atlanta, GA. For more than 25 years, she has served as a consultant and advisor for individual donors, government, public foundations and private donors. Throughout her career, Ms. Brown has distinguished herself as a trusted expert and resource in political strategy, rural development and special programming for a number of national and regional philanthropies. She is the founding project director of Grantmakers for Southern Progress (via Harvard.edu, LaTosha Brown)."
-
-          var eventTit = "Black Voters Matter in Georgia"
-          var evenPhoto = "bvm.jpg"
-          var evenPara = "In the 2020 election, more than 1 million African Americans cast ballots in Georgia. Since November, organizations such as the New Georgia Project and Black Voters Matter..."
-          var evenMore = 'In the 2020 election, more than 1 million African Americans cast ballots in Georgia. Since November, organizations such as the New Georgia Project and Black Voters Matter have worked to bring out even more voters for the Georgin U.S. Senate runoff elections in January. In one of those races, Democrat Raphael Warnock, a pastor from Atlanta, defeated Republican Sen. Kelly Loeffler. He becomes the first Black Democrat elected to the Senate from a Southern state. In the other race, Democrat Jon Ossoff won a tight runoff against Republican David Perdue. The two wins give Democrats control of the U.S. Senate for the first time since 2015. One of the people behind the historic turnout that helped propel Democrats to victory in Georgia is LaTosha Brown, who together with Cliff Albright, founded Black Voters Matter in 2016.' 
-          
-          evenEvenmore = 'Against that backdrop, Brown said she was elated "to see Black voters come out in record numbers in spite of all of those things and, to add a cherry on top, in spite of voter suppression" — to be on "the vanguard of democracy" and to "open up a new way of thinking about the political landscape" in Georgia and the country as a whole. She  continues, "I think it [is] quite simple. I mean, I think the name of my organization says it all. It [is] three words: Black Voters Matter. And I think that after we saw a state like Georgia, that had been solid Republican, flip in November, I think it opened up an avenue for people to see what was possible, that it was no longer a question or a debate whether Black voters, in fact, matter. People felt a sense of momentum, that part of that win opened up this space around what would be possible. ... We wanted people, we wanted Black voters in particular, to feel a sense of their power and their agency, and in spite of all odds, what we could do in pushing this country forward.'
-
-          
-
-
-        }
-        if (currentDay == 13){
-          var first = "Muhammad"
-          var last = "Ali"
-          var storyLink = "M.PNG"
-          var photo = "muhammad.jpg"
-          var para = "Muhammad Ali embodied the collision of sports and politics like no athlete before him ... or since. In 1960, he was still Cassius Clay from Louisville — an 18-year-old with remarkable athletic gifts who wore red..."
-          var more = "Muhammad Ali embodied the collision of sports and politics like no athlete before him ... or since. In 1960, he was still Cassius Clay from Louisville — an 18-year-old with remarkable athletic gifts who wore red, white and blue after winning a gold medal at the 1960 Summer Olympics. He was known for his quick wit, supreme self-confidence and boastful rhymes — but not politics. By 1964, he was the heavyweight champion of the world. That's also the year he joined the Nation of Islam — led by Malcolm X — and changed his name to Muhammad Ali. That move confused or shocked white Americans who followed his career, but that was nothing compared to the reaction when Ali refused induction into the U.S. Army in 1967 citing his religious beliefs and opposition to the Vietnam War. And the core of his protest was his identity as a black man, a black Muslim, in America. Ali was as determined to stand up for what he believed in as he was to dominate opponents in the boxing ring. But instead of 15 rounds, this went on for 3 1/2 years. And it came at a very steep price, one unimaginable for an athlete today. He was stripped of his title. He was banned from boxing. His source of income was gone. Ali's willingness to publicly take an unpopular political stand sets him apart from groundbreaking African-American athletes that preceded him. Names like Olympian Jesse Owens and baseball's Jackie Robinson. For Owens and Robinson, their excellence in competition combined with their mere presence was the political statement. Both 'were asked to swallow their pride in order to participate in their sport at the highest level.' Robinson had to agree to take all manner of racial abuse, to ensure that what was labeled baseball's 'Grand Experiment' would work. Robinson was chosen not just for his athletic skills, but 'because he represented a comfortable level of blackness for white fans.' That changed with Ali, He stood in the face of that and refused any suggestion that he be anything other than himself. As for taking on the Vietnam War, Ali was really on an island. Not only as an athlete, but as an American citizen, because most Americans in the mid-1960s support the war effort in Vietnam (via NPR, Muhammad Ai)."
-
-          
-          var eventTit = "Milliken v. Bradley"
-          var evenPhoto = "milliken.jpg"
-          var evenPara = "Roughly 9 million children — nearly 1 in 5 public school students in the U.S. — attend schools that are racially isolated and receive far less money than schools just a few miles away..."
-          var evenMore = "Roughly 9 million children — nearly 1 in 5 public school students in the U.S. — attend schools that are racially isolated and receive far less money than schools just a few miles away. 'Inequality is endemic' in America's public schools, nearly 1,000 school district borders where schools on one side receive at least 10% less money per student than schools on the other side and where the racial makeup of the two sides' students varies by 25 percentage points or more. It is the story of segregation, in 2019. Milliken v. Bradley was the case that posed an essential question in 1974: Who should be responsible for desegregating America's schools? The case arrived two decades after Brown began the push for school desegregation. In those intervening years, the federal government achieved meaningful progress in the South, and the movement ultimately worked its way north, to cities like Detroit. But many white voters grew anxious, even angry, about these efforts. That anger helped propel Richard Nixon to the White House in 1969. In just a few years, he filled not one but four vacancies on the Supreme Court. And it was this new court that would hear oral arguments in Milliken. Leaders from the state of Michigan and the city of Detroit had been sued for policies that had helped segregate Detroit's schools. At the time, two-thirds of students there were African American, while growing suburbs were almost exclusively white. The plaintiffs argued that school policies reinforced racist housing practices that had trapped black families inside the city. It was a story playing out across the United States." 
-          
-          evenEvenmore = "While black parents had been contained by racist housing policies, their children were being contained by school district lines. The state was pouring money into new suburban schools but was building them behind district lines that acted like fences. A lower court judge ruled that the only way to meaningfully desegregate Detroit was to tear down those lines — those fences — and to bus students between the city and 53 suburban school districts. The suburbs fought that ruling in the Supreme Court. The suburbs argued that their school district lines had been drawn without malice and that the federal courts had no right to interfere in the local control of schools unless the black parents who brought the case could show that the suburbs were responsible for school segregation in Detroit. A divided court agreed, finding in a 5-4 ruling that if these suburbs weren't actively hurting Detroit's students, then they couldn't be forced to help them either. Of the five justices in that majority, four had been appointed by Nixon. Ultimately, Detroit was told to somehow desegregate itself. 'The Detroit-only plan simply has no hope of achieving actual desegregation,' said Justice Thurgood Marshall in his dissent. 'Under such a plan, white and Negro students will not go to school together. Instead, Negro children will continue to attend all-Negro schools. The very evil that Brown was aimed at will not be cured but will be perpetuated.' Marshall knew that because schools are funded through local property taxes, these segregated big-city schools weren't just separate but were also clearly unequal. As an attorney in the early 1950s, Marshall had argued — and won — the historic Brown v. Board case, and he called the Milliken ruling a 'giant step backwards.' (via NPR, Milliken v. Bradley)"
-
-        }
-        if (currentDay == 14){
-          var first = "The"
-          var last = "Lovings"
-          var storyLink = "N.PNG"
-          var photo = "lovings.jpg"
-          var para = "In July 1958, Mildred and Richard Loving were arrested for interracial marriage, then a crime in their home state of Virginia. In June 1958, the couple went to Washington DC to marry..."
-          var more = "In July 1958, Mildred and Richard Loving were arrested for interracial marriage, then a crime in their home state of Virginia. In June 1958, the couple went to Washington DC to marry, to work around Virginia’s Racial Integrity Act of 1924, which made marriage between whites and non-whites a crime. After an anonymous tip, police officers raided their home a month later, telling the Lovings their marriage certificate was invalid. In 1959, the Lovings pled guilty to ‘cohabiting as man and wife, against the peace and dignity of the Commonwealth.' The Lovings were were sentenced to one year in prison, suspended if they left Virginia and did not return together for at least 25 years. The couple moved to Washington DC. For five years, the Lovings lived in internal exile while they raised their three children, Peggy, Sidney and Donald. In 1964, frustrated that they could not visit their families in Virginia together, Mildred wrote to attorney general Robert F Kennedy, who referred her to the American Civil Liberties Union (ACLU). The ACLU assigned volunteer attorneys Bernard S Cohen and Philip J Hirschkop to the Lovings. The case went from the Virginia Caroline county circuit court, all the way to the US supreme court in Washington.The Supreme Court overturned the Lovings’ convictions in a unanimous decision in June 1967, ruling that the ban on interracial marriage was unconstitutional and in violation of the 14th Amendment. Despite the supreme court’s decision, anti-miscegenation laws remained in several states despite the ruling making it unenforceable. Alabama continued to enforce the law until 1970, and was the last state to adapt its laws to the supreme court’s decision – in 2000 (via The Guardian, The Lovings, a marriage that changed history)."
-
-          var eventTit = "Loving v. Virginia"
-          var evenPhoto = "loving.jpg"
-          var evenPara = "Loving v. Virginia was a Supreme Court case that struck down state laws banning interracial marriage in the United States. The plaintiffs in the case were Richard and Mildred Loving..."
-          var evenMore = "Loving v. Virginia was a Supreme Court case that struck down state laws banning interracial marriage in the United States. The plaintiffs in the case were Richard and Mildred Loving, a white man and Black woman whose marriage was deemed illegal according to Virginia state law. With the help of the American Civil Liberties Union (ACLU), the Lovings appealed to the U.S. Supreme Court, which ruled unanimously that so-called “anti-miscegenation” statutes were unconstitutional under the 14th Amendment. The decision is often cited as a watershed moment in the dismantling of “Jim Crow” race laws. The Loving case was a challenge to centuries of American laws banning miscegenation, i.e., any marriage or interbreeding among different races. Restrictions on miscegenation existed as early as the colonial era, and of the 50 U.S. states, all but nine had a law against the practice at some point in their history. Early attempts to dispute race-based marriage bans in court met with little success. One of the first and most noteworthy cases was 1883’s Pace v. Alabama, in which the U.S. Supreme Court ruled that an Alabama anti-miscegenation law was constitutional because it punished Black people and white people equally. In 1888, meanwhile, the high court ruled that states had the authority to regulate marriage. By the 1950s, more than half the states in the Union—including every state in the South—still had laws restricting marriage by racial classifications." 
-          evenEvenmore = "In Virginia, interracial marriage was illegal under 1924’s Act to Preserve Racial Integrity. Those who violated the law risked anywhere from one to five years in a state penitentiary. The Supreme Court announced its ruling in Loving v. Virginia on June 12, 1967. In a unanimous decision, the justices found that Virginia’s interracial marriage law violated the 14th Amendment to the Constitution. 'Under our Constitution, the freedom to marry, or not marry, a person of another race resides with the individual, and cannot be infringed by the state,' Chief Justice Earl Warren wrote. The landmark ruling not only overturned the Lovings’ 1958 criminal conviction, it also struck down laws against interracial marriage in 16 U.S. states including Virginia."
-
-
-        }
-        if (currentDay == 15){
-          var first = "Stormé"
-          var last = "DeLaverie"
-          var storyLink = "O.PNG"
-          var photo = "storme.jpg"
-          var para = "Nobody knows for sure who threw the first punch at the Stonewall Uprising in New York City in 1969. But it’s widely believed that it could have been Stormé DeLarverie, a lifelong gay rights activist and drag performer..."
-          var more = "Nobody knows for sure who threw the first punch at the Stonewall Uprising in New York City in 1969. But it’s widely believed that it could have been Stormé DeLarverie, a lifelong gay rights activist and drag performer, who died in 2014. Prior to her participation in Stonewall, DeLarverie was a groundbreaking drag performer whose publicity photographs show a dandyish approach to zoot suits and black tie. Gender-fluid dressing has become a major force in fashion over the past few seasons, but DeLarverie’s approach to style is an early, striking instance of it. DeLarverie, who was born in New Orleans in 1920 to a black mother and a white father, spent the ’50s and ’60s as the only 'male impersonator' in the Jewel Box Revue, the period’s only racially integrated drag troupe. DeLarverie became so celebrated that she began circulating in highly respected crowds, among the likes of Dinah Washington and Billie Holiday. Dressing in traditionally masculine attire, she may have inspired other lesbians of the era in New York to do the same. DeLarverie lived for several years at the Chelsea Hotel, and a handful of documentaries have explored DeLarverie’s drag persona and her time as a guardian of the Village, serving as a security guard at the neighborhood’s gay bars and as a more general watchkeeper. DeLarverie was known at the time for roaming the West Village vigilante-style — she had no tolerance for what she called 'ugly,' meaning rudeness, bullying, or behavior that was otherwise intolerant of her 'baby girls' at the bars she was protecting. Having experienced a difficult upbringing herself, DeLarverie always sought to provide protection for others, whether it was at the Jewel Box or Henrietta Hudson. As she said in a 2001 documentary short called 'A Stormé Life,' 'I’m a human being that survived. I helped other people survive.' (via GQ and Them, Stormé DeLarverie)"
-
-          var eventTit = "Corona Virus in the Black Community"
-          var evenPhoto = "covid.jpg"
-          var evenPara = "The U.S. has been roiled this year by two crises that seem on the surface to be unrelated: the coronavirus pandemic and law-enforcement killings of black Americans..."
-          var evenMore = "The U.S. has been roiled this year by two crises that seem on the surface to be unrelated: the coronavirus pandemic and law-enforcement killings of black Americans— Although the immediate causes of these two tragedies seem distinct, both have their roots in structural racism. The virus has killed a disproportionate number of black people (as well as other people of color), and black people are by some estimates 2.5 times more likely than white people to be killed by the police. Support is building for police reform, and we can take concrete steps immediately to protect the health of black Americans. Deep health inequities have always existed in the U.S., but the pandemic has shone an especially harsh light on them. A report from the Centers for Disease Control and Prevention on a sample of 580 people hospitalized with confirmed cases of COVID-19 found that 33 percent of patients were black in a population sample where just 18 percent of the people were black. White people made up 59 percent of the same population, but only 45 percent were infected. Through April 16 in New York City, the death rate among blacks was 92 per 100,000 people and among Latinx people 74 per 100,000—whereas the numbers for white people and Asian people were 45 and 35 per 100,000, respectively." 
-          
-          evenEvenmore = "These trends are not limited to New York: the coronavirus has infected and killed an outsize number of black people across the U.S. Many people of color work in so-called essential industries such as nursing or home health care, grocery stores and mass transit, where they are more likely to come into close contact with people who are sick. To make matters worse, these jobs are often poorly paid, and a large proportion of such workers lack health or life insurance. In addition, many black, Latinx and indigenous communities have high rates of underlying health conditions, including diabetes, hypertension and heart disease, which are known risk factors for severe illness and death from COVID-19. These disparities can be traced back largely to the racism and redlining that have resulted in poor, overcrowded housing and exposed people of color to more severe levels of air pollution—factors that exacerbate all these health problems. The Families First Coronavirus Response Act and the Coronavirus Aid, Relief, and Economic Security (CARES) Act, both of which Congress passed in March, did very little to protect the health of essential workers, according to policy experts across the political spectrum, because they focused more on providing economic relief than medical care or benefits (via Scientific American, Too Many Black Americans Are Dying from COVID-19)."
-
-
-        }
-        if (currentDay == 16){
-          var storyLink = "P.PNG"
-          var first = "Mikki"
-          var last = "Kendall"
-          var photo = "mikki.jpg"
-          var para = "Mikki Kendall is a writer, diversity consultant, and occasional feminist who talks a lot about intersectionality, policing, gender, sexual assault, and other current events. Mikki Kendall's debut essay collection..."
-          var more = "Mikki Kendall is a writer, diversity consultant, and occasional feminist who talks a lot about intersectionality, policing, gender, sexual assault, and other current events. Mikki Kendall's debut essay collection is called 'Hood Feminism: Notes from the Women That a Movement Forgot.' √As the subtitle makes clear, Kendall's central thesis is that mainstream feminism in the United States has been anything but inclusive, despite being 'a movement that draws much of its strength from the claim that it represents over half of the world's population.' In prose that is clean, crisp, and cutting, Kendall reveals how feminism has both failed to take into account populations too often excluded from the banner of feminism and failed to consider the breadth of issues affecting the daily lives of millions of women.Many of the book's essays focus on these overlooked issues, with chapters examining how gun violence, hunger, poverty, education, housing, reproductive justice, and more are all feminist issues. Others, such as 'Black Girls Don't Have Eating Disorders' and 'The Hood Doesn't Hate Smart People,' challenge harmful myths that, in the case of the former, can lead to young women not getting the help and support they need and, in the latter, perpetuate race- and class-based stereotypes. Regardless of the topic, each chapter is designed to 'focus largely on the experiences of the marginalized, and address the issues faced by most women, instead of the issues that only concern a few — as has been the common practice of feminists to date — because tackling those larger issues is key to equality for all women.' Securing that equality, Kendall argues, requires that women accept some inconvenient truths, specifically 'the distinct likelihood that some women are oppressing others.... [W]hite women can oppress women of color, straight women can oppress lesbian women, cis women can oppress trans women, and so on.' If feminism is to truly represent all women, it must resist the 'tendency to assume that all women are experiencing the same struggles [which] has led us to a place where reproductive health imagery centers on cisgender able-bodied women to the exclusion of those who are trans, intersex, or otherwise inhabiting bodies that don't fit the narrow idea that genitalia dictates gender.'"
-
-          var eventTit = "There is No #MeToo Movement without Black Women"
-          var evenPhoto = "metoo.jpg"
-          var evenPara = "If you dig into many of the cultural and social advancements today, you’ll find a rich history of Black torchbearers replaced by white faces..."
-          var evenMore = "If you dig into many of the cultural and social advancements today, you’ll find a rich history of Black torchbearers replaced by white faces. Marijuana? Black leaders advocated for the legalization of marijuana as a civil rights issue long before it was popular. Body positivity? While often attributed to Ashley Graham, it’s a movement that in fact originated with Black plus-sized femmes. The #MeToo movement and unveiling of widespread sexual assault? Despite what you may have heard, the credit doesn’t belong to actress Alyssa Milano. African-American sexual assault survivor and activist Tarana Burke first introduced the phrase in 2006 to raise awareness specifically for marginalized victims. But this fight for sexual justice has been going on since the American Civil War. 'The history of the rape crisis movement in the United States is also a history of the struggle of African-American women against racism and sexism,' says Gillian Greensite, the director of Rape Prevention Education at University of California, Santa Cruz, on the History of the Rape Crisis Movement. To replace Black faces with white ones would be dishonest and insulting to the efforts Black women have made to create a better world for survivors and victims of abuse. But it also removes Black women from the conversation and causes serious detrimental effects to their health." 
-          
-          evenEvenmore = "Many of the resources, crisis centers, and safe spaces available to women, victims, and survivors today are because of Black women. Specifically, Black women who were early rape activists during slavery. Black women’s testimonies and campaigns against sexual violence and sexual exploitation of black slaves led to some of the nation’s most prominent movements for social justice, like the American abolitionist movement to end slavery. They also helped establish today’s safe spaces and crisis centers, including the leading organization for domestic violence, the National Coalition Against Domestic Violence. One of the earliest collective efforts to expose rape in the United States was after the Memphis Riot of May 1866. Black women boldly testified before Congress, detailing the horrifying experience of being gang-raped by a white mob. During this time, only the rape of a white woman was considered illegal. Black women were left unprotected, often subjected to death threats (via Healthline, #MeToo Won’t Succeed If We Don’t Listen to Black Women). [Black women] have a long tradition of sharing [their] stories and fighting for sexual justice. Who is willing to listen? Who is paying attention? Black women have to figure out how to sustain these moments of visibility. For allies, this means listening and sharing Black stories, not rewriting them."
-        }
-        if (currentDay == 17){
-          var first = "Bobby"
-          var last = "Seale"
-          var storyLink = "Q.PNG"
-          var photo = "bobby.jpg"
-          var para = "Bobby Seale was born Robert George Seale on October 22, 1936, in Dallas, Texas, the oldest of three children. In September 1962, Seale met Huey Newton at a rally protesting the Kennedy..."
-          var more = "Bobby Seale was born Robert George Seale on October 22, 1936, in Dallas, Texas, the oldest of three children. In September 1962, Seale met Huey Newton at a rally protesting the Kennedy Administration's blockade of Cuba. Kindred spirits, the pair quickly became friends, and that year marked the sprouting of Seale's political radicalism, which was deepened when Seale attended a speech given by Malcolm X. By 1966, Seale and Newton were ready to organize their beliefs, and they formed the Black Panthers (later renamed the Black Panther Party). Originally created as an armed force protecting the black community from the notoriously racist Oakland police, the Panthers' reputation grew and with it the scope of the organization itself. The Panthers became a new voice in the Civil Rights Movement, and they rejected outright the mainstream movement's nonviolent approach as well as the 'Back to Africa' teachings put forth by the more radical Black Nationalists. The Panthers focused much of their energies on community outreach, and the California movement spawned chapters across the nation. By 1968, Seale decided that a public account of the formation and history of the Panthers was needed, so he wrote Seize the Time: The Story of the Black Panther Party and Huey P. Newton (published in 1970). That same year, Seale was arrested while protesting at the Democratic National Convention in Chicago. He and seven other defendants, thereafter known as the Chicago Seven, were tried for conspiracy to incite riots in a circus-like atmosphere that resulted in Seale being sentenced to four years in prison for contempt of court (via Biography.com, Bobby Seale)."
-
-          var eventTit = "Safe Water Drinking Act of 1974"
-          var evenPhoto = "water.jpg"
-          var evenPara = "Most Americans do not give a second thought to what happens after they turn on a faucet handle or flush a toilet..."
-          var evenMore = "Most Americans do not give a second thought to what happens after they turn on a faucet handle or flush a toilet. This is because the result is always the same: Clean, potable water comes out, available to drink, wash hands, cook food, clean clothes, or tidily dispose of waste, whatever the case may be. Yet in many places throughout the country, running water is a scarce resource, or even an unattainable luxury. The water crisis in Flint, Michigan, is perhaps the most infamous recent example of racial inequities in water access, where local officials' failure to adequately treat tap water exposed the city's nearly 100,000 residents, more than half of whom are black, to dangerous levels of lead and other contaminants. The problem is also acute in more remote or rural areas, including certain majority-black communities in the Deep South, majority-Latinx communities in California's Central Valley, and Native American reservations in the Southwest, among others. Nationwide, 17 percent of people in rural areas have had trouble obtaining potable water, and 12 percent have experienced problems with their sewage systems, according to the report. In some places, conditions are getting worse, not better. These racial and socioeconomic disparities are not an accident. In an effort to cut down on the dangers posed by waterborne diseases, Congress passed the Safe Water Drinking Act in 1974, a landmark statute that empowers the Environmental Protection Agency to set and enforce national standards for drinking-water-contaminant levels. Cities and towns building out their systems would not always do so in majority-minority areas nearby. As the report documents, in the 1950s, the town of Zanesville, Ohio, did not build water lines in its African-American neighborhoods, and the following decade Roanoke, Virginia, did not extend its infrastructure to Hollins, a neighboring majority-black town. As a result, no one bothered to install a water system in the first place." 
-          
-          evenEvenmore = "Even today, there are places in the country where homes lack running water, within walking distance of neighborhoods that enjoy the full spectrum of water and sanitation services. The Safe Water Drinking Act also doesn't apply to systems that include fewer than 15 connections, or that serve fewer than 25 people. This means anyone who isn't linked into a large grid is more or less on their own, and the facilities they have to build, install, and maintain are subject to little regulatory oversight. Meanwhile, federal investment has plummeted over the past several decades, from a 63 percent share of total capital spending on water and wastewater in 1977 to less than 9 percent today. Free grant money turned into expensive loans, forcing state and local governments to take on debt in order to make meaningful improvements. In lower-income, rural areas where subsidized construction hasn't already occurred, modest local budgets can't compensate for the shortfall, and the customer base isn't large or wealthy enough to independently finance the costs of improvements. Oftentimes, this doesn't just mean that tap water is unsafe; it means there is no tap water at all. Communities without access now have to struggle to catch up to the rest of the country with both hands tied behind their backs (via GQ, The Hidden Racial Inequities of Access to Water in America)."
-
-
-        }
-        if (currentDay == 18){
-          var first = "Prince"
-          var last = ""
-          var storyLink = "R.PNG"
-          var photo = "prince.jpg"
-          var para = "Back in 1981, The New York Times called Prince “the most controversial contemporary rock star precisely because he challenges sexual and racial stereotypes.” Along with his androgynous appearance..."
-          var more = "Back in 1981, The New York Times called Prince “the most controversial contemporary rock star precisely because he challenges sexual and racial stereotypes.” Along with his androgynous appearance, he challenged American complacency with songs against war, poverty, and police brutality and supported an effort to get low-income black and brown youths prepared for the tech jobs of the future. In his 1981 album Controversy, Prince was tackling the Cold War and fears of nuclear annihilation with the track 'Ronnie, Talk to Russia.' 'Ronnie talk to Russia before it’s too late / Before they blow up the world,' he sang. In 1987, 'Sign o’ the Times' addressed HIV, drug addiction, and poverty. 'A sister killed her baby ’cause she couldn’t afford to feed it / And yet we’re sending people to the moon,' he sang. In 2014, his track 'Marz' turned the spotlight on child poverty in the black community. 'Lost my job at Mickey D’s / 4 giving away 2 much food 4 free / But I couldn’t watch another black child go 2 school / With nothing to eat,' he sang. There was the subtle shout-out to the Black Lives Matter movement at the 2015 Grammy Awards. 'Like books and black lives, albums still matter,' he said. Then, in the aftermath of Freddie Gray’s death in police custody, he released a poignant protest song, 'Baltimore,' that addressed unrest in that city and in Ferguson, Missouri, after Michael Brown’s death in 2014. 'Does anybody hear us pray / For Michael Brown or Freddie Gray? / Peace is more than the absence of war,' Prince sang. The song ends with the chant, 'If there ain’t no justice then there ain’t no peace.' The Minnesota-based artist was also the inspiration behind and a key supporter of “Yes We Code,” an initiative launched last July to teach computer science to 100,000 students from backgrounds underrepresented in the tech world. The program has its roots in a conversation that activist Van Jones had with Prince about race after Trayvon Martin's death (via Takepart.com, Prince)."
-
-          var eventTit = "1968 Summer Olympics"
-          var evenPhoto = "olympics.jpg"
-          var evenPara = "It’s an iconic image: Two athletes raise their fists on the Olympic podium. The photograph, taken after the 200 meter race at the 1968 Summer Olympics in Mexico City..."
-          var evenMore = "It’s an iconic image: Two athletes raise their fists on the Olympic podium. The photograph, taken after the 200 meter race at the 1968 Summer Olympics in Mexico City, turned African-American athletes Tommie Smith and John Carlos from track-and-field stars into the center of a roiling controversy over their raised-fist salute, a symbol of Black power and the human rights movement at large. Smith and Carlos, who had won gold and bronze, respectively, agreed to use their medal wins as an opportunity to highlight the social issues roiling the United States at the time. Racial tensions were at a height, and the Civil Rights movement had given way to the Black Power movement. African-Americans like Smith and Carlos were frustrated by what they saw as the passive nature of the Civil Rights movement. They sought out active forms of protests and advocated for racial pride, Black nationalism and dramatic action rather than incremental change." 
-          
-          evenEvenmore = "It was only months after the assassination of Rev. Dr. Martin Luther King, Jr., and protests against the Vietnam War were gaining steam as well. In the lead-up to the Olympics, Smith and Carlos helped organize the Olympic Project for Human Rights, a group that reflected their Black pride and social consciousness. The group saw the Olympic Games as an opportunity to agitate for better treatment of Black athletes and Black people around the world. Its demands included hiring more Black coaches and rescinding Olympic invitations to Rhodesia and South Africa, both of which practiced apartheid. Though the project initially proposed a boycott of the Olympics altogether, Smith and Carlos decided to compete in the hopes they could use their achievements as a platform for broader change. Then, just 10 days before the opening of the Summer Games, an unarmed group of protesters assembled in Mexico City’s Three Cultures Square to plan the next move of the growing Mexican students’ movement. The Mexican government sent in bulldozers to disperse the thousands gathered, and troops fired into the crowd, massacring between four (the government’s official count) and 3,000 students. Carlos and Smith were deeply affected by these events and the plight of marginalized people around the world. “It was a cry for freedom and for human rights,” Smith told Smithsonian magazine in 2008. “We had to be seen because we couldn’t be heard.” (via History, The Black Power Protest)"
-
-
-        }
-        if (currentDay == 19){
-          var first = "Ron"
-          var last = "Stallworth"
-          var storyLink = "S.PNG"
-          var photo = "ron.jpg"
-          var para = "Ron Stallworth was sworn in as a Colorado Springs police officer on his 21st birthday in 1974, making him the first African-American to graduate from the ranks of the Police Cadet Program. Stallworth was intrigued by..."
-          var more = "Ron Stallworth was sworn in as a Colorado Springs police officer on his 21st birthday in 1974, making him the first African-American to graduate from the ranks of the Police Cadet Program. Stallworth was intrigued by the undercover narcotics investigators, and spent his first years peppering them with questions and pitching himself as a worthy undercover cop. His first undercover assignment was to attend a speech given by Black Panther leader Stokely Carmichael. Stallworth dressed the part—blazer, bell-bottoms, concealed weapon and wire, Afro. Several months after his first special assignment, the real Stallworth became the youngest and first black undercover narcotics detective in Colorado Springs Police Department history. Part of Stallworth’s new job was to scan local newspapers for rumblings of suspicious activity. It was during one of these searches, in 1978, when the detective noticed a classified ad for a local Ku Klux Klan chapter. The real-life ad listed a P.O. box so Stallworth reached out to request more information about the organization via snail mail. He provided an unlisted, untraceable phone number and an untraceable address—but he did sign the letter with his real name. He used his real name, he has explained, because he did not think the correspondence would lead to an investigation. At most, he figured he would get a pamphlet—not a phone call two weeks later. A man starting a local K.K.K. chapter called Stallworth at the untraceable number he had provided, and asked him why he was interested in joining the organization. Caught off guard, Stallworth launched a profane monologue about hating minorities. The K.K.K. organizer was so eager to meet in person that Stallworth had to stall—to officially launch an investigation and prepare a proxy. Stallworth recruited an undercover narcotics officer named Chuck to play him. After a local K.K.K. organizer who was moving out of Colorado Springs suggested that Stallworth succeed him, the chief immediately shut down the investigation and instructed Stallworth to destroy all evidence of it. Wrote Stallworth, 'I believe he was fearful that if word got out that CSPD officers were sworn Klansmen he would have a PR disaster on his hands.' Over the years, Stallworth said, 'I thought about writing my story [as a book], but I didn’t, because I just didn’t feel like it.' When he sat down decades later, the detective said matter-of-factly, 'When I finally put pen to paper, I just felt like doing it.' (via Vanity Fair, Blackkklansman: The True Story)."
-
-          var eventTit = "The East St. Louis Race Riot"
-          var evenPhoto = "louis.jpg"
-          var evenPara = "An incident that survivors call the East St. Louis Race War. From July 1 through July 3, 1917, a small Illinois city located across the river from its Missouri counterpart..."
-          var evenMore = "An incident that survivors call the East St. Louis Race War. From July 1 through July 3, 1917, a small Illinois city located across the river from its Missouri counterpart was overrun with violence. A smoldering labor dispute turned deadly as rampaging whites began brutally beating and killing African-Americans. By the end of the three-day crisis, the official death toll was 39 black individuals and nine whites, but many believe that more than 100 African-Americans were killed. “We spent a lifetime as children hearing these stories. It was clear to me my father was suffering from some form of what they call PTSD,” the son of a survivor [Kennedy] recalls. “He witnessed horrible things: people’s houses being set ablaze, . . .  people being shot when they tried to flee, some trying to swim to the other side of the Mississippi while being shot at by white mobs with rifles, others being dragged out of street cars and beaten and hanged from street lamps.” Racial tensions began simmering in East St. Louis—a city where thousands of blacks had moved from the South to work in war factories—as early as February 1917. The African-American population was 6,000 in 1910 and nearly double that by 1917. In the spring, the largely white workforce at the Aluminum Ore Company went on strike. Hundreds of blacks were hired. After a City Council meeting on May 28, angry white workers lodged formal complaints against black migrants. When word of an attempted robbery of a white man by an armed black man spread through the city, mobs started beating any African-Americans they found, even pulling individuals off of streetcars and trolleys. The National Guard was called in but dispersed in June." 
-          
-          evenEvenmore = "On July 1, a white man in a Ford shot into black homes. Armed African-Americans gathered in the area and shot into another oncoming Ford, killing two men who turned out to be police officers investigating the shooting. The next morning, whites pouring out of a meeting in the Labor Temple downtown began beating blacks with guns, rocks and pipes. They set fire to homes and shot residents as they fled their burning properties. Blacks were also lynched in other areas of the city. The East St. Louis affair was a man hunt, conducted on a sporting basis, though with anything but the fair play which is the principle of sport. There was a horribly cool deliberateness and a spirit of fun about it. ‘Get a n*****’ was the slogan (via Smithsonian Magazine, The East St. Louis Race Riot)."
-
-
-        }
-        if (currentDay == 20){
-          var first = "James"
-          var last = "Baldwin"
-          var storyLink = "T.PNG"
-          var photo = "james.jpg"
-          var para = "James Baldwin was an essayist, playwright, novelist and voice of the American civil rights movement. Writer and playwright James Baldwin published the 1953 novel Go Tell It on the Mountain, receiving acclaim for his insights on race, spirituality and humanity..."
-          var more = "James Baldwin was an essayist, playwright, novelist and voice of the American civil rights movement. Writer and playwright James Baldwin published the 1953 novel Go Tell It on the Mountain, receiving acclaim for his insights on race, spirituality and humanity. Baldwin was born on August 2, 1924, in Harlem, New York. One of the 20th century's greatest writers, Baldwin broke new literary ground with the exploration of racial and social issues in his many works. He was especially known for his essays on the Black experience in America. After graduating from high school in 1942, he had to put his plans for college on hold to help support his family, which included seven younger children. He took whatever work he could find, including laying railroad tracks for the U.S. Army in New Jersey. During this time, Baldwin frequently encountered discrimination, being turned away from restaurants, bars and other establishments because he was African American. After being fired from the New Jersey job, Baldwin sought other work and struggled to make ends meet. Devoting himself to writing a novel, Baldwin took odd jobs to support himself. He befriended writer Richard Wright, and through Wright, he was able to land a fellowship in 1945 to cover his expenses. Baldwin started getting essays and short stories published in such national periodicals as The Nation, Partisan Review and Commentary. Three years later, Baldwin made a dramatic change in his life and moved to Paris on another fellowship. The shift in location freed Baldwin to write more about his personal and racial background. 'Once I found myself on the other side of the ocean, I see where I came from very clearly...I am the grandson of a slave, and I am a writer. I must deal with both,' Baldwin once told The New York Times. In 1963, there was a noted change in Baldwin's work with The Fire Next Time. This collection of essays was meant to educate white Americans on what it meant to be Black. It also offered white readers a view of themselves through the eyes of the African American community. In the work, Baldwin offered a brutally realistic picture of race relations, but he remained hopeful about possible improvements. 'If we...do not falter in our duty now, we may be able...to end the racial nightmare.' His words struck a chord with the American people, and The Fire Next Time sold more than a million copies.That same year, Baldwin was featured on the cover of Time magazine. 'There is not another writer — white or Black — who expresses with such poignancy and abrasiveness the dark realities of the racial ferment in North and South,' Time said in the feature (via Biography.com, James Baldwin)."
-
-          var eventTit = "Tuskegee Syphilis Study"
-          var evenPhoto = "tuskegee.jpg"
-          var evenPara = "In 1932, the Public Health Service, working with the Tuskegee Institute, began a study to record the natural history of syphilis in hopes of justifying treatment programs for Black people..."
-          var evenMore = "In 1932, the Public Health Service, working with the Tuskegee Institute, began a study to record the natural history of syphilis in hopes of justifying treatment programs for [Black people]. It was called the “Tuskegee Study of Untreated Syphilis in the Negro Male.” The study initially involved 600 black men – 399 with syphilis, 201 who did not have the disease. The study was conducted without the benefit of patients’ informed consent. Researchers told the men they were being treated for “bad blood,” a local term used to describe several ailments, including syphilis, anemia, and fatigue. In truth, they did not receive the proper treatment needed to cure their illness. In July 1972, an Associated Press story about the Tuskegee Study caused a public outcry that led the Assistant Secretary for Health and Scientific Affairs to appoint an Ad Hoc Advisory Panel to review the study. The panel had nine members from the fields of medicine, law, religion, labor, education, health administration, and public affairs. The panel found that the men had agreed freely to be examined and treated. However, there was no evidence that researchers had informed them of the study or its real purpose. In fact, the men had been misled and had not been given all the facts required to provide informed consent. The men were never given adequate treatment for their disease. Even when penicillin became the drug of choice for syphilis in 1947, researchers did not offer it to the subjects."
-          
-          evenEvenmore = "The advisory panel found nothing to show that subjects were ever given the choice of quitting the study, even when this new, highly effective treatment became widely used. The advisory panel concluded that the Tuskegee Study was “ethically unjustified”–the knowledge gained was sparse when compared with the risks the study posed for its subjects. In October 1972, the panel advised stopping the study at once. A month later, the Assistant Secretary for Health and Scientific Affairs announced the end of the Tuskegee Study. In the summer of 1973, a class-action lawsuit was filed on behalf of the study participants and their families. In 1974, a $10 million out-of-court settlement was reached. As part of the settlement, the U.S. government promised to give lifetime medical benefits and burial services to all living participants. The Tuskegee Health Benefit Program (THBP) was established to provide these services. In 1975, wives, widows and offspring were added to the program. In 1995, the program was expanded to include health as well as medical benefits. The Centers for Disease Control and Prevention was given responsibility for the program, where it remains today in the National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention. The last study participant died in January 2004. The last widow receiving THBP benefits died in January 2009. There are 11 offspring currently receiving medical and health benefits (via CDC)."
-
-
-        }
-        if (currentDay == 21){
-          var first = "Ava"
-          var last = "Duvernay"
-          var storyLink = "U.PNG"
-          var photo = "ava.jpg"
-          var para = "Ava DuVernay is a writer, producer, director and distributor of independent film. DuVernay was born on August 24, 1972 in Long Beach, California. As a child, DuVernay’s Aunt Denise encouraged her passion for art and creativity..."
-          var more = "Ava DuVernay is a writer, producer, director and distributor of independent film. DuVernay was born on August 24, 1972 in Long Beach, California. As a child, DuVernay’s Aunt Denise encouraged her passion for art and creativity. Her aunt worked the night shift as a nurse so she could pursue her love for art, literature and theater during the day. She introduced DuVernay the 1961 film West Side Story, and DuVernay fell in love with it. DuVernay learned by example that art could be a vehicle for activism. Winner of the Emmy, BAFTA and Peabody Awards, Academy award nominee Ava DuVernay is a writer, director, producer and film distributor. Her directorial work includes the historical drama SELMA, the criminal justice documentary 13TH and Disney’s A WRINKLE IN TIME, which made her the highest grossing black woman director in American box office history. She was the first African American woman to win Best Director at the Sundance Film Festival, be nominated for a Best Director Golden Globe, direct a film nominated for a Best Picture Oscar, and direct a film with a budget over $100 million. Her project, 'When They See Us', was nominated for 16 Emmy awards, making her and Beyoncé the first African American women in Primetime Emmy history to receive multiple nominations in their careers for directing. She oversees production on her critically-acclaimed TV series QUEEN SUGAR, her new CBS limited series THE RED LINE and her upcoming OWN series CHERISH THE DAY. Winner of the 2012 Sundance Film Festival's Best Director Prize for her micro-budget film MIDDLE OF NOWHERE, DuVernay amplifies the work of people of color and women of all kinds through her non-profit film collective ARRAY, named one of Fast Company’s Most Innovative Companies (via Ava DuVernay and National Women's History Museum, Ava DuVernay)."
-
-          var eventTit = "Birmingham Church Bombing"
-          var evenPhoto = "birmingham.jpg"
-          var evenPara = "The Birmingham church bombing occurred on September 15, 1963, when a bomb exploded before Sunday morning services at the 16th Street Baptist Church in Birmingham, Alabama..."
-          var evenMore = "The Birmingham church bombing occurred on September 15, 1963, when a bomb exploded before Sunday morning services at the 16th Street Baptist Church in Birmingham, Alabama—a church with a predominantly Black congregation that also served as a meeting place for civil rights leaders. Four young girls were killed and many other people injured. Outrage over the incident and the violent clash between protesters and police that followed helped draw national attention to the hard-fought, often-dangerous struggle for civil rights for African Americans. Alabama Governor George Wallace was a leading foe of desegregation, and Birmingham had one of the strongest and most violent chapters of the Ku Klux Klan (KKK). The city’s police commissioner, Eugene “Bull” Connor, was notorious for his willingness to use brutality in combating radical demonstrators, union members and any Black citizens. By 1963, homemade bombs set off in Birmingham's Black homes and churches were such common occurrences that the city had earned the nickname “Bombingham.” Precisely because of its reputation as a stronghold for white supremacy, civil rights activists made Birmingham a major focus of their efforts to desegregate the Deep South.Many of the civil rights protest marches that took place in Birmingham during the 1960s began at the steps of the 16th Street Baptist Church, which had long been a significant religious center for the city’s Black population and a routine meeting place for civil rights organizers like King. KKK members had routinely called in bomb threats intended to disrupt civil rights meetings as well as services at the church." 
-          
-          evenEvenmore = "At 10:22 a.m. on the morning of September 15, 1963, some 200 church members were in the building—many attending Sunday school classes before the start of the 11 am service—when the bomb detonated on the church’s east side, spraying mortar and bricks from the front of the church and caving in its interior walls. Most parishioners were able to evacuate the building as it filled with smoke, but the bodies of four young girls (14-year-old Addie Mae Collins, Cynthia Wesley and Carole Robertson and 11-year-old Denise McNair) were found beneath the rubble in a basement restroom. Though Birmingham’s white supremacists (and even certain individuals) were immediately suspected in the bombing, repeated calls for the perpetrators to be brought to justice went unanswered for more than a decade. It was later revealed that the FBI had information concerning the identity of the bombers by 1965 and did nothing. (J. Edgar Hoover, then-head of the FBI, disapproved of the civil rights movement; he died in 1972.) In 1977, Alabama Attorney General Bob Baxley reopened the investigation and Klan leader Robert E. Chambliss was brought to trial for the bombings and convicted of murder. Continuing to maintain his innocence, Chambliss died in prison in 1985. The case was again reopened in 1980, 1988 and 1997, when two other former Klan members, Thomas Blanton and Bobby Frank Cherry, were finally brought to trial; Blanton was convicted in 2001 and Cherry in 2002. A fourth suspect, Herman Frank Cash, died in 1994 before he could be brought to trial. Even though the legal system was slow to provide justice, the effect of the bombing of the 16th Street Baptist Church was immediate and significant. Outrage over the death of the four young girls helped build increased support behind the continuing struggle to end segregation—support that would help lead to the passage of both the Civil Rights Act of 1964 and the Voting Rights Act of 1965. In that important sense, the bombing’s impact was exactly the opposite of what its perpetrators had intended (via History)."
-
-        }
-        if (currentDay == 22){
-          var first = "Nannie Helen"
-          var last = "Burroughs"
-          var storyLink = "V.PNG"
-          var photo = "nannie.jpg"
-          var para = "Around 1880, Nannie Helen Burroughs was born to a formerly enslaved couple living in Orange, Virginia. Her father died when she was young, and she and her mother relocated to Washington, DC. Burroughs excelled in school..."
-          var more = "Around 1880, Nannie Helen Burroughs was born to a formerly enslaved couple living in Orange, Virginia. Her father died when she was young, and she and her mother relocated to Washington, DC. Burroughs excelled in school and graduated with honors from M Street High School (now Paul Laurence Dunbar High School). Despite her academic achievements, Burroughs was turned down for a Washington D.C. public school teaching position. Some historians speculate that the elite black community discriminated against Burroughs because she had darker skin. Undeterred, Burroughs decided to open her own school to educate and train poor, working African American women. Burroughs proposed her school initiative to the National Baptist Convention (NBC). In response, the organization purchased six acres of land in Northeast Washington, D.C. Now Burroughs needed money to construct the school. She did not, however, have unanimous support. Civil rights leader Booker T. Washington did not believe African Americans would donate money to found the school. But Burroughs did not want to rely on money from wealthy white donors. Relying on small donations from black women and children from the community, Burroughs managed to raise enough money to open the National Training School for Women and Girls. In addition to founding the National Training School for Women and Girls, Burroughs also advocated for greater civil rights for African Americans and women. At the time, black women had few career choices. Many did domestic work like cooking and cleaning. Burroughs believed women should have the opportunity to receive an education and job training. She wrote about the need for black and white women to work together to achieve the right to vote. She believed suffrage for African American women was crucial to protect their interests in an often discriminatory society (via NPS.gov, Nannie Helen Bourroughs)."
-
-          var eventTit = "The Myth of the 'Welfare Queen'"
-          var evenPhoto = "welfare.jpg"
-          var evenPara = "It was the fall of 1974 when the Chicago Tribune ran a story with this lead - Linda Taylor received Illinois welfare checks and food stamps, even though she was driving three 1974..."
-          var evenMore = "It was the fall of 1974 when the Chicago Tribune ran a story with this lead - Linda Taylor received Illinois welfare checks and food stamps, even though she was driving three 1974 autos - a Cadillac, a Lincoln and a Chevrolet station wagon - claimed to own four South Side buildings and was about to leave for a vacation in Hawaii. That story went on to say that she had at least 27 different aliases. She had dozens of addresses. She had three Social Security cards. They, like, really wanted you to understand that she was [outrageous]. So they mentioned that she had recently gotten married to a sailor who was 20 years her junior. She became a staple for politicians who wanted to cut welfare spending, including a certain California governor and presidential hopeful named Ronald Reagan. When another newspaper picked up Linda Taylor's story, it ran the headline 'Welfare Queen Arrested.' And with that headline, there was a new stereotype. From there, the so-called welfare queen would become one of the most enduring and pernicious stereotypes in American politics. A lot of the details about this original welfare queen were exaggerated, or they were just wrong - like the amount of money that she supposedly took from the state of Illinois. And although Linda Taylor embodied this anti-black stereotype, her actual racial identity, was a little bit more ambiguous. Linda Taylor changed races as quickly and often as she changed names and addresses, just depending on whatever the scam required. In the 1960s, more black people had moved out of the South and into big cities in the North and in the West, where the welfare rules were less discriminatory. And so black folks were able to use welfare. But those people were treated with suspicion and even hostility by local officials and the public." 
-          
-          evenEvenmore = "At the same time, many of the poor black women in big cities on welfare started organizing into local groups, calling for better treatment from their caseworkers, increased benefits. Some were even calling for a universal basic income - that's where the government guarantees that all its citizens get a certain amount of annual money. By the 1970s, with the economy slowing down and the public getting tired of stories of urban unrest, people were primed to believe even outlandish stories about poor city folks getting rich off taxpayer money. So y'all know where this is going. So that story that ran in the Chicago Tribune in 1974 about a spendthrift moocher caking off on furs and on cars in one of the nation's most well-known black neighborhoods.In the '70s, there was this feeling that welfare had become a problem. It had become a crisis. States don't want to be spending as much money. People are mad because their paychecks aren't buying as much as they used to. Who's causing this problem? It's black women on welfare. Who exemplifies that problem? Linda Taylor. She was listed as white on the census in 1940 in Arkansas. She later in 1948 in California, when she got married there, identified herself as Hawaiian. And then in Chicago in the 1960s, she claimed that she was black. During these timese she was involved in a myriad of serious crime from scam to murder. So you have these two ideas happening in these stories, there's this woman who was using this racial ambiguity to scam people and also that she's a Cadillac-driving welfare queen from the South Side of Chicago, which is clearly meant to racialize her as black. Taylor becomes a sort of very racialized figure. And then people sort of latch onto her. They used her as an example of all the things wrong with welfare, and minimized her activity in a large variety of crime to solidify this new stereotype. And then by the time you get to Clinton 20 years later, it's still racialized but in this much more abstract way. It's harder to see, the way the rhetoric is about race and about the sort of suspicions about black mothers. But that's still informing what happens in our discourse around welfare (via NPR, The Original Welfare Queen)."
-        }
-        if (currentDay == 23){
-          var first = "Pauli"
-          var last = "Murray"
-          var storyLink = "W.PNG"
-          var photo = "pauli.jpg"
-          var para = "Pauli Murray lived one of the most remarkable lives of the twentieth century.  After High School Murray quickly became involved in the civil rights movement. In 1938, they began a campaign to enter graduate school at the all-white..."
-          var more = "Pauli Murray lived one of the most remarkable lives of the twentieth century.  After High School Murray quickly became involved in the civil rights movement. In 1938, they began a campaign to enter graduate school at the all-white University of North Carolina. Despite a lack of support from the NAACP, Murray’s own media campaign received national publicity. During this campaign, Murray developed a life-long friendship and correspondence with the first lady at the time, Eleanor Roosevelt. Murray worked to end segregation on public transport. In March 1940, they were arrested and imprisoned for refusing to sit at the back of a bus in Richmond, Virginia. In 1941, Murray enrolled at the law school at Howard University with the intention of becoming a civil rights lawyer. The following year they joined George Houser, James Farmer, and Bayard Rustin to form the nonviolence-focused Congress of Racial Equality (CORE). They were the first Black person to earn a JSD (Doctor of the Science of Law) degree from Yale Law School, a founder of the National Organization for Women and the first Black woman to be ordained an Episcopal priest. Pauli Murray’s legal arguments and interpretation of the US Constitution were winning strategies for public school desegregation, women’s rights in the workplace, and an extension of rights to LGBTQ+ people based on Title VII of the 1964 Civil Rights Act. Pauli Murray crafted a broad vision of justice, equity, and human rights using words as their primary tool in the fight for liberation. Pauli resisted categories of race, class, gender, and sexual orientation, wrestling with issues raised by their own racial identity, economic struggles, and sexual and gender identity. They aspired to an integrated body, mind, and spirit that aligned with a holistic sense of self (via Pauli Murray Center)."
-
-          var eventTit = "Griggs v. Duke Power"
-          var evenPhoto = "griggs.jpg"
-          var evenPara = "In 1971, the Supreme Court issued a unanimous ruling in Griggs v. Duke Power, which transformed our nation’s work places.  As a result of the NAACP's Legal Defense Fund [LDF’s]..."
-          var evenMore = "In 1971, the Supreme Court issued a unanimous ruling in Griggs v. Duke Power, which transformed our nation’s work places.  As a result of the NAACP's Legal Defense Fund [LDF’s] advocacy, the Supreme Court embraced a powerful legal tool – now known as the “disparate impact” framework – that has proved essential in the fight to eradicate arbitrary and artificial barriers to equal employment opportunity for all individuals, regardless of their race. In Griggs, LDF represented a group of thirteen African-American employees who worked at the Duke Power Company’s Dan River Steam Station, a power-generating facility located in Draper, North Carolina.  Duke Power had a long history of segregating employees by race.  At the Steam Station, the best jobs were reserved for whites.  African-Americans were relegated to the labor department, where the highest-paid worker earned less than the lowest-paid employee in the other four departments where only whites worked. Shortly after Congress passed Title VII of the Civil Rights Act of 1964, which made it illegal for employers to discriminate on the basis of race, Duke Power stopped expressly restricting African-Americans to the labor department and announced new standards for hiring, promotion, and transfers.  In order to work in positions outside of the labor department, Duke Power now required a high school diploma or scores on standardized IQ tests equal to those of the average high school graduate.  These new requirements were not an improvement, however.  They effectively perpetuated the discriminatory policies that Duke Power had utilized prior to the enactment of Title VII." 
-          
-          evenEvenmore = "Although the testing and diploma criteria disqualified African-Americans at a substantially higher rate than whites, Duke Power never established that they successfully measured ability to do the jobs in question.  Indeed, the white employees hired before the requirements were imposed performed entirely satisfactorily. In December 1970, Jack Greenberg, presented argument in the Supreme Court on behalf of the African-American employees. In a groundbreaking decision, the Supreme Court ruled against Duke Power.  It held that Title VII “proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation.”  The Court emphasized that Title VII in no way prohibits testing or diploma requirements for hiring or promotions.  Indeed, when they are properly developed and used, tests and other employment criteria can be effective, efficient means for employers to evaluate applicants.  But as the Court explained in Griggs, “What Congress has commanded is that any tests used must measure the person for the job and not the person in the abstract.”  The Court therefore held that when an employment practice operates to exclude African-Americans or other racial minorities, that practice is prohibited unless the employer can show that it fulfills a genuine business need and is a valid measure of an applicant’s ability to learn or perform the job in question.  Duke Power’s practices failed to meet these standards (via NAACP LDF, Griggs v. Duke Power)."
-
-
-        }
-        if (currentDay == 24){
-          var first = "Claudette"
-          var last = "Colvin"
-          var storyLink = "X.PNG"
-          var photo = "claudette.jpg"
-          var para = "Few people know the story of Claudette Colvin: When she was 15, she refused to move to the back of the bus and give up her seat to a white person — nine months before Rosa Parks did the very same thing..."
-          var more = "Few people know the story of Claudette Colvin: When she was 15, she refused to move to the back of the bus and give up her seat to a white person — nine months before Rosa Parks did the very same thing. Most people know about Parks and the Montgomery, Ala., bus boycott that began in 1955, but few know that there were a number of women who refused to give up their seats on the same bus system. Most of the women were quietly fined, and no one heard much more. Now a 69-year-old retiree, Colvin lives in the Bronx. She remembers taking the bus home from high school on March 2, 1955, as clear as if it were yesterday. The bus driver ordered her to get up and she refused, saying she'd paid her fare and it was her constitutional right. Two police officers put her in handcuffs and arrested her. Her school books went flying off her lap. 'All I remember is that I was not going to walk off the bus voluntarily,' Colvin says. It was Negro history month, and at her segregated school they had been studying black leaders like Harriet Tubman, the runaway slave who led more than 70 slaves to freedom through the network of safe houses known as the Underground Railroad. They were also studying about Sojourner Truth, a former slave who became an abolitionist and women's rights activist. The class had also been talking about the injustices they were experiencing daily under the Jim Crow segregation laws, like not being able to eat at a lunch counter. 'We couldn't try on clothes,' Colvin says. 'You had to take a brown paper bag and draw a diagram of your foot ... and take it to the store. Can you imagine all of that in my mind? My head was just too full of black history, you know, the oppression that we went through. It felt like Sojourner Truth was on one side pushing me down, and Harriet Tubman was on the other side of me pushing me down. I couldn't get up.' Colvin is important because she challenged the law in court, one of four women plaintiffs in Browder v. Gayle, the court case that successfully overturned bus segregation laws in Montgomery and Alabama (NPR, Claudette Colvin)."
-
-          var eventTit = "1965 Bloody Sunday"
-          var evenPhoto = "bloody.jpg"
-          var evenPara = "On March 7, 1965, when then-25-year-old activist John Lewis led over 600 marchers across the Edmund Pettus Bridge in Selma, Alabama and faced brutal attacks by..."
-          var evenMore = "On March 7, 1965, when then-25-year-old activist John Lewis led over 600 marchers across the Edmund Pettus Bridge in Selma, Alabama and faced brutal attacks by oncoming state troopers, footage of the violence collectively shocked the nation and galvanized the fight against racial injustice. The passage of the landmark Civil Rights Act of 1964 months earlier had done little in some parts of the state to ensure African Americans of the basic right to vote. Perhaps no place was Jim Crow’s grip tighter than in Dallas County, Alabama, where African Americans made up more than half of the population, yet accounted for just 2 percent of registered voters. For months, the efforts of the Student Nonviolent Coordinating Committee (SNCC) to register Black voters in the county seat of Selma had been thwarted. In January 1965, Martin Luther King, Jr., came to the city and gave the backing of the Southern Christian Leadership Council (SCLC) to the cause. Peaceful demonstrations in Selma and surrounding communities resulted in the arrests of thousands. The rising racial tensions finally bubbled over into bloodshed in the nearby town of Marion on February 18, 1965, when state troopers clubbed protestors and fatally shot 26-year-old Jimmie Lee Jackson, an African American demonstrator trying to protect his mother, who was being struck by police."
-          
-          evenEvenmore = "In response, civil rights leaders planned to take their cause directly to Alabama Governor George Wallace on a 54-mile march from Selma to the state capital of Montgomery. Although Wallace ordered state troopers “to use whatever measures are necessary to prevent a march,” approximately 600 voting rights advocates set out from the Brown Chapel AME Church on Sunday, March 7. The demonstrators marched undisturbed through downtown Selma, where the ghosts of the past constantly permeated the present. As they began to cross the steel-arched bridge spanning the Alabama River, the marchers who gazed up could see the name of a Confederate general and reputed grand dragon of the Alabama Ku Klux Klan, Edmund Pettus, staring right back at them in big block letters emblazoned across the bridge’s crossbeam. Once Lewis and Williams reached the crest of the bridge, they saw trouble on the other side. A wall of state troopers, wearing white helmets and slapping billy clubs in their hands, stretched across Route 80 at the base of the span. Behind them were deputies of county sheriff Jim Clark, some on horseback, and dozens of white spectators waving Confederate flags and giddily anticipating a showdown. Troopers knocked the marchers to the ground. They struck them with sticks. Clouds of tear gas mixed with the screams of terrified marchers and the cheers of reveling bystanders. Deputies on horseback charged ahead and chased the gasping men, women and children back over the bridge as they swung clubs, whips and rubber tubing wrapped in barbed wire. Although forced back, the protestors did not fight back. The events in Selma galvanized public opinion and mobilized Congress to pass the Voting Rights Act, which President Johnson signed into law on August 6, 1965. Today, the bridge that served as the backdrop to “Bloody Sunday” still bears the name of a white supremacist, but now it is a symbolic civil rights landmark." 
-
-
-        }
-        if (currentDay == 25){
-          var first = "Tarana"
-          var last = "Burke"
-          var storyLink = "Y.PNG"
-          var photo = "tarana.jpg"
-          var para = "As an activist, community organizer, and executive, Tarana Burke has made quite an impact. Known as the founder of the ‘me too’ Movement, Burke’s hashtag has been used more than 19 million times on Twitter alone. Since then..."
-          var more = "As an activist, community organizer, and executive, Tarana Burke has made quite an impact. Known as the founder of the ‘me too’ Movement, Burke’s hashtag has been used more than 19 million times on Twitter alone. Since then, Burke has been widely recognized for her work, and was named Person of the Year by TIME Magazine in 2017. Tarana Burke was born on September 12, 1973 in The Bronx, New York. From a young age, Burke developed a passion for activism and community organizing. In the late 1980s, she joined an organization focused on youth development called 21st Century. Starting as a teenager, Burke led campaigns and launched initiatives around issues like housing inequality, racial discrimination, and economic injustice. Fueled by her passion for activism, she decided to attend Alabama State University, a Historically Black University (HBCU), to further develop her organizing skills. Burke’s advocacy and leadership continued throughout her college career. After graduating, she moved to Selma, Alabama to work for 21st Century. While working with this organization, Burke encountered many young women of color that were survivors of sexual violence and abuse. Also a survivor of sexual abuse, Burke identified with these young women and her efforts shifted towards supporting them. She began to find ways to provide resources, support and safe spaces for young women of color to share their stories. During the 2017 Harvey Weinstein sexual abuse scandal, Burke’s hashtag #metoo went viral. People all over the world began posting the phrase on their social media accounts to align with the movement. Following this surge of support, Burke became a global leader and helped to get a larger conversation started around sexual violence. According to the Pew Research Center, in just one year the #metoo hashtag was used more than 19 million times on Twitter alone. In 2017, TIME Magazine named Burke and other “Silence Breakers” as Person of the Year. The very next year, she attended the 75th Annual Golden Globe Awards as a guest of actress Michelle Williams. Burke has been internationally celebrated for her work and has been invited to speak across the country (via National Womens History Museum, Tarana Burke)."
-
-          var eventTit = "Voting Rights Act of 1965"
-          var evenPhoto = "voting.jpg"
-          var evenPara = "Lyndon B. Johnson assumed the presidency in November 1963 upon the assassination of President John F. Kennedy. In the presidential race of 1964, Johnson was officially elected..."
-          var evenMore = "Lyndon B. Johnson assumed the presidency in November 1963 upon the assassination of President John F. Kennedy. In the presidential race of 1964, Johnson was officially elected in a landslide victory and used this mandate to push for legislation he believed would improve the American way of life, such as stronger voting-rights laws. After the Civil War, the 15th Amendment, ratified in 1870, prohibited states from denying a male citizen the right to vote based on “race, color or previous condition of servitude.” Nevertheless, in the ensuing decades, various discriminatory practices were used to prevent African Americans, particularly those in the South, from exercising their right to vote. During the civil rights movement of the 1950s and 1960s, voting rights activists in the South were subjected to various forms of mistreatment and violence. One event that outraged many Americans occurred on March 7, 1965, when peaceful participants in a Selma to Montgomery march for voting rights were met by Alabama state troopers who attacked them with nightsticks, tear gas and whips after they refused to turn back. Black people attempting to vote often were told by election officials that they had gotten the date, time or polling place wrong, that they possessed insufficient literacy skills or that they had filled out an application incorrectly. Black people, whose population suffered a high rate of illiteracy due to centuries of oppression and poverty, often would be forced to take literacy tests, which they sometimes failed. Johnson also told Congress that voting officials, primarily in Southern states, had been known to force Black voters to “recite the entire Constitution or explain the most complex provisions of state laws,” a task most white voters would have been hard-pressed to accomplish. In some cases, even Black people with college degrees were turned away from the polls. The voting rights bill was passed in the U.S. Senate by a 77-19 vote on May 26, 1965." 
-          
-          evenEvenmore = "After debating the bill for more than a month, the U.S. House of Representatives passed the bill by a vote of 333-85 on July 9. Johnson signed the Voting Rights Act into law on August 6, 1965, with Martin Luther King, Jr. and other civil rights leaders present at the ceremony. The act banned the use of literacy tests, provided for federal oversight of voter registration in areas where less than 50 percent of the non-white population had not registered to vote, and authorized the U.S. attorney general to investigate the use of poll taxes in state and local elections. In 1964, the 24th Amendment made poll taxes illegal in federal elections; poll taxes in state elections were banned in 1966 by the U.S. Supreme Court (via History)."
-
-
-        }
-        if (currentDay == 26){
-          var first = "Malcolm"
-          var last = "X"
-          var storyLink = "Z.PNG"
-          var photo = "malcolm.jpg"
-          var para = "Remembering Malcolm X (exerpts from a speech in Los Angeles calling out police brutality): "
-          var more = 'Remembering Malcolm X (exerpts from a speech in Los Angeles calling out police brutality): "In order for you and me to devise some kind of method or strategy to offset some of the events, or repetition of the events that have taken place here in Los Angeles recently, we have to go to the root. We have to go to the cause. Dealing with the condition itself is not enough. We have to get to the cause of it all, or the root of it all. And it is because of our effort, toward getting straight to the root that people oft-times think we’re dealing in hate...We are oppressed. We are exploited. We are downtrodden. We are denied not only civil rights but human rights. So the only way we’re going to get some of this oppression and exploitation away from us or aside from us is come together against a common enemy...And I for one as a Muslim believe that the white man is intelligent enough, if he were made to realize how black people really feel, and how fed up we are, without that old compromising sweet-talk. Stop sweet-talking him. Tell him how you feel. Tell him what kind of Hell you been catching, and let him know that if he’s not ready to clean his house up, if he’s not ready to clean his house up…he shouldn’t have a house. It should catch on fire. And burn down."'
-
-          var eventTit = "The Rodney King Riots"
-          var evenPhoto = "rodney.jpg"
-          var evenPara = "In April of 1992, four Los Angeles policemen — three of them white — were acquitted of the savage beating of Rodney King, an African-American man. Caught on camera by..."
-          var evenMore = "In April of 1992, four Los Angeles policemen — three of them white — were acquitted of the savage beating of Rodney King, an African-American man. Caught on camera by a bystander, graphic video of the attack was broadcast into homes across the nation and worldwide. Fury over the acquittal — stoked by years of racial and economic inequality in the city — spilled over into the streets, resulting in five days of rioting in Los Angeles. It ignited a national conversation about racial and economic disparity and police use of force that continues today. A year earlier, in March 1991, King — who was on parole for robbery — had led police on a high-speed chase through Los Angeles; later, he was charged with driving under the influence. When police finally stopped him, King was ordered out of the car. Los Angeles Police Department officers then kicked him repeatedly and beat him with batons for a reported 15 minutes. The video showed that more than a dozen cops stood by, watching and commenting on the beating. King's injuries resulted in skull fractures, broken bones and teeth, and permanent brain damage. Ultimately, four officers were charged with excessive use of force. A year later, on April 29, 1992, a jury consisting of 12 residents from the distant suburbs of Ventura County — nine white, one Latino, one biracial, one Asian — found the four officers not guilty."
-          
-          evenEvenmore = "The reaction to the acquittal in South Central Los Angeles — now known just as South Los Angeles — was particularly violent. At the time, more than half of the population there was black. Tension had already been mounting in the neighborhood in the years leading up to the riots: the unemployment rate was about 50 percent, a drug epidemic was ravaging the area, and gang activity and violent crime were high. Another contributing factor: The same month as Rodney King's beating, a Korean store owner in South Los Angeles shot and killed a 15-year-old African-American girl named Latasha Harlins, who was accused of trying to steal orange juice. It was later discovered Harlins was clutching money to pay for the juice when she was killed. The store owner received probation and a $500 fine. At the same time, the community's anger was also deepening against Los Angeles police. African-Americans said they did not feel protected during times of need, but instead reported being harassed without cause. During the five days of unrest, there were more than 50 riot-related deaths — including 10 people who were shot and killed by LAPD officers and National Guardsmen. More than 2,000 people were injured, and nearly 6,000 alleged looters and arsonists were arrested. Slowly, residents returned to their everyday routines. But the Rodney King beating and the Los Angeles riots exploded out of social issues that still have not been resolved. That shocking, grainy video of his beating would be just the first of a long line of police brutality videos to go viral. That and issues such as racial profiling are as evident now — in places such as Baltimore, Ferguson and other inner cities — as they were in 1992 Los Angeles, says Armour, the USC professor and author of a book about what he calls the 1992 'uprising.' “Ain't nothing changed but the year it is,” he says (via NPR, When LA Erupted In Anger)."
-        }
-        if (currentDay == 27){
-          var first = "Jesse"
-          var last = "Owens"
-          var storyLink = "AA.PNG"
-          var photo = "jesse.jpg"
-          var para = "The most famous athlete of his time, his stunning triumph at the 1936 Olympic Games captivated the world even as it infuriated the Nazis. Despite the racial slurs he endured, Jesse Owens’ grace and athleticism..."
-          var more = "The most famous athlete of his time, his stunning triumph at the 1936 Olympic Games captivated the world even as it infuriated the Nazis. Despite the racial slurs he endured, Jesse Owens’ grace and athleticism rallied crowds across the globe. But when the four-time Olympic gold medalist returned home, he could not even ride in the front of a bus. James Cleveland Owens was the youngest of ten children, three girls and seven boys, born to Henry Cleveland Owens and Mary Emma Fitzgerald in Oakville, Alabama on September 12, 1913. J.C., as he was called, was nine years old when the family moved to Cleveland, Ohio for better opportunities, as part of the Great Migration, when 1.5 million African Americans left the segregated South. When his new teacher asked his name (to enter in her roll book), he said 'J.C.', but because of his strong Southern accent, she thought he said 'Jesse'. The name took, and he was known as Jesse Owens for the rest of his life. In 1936 African American sprinter Jesse Owens amazed the world by breaking Olympic records and winning four gold medals in Berlin, the headquarters of Hitler’s Nazi regime. However, in classic Olympic fashion, Owens became known not only for his athletic triumphs, but for his epic embrace with Aryan German competitor Luz Long and for the social barriers he broke down in the face of Hitler’s Nazi regime. Rather than protesting “Hitler’s Games,” Owens used his position in the spotlight to display the greatness and compassion that can be achieved outside of the political and cultural constraints of society. Owens was allowed to travel with and stay in the same hotels as whites, while at the time blacks in many parts of the United States were denied equal rights. After a New York City ticker-tape parade of Fifth Avenue in his honor, Owens had to ride the freight elevator at the Waldorf-Astoria to reach the reception honoring him. Owens said, 'Hitler didn’t snub me – it was FDR who snubbed me. The president didn’t even send me a telegram.' On the other hand, Hitler sent Owens a commemorative inscribed cabinet photograph of himself. Jesse Owens was never invited to the White House nor were honors bestowed upon him by President Franklin D. Roosevelt (FDR) or his successor Harry S. Truman during their terms. In 1955, President Dwight D. Eisenhower honored Owens by naming him an 'Ambassador of Sports.' (via Blackhistorymonth.org, Jessie Owens)"
-
-          var eventTit = "The Democratic National Convention of 1972"
-          var evenPhoto = "shirley.jpg"
-          var evenPara = "The Democratic National Convention was a tense scene in July of 1972. The gathering in Miami came just one month after burglars had broken into the Democratic headquarters at the Watergate..."
-          var evenMore = "The Democratic National Convention was a tense scene in July of 1972. The gathering in Miami came just one month after burglars had broken into the Democratic headquarters at the Watergate. The candidate who won the presidential nomination would be the one to take on President Richard Nixon, whom most people didn’t yet suspect of orchestrating the break-in. And for the first time, one of the candidates for the Democratic challenger was a Black woman. Shirley Chisholm had long been known for breaking barriers. Four years before, she’d become the first Black U.S. Congresswoman in history as a Representative of her New York district. When she launched her primary campaign in January of ‘72, she became the first Black person to seek the presidential nomination from one of the two major parties (the first woman was Margaret Chase Smith, who sought the Republican nomination in 1964). Her slogan was: “Unbought and Unbossed.” From the beginning, white male journalists and politicians didn’t take her bid seriously. Norman Mailer called her campaign “quixotic” in the Wall Street Journal, writing that “few politicians, Black or white, believe it.” Chisholm’s strongest supporters were Black women, but she struggled to win support from Black men and white women." 
-          
-          evenEvenmore = "Many of them endorsed Senator George McGovern because they felt he was more likely to win against Nixon. (McGovern won the nomination and lost to Nixon in a landslide.) Chisholm was realistic about her chances, and winning wasn’t necessarily her goal. Chisholm hoped that once she reached the convention, she could could use her coalition of delegates to negotiate with the winning candidate in favor of rights for women, Black Americans and Indigenous people. In July, Chisholm arrived at the Democratic convention with 152 delegates. This was more than those of senator Hubert Humphrey and Edward Muskie, who’d been two of the main challengers on the campaign trail (Humphrey was the Democratic candidate in 1968). Yet she was still in fourth place behind Senator George McGovern, Senator Henry Jackson, and the injured Wallace. McGovern was the clear winner with 1,729 delegates, and his lead gave him no incentive to negotiate with Chisholm for her 152. Even though she wasn’t able to use her delegates as leverage, Chisholm knew her candidacy was necessary in shifting the paradigm in which the only white men could be considered presidential material. Her presidential run was met with hostility from racists who vandalized her campaign materials with the n-word and men who told the Chicago Daily Defender she was playing “vaginal politics.” But her candidacy opened the door for other Black and female candidates to run for president.  She said many times, “I just want to show it can be done,” (via History, Shirley Chisholm)."
-
-
-        }
-        if (currentDay == 28){
-          var first = "Rose"
-          var last = "Robinson"
-          var storyLink = "BB.PNG"
-          var photo = "rose.jpg"
-          var para = "Rose was a  high jumper from Chicago. She was a member of the Congress of Racial Equality. But as an athlete, once the Cold War kicks off and she understands that the United States government is using her as a black person ..."
-          var more = "Rose was a  high jumper from Chicago. She was a member of the Congress of Racial Equality. But as an athlete, once the Cold War kicks off and she understands that the United States government is using her as a black person to say something about democracy that's essentially not true, she pulls away from the system. So in 1959, when the United States and Soviets agree to have track meets, these type of goodwill games to promote peace, she qualifies to go but refuses to go. Rose is hyper-critical of these trips and she’s loud about it. She’s giving interviews to 'The Defender'.' She’s giving interviews to Jet and she says, 'I’m not going to be a pawn. I’m not going to be a tool in this propaganda effort. And I’m not going to use my tax dollars to support this war machine. I’m not doing it. You’re not going to use my body to do that.' She also - it's noted in the press that during the Pan Am Games in America, she doesn't stand up for the national anthem. And then in 1960, she is actually arrested for refusing to pay taxes. And she goes on a hunger strike. This is what starts getting a lot of coverage. If you look at some pictures of her, she has to be carried into the courtroom, carried to her jail cell, because she’s become so frail. Very soon some pacifist groups—American Friends, some of the anti-war groups—start picketing on her behalf, in front of the courthouse, amplifying her hunger strike. So certainly, a lot of the times, as she’s remembered, is as a pacifist. She’s in jail for a long time because every time they bring her in front of the judge, they say, 'OK, stop your hunger strike, pay your fine, go home.' And she refuses to capitulate at all, which is why she keeps ending up in the jail cell. And when she finally gets released from jail, she doesn’t stop being vocal and active, but her athletic career definitely wanes. Part of it is that she physically is greatly diminished from her protest. Then she fully steps away from sport. How she’s remembered, is as a pacifist; we actually kind of lose all sense of her athletic career, at all (via The Nation, Rose Robinson)."
-
-          var eventTit = "The Modern Civil Rights Protest"
-          var evenPhoto = "nfl.jpg"
-          var evenPara = "Excerpts from the NYT Opinion Piece: Waiting for a Perfect Protest:"
-          var evenMore = "Excerpts from the NYT Opinion Piece: Waiting for a Perfect Protest: Even mainstream media outlets that typically fact-check the president seem to have subtly bought into Mr. Trump’s “both sides” narrative regarding right- and left-wing extremism. They’ve run headlines that highlight small violent skirmishes while ignoring the thousands who marched and protested peacefully, to say nothing of the injustices that inspired the protests. Our complaint here is not about the right-wing media outlets that we know will continue to delegitimize anti-racist protest in any form — whether it’s peacefully sitting during the national anthem, marching in the streets, staging boycotts or simply making the apparently radical claim that “black lives matter.” Rather, our concern at this moment is with our moderate brothers and sisters who voice support for the cause of racial justice but simultaneously cling to paralyzingly unrealistic standards when it comes to what protest should look like. National polling from the 1960s shows that even during that celebrated “golden age” of nonviolent protest, most Americans were against marches and demonstrations." 
-
-          evenEvenmore = " A 1961 Gallup poll revealed that 57 percent of the public thought that lunch counter sit-ins and other demonstrations would hurt integration efforts. A 1963 poll showed that 60 percent had an unfavorable feeling toward the planned March on Washington, where Dr. King gave his “I Have a Dream” speech. A year later, 74 percent said that since black people had made some progress, they should stop their demonstrations; and by 1969, 74 percent said that marching, picketing and demonstrations were hurting the civil rights cause. As for Dr. King personally, the figure who current moderates most readily point to as a model, 50 percent of people polled in 1966 thought that he was hurting the civil rights movement; only 36 percent believed he was helping. The civil rights movement was messy, disorderly, confrontational and yes, sometimes violent. Those standing on the sidelines of the current racial-justice movement, waiting for a pristine or flawless exercise of righteous protest, will have a long wait. They, we suspect, will be this generation’s version of the millions who claim that they were one of the thousands who marched with Dr. King. Each of us should realize that what we do now is most likely what we would have done during those celebrated protests 50 years ago. Rather than critique from afar, come out of your homes, follow those who are closest to the pain, and help us to redeem this country, and yourselves, in the process (read the full opinion piece at NYT, Waiting for a Perfect Protest)."
-        }
-
-
-        var myObject = {
-          firstName: first,
-          lastName: last,
-          fullName: function() {
-            return this.firstName + " " + this.lastName;
-          }
-        }
-
-        var myStory = {
-          path: "bhmAssets/stories/",
-          storyName: storyLink,
-          fullStory: function() {
-            return this.path + this.storyName;
-          }
-        }
-
-        var myText = {
-          blurb: para,
-          fullText: function() {
-            return this.blurb;
-          }
-        }
-        var myPic = { 
-          path: "bhmAssets/spotPhotos/",
-          picName: photo,
-          fullPic: function() {
-            return this.path + this.picName;
-          }
-        }
-
-        var myEvenObject = {
-          firstName: eventTit,
-          fullEvenName: function() {
-            return this.firstName;
-          }
-        }
-
-        var myEvenText = {
-          blurb: evenPara,
-          fullEvenText: function() {
-            return this.blurb;
-          }
-        }
-
-        var myEvenPic = { 
-          path: "bhmAssets/eventPhotos/",
-          picName: evenPhoto,
-          fullEvenPic: function() {
-            return this.path + this.picName;
-          }
-        }
-
-        var spotlight = {
-          spotlight: starName,
-          fullSpotlight: function() {
-            return this.spotlight;
-          }
-        }
-
-        var myStar = { 
-          path: "bhmAssets/stars/",
-          stars: starPhoto,
-          fullStar: function() {
-            return this.path + this.stars;
-          }
-        }
-
-        var mystarBlurb = { 
-          starBlurb: starBlurb,
-          fullStarBlurb: function() {
-            return this.starBlurb;
-          }
-        }
-
-        var orgNamer = {
-          orgName: orgName,
-          fullOrgName: function() {
-            return this.orgName;
-          }
-        }
-
-        var myOrg = { 
-          path: "bhmAssets/orgs/",
-          orgPhoto: orgPhoto,
-          fullOrg: function() {
-            return this.path + this.orgPhoto;
-          }
-        }
-
-        var myOrgBlurb = { 
-          orgBlurb: orgBlurb,
-          fullOrgBlurb: function() {
-            return this.orgBlurb;
-          }
-        }
-
-        var myOrgStories = { 
-          path: "bhmAssets/orgStories/",
-          orgLink: orgLink,
-          fullOrgStory: function() {
-            return this.path + this.orgLink;
-          }
-        }
-
-        a = myStory.fullStory();
-        x = myObject.fullName();
-        y = myPic.fullPic();
-        z = myText.fullText();
-
-        xx = myEvenObject.fullEvenName();
-        yy = myEvenPic.fullEvenPic();
-        zz = myEvenText.fullEvenText();
-
-        b = spotlight.fullSpotlight();
-        c = myStar.fullStar();
-        d = mystarBlurb.fullStarBlurb();
-        e = orgNamer.fullOrgName();
-        f = myOrg.fullOrg();
-        g = myOrgBlurb.fullOrgBlurb();
-        h = myOrgStories.fullOrgStory();
-
-        document.getElementById("name").innerHTML = x;
-        document.getElementById("story").href = a;
-        document.getElementById("story2").href = a;
-        document.getElementById("pic").src = y;
-        document.getElementById("text").innerHTML = z;
-        document.getElementById("evenName").innerHTML = xx;
-        document.getElementById("evenPic").src = yy;
-        document.getElementById("evenText").innerHTML = zz; 
-
-        document.getElementById("starName").innerHTML = b;
-        document.getElementById("starPic").src = c;
-        document.getElementById("starBlurb").innerHTML = d;
-        document.getElementById("orgName").innerHTML = e;
-        document.getElementById("orgPic").src = f;
-        document.getElementById("orgBlurb").innerHTML = g;
-        document.getElementById("donateStory").href = h;
-
-        function myFunction() {
-          
-          var x = document.getElementById("text");
-          var y = document.getElementById("theButt");
-          if (x.innerHTML == para){
-            x.innerHTML = more;
-            y.innerHTML = "Less";
-          } else {
-            x.innerHTML = para;
-            y.innerHTML = "More";
-          }
-        }
-
-        function myFunction2() {
-          
-          var x = document.getElementById("evenText");
-          var y = document.getElementById("theButt2");
-          if (x.innerHTML == evenPara){
-            x.innerHTML = evenMore + "<br> <br>" + evenEvenmore;
-            y.innerHTML = "Less";
-          } else {
-            x.innerHTML = evenPara;
-            y.innerHTML = "More";
-          }
-        }
+        <div id = "smallSpace"></div>
+        <p class="miniName" id="starName"></p>
         
-      </script>
+        <div id="blurbContainer">
+          <p class="regText" id="starBlurb"></p>
+        </div>
+
+        <div id = "space"></div>
+
+        <h1 id="regTitle">Organization of the Week</h1>
+        <div id = "smallSpace"></div>
+        <img id="orgPic" src="">
+        <br><br>
+        <div id = "smallSpace"></div>
+        <p class="miniName" id="orgName"></p>
+
+        <div id="blurbContainer">
+          <p class="regText" id="orgBlurb"></p>
+        </div>
+
+        <a class="regText" id="donateStory" href="" download>Download an IG Story graphic to collect donations</a>
+      </div>
+
+      <br><br>
 
 
-      
+      <div id = "space"></div>
+      <p class = "bigger" id="regTitle">Figure of the Day</p>
 
+      <div>
+        <img id="pic" src="">
+        <br>
+        <div id = "smallSpace"></div>
+        <p class = "smallerTitle" id="name"></p>
 
+        <div id="blurbContainer">
+          <p class="regText" class = "regText" id="text"></p>
+          <div id = "smallSpace"></div>
+          <button id="theButt" class="daButt" onclick="myFunction()">More</button>
+        </div>
 
+        <br>
+        
+        <div id = "space"></div>
+        <p class = "bigger" id="regTitle"">Event of the Day</p>
+        <img id="evenPic" src="">
+        <br>
+        <div id = "smallSpace"></div>
+        <p class = "smallerTitle" id="evenName"></p>
 
+        <div id="blurbContainer">
+          <p class="regText" id="evenText"></p>
+          <div id = "smallSpace"></div>
+          <button id="theButt2" class="daButt" onclick="myFunction2()">More</button>
+        </div>
+
+        <br>
+
+      </div>
+
+      <a class="regText" id="story2" href="" download>Download daily IG story graphic</a>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
-  </body>
+  </div>
+</body>
 
 </html>
