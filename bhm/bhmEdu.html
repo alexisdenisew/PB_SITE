@@ -1,442 +1,569 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <script src="accScript.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <title>Black History Month</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bhmStyle.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  
 
-  <body>
-    <div id = "insides">
+<head>
+  <!--   favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest"> 
+  
+  <!--   Script -->
+  <script src="script.js" defer></script>
+
+  <!--   Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!--   General -->
+  <meta charset="UTF-8">
+  <title>Black History Month</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bhmStyle.css" rel="stylesheet" type="text/css" />
+
+  <!--   Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind+Madurai&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div id="ent">
+    <div class="center">
       <br>
-      <img id ="bhmTit" src ="bhmAssets/bigTit.png">
+      <img id="bhmTit" src="bhmAssets/bigTit.png">
       <br>
       <br>
 
       <div class="scrollmenu">
-        <a class= "inactiveLink" href="bhm.html">Home</a>
-        <a class= "inactiveLink" id = "story" href="" download>Daily IG Graphic</a>
-        <a class= "inactiveLink" href="bhmOrgs.html">Organizations</a>
-        <a class= "activeLink" href="bhmEdu.html">Education</a>
-        <a class= "inactiveLink" href="bhmAction.html">Action</a>
-        <a class= "inactiveLink" href="bhmFigures.html">Figures Archive</a>
-        <a class= "inactiveLink" href="bhmEvents.html">Events Archive</a>
-        <a class= "inactiveLink" href="index.html">PB Resources</a>
+        <a class="inactiveLink" href="bhm.html">Home</a>
+        <a class="inactiveLink" id="story" href="" download>Daily IG Graphic</a>
+        <a class="inactiveLink" href="bhmOrgs.html">Organizations</a>
+        <a class="activeLink" href="bhmEdu.html">Education</a>
+        <a class="inactiveLink" href="bhmAction.html">Action</a>
+        <a class="inactiveLink" href="bhmFigures.html">Figures Archive</a>
+        <a class="inactiveLink" href="bhmEvents.html">Events Archive</a>
+        <a class="inactiveLink" href="../index.html">PB Resources</a>
       </div>
       <br>
 
-<p id="name2">Education</p>
-<p id = "exp">Podcasts</p>
-
-<div id= "archiveSet">
-<a id= "namePlaqueLink" href = "https://www.npr.org/sections/codeswitch/" target = "_blank">1. NPR's Code Switch: Race in your Face</a>
-<br>
-
-<a id= "namePlaqueLink" href = "https://serialpodcast.org/" target = "_blank">2. Serial: Serial is heading back to court. This time, in Cleveland.</a>
-<br>
-
-<a id= "namePlaqueLink" href = "https://open.spotify.com/show/3mA5eAmccSJ87mtqAtsOwl?si=XOn8PMJKRP6yT8viEih_5w" target = "_blank">3. Clueless with Alexis: From college, to computer science and engineering, to social justice</a>
-</div>
-
-<p id = "exp">Books</p>
-
-
-<div id= "archiveSet">
-
-  <p id = "exp">Non Fiction</p>
-
-<a id = "namePlaqueLink" href="https://www.penguinrandomhouse.com/books/95388/savage-inequalities-by-jonathan-kozol/" target = "_blank">1. Savage Inequalities</a>
-      <br>
-    <a id = "namePlaqueLink" href="https://www.penguinrandomhouse.com/books/318941/the-broken-ladder-by-keith-payne/" target = "_blank">2. The Broken Ladder</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://robindiangelo.com/publications/" target = "_blank">3. White Fragility</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://newjimcrow.com/" target = "_blank">4. The New Jim Crow</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://books.google.com/books/about/Democracy_in_Black.html?id=xt9hCAAAQBAJ&source=kp_book_description" target = "_blank">5. Democracy in Black</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.epi.org/publication/the-color-of-law-a-forgotten-history-of-how-our-government-segregated-america/" target = "_blank">6. The Color of Law</a>
-      <br>
-
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Fire-Next-Time-James-Baldwin/dp/067974472X" target = "_blank">7. The Fire Next Time </a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/We-Were-Eight-Years-Power/dp/0399590560" target = "_blank">8. We Were Eight Years in Power</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Source-Self-Regard-Selected-Speeches-Meditations/dp/0525521038" target = "_blank">9. The Source of Self Regard</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Killing-Black-Body-Reproduction-Meaning/dp/0679758690" target = "_blank">10. Killing the Black Body</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.penguinrandomhouse.com/books/537978/policing-the-black-man-by-edited-and-with-an-introduction-by-angela-j-davis/" target = "_blank">11. Policing the Black Man</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Longer-Talking-White-People-About-ebook/dp/B06WWPX2YF" target = "_blank">12. Why I'm No Longer Talking to White People About Race</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/American-Prison-Reporters-Undercover-Punishment/dp/0735223580" target = "_blank">13. American Prison</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Stony-Road-Reconstruction-White-Supremacy/dp/0525559531" target = "_blank">14. Stony the Road</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Democracy-Black-Still-Enslaves-American-ebook/dp/B00WCXJIN8" target = "_blank">15. Democracy in Black</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.penguinrandomhouse.com/books/198292/sister-outsider-by-audre-lorde/" target = "_blank">16. Sister Outsider</a>
-      <br>
-
-<p id = "exp">Play</p>
-
-
-      <a id = "namePlaqueLink" href="https://www.britannica.com/topic/Fences" target = "_blank">1. Fences</a>
-      <br>
-
-    <p id = "exp">Fiction</p>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Underground-Railroad-Pulitzer-Winner-National/dp/0385542364" target = "_blank">1. The Underground Railroad</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Beloved-Toni-Morrison/dp/1400033411" target = "_blank">2. Beloved</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.penguinrandomhouse.com/books/117662/the-bluest-eye-by-toni-morrison/" target = "_blank">3. The Bluest Eye</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Color-Purple-Alice-Walker/dp/0156028352" target = "_blank">4. The Color Purple</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Homegoing-Yaa-Gyasi/dp/1101971061" target = "_blank">5. Homegoing</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Americanah-Chimamanda-Ngozi-Adichie/dp/0307455920" target = "_blank">6. Americanah</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.goodreads.com/book/show/38463.If_Beale_Street_Could_Talk" target = "_blank">7. If Beale Street Could Talk</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Their-Eyes-Were-Watching-God/dp/0060838671" target = "_blank">8. Their Eyes Were Watching God</a>
-      <br>
-
-
-<p id = "exp">Biography</p>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Blood-My-Eye-George-Jackson/dp/0933121237" target = "_blank">1. Blood in My Eye</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Fire-Next-Time-James-Baldwin/dp/067974472X" target = "_blank">2. The Fire Next Time</a>
-      <br>
-
-<p id = "exp">Autobiography</p>
-
-      <a id = "namePlaqueLink" href="https://www.ibramxkendi.com/how-to-be-an-antiracist-1" target = "_blank">1. How to Be an Antiracist</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Just-Mercy-Story-Justice-Redemption/dp/081298496X" target = "_blank">2. Just Mercy</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Autobiography-Malcolm-Told-Alex-Haley/dp/0345350685" target = "_blank">3. The Autobiography of Malcom X</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Between-World-Me-Ta-Nehisi-Coates/dp/0451482212" target = "_blank">4. Between the World and Me</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Portable-Frederick-Douglass-Penguin-Classics/dp/0143106813" target = "_blank">5. The Portable Fredrick Douglass</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Know-Why-Caged-Bird-Sings/dp/0345514408" target = "_blank">6. I Know Why the Caged Bird Sings</a>
-
-<p id = "exp">Poetry</p>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Olio-Tyehimba-Jess/dp/1940696208" target = "_blank">1. Olio</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Aunt-Jemima-nailgun-Aziza-Barnes-ebook/dp/B01MZC3LXJ" target = "_blank">2. Me Aunt Jemima and the Nailgun</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.graywolfpress.org/books/life-mars" target = "_blank">3. Life on Mars</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Complete-Collected-Poems-Maya-Angelou/dp/067942895X" target = "_blank">4. The Complete Collected Poems of Maya Angelou</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Citizen-American-Lyric-Claudia-Rankine/dp/1555976905" target = "_blank">5. Citizen: An American Lyric</a>
-
-
-<p id = "exp">Black-Owned Book Stores (Online Orders Accepted)</p>
-
-      <a id = "namePlaqueLink" href="http://www.thelitbar.com/" target = "_blank">1. The Lit Bar (Bronx, NY)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.cafeconlibrosbk.com/" target = "_blank">2. Cafe Con Libros Feminist Bookstore (Brooklyn, NY)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://sistahscifi.com/" target = "_blank">3. Sistah Scifi</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.unclebobbies.com/" target = "_blank">4. Uncle Bobbie's (Phila., PA)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.harriettsbookshop.com/" target = "_blank">5. Harriet's Bookshop (Phila., PA)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.loyaltybookstores.com/" target = "_blank">6. Loyalty Bookstore (Washington, D.C.)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.mahoganybooks.com/" target = "_blank">7. Mahogany Books (Washington, D.C.)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.events.sankofa.com/books" target = "_blank">8. Sankofa Video Books & Café (Washington, DC)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.semicolonchi.com/" target = "_blank">9. Semicolon Bookstore (Chicago, IL)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.liberationstationbookstore.com/" target = "_blank">10. Liberation Station Bookstore (Durham, NC)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.shelvesbookstore.com/" target = "_blank">11. Shelves Bookstore (Charlotte, NC)</a>
-      <br>
-      <a id = "namePlaqueLink" href="http://www.sourcebooksellers.com/" target = "_blank">12. Source Booksellers (Detroit, MI)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.esowonbookstore.com/" target = "_blank">13. Eso Won Bookstore (Los Angeles, CA)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://blackpearlbookstore.com/" target = "_blank">14. Black Pearl Books (Austin, TX)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://keybookstore.com/shop/" target = "_blank">15. The Key Bookstore (Hartford, CT)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://pyramidbooks.indielite.org/" target = "_blank">16. Pyramid Books (Boynton Beach, FL)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.booksandcranniesva.com/" target = "_blank">17. Books and Crannies (Martinsville, VA)</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://bookshop.org/shop/fultonstreet" target = "_blank">18. Fulton Street Books and Coffee (Tulsa, OK)</a>
-      <br>
-
-</div>
-
-<p id = "exp">Movies</p>
-
-<div id = "archiveSet">
-
-
-<a id = "namePlaqueLink" href="https://justmercy.eji.org/" target = "_blank">1. Just Mercy</a>
-      <br>
-
-    <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt7349662//" target = "_blank">2. Blackkklansman</a>
-      <br>
-
-
-      <a id = "namePlaqueLink" href="http://www.avaduvernay.com/selma" target = "_blank">3. Selma</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt3850214/" target = "_blank">4. Dope</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt6857112/" target = "_blank">5. US</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt7125860/" target = "_blank">6. If Beale Street Could Talk</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt2671706/" target = "_blank">7. Fences</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt4846340/" target = "_blank">8. Hidden Figures</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://a24films.com/films/the-last-black-man-in-san-francisco" target = "_blank">9. Last Black Man in San Francisco</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt0101507/" target = "_blank">10. Boyz N The Hood</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt4975722/" target = "_blank">11. Moonlight</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt5052448/" target = "_blank">12. Get Out</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.amazon.com/Do-Right-Thing-Ossie-Davis/dp/B000I9VOGW" target = "_blank">13. Do the Right Thing</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt1233334/" target = "_blank">14. Pariah</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt0088939/" target = "_blank">15. The Color Purple</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt0118540/" target = "_blank">16. 4 Little Girls</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt1213585/" target = "_blank">17. Good Hair</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt5688932/" target = "_blank">18. Sorry to Bother You</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt0104797/" target = "_blank">19. Malcolm X</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt0115632/" target = "_blank">20. Basquiat</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.rottentomatoes.com/m/da_5_bloods" target = "_blank">21. Da 5 Bloods</a>
-      <br>
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt5895028/" target = "_blank">22. 13th</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt9784798/" target = "_blank">23. Judas and the Black Messiah</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt10612922/" target = "_blank">24. One Night in Miami</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.netflix.com/title/80144402" target = "_blank">25. I Am Not Your Negro</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt5390504/" target = "_blank">26. Detroit</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt1070874/" target = "_blank">27. The Trial of the Chicago 7 </a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt1327773/" target = "_blank">28. The Butler</a>
-      <br>
-
-      <a id = "namePlaqueLink" href="https://www.imdb.com/title/tt2334649/" target = "_blank">29. Fruitvale Station</a>
-      <br>
-</div>
-
-<script type="text/javascript">
-  let currentDay = (new Date).getDate()
-  if (currentDay == 1 || currentDay == 31){
-    var storyLink = "A.PNG"
-
-  }
-  if (currentDay == 2){
-    var storyLink = "B.PNG"
-
-  }
-  if (currentDay == 3){
-    var storyLink = "C.PNG"
-
-  }
-  if (currentDay == 4){
-    var storyLink = "D.PNG"
-
-  }
-  if (currentDay == 5){
-    var storyLink = "E.PNG"
-
-  }
-  if (currentDay == 6){
-    var storyLink = "F.PNG"
-
-  }
-  if (currentDay == 7){
-    var storyLink = "G.PNG"
-
-  }
-  if (currentDay == 8){
-    var storyLink = "H.PNG"
-
-  }
-  if (currentDay == 9){
-    var storyLink = "I.PNG"
-
-  }
-  if (currentDay == 10){
-    var storyLink = "J.PNG"
-
-  }
-  if (currentDay == 11){
-    var storyLink = "K.PNG"
-
-  }
-  if (currentDay == 12){
-    var storyLink = "L.PNG"
-
-  }
-  if (currentDay == 13){
-    var storyLink = "M.PNG"
-
-  }
-  if (currentDay == 14){
-    var storyLink = "N.PNG"
-
-  }
-  if (currentDay == 15){
-    var storyLink = "O.PNG"
-
-  }
-  if (currentDay == 16){
-    var storyLink = "P.PNG"
-
-  }
-  if (currentDay == 17){
-    var storyLink = "Q.PNG"
-
-  }
-  if (currentDay == 18){
-    var storyLink = "R.PNG"
-
-  }
-  if (currentDay == 19){
-    var storyLink = "S.PNG"
-
-  }
-  if (currentDay == 20){
-    var storyLink = "T.PNG"
-
-  }
-  if (currentDay == 21){
-    var storyLink = "U.PNG"
-
-  }
-  if (currentDay == 22){
-    var storyLink = "V.PNG"
-
-  }
-
-  if (currentDay == 23){
-    var storyLink = "W.PNG"
-
-  }
-
-if (currentDay == 24){
-    var storyLink = "X.PNG"
-
-  }
-
-  if (currentDay == 25){
-    var storyLink = "Y.PNG"
-
-  }
-
-if (currentDay == 26){
-    var storyLink = "Z.PNG"
-
-  }
-
-
-if (currentDay == 27){
-    var storyLink = "AA.PNG"
-
-  }
-
-  if (currentDay == 28){
-    var storyLink = "BB.PNG"
-
-  }
-  var myStory = {
-            path: "bhmAssets/stories/",
-            storyName: storyLink,
-            fullStory: function() {
-              return this.path + this.storyName;
-            }
-          }
-
-  a = myStory.fullStory();
-  document.getElementById("story").href = a;
-
-</script>
-
-    
-
-
-
-
-
+      <div id="space"></div>
+      <p class="bigger" id="regTitle">Education</p>
+      <p class="regText">This year we've compiled a list of podcast episodes, books, and moves that celebrate and
+        challenge our view of Black History. Whether you challenge yourself to watch a new movie or listen to a new podcast episode
+        everyday, you can make this Black History Month an educational one!</p>
+      <div id="smallSpace"></div>
+    </div>
+
+    <button class="actButt" id="starName" onclick="showDivOne()">Podcast Episodes</button>
+    <div id="weekOne">
+      <div id="space"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/1a7lkqr2QwXua74rahC8NN" target="_blank">1. Just a Word - Southlake</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Southlake’s leaders try to bring the community together in the weeks after the viral N-word video. But inside the halls of Carroll High, Black students aren't feeling heard. In the midst of the turmoil, 17-year-old Raven Rolle secretly records her emotional showdown in the principal’s office with a white student who insists that anyone should be able to say the N-word. Meanwhile, the school district is forging ahead with a plan to address racist bullying, but before officials can release it, a pandemic and a national racial reckoning throws everything off track. A friend of Raven’s, Nikki Olaleye, organizes a Black Lives Matter rally in town square—and fear takes hold in Southlake.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/4gyiMuSffFaxveqWWs2kCO" target="_blank">2. Under the Color of Law - On Our Watch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">One of the first police shootings to be captured on cell phone, millions saw Bay Area Rapid Transit police Officer Johannes Mehserle fire a single, fatal gunshot into Oscar Grant's back as the 22-year-old lay face down on the train station platform. Now, a lawsuit filed by NPR member station KQED has forced BART to comply with California's 2019 police transparency law, and release never-before-heard tapes from inside that investigation.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/7ldb3owIdSlLcq5PRfDUz0" target="_blank">3. Percieved Threat - On Our Watch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">A 16-year-old Black kid walks into a gas station in Stockton, Calif. to buy gummy worms for his little sister. When the teen gets in an argument with the clerk over a damaged dollar bill, a white officer in plainclothes decides to intervene — with force. In the fourth episode of On Our Watch, we trace the ripple effects of this incident over the next 10 years in a department trying to address racism and bias. But can the chief's efforts at truth and reconciliation work when the accountability process seems to ignore the truth?</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/4sV2r6gk7UrLtk8GPJlYk3" target="_blank">4. Making Revolution Irresistable - Louder Than a Riot</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Yo Gotti grew up in Memphis just across the state line from Mississippi State Penitentiary (aka Parchman) — so this year, when he learned about the squalor its inmates were living in, he wanted to help. Gotti enlisted Jay-Z and Roc Nation to sue the department of corrections for human rights violations. In our finale episode, we ask how much celebrity activism really helps the prison reform movement, and sit down with rapper Noname and organizer Mariame Kaba to consider the alternate solutions proposed by prison abolition.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/7z0ni0j7KrDBCL1HmVoUiW" target="_blank">5. 'Prison to Prison Pipeline': Isis Tha Savior - Louder Than a Riot</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Hip-hop loves a hero's come-up, but the culture often has a hard time seeing women as heroes. Two years ago, when Louder Than A Riot editor Chiquita Paschal discovered she had a sister — who rapped — she quickly saw how that double standard can take shape. Chiquita's sister is Mary Enoch Elizabeth Baxter, aka Philly rapper Isis Tha Saviour. In this episode, Chiquita takes us on Mary's hero's journey — from her time as a ward of the state to finding her voice in rap. And together, they delve into incarceration's ripple effects on families like theirs, and how hip-hop can help transform trauma into freedom.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/4WqVkij9WxfT6aAjcLC9MA" target="_blank">6. Lyrics Still on Trial: Young Thug and Gunna - Louder Than a Riot</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Last week, two of Atlanta's biggest rappers Young Thug and Gunna were arrested under the RICO Act. The DA charged their crew YSL as a gang and the indictment read more like a lyrical analysis than a police report. If this sounds familiar, it's because these same tactics were used in cases we explored with DJ Drama, Bobby Shmurda, and Mac Phipps. In this bonus episode, we speak with NPR's Ayesha Rascoe about the impact of YSL, and how RICO is being used against rap crews.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/3o2DQI0Ojq5zcf5fPIOXpE" target="_blank">7. Old School - School Colors</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Bedford-Stuyvesant, Brooklyn is one of the most iconic historically Black neighborhoods in the United States. But Bed-Stuy is changing. Fifty years ago, schools in Bed-Stuy's District 16 were so overcrowded that students went to school in shifts. Today, they're half-empty. Why?In trying to answer that question, we discovered that the biggest, oldest questions we have as a country about race, class, and power have been tested in the schools of Central Brooklyn for as long as there have been Black children here. And that's a long, long time.In this episode, we visit the site of a free Black settlement in Brooklyn founded in 1838; speak to one of the first Black principals in New York City; and find out why half a million students mobilized in support of school integration couldn’t force the Board of Education to produce a citywide plan.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/1KEkasrW7vdCf2jWkZt302" target="_blank">8. Power to the People - School Colors</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In the late 1960s, the Central Brooklyn neighborhood of Ocean Hill-Brownsville was at the center of a bold experiment in community control of public schools. But as Black and Puerto Rican parents in Ocean Hill-Brownsville tried to exercise power over their schools, they collided headfirst with the teachers’ union — leading to the longest teachers’ strike in American history, 51 years ago this fall.What started as a local pilot project turned into one of the most divisive racial confrontations ever witnessed in New York City. Ocean Hill-Brownsville made the national news for months, shattered political coalitions and created new ones, and fundamentally shaped the city we live in today.But as the strike shut down schools citywide, Ocean Hill-Brownsville mobilized to keep their schools open — and prove to the world that Black people could educate their own children and run their own institutions successfully. In the process, they inspired a particular brand of defiant, independent, and intensely proud Black activism that would define political life in Central Brooklyn for generations.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/2QkRODoChgBkdhkwWhEvQZ" target="_blank">9. Through the Looking Glass - Floodlines</a>
+      <div id="smallSpace"></div>
+      <p id="regText">The story of an unnatural disaster. Hosted by Vann R. Newkirk II. Part III: A universe of rumor and misinformation plays out on television.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/6BM0QxiH8CIhITr7NgKBLB" target="_blank">10. The Song - Uncivil</a>
+      <div id="smallSpace"></div>
+      <p id="regText">We dig deep into the anthem of the Confederacy, and learn that almost everything we thought we knew about it... was wrong. Learn more about your ad choices.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/0R4bV9jOh86qIZbUGi8ivf" target="_blank">11. Nikole Hannah-Jones and the war over history</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In this special episode from our friends at Throughline, co-hosts Rund Abdelfatah and Ramtin Arablouei explore the war over history with Nikole Hannah-Jones, an investigative journalist at The New York Times and the creator of the 1619 Project. They discuss how the 1619 Project became one of the most dramatic battlegrounds in the fight over our country's historical narratives — and whether an agreed upon history could ever exist.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/06JC81WGVXdJs8cRuQbbCI" target="_blank">12. The History and Meaning of Juneteenth</a>
+      <div id="smallSpace"></div>
+      <p id="regText">After 155 years, Juneteenth, a celebration of the emancipation of enslaved Americans, is being acknowledged as a holiday by corporations and state governments across the country. Today, we consider why, throughout its history, Juneteenth has gained prominence at moments of pain in the struggle for black liberation in America. We also ask: What does freedom mean now? Guest: Dr. Daina Ramey Berry, a professor of history at the University of Texas at Austin. For more information on today’s episode, visit nytimes.com/thedaily Background reading: In a project examining the history and import of Juneteenth, we ask: What is freedom in America?Opal Lee, 93, an activist and lifelong Texan, has campaigned to make June 19 a national holiday for years. This is her vision for honoring the emancipation of enslaved Americans.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/242PbqVzjvw3TYjWcNVZtP" target="_blank">13. How the Other Half Eats - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">How do race and class affect the way we eat? What does it mean to "eat like a white person?" And if food inequality isn't about "food deserts," what is it really about? We're getting into all those questions and more with Priya Fielding-Singh, author of the book, How the Other Half Eats.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="" target="_blank">14. The Folk Devil Made Me Do It - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">What moral panics reveal about the ongoing freakout over critical race theory in schools.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/6n3PqaRXZi0JMX4Z7RCwOZ" target="_blank">15. You've Got Some Gauls - Serial</a>
+      <div id="smallSpace"></div>
+      <p id="regText">When a judge believes he knows you better than you know yourself.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/17KZLNkzHZwP8N9J13MHky" target="_blank">16. You in the Red Shirt - Serial</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Life after you put a cop in jail.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/7tdmgpEEvcAmuqnXu4kttC" target="_blank">17. The Book of Statuses - Nice White Parents</a>
+      <div id="smallSpace"></div>
+      <p id="regText">It’s 2015 and one Brooklyn middle school is about to receive a huge influx of new students. Reporter Chana Joffe Walt follows what happens when the School for International Studies’s 6th grade class swells from 30 mostly Latino, Black and Middle Eastern students, to a class of 103 —an influx almost entirely driven by white families. Everyone wants “what’s best for the school” but it becomes clear that they don’t share the same vision of what “best” means.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/4MVLR1eFAphlPLbcJweW27" target="_blank">18. I Still Believe in It - Nice White Parents</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Chana Joffe-Walt searches the New York City Board of Education archives for more information about the School for International Studies, which was originally called I.S. 293. In the process, she finds a folder of letters written in 1963 by mostly white families in Cobble Hill, Brooklyn. They are asking for the board to change the proposed construction of the school to a site where it would be more likely to be racially integrated. It’s less than a decade after Brown v. Board of Education, amid a growing civil rights movement, and the white parents writing letters are emphatic that they want an integrated school. They get their way and the school site changes — but after that, nothing else goes as planned.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/09lhX8UMuvTXT3ymrjNFL1" target="_blank">19. Imagining a World Without Prisons or Police - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">When Derecka Purnell was growing up, the police were a regular presence in her life. Years later, the lawyer, activist, and author of the new book, Becoming Abolitionists, realized that her vision of a just society was radically different from the world in which she'd been socialized.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="" target="_blank">20. A Taste of Freedom - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Juneteenth commemorates the day that enslaved Texans found out — more than two years after Emancipation Day — that they were free. It's also a day known for celebratory meals and red drinks. But as the holiday becomes more widespread, we wondered: Is there a risk that certain people (and corporations) will try to keep the food and lose the history?</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/197PLbxrYgAqpX8773wAF7" target="_blank">21. The Death of Tyre Nichols - The Daily</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Tyre Nichols was a 29-year-old Black man who lived in Memphis. His mother described him as living a simple and pleasant life. He worked for FedEx, loved to skateboard, was an amateur photographer and had a 4-year-old son. On the evening of Jan. 7, after a traffic stop, Mr. Nichols was violently beaten by the police, sustaining severe injuries. He died on Jan. 10. For weeks, what exactly had happened was unclear.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/3rBWNNJdvPDcuRVqVQ4hUx" target="_blank">22. The State of Disunion - Throughline</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Is the U.S. on the brink of civil war? It's a question that has been in the air for a while now, as divisions continue to worsen. Beyond the political speeches and debates in the halls of Congress, it's something you're likely feeling in your day-to-day life. Vaccines, school curriculums, climate change, what you define as a human rights issue, even who you call a friend. Some say we've moved beyond the point of discussion. But when words fail, what comes next? In conversation with Malcolm Nance, Anne Applebaum, and Peniel Joseph, we take a deeper look at what we mean when we say civil war, how exactly the country reached this political moment, and where we go from here.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/3q24hejZSWw4JFKryjwIXe" target="_blank">23. The Original Rainbow Coalition - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In this episode we turn to late 1960s Chicago, when three unlikely groups came together to form a coalition based on interracial solidarity. It's hard to imagine this kind of collaboration today, but we dove into how a group of Black radicals, Confederate flag-waving white Southerners, and street-gang-turned-activist Puerto Ricans found common ground.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/4gRLnGmsj8gXDhmuZT14hc" target="_blank">24. Why some Republicans want to narrow who counts as Black - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Republican officials in Louisiana want to change how Black people are counted in voting maps. If their plan is successful, it could shrink the power of Black voters across the country — and further gut the Voting Rights Act.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/6oMAQdfCBdXZvvsfTucWLT" target="_blank">25. Reverse Freedom Rides - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Recently, Republican governors have been sending migrants from the southern border to cities they deem more liberal under false pretenses. The political stunt echoes what segregationists 1962 called Reverse Freedom Rides.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/2RIHlPW7lLYadD8qpCCReE" target="_blank">26. Why the N-word is so Toxic - Code Switch</a>
+      <div id="smallSpace"></div>
+      <p id="regText">It is probably the most radioactive word in the English language. At the same time, the N-word is kind of everywhere: books, movies, music, comedy (not to mention the mouths of people who use it frequently, whether as a slur or a term of endearment.) So on this episode, we're talking about what makes the word unique — and how the rules about its use line up with other words.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/636XbaTzR3nCYIYJHx8Ma7" target="_blank">27. Bayard Rustin: The Man Behind the March on Washington - Throughline</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Bayard Rustin, the man behind the March on Washington, was one of the most consequential architects of the civil rights movement you may never have heard of. Rustin imagined how nonviolent civil resistance could be used to dismantle segregation in the United States. He organized around the idea for years and eventually introduced it to Dr. Martin Luther King Jr. But his identity as a gay man made him a target, obscured his rightful status and made him feel forced to choose, again and again, which aspect of his identity was most important.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://open.spotify.com/episode/5wHZ0sqFma52gsnq3BzVH7" target="_blank">28. Soul Train - Throughline</a>
+      <div id="smallSpace"></div>
+      <p id="regText">When Soul Train was first nationally syndicated in October 1971, there was nothing else like it on TV. It was the iconic Black music and dance show, a party every weekend that anyone could join from their living room. Our friends at It's Been A Minute with Sam Sanders break down the lasting influence of Soul Train on the culture and ask why there's never been a show like it since.</p>
+      <div id="smallSpace"></div>
 
     </div>
-  </body>
+
+    <script>
+      document.getElementById('weekOne').style.display = "none";
+
+      function showDivOne() {
+        if (document.getElementById('weekOne').style.display == "none") {
+          document.getElementById('weekOne').style.display = "block";
+        } else {
+          document.getElementById('weekOne').style.display = "none";
+        }
+
+      }
+    </script>
+
+    <div id="smallSpace"></div>
+    <button class="actButt" id="starName" onclick="showDivTwo()">Books</button>
+
+    <div id="weekTwo">
+      <div id="space"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://rep.club/products/all-about-love-bell-hooks?_pos=1&_sid=c8a82db6d&_ss=r" target="_blank">1. All About Love - bell hooks</a>
+      <div id="smallSpace"></div>
+      <p id="regText">“The word ‘love’ is most often defined as a noun, yet...we would all love better if we used it as a verb,” writes bell hooks as she comes out fighting and on fire in All About Love. Here, at her most provocative and intensely personal, bell hooks (renowned scholar, cultural critic, and feminist) skewers our view of love as romance. In its place she offers a proactive new ethic for a people and a society bereft with lovelessness.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://shop.15percentpledge.org/products/token-black-girl-a-memoir" target="_blank">2. Token Black Girl - Danielle Prescod</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Racial identity, pop culture, and delusions of perfection collide in an eye-opening and refreshingly frank memoir by fashion and beauty insider Danielle Prescod.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.penguinrandomhouse.com/books/95388/savage-inequalities-by-jonathan-kozol/" target="_blank">3. Savage Inequalities - Jonathan Kozol</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In 1988, Jonathan Kozol set off to spend time with children in the American public education system. For two years, he visited schools in neighborhoods across the country, from Illinois to Washington, D.C., and from New York to San Antonio. He spoke with teachers, principals, superintendents, and, most important, children. What he found was devastating. Not only were schools for rich and poor blatantly unequal, the gulf between the two extremes was widening—and it has widened since. The urban schools he visited were overcrowded and understaffed, and lacked the basic elements of learning—including books and, all too often, classrooms for the students.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.penguinrandomhouse.com/books/553182/american-prison-by-shane-bauer/" target="_blank">4. American Prison - Shane Bauer</a>
+      <div id="smallSpace"></div>
+      <p id="regText">A ground-breaking and brave inside reckoning with the nexus of prison and profit in America: in one Louisiana prison and over the course of our country’s history.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.penguinrandomhouse.com/books/155575/killing-the-black-body-by-dorothy-roberts/" target="_blank">5. Killing the Black Body - Dorothy Roberts</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Killing the Black Body remains a rallying cry for education, awareness, and action on extending reproductive justice to all women. It is as crucial as ever, even two decades after its original publication.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.goodreads.com/book/show/38463.If_Beale_Street_Could_Talk" target="_blank">6. If Beale Street Could Talk - James Baldwin</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In this honest and stunning novel, James Baldwin has given America a moving story of love in the face of injustice. Told through the eyes of Tish, a nineteen-year-old girl, in love with Fonny, a young sculptor who is the father of her child, Baldwin's story mixes the sweet and the sad. Tish and Fonny have pledged to get married, but Fonny is falsely accused of a terrible crime and imprisoned. Their families set out to clear his name, and as they face an uncertain future, the young lovers experience a kaleidoscope of emotions-affection, despair, and hope. In a love story that evokes the blues, where passion and sadness are inevitably intertwined, Baldwin has created two characters so alive and profoundly realized that they are unforgettably ingrained in the American psyche.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.goodreads.com/book/show/92057.The_Autobiography_of_Malcolm_X" target="_blank">7. The Autobiography of Malcolm X - Malcolm X, Alex Haley</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Through a life of passion and struggle, Malcolm X became one of the most influential figures of the 20th Century. In this riveting account, he tells of his journey from a prison cell to Mecca, describing his transition from hoodlum to Muslim minister. Here, the man who called himself "the angriest Black man in America" relates how his conversion to true Islam helped him confront his rage and recognize the brotherhood of all mankind.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.goodreads.com/en/book/show/20342617" target="_blank">8. Just Mercy: A Story of Justice and Redemption - Bryan Stevenson</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Just Mercy tells the story of EJI, from the early days with a small staff facing the nation’s highest death sentencing and execution rates, through a successful campaign to challenge the cruel practice of sentencing children to die in prison, to revolutionary projects designed to confront Americans with our history of racial injustice. One of EJI’s first clients was Walter McMillian, a young Black man who was sentenced to die for the murder of a young white woman that he didn’t commit. The case exemplifies how the death penalty in America is a direct descendant of lynching — a system that treats the rich and guilty better than the poor and innocent.
+</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.goodreads.com/book/show/464260.The_Fire_Next_Time" target="_blank">9. The Fire Next Time - James Baldwin</a>
+      <div id="smallSpace"></div>
+      <p id="regText">A national bestseller when it first appeared in 1963, The Fire Next Time galvanized the nation and gave passionate voice to the emerging civil rights movement. At once a powerful evocation of James Baldwin’s early life in Harlem and a disturbing examination of the consequences of racial injustice, the book is an intensely personal and provocative document. It consists of two “letters,” written on the occasion of the centennial of the Emancipation Proclamation, that exhort Americans, both black and white, to attack the terrible legacy of racism. Described by The New York Times Book Review as “sermon, ultimatum, confession, deposition, testament, and chronicle…all presented in searing, brilliant prose,” The Fire Next Time stands as a classic of our literature.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.goodreads.com/en/book/show/12962487" target="_blank">10. I, Too, Am America - Langston Hughes, Bryan Collier</a>
+      <div id="smallSpace"></div>
+      <p id="regText">The poetic wisdom of Langston Hughes merges with visionary illustrations from Bryan Collier in this inspirational picture book that carries the promise of equality. <br> I, too, sing America./ I am the darker brother./ They send me to eat in the kitchen/ When company comes,/ But I laugh,/ And eat well,/ And grow strong. <br> Langston Hughes was a courageous voice of his time, and his authentic call for equality still rings true today. Beautiful paintings from Barack Obama illustrator Bryan Collier accompany and reinvent the celebrated lines of the poem “I, Too,” creating a breathtaking reminder to all Americans that we are united despite our differences.</p>
+      <div id="smallSpace"></div>
+    </div>
+
+    <script>
+      document.getElementById('weekTwo').style.display = "none";
+
+      function showDivTwo() {
+        if (document.getElementById('weekTwo').style.display == "none") {
+          document.getElementById('weekTwo').style.display = "block";
+        } else {
+          document.getElementById('weekTwo').style.display = "none";
+        }
+
+      }
+    </script>
+
+
+    <div id="smallSpace"></div>
+    <button class="actButt" id="starName" onclick="showDivThree()">Movies</button>
+
+    <div id="weekThree">
+      <div id="space"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=krfcq5pF8u8" target="_blank">1. 13th</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Filmmaker Ava DuVernay explores the history of racial inequality in the United States, focusing on the fact that the nation's prisons are disproportionately filled with African-Americans.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=ebuKaY0KIbI" target="_blank">2. 4 Little Girls</a>
+      <div id="smallSpace"></div>
+      <p id="regText">On Sunday, September 15, 1963, the 16th Street Baptist Church in Birmingham, Alabama, was bombed by four members of a Ku Klux Klan-affiliated racist group. Addie Mae Collins, Denise McNair, Carole Robertson and Cynthia Wesley, four African-American girls between the ages of 11 and 14 who had been attending the church's Sunday school, were killed in the blast. </p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.netflix.com/title/70259169" target="_blank">3. 42</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In 1946, Branch Rickey (Harrison Ford), legendary manager of the Brooklyn Dodgers, defies major league baseball's notorious color barrier by signing Jackie Robinson (Chadwick Boseman) to the team. The heroic act puts both Rickey and Robinson in the firing line of the public, the press and other players. Facing open racism from all sides, Robinson demonstrates true courage and admirable restraint by not reacting in kind and lets his undeniable talent silence the critics for him.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=PqCZhqoL7UI" target="_blank">4. Blackkklansman</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Ron Stallworth is the first African-American detective to serve in the Colorado Springs Police Department. Determined to make a name for himself, Stallworth bravely sets out on a dangerous mission: infiltrate and expose the Ku Klux Klan. The detective soon recruits a more seasoned colleague, Flip Zimmerman, into the undercover investigation of a lifetime. Together, they team up to take down the extremist hate group as the organization aims to sanitize its rhetoric to appeal to the mainstream.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.netflix.com/watch/81045635?source=35" target="_blank">5. Da 5 Bloods</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Four African American veterans battle the forces of man and nature when they return to Vietnam looking for the remains of their fallen squad leader and the gold fortune he helped them hide.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.paramountplus.com/movies/video/IuSrsBljpMHdcRQTjFGoe1DN9TGrthqa/" target="_blank">6. Fences</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Troy Maxson (Denzel Washington) makes his living as a sanitation worker in 1950s Pittsburgh. Maxson once dreamed of becoming a professional baseball player, but was deemed too old when the major leagues began admitting black athletes. Bitter over his missed opportunity, Troy creates further tension in his family when he squashes his son's (Jovan Adepo) chance to meet a college football recruiter.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=DzfpyUB60YY" target="_blank">7. Get Out</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Now that Chris and his girlfriend, Rose, have reached the meet-the-parents milestone of dating, she invites him for a weekend getaway upstate with her parents, Missy and Dean. At first, Chris reads the family's overly accommodating behaviour as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries leads him to a truth that he never could have imagined.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=kNw8V_Fkw28" target="_blank">8. Hair Love</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Hair Love is a 2019 American animated short film directed by Matthew A. Cherry, Everett Downing Jr., and Bruce W. Smith, and written by Cherry. It follows the story of a man who must do his daughter's hair for the first time, and it features Issa Rae as a voice of the mother.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=LDEFa7Nz0eI" target="_blank">9. Harriet</a>
+      <div id="smallSpace"></div>
+      <p id="regText">From her escape from slavery through the dangerous missions she led to liberate hundreds of slaves through the Underground Railroad, the story of heroic abolitionist Harriet Tubman is told.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.disneyplus.com/movies/hidden-figures/2xa2YdiOJXQt" target="_blank">10. Hidden Figures</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Three brilliant African-American women at NASA -- Katherine Johnson, Dorothy Vaughan and Mary Jackson -- serve as the brains behind one of the greatest operations in history: the launch of astronaut John Glenn into orbit, a stunning achievement that restored the nation's confidence, turned around the Space Race and galvanized the world.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.netflix.com/watch/81019839?source=35" target="_blank">11. If Beale Street Could Talk</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In early 1970s Harlem, daughter and wife-to-be Tish vividly recalls the passion, respect and trust that have connected her and her artist fiancé Alonzo Hunt, who goes by the nickname Fonny. Friends since childhood, the devoted couple dream of a future together, but their plans are derailed when Fonny is arrested for a crime he did not commit.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.pbs.org/independentlens/documentaries/i-am-not-your-negro/" target="_blank">12. I Am Not Your Negro</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In 1979, James Baldwin wrote a letter to his literary agent describing his next project, "Remember This House." The book was to be a revolutionary, personal account of the lives and assassinations of three of his close friends: Medgar Evers, Malcolm X and Martin Luther King, Jr. At the time of Baldwin's death in 1987, he left behind only 30 completed pages of this manuscript. Filmmaker Raoul Peck envisions the book James Baldwin never finished.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.warnerbros.com/movies/judas-and-black-messiah" target="_blank">13. Judas and the Black Messiah</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Offered a plea deal by the FBI, William O'Neal infiltrates the Illinois chapter of the Black Panther Party to gather intelligence on Chairman Fred Hampton.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=q7MxXxFu6fI" target="_blank">14. Just Mercy</a>
+      <div id="smallSpace"></div>
+      <p id="regText">After graduating from Harvard, Bryan Stevenson heads to Alabama to defend those wrongly condemned or those not afforded proper representation. One of his first cases is that of Walter McMillian, who is sentenced to die in 1987 for the murder of an 18-year-old girl, despite evidence proving his innocence. In the years that follow, Stevenson encounters racism and legal and political maneuverings as he tirelessly fights for McMillian's life.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://a24films.com/films/the-last-black-man-in-san-francisco" target="_blank">15. Last Black Man in San Francisco</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Jimmie and his best friend Mont try to reclaim the house built by Jimmie's grandfather, launching them on a poignant odyssey that connects them to their past, even as it tests their friendship and sense of belonging in the place they call home.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.rottentomatoes.com/m/1042135-malcolm_x" target="_blank">16. Malcolm X</a>
+      <div id="smallSpace"></div>
+      <p id="regText">A tribute to the controversial black activist and leader of the struggle for black liberation. He hit bottom during his imprisonment in the '50s, he became a Black Muslim and then a leader in the Nation of Islam. His assassination in 1965 left a legacy of self-determination and racial pride.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.paramountplus.com/movies/video/qNN3w0_oSSePd8qaRWxAJ8Ial0dYcbsl/" target="_blank">17. Moonlight</a>
+      <div id="smallSpace"></div>
+      <p id="regText">A look at three defining chapters in the life of Chiron, a young black man growing up in Miami. His epic journey to manhood is guided by the kindness, support and love of the community that helps raise him.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.hulu.com/movie/selma-62335705-af54-4f06-a366-4c168d17ba63?entity_id=62335705-af54-4f06-a366-4c168d17ba63" target="_blank">18. Selma</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Although the Civil Rights Act of 1964 legally desegregated the South, discrimination was still rampant in certain areas, making it very difficult for Blacks to register to vote. In 1965, an Alabama city became the battleground in the fight for suffrage. Despite violent opposition, Dr. Martin Luther King Jr. (David Oyelowo) and his followers pressed forward on an epic march from Selma to Montgomery, and their efforts culminated with President Lyndon Johnson signing the Voting Rights Act of 1965.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=jq1kJVE3Oaw" target="_blank">19. 
+Straight Outta Compton</a>
+      <div id="smallSpace"></div>
+      <p id="regText">In 1988, a groundbreaking new group revolutionizes music and pop culture, changing and influencing hip-hop forever. N.W.A's first studio album, "Straight Outta Compton," stirs controversy with its brutally honest depiction of life in Southern Los Angeles. With guidance from veteran manager Jerry Heller, band members Ice Cube (O'Shea Jackson Jr.), Dr. Dre (Corey Hawkins), Eazy-E, DJ Yella and MC Ren navigate their way through the industry, acquiring fame, fortune and a place in history.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.hulu.com/movie/summer-of-soul-6f2160ed-eaa2-462a-b495-f61f4f31714d?entity_id=6f2160ed-eaa2-462a-b495-f61f4f31714d" target="_blank">20. Summer of Soul</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Over the course of six weeks during the summer of 1969, thousands of people attend the Harlem Cultural Festival to celebrate Black history, culture, music, and fashion.</p>
+      <div id="smallSpace"></div>
+
+      <a class="smallerTitle" id="namePlaqueLink" href="https://www.youtube.com/watch?v=QGr_GL336A8" target="_blank">21. Fruitvalle Station</a>
+      <div id="smallSpace"></div>
+      <p id="regText">Though he once spent time in San Quentin, 22-year-old black man Oscar Grant (Michael B. Jordan) is now trying hard to live a clean life and support his girlfriend (Melonie Diaz) and young daughter (Ariana Neal). Flashbacks reveal the last day in Oscar's life, in which he accompanied his family and friends to San Francisco to watch fireworks on New Year's Eve, and, on the way back home, became swept up in an altercation with police that ended in tragedy. Based on a true story.</p>
+      <div id="smallSpace"></div>
+
+      
+    </div>
+
+    <script>
+      document.getElementById('weekThree').style.display = "none";
+
+      function showDivThree() {
+        if (document.getElementById('weekThree').style.display == "none") {
+          document.getElementById('weekThree').style.display = "block";
+        } else {
+          document.getElementById('weekThree').style.display = "none";
+        }
+
+      }
+    </script>
+
+
+
+
+    <script type="text/javascript">
+      let currentDay = (new Date).getDate()
+      if (currentDay == 1 || currentDay == 31) {
+        var storyLink = "A.PNG"
+
+      }
+      if (currentDay == 2) {
+        var storyLink = "B.PNG"
+
+      }
+      if (currentDay == 3) {
+        var storyLink = "C.PNG"
+
+      }
+      if (currentDay == 4) {
+        var storyLink = "D.PNG"
+
+      }
+      if (currentDay == 5) {
+        var storyLink = "E.PNG"
+
+      }
+      if (currentDay == 6) {
+        var storyLink = "F.PNG"
+
+      }
+      if (currentDay == 7) {
+        var storyLink = "G.PNG"
+
+      }
+      if (currentDay == 8) {
+        var storyLink = "H.PNG"
+
+      }
+      if (currentDay == 9) {
+        var storyLink = "I.PNG"
+
+      }
+      if (currentDay == 10) {
+        var storyLink = "J.PNG"
+
+      }
+      if (currentDay == 11) {
+        var storyLink = "K.PNG"
+
+      }
+      if (currentDay == 12) {
+        var storyLink = "L.PNG"
+
+      }
+      if (currentDay == 13) {
+        var storyLink = "M.PNG"
+
+      }
+      if (currentDay == 14) {
+        var storyLink = "N.PNG"
+
+      }
+      if (currentDay == 15) {
+        var storyLink = "O.PNG"
+
+      }
+      if (currentDay == 16) {
+        var storyLink = "P.PNG"
+
+      }
+      if (currentDay == 17) {
+        var storyLink = "Q.PNG"
+
+      }
+      if (currentDay == 18) {
+        var storyLink = "R.PNG"
+
+      }
+      if (currentDay == 19) {
+        var storyLink = "S.PNG"
+
+      }
+      if (currentDay == 20) {
+        var storyLink = "T.PNG"
+
+      }
+      if (currentDay == 21) {
+        var storyLink = "U.PNG"
+
+      }
+      if (currentDay == 22) {
+        var storyLink = "V.PNG"
+
+      }
+
+      if (currentDay == 23) {
+        var storyLink = "W.PNG"
+
+      }
+
+      if (currentDay == 24) {
+        var storyLink = "X.PNG"
+
+      }
+
+      if (currentDay == 25) {
+        var storyLink = "Y.PNG"
+
+      }
+
+      if (currentDay == 26) {
+        var storyLink = "Z.PNG"
+
+      }
+
+
+      if (currentDay == 27) {
+        var storyLink = "AA.PNG"
+
+      }
+
+      if (currentDay == 28) {
+        var storyLink = "BB.PNG"
+
+      }
+      var myStory = {
+        path: "bhmAssets/stories/",
+        storyName: storyLink,
+        fullStory: function () {
+          return this.path + this.storyName;
+        }
+      }
+
+      a = myStory.fullStory();
+      document.getElementById("story").href = a;
+
+    </script>
+
+
+
+
+
+
+
+    <div id="space"></div>
+  </div>
+</body>
 
 </html>
