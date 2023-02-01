@@ -239,9 +239,17 @@ div.scrollmenu a {
     margin-right: 10%;
   }
   #bhmTit{
-    width: 100%;
+    width: 80%;
     height: auto;
     max-width: 900px;
+  }
+  #smallSpace{
+    height: 20px;
+    width: auto;
+  }
+  #space{
+    height: 50px;
+    width: auto;
   }
   .activeLink, .inactiveLink{
     font-size: 150%;
@@ -327,20 +335,30 @@ div.scrollmenu a {
 
 @media screen and (max-width: 600px) {
   #ent{
-    margin-left:10%;
-    margin-right: 10%;
+    margin-left:5%;
+    margin-right: 5%;
   }
   #bhmTit{
-    width: 100%;
+    width: 90%;
     height: auto;
     max-width: 900px;
   }
-
+  #regTitle{
+    font-size: 120%;
+  }
+  #smallSpace{
+    height: 20px;
+    width: auto;
+  }
+  #space{
+    height: 50px;
+    width: auto;
+  }
   .activeLink, .inactiveLink{
     font-size: 150%;
   }
   #starName, #orgName{
-    font-size: 200%;
+    font-size: 120%;
   }
   .bigger{
     font-size: 300%;
@@ -373,8 +391,8 @@ div.scrollmenu a {
   }
   .daButt {
     border-radius:8px;
-    font-size: 125%;
-    padding:10px 14px;
+    font-size: 105%;
+    padding:5px 7px;
   }
   #blurbContainer{
     margin-left: 5%;
@@ -395,7 +413,7 @@ div.scrollmenu a {
     font-size: 20px;
   }
   #namePlaqueLink{
-    font-size: 25px;
+    font-size: 120%;
   }
   #nameBlurb{
     font-size: 13px;
@@ -415,7 +433,7 @@ div.scrollmenu a {
     font-size: 200%;
   }
   .regText{
-    font-size: 100%;
+    font-size: 80%;
   }
 }
 
