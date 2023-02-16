@@ -21,18 +21,18 @@ if (currentDay >= 5 && currentDay <= 11) {
 }
 
 if (currentDay >= 12 && currentDay <= 18) {
-  var starPhoto = "chris.jpg"
-  var starName = "Chris Smalls"
-  var starBlurb = "[Blurb Here]"
-  var orgName = "The Black Aids Institute"
-  var orgPhoto = "BAI.png"
-  var orgBlurb = "Recognizing that health justice is a racial and social justice issue, BAI is deeply committed to exposing the systems and roots of oppression that marginalize Black people and exacerbate our health burden. We are revolutionizing the HIV response by centering Black experiences and perspectives to ensure that Black people can live their fullest, healthiest lives with dignity, care, and respect."
+  var starPhoto = "joel.jpg"
+  var starName = "Joel Bervell"
+  var starBlurb = "Joel Bervell is a third year Ghanaian-American medical student at Washington State University, Elson S. Floyd College of Medicine. In 2017, Joel graduated from Yale University, where he earned a BA in Molecular Cellular Developmental Biology. He is committed to fighting health disparities in medicine through education and regularly shares topics about racial disparities in healthcare and other industries on his TikTok and Instagram (@joelbervell) where his platforms have over 300,000+ combined followers and 20,000,000+ impressions. He has been invited to speak on panels at the National Institute of Health, U.S. Food and Drug Administration, Clinton Foundation, Open Society Foundations, and more. He has also spoken on national media outlets including NPR and WebMd and regularly produces digital media content for Aljazeera and Brut Media. He currently is working with the World Health Organization’s Digital Communications, a collection of health professionals combatting the spread of misinformation on social media about COVID-19, and on a Diversity, Equity and Inclusion project with the VA Hospital systems."
+  var orgName = "exalt"
+  var orgPhoto = "exalt.png"
+  var orgBlurb = "Exalt elevates expectations of personal success for youth ages 15-19 who’ve been involved in the criminal justice system. They inspire youth at a critical crossroads to believe in their worth, from the first steps in contemplation through the journey to create lasting behavioral change. Their powerful combination of structured classes for tangible skill development, individualized support to navigate the education and justice systems, placement in paid internships and an alumni network of resources equips youth with the tools and experience to avoid further criminal justice system involvement. Exalt empowers youth to see a future filled with hope – and provides the road map to get there."
   var orgLink = "donation2.png"
 }
 
 if (currentDay >= 19 && currentDay <= 25) {
-  var starPhoto = "joel.jpg"
-  var starName = "Joel Bervell"
+  var starPhoto = "chris.jpg"
+  var starName = "Chris Smalls"
   var starBlurb = "[Blurb Here]"
   var orgName = "The Black Aids Institute"
   var orgPhoto = "BAI.png"
