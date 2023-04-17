@@ -72,12 +72,12 @@
                   Educate
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../educate/cheatSheet.html">BLM Cheat Sheet</a></li>
-                  <li><a class="dropdown-item" href="../educate/podcasts.html">Podcasts</a></li>
-                  <li><a class="dropdown-item" href="../educate/movies.html">Movies</a></li>
-                  <li><a class="dropdown-item" href="../educate/books.html">Books</a></li>
-                  <li><a class="dropdown-item" href="../educate/live.html">Live</a></li>
-                  
+                  <li><a class="dropdown-item" href="cheatSheet.html">BLM Cheat Sheet</a></li>
+                  <li><a class="dropdown-item" href="podcasts.html">Podcasts</a></li>
+                  <li><a class="dropdown-item" href="movies.html">Movies</a></li>
+                  <li><a class="dropdown-item" href="books.html">Books</a></li>
+                  <li><a class="dropdown-item" href="live.html">Live</a></li>
+                  </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -85,19 +85,19 @@
                   Act
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="petitions.html">Petitions</a></li>
-                  <li><a class="dropdown-item" href="phoneCalls.html">Phone Calls</a></li>
-                  <li><a class="dropdown-item" href="#">Emails</a></li>
-                  <li><a class="dropdown-item" href="boycott.html">Boycott</a></li>
-                  <li><a class="dropdown-item" href="pride.html"><span style='color: red'>P</span>
+                  <li><a class="dropdown-item" href="../act/petitions.html">Petitions</a></li>
+                  <li><a class="dropdown-item" href="../act/phoneCalls.html">Phone Calls</a></li>
+                  <li><a class="dropdown-item" href="../act/emails.html">Emails</a></li>
+                  <li><a class="dropdown-item" href="../act/boycott.html">Boycott</a></li>
+                  <li><a class="dropdown-item" href="../act/pride.html"><span style='color: red'>P</span>
                       <span style='color: orange'>R</span>
                       <span style='color: green'>I</span>
                       <span style='color: blue'>D</span>
                       <span style='color: violet'>E</span></a></li>
-                  <li><a class="dropdown-item" href="blackTransLives.html">Black Trans Lives</a></li>
-                  <li><a class="dropdown-item" href="protestingTips">Protesting Tips</a></li>
-                  <li><a class="dropdown-item" href="bailInfo.html">Bail/ Arrest Info</a></li>
-                  
+                  <li><a class="dropdown-item" href="../act/blackTransLives.html">Black Trans Lives</a></li>
+                  <li><a class="dropdown-item" href="../act/protestingTips">Protesting Tips</a></li>
+                  <li><a class="dropdown-item" href="../act/bailInfo.html">Bail/ Arrest Info</a></li>
+                  </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -110,7 +110,7 @@
                   <li><a class="dropdown-item" href="../donate/blackBusinesses.html">Black Businesses</a></li>
                   <li><a class="dropdown-item" href="../donate/bailFunds.html">Bail Funds</a></li>
                   <li><a class="dropdown-item" href="../donate/memorialFunds.html">Memorial Funds</a></li>
-                  
+                  </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../aboutUs.html">About Us</a>
@@ -148,9 +148,55 @@
       <div id="center">
         <h1 id="pageTitle">Emails</h1>
         <div class="space"></div>
-        <p id="topInfo">Dynamic applications are down for maintenance. Check back in January for updates!</p>
       </div>
+
+      
+      <div id="center">
+        <p >Enter your info and a unique/personal sentence to help bypass filters. No information will be kept or stored. Click on the underlined titles to prompt your device to generate the email.</p>
+        <input type="text" id="email" placeholder="Grace Hopper"></input>
+        <input type="text" id="subject" placeholder="New York, NY"></input>
+        <input type="text" id="sentence" placeholder="Black lives still matter."></input>
+        <button id="subButton" class = "actButt" onclick="revealText()">Submit</button>
+        <div class="space"></div>
+        <div id="readyDiv">
+          <p id = "greeny">Ready to send!</p>
+        </div>
+        <div id="smallSpace"></div>
+      </div>
+
+      <script>
+        document.getElementById('readyDiv').style.display = "none";
+
+        function revealText() {
+          if (document.getElementById('readyDiv').style.display == "none") {
+            document.getElementById('readyDiv').style.display = "block";
+          } else {
+            document.getElementById('readyDiv').style.display = "none";
+          }
+
+        }
+      </script>
+
       <div class="space"></div>
+
+      <a class="midTitle" onclick="emailOne()">1. Demand Justice for Ralph Yarl</a>
+      <p id="def">On Thursday, April 13, 2023, Ralph Pual Yarl was on his way to pick up his twin younger brothers from their friend's house a few blocks away from his house. He didn't have his phone. He mistakenly went to the wrong house, one block away from the house where his siblings were. He pulled into the driveway and rang the doorbell. The man in the home opened the door, looked him in the eye, and shot him in the head. Ralph fell to the ground, and the man shot him again. Ralph was then able to get up and run to the neighbor's house, looking for help. Unfortunately, he had to run to 3 different homes before someone finally agreed to help him after he was told to lie on the ground with his hands up. Contact Prosecutor Zachary Thompson to demand the shooter's immediate arrest.</p>
+
+      <script>
+        function emailOne() {
+          var input = document.getElementById('email');
+          email = input.value;
+          var input = document.getElementById('subject');
+          subject = input.value;
+          var input = document.getElementById('sentence');
+          greeting = input.value;
+          topic = "I Demand Justice for Ralph Yarl!"
+          name = "Prosecutor Zachary Thompson,"
+          info = "On Thursday, April 13, 2023, Ralph Pual Yarl was on his way to pick up his twin younger brothers from their friend's house a few blocks away from his house. He didn't have his phone. He mistakenly went to the wrong house, one block away from the house where his siblings were. He pulled into the driveway and rang the doorbell. The man in the home opened the door, looked him in the eye, and shot him in the head. Ralph fell to the ground, and the man shot him again. Ralph was then able to get up and run to the neighbor's house, looking for help. Unfortunately, he had to run to 3 different homes before someone finally agreed to help him after he was told to lie on the ground with his hands up. I demand that the shooter responsible be arrested and prosecuted to the full extent of the law."
+          window.location.href = "mailto: prosecutor@claycopa.com" + "?subject=" + topic + " || " + email + " " + subject + "&body=" + name + "%0D%0A" + "%0D%0A" + greeting + "%0D%0A" + "%0D%0A" + info + "%0D%0A" + "%0D%0A" + "Best," + "%0D%0A" + "%0D%0A" + email + " " + subject;
+        }
+      </script>
+
 
       <div id="center">
         <img id="bar" src="../../assets/bar.png">
