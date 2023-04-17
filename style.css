@@ -95,6 +95,13 @@
   text-decoration-color: #e85d04;
 }
 
+#subButton{
+  background-color: #e85d04;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
 
 /* Responsive */
 @media screen and (min-width: 1001px) {
