@@ -1,0 +1,238 @@
+/* General Styling */
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  background-color: #1E5631;
+}
+
+@font-face {
+  font-family: bgo;
+  src: url(assets/British-Green/British-Green-Oblique.ttf);
+}
+
+@font-face {
+  font-family: bgs;
+  src: url(assets/British-Green/British-Green-Script.ttf);
+}
+
+@font-face {
+  font-family: bg;
+  src: url(assets/British-Green/British-Green.ttf);
+}
+
+.bgo {
+  font-family: bgo;
+}
+
+.bgs {
+  font-family: bgs;
+}
+
+.bg {
+  font-family: bg;
+}
+
+.center{
+  text-align: center;
+  margin-top: 1%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #FFD600; /* Button text color */
+  background-color: transparent; /* Button background color */
+  border: 2px solid #FFD600;
+  border-radius: 5px; /* Circular shape */
+  cursor: pointer;
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #FFD600;
+}
+
+.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+div.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: #1E5631; /* Change to your desired background color */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.navbar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #FFD600;
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #f1f1f1;
+}
+
+.dropdown {
+  display: block;
+}
+
+.dropbtn {
+  background-color: #1E5631; /* Match the navbar background color */
+  color: #FFD600;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 22px; /* Match the font size of other navbar links */
+  cursor: pointer;
+  font-family: bgo;
+}
+
+.dropdown-content {
+  display: none;
+  position: static; /* Aligns dropdown content with other navbar items */
+  background-color: #1E5631; /* Match the navbar background color */
+  font-family: bgo;
+}
+
+.dropdown-content a {
+  color: #FFD600;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navTitle {
+  position: fixed;
+  top: 20px;
+  left: 60px; /* Adjust as needed to align with the hamburger menu */
+  font-size: 24px; /* Adjust size as needed */
+  color: #FFD600;
+  margin: 0;
+  z-index: 101; /* Ensure it's above other elements */
+}
+
+
+/* Position the title at the top center, but below the navbar */
+#title {
+  text-align: center; /* Center aligned */
+  margin-top: 80px;
+  font-size: 7vh;
+  color: #FFD600;
+}
+
+#box{
+  margin: 4%;
+}
+
+/* Position the smallerTitle below the title and left aligned */
+#smallerTitle, .smallerTitle {
+  text-align: left; /* Left aligned */
+  font-size: 4vh;
+  color: #FFD600;
+}
+
+.button-container {
+  text-align: center; /* Center the button container */
+  margin-top: 20px; /* Space from the top or other elements */
+}
+
+.button {
+  display: inline-block; /* Align buttons in a row */
+  padding: 10px 20px;
+  margin: 5px; /* Space between buttons */
+  font-family: bgo; /* Assuming you want to use this font */
+  font-size: 18px; /* Adjust the font size as needed */
+  text-decoration: none;
+  
+  border: 2px solid #FFD600; /* Circular yellow border */
+  border-radius: 5px; /* Make the border circular */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#notActive{
+  color: #FFD600; /* Yellow text color */
+  background-color: transparent; /* Transparent background */
+}
+
+#active {
+  color: #1E5631;
+  background-color: #FFD600;
+}
+
+#notActive:hover{
+  color: #1E5631; /* Yellow text color */
+  background-color: #FFD600; /* Transparent background */
+}
+
+.selectDropdown, #subButton{
+  margin: 20px;
+  padding: 10px;
+  font-family: bgo;
+  font-size: 16px;
+  color: #FFD600;
+  background-color: #1E5631;
+  border: 2px solid #FFD600;
+  border-radius: 5px;
+}
+
+
+#regText, .regText {
+  text-align: left; /* Left aligned */
+  font-size: 3vh;
+  color: #FFD600;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  
+  #navTitle {
+    left: 25px; /* Adjust for mobile if needed */
+    font-size: 18px; /* Adjust size for mobile */
+  }
+}
+
+#storyIMG{
+  width: 22%;
+  height: auto;
+}
