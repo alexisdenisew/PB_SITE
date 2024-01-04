@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../../script.js" defer></script>
+  <script src="../../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../../education/movies.html">Movies</a>
+        <a href="../../education/books.html">Books</a>
+        <a href="../../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../../action/petitions.html">Petitions</a>
+        <a href="../../action/emails.html">Emails</a>
+        <a href="../../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../../donation/orgs.html">Organizations</a>
+        <a href="../../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href=".#">MLK Day</a>
+        <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../../about.html">About PBR</a>
+    <a class = "bgo" href="../../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>M</span>artin <span style='font-family: bgs'> L</span>uther<span style='font-family: bgs'> K</span>ing<span style='font-family: bgs'> D</span>ay</h1>
+
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section1">Forgotten Quotes</option>
+      <option value="section2">Find your Senators</option>
+      <option value="section3">Education Reform</option>
+      <option value="section4">Voting Rights</option>
+    </select>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>The Legacy of MLK</span></h1>
+
+    <p id = "regText" class="bg">"I must confess that over the past few years I have been gravely disappointed with the white moderate [...] who paternalistically believes he can set the timetable for another man's freedom; who lives by a mythical concept of time and who constantly advises the Negro to wait for a "more convenient season." Shallow understanding from people of good will is more frustrating than absolute misunderstanding from people of ill will. Lukewarm acceptance is much more bewildering than outright rejection.” - MLK</p>
+    <p id = "regText" class="bg">In commemoration of MLK's enduring legacy, PB-Resources is dedicated to raising awareness of Martin Luther King's lesser known quotes that remain remarkably relevant today. PBR is also equipping individuals with the resources to actively engage in two causes close to MLK's heart: education and voting.</p>
+    <p id = "regText" class="bg">This MLK Day, we invite you to take meaningful action with PBR by sharing these poignant quotes across your social platforms and participating in the actionable steps outlined below. Together, we can honor Dr. King's vision and contribute to positive change in our communities.</p>
+
+    <br id="section1"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Forgotten Quotes</span></h1>
+
+    <p id = "regText" class="bg">The following images are MLK quote cards you can share on your socials. To download these images on your mobile device, tap and hold the image you prefer. If you're on a desktop computer, right-click on the image you'd like to use and select "Save" to download.</p>
+
+    <img id = "storyIMG" src="assets/stories/mlk1.png">
+    <img id = "storyIMG" src="assets/stories/mlk2.png">
+    <img id = "storyIMG" src="assets/stories/mlk3.png">
+    <img id = "storyIMG" src="assets/stories/mlk4.png">
+    <img id = "storyIMG" src="assets/stories/mlk5.png">
+    <img id = "storyIMG" src="assets/stories/mlk6.png">
+    <img id = "storyIMG" src="assets/stories/mlk7.png">
+    
+    <br id="section2"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Find your Senators</span></h1>
+
+    <div class = "center">
+      <label class = "smallerTitle" id = "stateLabel" for="states">Select your State: </label>
+      <select name="state" id="state" class = "selectDropdown">
+    </div> 
+      <option value = "Alabama">Alabama</option>
+      <option value = "Alaska">Alaska</option>
+      <option value = "Arizona">Arizona</option>
+      <option value = "Arkansas">Arkansas</option>
+      <option value = "California">California</option>
+      <option value = "Colorado">Colorado</option>
+      <option value = "Connecticut">Connecticut</option>
+      <option value = "Delaware">Delaware</option>
+      <option value = "Florida">Florida</option>
+      <option value = "Georgia">Georgia</option>
+      <option value = "Hawaii">Hawaii</option>
+      <option value = "Idaho">Idaho</option>
+      <option value = "Illinois">Illinois</option>
+      <option value = "Indiana">Indiana</option>
+      <option value = "Iowa">Iowa</option>
+      <option value = "Kansas">Kansas</option>
+      <option value = "Kentucky">Kentucky</option>
+      <option value = "Louisiana">Louisiana</option>
+      <option value = "Maine">Maine</option>
+      <option value = "Maryland">Maryland</option>
+      <option value = "Massachusetts">Massachusetts</option>
+      <option value = "Michigan">Michigan</option>
+      <option value = "Minnesota">Minnesota</option>
+      <option value = "Mississippi">Mississippi</option>
+      <option value = "Missouri">Missouri</option>
+      <option value = "Montana">Montana</option>
+      <option value = "Nebraska">Nebraska</option>
+      <option value = "Nevada">Nevada</option>
+      <option value = "New Hampshire">New Hampshire</option>
+      <option value = "New Jersey">New Jersey</option>
+      <option value = "New Mexico">New Mexico</option>
+      <option value = "New York">New York</option>
+      <option value = "North Carolina">North Carolina</option>
+      <option value = "North Dakota">North Dakota</option>
+      <option value = "Ohio">Ohio</option>
+      <option value = "Oklahoma">Oklahoma</option>
+      <option value = "Oregon">Oregon</option>
+      <option value = "Pennsylvania">Pennsylvania</option>
+      <option value = "Rhode Island">Rhode Island</option>
+      <option value = "South Carolina">South Carolina</option>
+      <option value = "South Dakota">South Dakota</option>
+      <option value = "Tennessee">Tennessee</option>
+      <option value = "Texas">Texas</option>
+      <option value = "Utah">Utah</option>
+      <option value = "Vermont">Vermont</option>
+      <option value = "Virginia">Virginia</option>
+      <option value = "Washington">Washington</option>
+      <option value = "West Virginia">West Virginia</option>
+      <option value = "Wisconsin">Wisconsin</option>
+      <option value = "Wyoming">Wyoming</option>
+    </select>
+    <br><br>
+    <button id = "subButton" onclick="func1()">go!</button>
+
+    <p ><span id = "info" style='color: white; font-family: bg; font-size: 4vh'>Alabama</span></p>
+    <a class = "regText" id = "name1" href="https://www.senate.gov/" target = "_blank">Britt, Katie</a> <br>
+    <a class = "regText" href = "tel:2022245744" id = "phone1">(202) 224-5744</a><br><br>
+    <br>
+    <a class = "regText" id = "name2" href="https://www.senate.gov/" target = "_blank">Tuberville, Tommy</a><br>
+    <a class = "regText" href = "2022244124" id = "phone2">(202) 224-4124</a>
+
+    <br id="section3"><br>
+    
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Education Reform</span></h1>
+
+    <p id = "regText" class="bg">Decades after the landmark Supreme Court ruling in Brown v. Board of Education, which deemed "separate but equal" schools unconstitutional, racial and ethnic segregation still deeply affects our educational system. This persistent issue has detrimental effects on the academic achievements of Black students. As evidenced by this report, it results in lower standardized test scores, exacerbates performance disparities between White and Black students, perpetuates economic segregation, with Black students disproportionately attending high-poverty schools. Consequently, the dream of integration and equal opportunities for all Black students, as envisioned by Martin Luther King Jr., remains largely unfulfilled, according to the Economic Policy Institute.</p>
+    <p id = "regText" class="bg">To address this pressing concern, it is essential to engage with your local representatives. Please use the "Find you Seanators" tool above to identify your senator's contact information. Use the provided script to encourage your congressperson to prioritize a comprehensive school integration plan for your district. You may reach out to them via phone or a contact form, ensure your message is personalized to avoid it being flagged as spam.</p>
+
+    <br>
+    <h1 class="bgo" id="smallerTitle">Script</h1>
+    <p id = "regText" class="bg">Hello, I'm [NAME], a constituent calling from [CITY, ZIP]. I'm extremely concerned about the ongoing issue of segregated schools in our district. American schools are as segregated today as they were in the nineteen-sixties, in the years after Brown v. Board of Education. I'm calling to urge [Senator/Representative NAME] to demand bipartisan action towards an integration plan for all schools across the United States. I don't want to see these young people used as a bargaining chip, so I expect my [senator/representative] to make the integration of schools a priority on your agenda. "Separate but equal" schools were not acceptable in the 1960s, and should not be acceptable today. Please pass along my concerns to the [senator/representative]. I'd appreciate if your office could follow up with me with any news related to this issue. I can be reached at [CONTACT INFO]. Thanks so much for taking my [email/call].</p>
+
+    <br id="section4"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Voting Rights</span></h1>
+
+    <p id = "regText" class="bg">Ronnie Newman, the National Political Director at the ACLU, has emphasized the alarming trend of widespread attacks on the fundamental right to vote across the nation. He highlights that various state legislatures have overtly targeted Black, Latinx, and Indigenous voters. These efforts manifest in attacks on mail-in voting, reductions in early voting periods, and the imposition of unnecessary and cumbersome identification requirements. This situation poses a substantial and immediate threat to the integrity of our democracy. Newman asserts the urgent need for Congress and President Biden to swiftly enact federal voting rights legislation, leaving no room for delays. To delve deeper into the issue of voter suppression, particularly its persistence nearly six decades after the passage of the Voting Rights Act, please explore the following information.</p>
+    <p id = "regText" class="bg">To address this pressing concern, it is essential to engage with your local representatives. Please use the "Find you Seanators" tool above to identify your senator's contact information. Use the provided script to encourage your congressperson to prioritize a comprehensive school integration plan for your district. You may reach out to them via phone or a contact form, ensure your message is personalized to avoid it being flagged as spam.</p>
+
+    <br>
+    <h1 class="bgo" id="smallerTitle">Script</h1>
+    <p id = "regText" class="bg">Hello, I'm [NAME], a constituent calling from [CITY, ZIP]. I'm extremely concerned about state lawmakers introducing more than 500 voter suppression bills to make it harder to get registered and cast our ballots, passing federal voting rights legislation is the single most important thing we can do to protect access to the ballot box. This is worrisome because, Black and Brown voters are being disproportionately prevented from casting a ballot. I'm calling to urge [Senator/Representative NAME] to demand bipartisan support for the Freedom to Vote Act. I don't want to see Black and Brown voters used as a bargaining chip, so I expect my [senator/representative] to oppose any newly introduced legislation that makes it harder for people to vote. Voting is a sacred pillar of our Democracy and needs to be accessible to all. Please pass along my concerns to the [senator/representative]. I'd appreciate if your office could follow up with me with any news related to this issue. I can be reached at [CONTACT INFO]. Thanks so much for taking my [email/call].</p>
+
+    <br><br>
+
+  </div>
+
+  
+  
+  
+</body>
+</html>
