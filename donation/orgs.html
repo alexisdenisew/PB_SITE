@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../script.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../education/movies.html">Movies</a>
+        <a href="../education/books.html">Books</a>
+        <a href="../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../action/petitions.html">Petitions</a>
+        <a href="../action/emails.html">Emails</a>
+        <a href="../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="#">Organizations</a>
+        <a href="directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="../hubs/mlk/index.html">MLK Day</a>
+        <a href="../hubs/blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../about.html">About PBR</a>
+    <a class = "bgo" href="../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>D</span>onation</h1>
+  <div class="button-container">
+    <a href="#" id = "active" class="button">Organizations</a>
+    <a href="directAction.html" id = "notActive" class="button">Direct Action</a>
+  </div>
+
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section1">Racial Justice</option>
+      <option value="section2">Reproductive Rights</option>
+      <option value="section3">Immigration</option>
+      <option value="section4">Climate Change</option>
+      <option value="section5">LGBTQ+ Rights</option>
+      <option value="section6">Free Palestine</option>
+    </select>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Racial Justice</span></h1>
+    
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/give/pm-donate-to-aclu?utm_medium=pm&utm_source=gs&utm_campaign=nat-dig-pm-dd-int&utm_content=gs-search_brand_exact-aclu-c-681614949744&initms_aff=nat&initms_chan=pm&initms=nat-dig-pm-dd-int-gs-search_brand_exact-aclu-c-681614949744&ms_aff=nat&ms_chan=pm&ms=nat-dig-pm-dd-int-gs-search_brand_exact-aclu-c-681614949744&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxf0mlxiDvRTCyZiX6EpxfhRFSfsKfaQR6VUinMV0peXu3MA5Kbs8mRoCaEAQAvD_BwE" target = "_blank">ACLU</a></h1>
+    <p id = "regText" class="bg">The American Civil Liberties Union is a nonprofit organization founded in 1920 "to defend and preserve the individual rights and liberties guaranteed to every person in this country by the Constitution and laws of the United States".</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://blackfutureslab.org/" target = "_blank">The Black Futures Lab</a></h1>
+    <p id = "regText" class="bg">The Black Futures Lab transforms Black communities into constituencies that change the way power operates—locally, statewide and nationally. The problems facing our communities are complex—the solutions require experimentation, innovation and political power. We deserve a government that represents us, policies that improve our lives, and politics that reflect our lives.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://colorofchange.org/" target = "_blank">Color of Change</a></h1>
+    <p id = "regText" class="bg">Color of Change designs campaigns powerful enough to end practices that unfairly hold Black people back, and champion solutions that move us all forward. Until justice is real.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://eji.org/" target = "_blank">Equal Justice Initiative</a></h1>
+    <p id = "regText" class="bg">EJI works with communities that have been marginalized by poverty and discouraged by unequal treatment and are committed to changing the narrative about race in America. EJI produces groundbreaking reports, an award-winning calendar, and short films that explore our nation’s history of racial injustice.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://fairfight.com/" target = "_blank">Fair Fight</a></h1>
+    <p id = "regText" class="bg">Promotes fair elections around the country, encourages voter participation in elections, and educates voters about elections and their voting rights. Fair Fight Action brings awareness to the public on election reform, advocates for election reform at all levels, and engages in other voter education programs and communications.</p>
+    
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://votingwhileblack.com/camp-color-of-change-pac-faq/" target = "_blank">Voting While Black</a></h1>
+    <p id = "regText" class="bg">Voting While Black is focused on building independent Black political power, amplifying Black voices, electing progressive candidates who share our values, and holding them accountable to our communities.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://13thforward.com/" target = "_blank">13th Forward</a></h1>
+    <p id = "regText" class="bg">13th Forward is a legislative coalition of advocates, grassroots organizations, and impacted people working to end exploitation and brutality within our prison labor system.</p>
+    
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://15percentpledge.org/" target = "_blank">15% Pledge</a></h1>
+    <p id = "regText" class="bg">Black people make up 15% of the US population. So, The Pledge asked businesses to dedicate 15% of their shelf space to Black-owned brands. The Pledge is an invitation to retailers to give their valued community what they are asking for: variety and economic equality. The Pledge allows us to learn and grow together, led by a sustainable model for long-term change.</p>
+
+    <br id="section2"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Reproductive Rights</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://reproductiverights.org/?s_src=22RR1121sb8doj&gad_source=1&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxYYVOlaEg_aPkFssfHSWw1Gl7OrkHhy8ZRW2pAaxY2QP251A7uLRPRoCHgAQAvD_BwE" target = "_blank">Center for Reproductive Rights</a></h1>
+    <p id = "regText" class="bg">An international legal advocacy group dedicated to advancing reproductive rights as fundamental human rights worldwide.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.guttmacher.org/" target = "_blank">Guttmacher Institute</a></h1>
+    <p id = "regText" class="bg">A research and policy organization committed to advancing sexual and reproductive health and rights globally.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://reproductivefreedomforall.org/" target = "_blank">Reproductive Freedom For All</a></h1>
+    <p id = "regText" class="bg">Fights for reproductive freedom, advocating for abortion access, birth control, and protection against pregnancy discrimination.</p>    
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://act.nwlc.org/a/donate-ads?ms=MRDAFGO_c3-FR_SE_EvergreenFR&utm_campaign=EvergreenFR&utm_source=google&utm_medium=cpc&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxQmLrb4wTLl4lNYhDEGNqptASoLi6uG0b9qZq79uqJLYn4EkrJt0yRoCjGUQAvD_BwE&gclsrc=aw.ds" target = "_blank">National Women's Law Center</a></h1>
+    <p id = "regText" class="bg">Focuses on advancing and protecting women's legal rights, including reproductive health and rights.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.weareplannedparenthoodaction.org/onlineactions/6iOI0_HnUUmPu_6_SRgayg2?sourceid=1015196&ms=4NALzzz00z1N1A&utm_campaign=4NIAU23XA_0000000107_0E1NAC&utm_source=Google&utm_medium=search&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxd8F66lAJHsZgYmkosq4HEdrjTmEFmR9JkzpMPHpwDqMf5gz0CT4uBoCE4cQAvD_BwE&gclsrc=aw.ds" target = "_blank">Planned Parenthood</a></h1>
+    <p id = "regText" class="bg">A leading health care provider and advocate for reproductive rights in the U.S., offering services like birth control, STD testing, and abortion.</p>
+    
+
+    <br id="section3"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Immigration</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.americanimmigrationcouncil.org/" target = "_blank">American Immigration Council</a></h1>
+    <p id = "regText" class="bg">Promotes fair and humane immigration policies and advocates for justice for immigrants through research and legal services.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.ilrc.org/?gad_source=1&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxTXsgCZ-PYBWkq0Xqbeizbuc33_8zGbDL2_kik4B72pq933JCJwlDxoCxnsQAvD_BwE" target = "_blank">Immigrant Legal Resource Center (ILRC)</a></h1>
+    <p id = "regText" class="bg">Works with immigrants, attorneys, and advocates to promote diversity and the rights of all people.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://secure.actblue.com/donate/ijf-ads-230920-search-evergreen-dd-us?refcode=ads_search_23n006_230920_dd_us_nilc%20immigrant%20justice%20fund_ad1&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxcHmFhoeJf0eQZ_Z2Q2vxMfgavki1PWuQr7y4bPxaKzMA55LIpbL9BoC3pEQAvD_BwE" target = "_blank">National Immigration Law Center (NILC)</a></h1>
+    <p id = "regText" class="bg">Dedicated to defending and advancing the rights of low-income immigrants through litigation, policy analysis, and advocacy.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.raicestexas.org/" target = "_blank">The Refugee and Immigrant Center for Education and Legal Services (RAICES)</a></h1>
+    <p id = "regText" class="bg">Provides free and low-cost legal services to underserved immigrant children, families, and refugees.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://unitedwedream.org/" target = "_blank">United We Dream</a></h1>
+    <p id = "regText" class="bg">The largest immigrant youth-led community in the U.S., focusing on the dignity and fair treatment of immigrant families.</p>
+
+
+
+    <br id="section4"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Climate Change</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://350.org/?r=US&c=NA" target = "_blank">350.org</a></h1>
+    <p id = "regText" class="bg">An international movement working to end fossil fuel use and promote renewable energy to combat climate change.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.greenpeace.org/international/" target = "_blank">Greenpeace</a></h1>
+    <p id = "regText" class="bg">A global environmental organization focusing on major issues like climate change, deforestation, and pollution.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.climaterealityproject.org/" target = "_blank">The Climate Reality Project</a></h1>
+    <p id = "regText" class="bg">Focuses on education and advocacy about climate change impacts, founded by Al Gore.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.sierraclub.org/" target = "_blank">The Sierra Club</a></h1>
+    <p id = "regText" class="bg">One of the oldest U.S. environmental organizations, advocating for clean energy and sustainable climate solutions.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.worldwildlife.org/" target = "_blank">World Wildlife Fund (WWF)</a></h1>
+    <p id = "regText" class="bg">Known for wildlife conservation, WWF also addresses climate change to protect wildlife habitats.</p>
+    
+
+    <br id="section5"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>LGBTQ+ Rights</span></h1>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://give.glaad.org/page/51921/donate/1?ea.tracking.id=2300AGEVXXXX&utm_source=2300AGEVXXXX&utm_medium=sem&utm_campaign=fy23evergreen&en_txn6=7015f000000MvgpAAC&en_og_source=evergreen_sem&gad_source=1&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxRs6c7pSyGBWRxFiytvHaljsJmAC_Y7HTjtSJ96dGNxUQ08B4Mo-0RoCJloQAvD_BwE" target = "_blank">GLAAD</a></h1>
+    <p id = "regText" class="bg">Works to promote accurate, inclusive representation of LGBTQ individuals in the media and counteract defamation.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://give.hrc.org/page/125646/donate/1?ea.tracking.id=dr_don_mr_searchFY24" target = "_blank">Human Rights Campaign (HRC)</a></h1>
+    <p id = "regText" class="bg">The largest LGBTQ advocacy group in the U.S., dedicated to fighting for equal rights and raising awareness about LGBTQ issues.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://pflag.org/" target = "_blank">PFLAG</a></h1>
+    <p id = "regText" class="bg">Offers support to LGBTQ+ individuals, their parents, families, and allies, advocating for equal rights and acceptance.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.theokraproject.com/" target = "_blank">The Okra Project</a></h1>
+    <p id = "regText" class="bg">The Okra Project is a collective that addresses the global crisis faced by Black Trans people by bringing home-cooked, healthy, and culturally specific meals and resources to Black Trans People wherever they can reach them. This initiative not only provides nourishment but also seeks to extend support and community care to one of the most marginalized groups in society. </p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.thetrevorproject.org/" target = "_blank">The Trevor Project</a></h1>
+    <p id = "regText" class="bg">Provides crisis intervention and suicide prevention services to LGBTQ youth, creating a safe and supportive environment.</p>
+    
+
+    <br id="section6"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Free Palestine<sup> new</sup></span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://bdsmovement.net/bnc" target = "_blank">Palestinian BDS National Committee (BNC)</a></h1>
+    <p id = "regText" class="bg">Leads the global BDS movement to pressure Israel into compliance with international law.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.jewishvoiceforpeace.org/" target = "_blank">Jewish Voice for Peace (JVP)</a></h1>
+    <p id = "regText" class="bg">A U.S.-based organization advocating for peace and justice in Israel/Palestine through grassroots efforts.</p>
+    
+
+    <br><br>
+
+
+
+  </div>
+
+  
+  
+  
+</body>
+</html>
