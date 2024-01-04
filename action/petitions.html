@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../script.js" defer></script>
+  <script src="../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../education/movies.html">Movies</a>
+        <a href="../education/books.html">Books</a>
+        <a href="../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../action/petitions.html">Petitions</a>
+        <a href="../action/emails.html">Emails</a>
+        <a href="../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../donation/orgs.html">Organizations</a>
+        <a href="../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="../hubs/mlk/index.html">MLK Day</a>
+        <a href="../hubs/blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../about.html">About PBR</a>
+    <a class = "bgo" href="../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>A</span>ction</h1>
+  <div class="button-container">
+    <a href="calls.html" id = "notActive" class="button">Calls</a>
+    <a href="emails.html" id = "notActive" class="button">Emails</a>
+    <a href="#" id = "active" class="button">Petitions</a>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section1">Racial Justice</option>
+      <option value="section2">Reproductive Rights</option>
+      <option value="section3">Immigration</option>
+      <option value="section4">Climate Change</option>
+      <option value="section5">LGBTQ+ Rights</option>
+      <option value="section6">Free Palestine</option>
+    </select>
+  </div>
+
+  <div id = "box">
+    <h1 id="section1" id="smallerTitle" class="bgo"><span style='color: white'>Racial Justice</span></h1>
+    <h1 class="bgo"><a id="smallerTitle" href = "https://act.colorofchange.org/sign/stopcopcity?source=coc_main_website&_gl=1*1rgi9es*_ga*MTIyNzUxNzE1MC4xNzA0MzI4NjM3*_ga_81WFRBRG4C*MTcwNDQwMTI1MC4yLjEuMTcwNDQwMTQ0My4wLjAuMA.." target = "_blank">Tell Corporations: Stop Funding Cop City</a></h1>
+    <p id = "regText" class="bg">This petition calls for corporations to cease funding the Atlanta Police Foundation's "Cop City" project, citing concerns over increased police militarization, the potential environmental impact on the South River Forest, and the broader implications for the Black community in Atlanta.</p>
+    <h1 class="bgo"><a id="smallerTitle" href = "https://secure.vera.org/a/take-action-rikers?ms=acqi_comm_all_email_BS23_ctr_100322&utm_source=email&utm_medium=acqi&utm_campaign=all_100322&sourceid=&emci=465a3c81-6543-ed11-b495-002248258d38&emdi=12ac112b-7f45-ed11-b495-002248258d38&ceid=38958" target = "_blank">Demand to Close Rikers Island</a></h1>
+    <p id = "regText" class="bg">This petition calls for the closure of Rikers Island due to persistent human rights abuses in its jails. It's part of a broader initiative to end mass incarceration.</p>
+    <h1 class="bgo"><a id="smallerTitle" href = "https://campaigns.organizefor.org/petitions/stop-enabling-fl-gov-desantis-and-allow-ap-african-american-studies-to-be-taught-in-high-schools?_gl=1*1tw6tqo*_ga*MTIyNzUxNzE1MC4xNzA0MzI4NjM3*_ga_81WFRBRG4C*MTcwNDQwMTI1MC4yLjEuMTcwNDQwMTI1My4wLjAuMA.." target = "_blank"> Let AP African American Studies Be Taught in Schools</a></h1>
+    <p id = "regText" class="bg">This petition demands the Florida State Board of Education to override Governor DeSantis' decision against AP African American Studies in schools, promoting inclusive education and acknowledging Black history's importance in shaping the nation.</p>
+    <h1 class="bgo"><a id="smallerTitle" href = "https://campaigns.organizefor.org/petitions/banfrt-in-baltimore?_gl=1*1x9i5sv*_ga*MTIyNzUxNzE1MC4xNzA0MzI4NjM3*_ga_81WFRBRG4C*MTcwNDQwMTI1MC4yLjEuMTcwNDQwMTI1My4wLjAuMA.." target = "_blank">#BanFRT in Baltimore</a></h1>
+    <p id = "regText" class="bg">This petition urges Baltimore's leadership to extend the current moratorium on facial recognition technology, advocating for the permanent ban of this biased and dangerous surveillance tool to protect the rights and privacy of the city's diverse communities.</p>
+    
+
+    <br id="section2"><br>
+
+    <h1 id="section1" id="smallerTitle" class="bgo"><span style='color: white'>Reproductive Rights</span></h1>
+    <h1 class="bgo"><a id="smallerTitle" href = "https://lwvfl.org/abortion2024/" target = "_blank">Ensure the Constitutional Right to Abortion in Florida</a></h1>
+    <p id = "regText" class="bg">This petition by the League of Women Voters of Florida aims to uphold the right to abortion in the state. It responds to extreme abortion bans by attempting to put reproductive rights on the Florida ballot. The initiative seeks to gather signatures to ensure that reproductive health care decisions remain in the hands of families and their doctors, not politicians.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/send-message/defend-reproductive-freedom-now?ms=wwwactionpage&initms=wwwactionpage&ms_aff=NAT&initms_aff=NAT&ms_chan=web&initms_chan=web" target = "_blank">Defend Reproductive Freedom Now</a></h1>
+    <p id = "regText" class="bg">This campaign urges Congress to protect abortion access and reproductive freedom at the federal level, in response to state-level abortion bans and attacks on birth control following the Supreme Court's decision to overturn Roe v. Wade. The petition emphasizes the urgency of legislative action to safeguard essential health care and bodily autonomy.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/petition/tell-court-protect-medication-abortion-now?ms=wwwactionpage&initms=wwwactionpage&ms_aff=NAT&initms_aff=NAT&ms_chan=web&initms_chan=web" target = "_blank">Tell the Court: Protect Medication Abortion Now</a></h1>
+    <p id = "regText" class="bg">This petition focuses on a Supreme Court case threatening to impose restrictions on mifepristone, a key medication for abortion care. It urges the Court to reject anti-abortion efforts that compromise safe and effective reproductive health care, emphasizing the importance of upholding access to medication abortion in all states.</p>
+
+    <br id="section3"><br>
+
+    <h1 id="section1" id="smallerTitle" class="bgo"><span style='color: white'>Immigration</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/petition/tell-biden-end-trumps-illegal-and-inhumane-immigration-policies" target = "_blank">Tell Biden: End Trump's Illegal and Inhumane Immigration Policies</a></h1>
+    <p id = "regText" class="bg">This petition advocates for the Biden administration to end the Trump-era immigration policies, including Title 42 and the Migrant Protection Protocols (MPP), which have been criticized for jeopardizing the safety of asylum seekers and misusing public health measures for border control.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/send-message/justice-people-seeking-asylum-stop-life-threatening-tactics-now?ms=wwwactionpage&initms=wwwactionpage&ms_aff=NAT&initms_aff=NAT&ms_chan=web&initms_chan=web" target = "_blank">Justice for People Seeking Asylum: Stop Life-Threatening Tactics Now</a></h1>
+    <p id = "regText" class="bg">The ACLU is urging the Department of Homeland Security to end its involvement with Texas's Operation Lone Star, which employs dangerous tactics against asylum seekers, including pushing them into the Rio Grande, where they face life-threatening risks including razor wire traps. This petition aims to halt these inhumane actions and uphold the rights and safety of those seeking asylum.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/petition/tell-biden-seeking-asylum-legal-right?ms=wwwactionpage&initms=wwwactionpage&ms_aff=NAT&initms_aff=NAT&ms_chan=web&initms_chan=web" target = "_blank">Tell Biden: Seeking Asylum is a Legal Right</a></h1>
+    <p id = "regText" class="bg">This petition focuses on a Supreme Court case threatening to impose restrictions on mifepristone, a key medication for abortion care. It urges the Court to reject anti-abortion efforts that compromise safe and effective reproductive health care, emphasizing the importance of upholding access to medication abortion in all states.</p>
+
+    <br id="section4"><br>
+
+    <h1 id="section1" id="smallerTitle" class="bgo"><span style='color: white'>Climate Change</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://preserve.nature.org/page/81465/petition/1?locale=en-US" target = "_blank">Stand Up for Real Climate Action</a></h1>
+    <p id = "regText" class="bg">This petition, organized by The Nature Conservancy, calls for U.S. leaders to honor commitments to global climate action, like the Paris Agreement, and to take urgent actions at home. It emphasizes the critical need for immediate action to prevent destructive effects of climate change.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.unrefugees.org/climate-change-petition-2021/" target = "_blank">The Climate Crisis Can No Longer Be Ignored</a></h1>
+    <p id = "regText" class="bg">This petition by USA for UNHCR highlights the emergency climate change poses, especially for people already displaced by conflict and violence. It urges governments to promote measures combating climate change to prevent increasing forced displacement and vulnerabilities.</p>
+
+
+    <br id="section5"><br>
+
+    <h1 id="section1" id="smallerTitle" class="bgo"><span style='color: white'>LGBTQ+ Rights</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/send-message/protect-trans-care-now?ms=wwwactionpage&initms=wwwactionpage&ms_aff=NAT&initms_aff=NAT&ms_chan=web&initms_chan=web" target = "_blank">Protect Trans Care Now</a></h1>
+    <p id = "regText" class="bg">This petition is a call to action against the increasing legislative efforts to criminalize gender-affirming care for transgender individuals. It urges members of Congress to publicly commit to protecting the health and dignity of transgender people, emphasizing the importance of evidence-based, medically necessary gender-affirming care and the need to counteract harmful political actions against the transgender community.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://action.aclu.org/petition/take-pledge-support-trans-youth-now?ms=wwwactionpage&initms=wwwactionpage&ms_aff=NAT&initms_aff=NAT&ms_chan=web&initms_chan=web" target = "_blank">Support Trans Youth Now</a></h1>
+    <p id = "regText" class="bg">This petition is an urgent call for individuals to pledge their support for transgender youth, who are facing a wave of legislative attacks across the United States. It highlights the need to combat these cruel measures, like bans on participation in school sports and denial of gender-affirming medical care, and to show trans youth that they are valued, supported, and not alone in their fight for rights and recognition.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank"></a></h1>
+    <p id = "regText" class="bg"></p>
+
+    <br id="section6"><br>
+
+    <h1 id="section1" id="smallerTitle" class="bgo"><span style='color: white'>Free Palestine <sup> new</sup></span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.amnesty.org/en/petition/demand-a-ceasefire-by-all-parties-to-end-civilian-suffering/" target = "_blank">Demand a Ceasefire by All Parties to End Civilian Suffering"</a></h1>
+    <p id = "regText" class="bg">Amnesty International's petition calls for an immediate ceasefire by all parties in the Israel-Gaza conflict to halt the devastating toll on civilians. It highlights the urgent need to end civilian bloodshed, ensure humanitarian aid access to Gaza, and address the long-term issues, including dismantling Israel's system of apartheid against Palestinians.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.change.org/p/sign-and-share-this-urgent-petition-calling-for-a-ceasefirenow-in-gaza-and-israel" target = "_blank">Open Call for an Immediate Ceasefire in Gaza and Israel</a></h1>
+    <p id = "regText" class="bg">This Change.org petition emphasizes the need for an immediate ceasefire in Gaza and Israel to prevent further humanitarian catastrophe and loss of innocent lives. It calls for global leaders and the UN Security Council to act decisively, ensuring the delivery of lifesaving aid and the protection of civilians in the conflict zone.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://actionnetwork.org/petitions/end-the-siege-on-gaza-now/" target = "_blank">End the Siege on Gaza Now</a></h1>
+    <p id = "regText" class="bg">The petition, organized by the Palestinian Youth Movement, calls for the U.S. President and Secretary of State to take action against the long-standing siege on Gaza. It highlights the dire humanitarian crisis faced by Palestinians, including lack of water, electricity, and medical supplies, and demands the establishment of a humanitarian corridor, cessation of hostilities, and lifting the blockade to allow vital supplies and aid to reach Gaza.</p>
+    <br id="section5"><br>
+</div>
+
+    
+
+
+
+  
+  
+  
+</body>
+</html>
