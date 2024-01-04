@@ -1,265 +1,69 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <!--   favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest"> 
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168123736-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-168123736-1');
-  </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script data-ad-client="ca-pub-3386243419088545" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta charset="utf-8">
-  <!--   End of Google analytics stuff -->
-
-  <!--   Bootstrap stuff -->
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-
-  <!--   General -->
   <meta name="viewport" content="width=device-width">
-  <title>Pb-Resources</title>
+  <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
 </head>
-
 <body>
-  <div id="ent">
-
-    <!-- Bootstarp off canvas nav bar  -->
-    <nav class="navbar bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Educate
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="sections/educate/cheatSheet.html">BLM Cheat Sheet</a></li>
-                  <li><a class="dropdown-item" href="sections/educate/podcasts.html">Podcasts</a></li>
-                  <li><a class="dropdown-item" href="sections/educate/movies.html">Movies</a></li>
-                  <li><a class="dropdown-item" href="sections/educate/books.html">Books</a></li>
-                  <li><a class="dropdown-item" href="sections/educate/live.html">Live</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Act
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="sections/act/petitions.html">Petitions</a></li>
-                  <li><a class="dropdown-item" href="sections/act/phoneCalls.html">Phone Calls</a></li>
-                  <li><a class="dropdown-item" href="sections/act/emails.html">Emails</a></li>
-                  <li><a class="dropdown-item" href="sections/act/boycott.html">Boycott</a></li>
-                  <li><a class="dropdown-item" href="sections/act/pride.html"><span style='color: red'>P</span>
-                      <span style='color: orange'>R</span>
-                      <span style='color: green'>I</span>
-                      <span style='color: blue'>D</span>
-                      <span style='color: violet'>E</span></a></li>
-                  <li><a class="dropdown-item" href="sections/act/blackTransLives.html">Black Trans Lives</a></li>
-                  <li><a class="dropdown-item" href="sections/act/protestingTips">Protesting Tips</a></li>
-                  <li><a class="dropdown-item" href="sections/act/bailInfo.html">Bail/ Arrest Info</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Donate
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="sections/donate/directAction.html">Direct Action</a></li>
-                  <li><a class="dropdown-item" href="sections/donate/organizations.html">Organizations</a></li>
-                  <li><a class="dropdown-item" href="sections/donate/blackBusinesses.html">Black Businesses</a></li>
-                  <li><a class="dropdown-item" href="sections/donate/bailFunds.html">Bail Funds</a></li>
-                  <li><a class="dropdown-item" href="sections/donate/memorialFunds.html">Memorial Funds</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sections/aboutUs.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sections/socials.html">Socials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sections/contact.html">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Portals
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="juneteenth/juneteenth.html">Juneteenth</a></li>
-                  <li><a class="dropdown-item" href="bhm/bhm.html">Black History Month</a></li>
-                  <li><a class="dropdown-item" href="MLKDay/mlk.html">MLK Day</a></li>
-                                    <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="redline/redline.html">Redline <span style='color: grey'>- 12/08/22</span></a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!--     Big image spash  -->
-    <div id="center">
-      <img id="bigImg" src="assets/pbrStyled.png">
-    </div>
-
-    <!--     Portals -->
-    <div id="spacer">
-      <div id="center">
-        <p id="topInfo">Connecting communities with the social justice movement. <br> <a id="red"
-            href="sections/aboutUs.html">Learn how to get
-            involved.</a></p>
-      </div>
-
-
-      <div class="specialSpace"></div>
-
-      <div class="portal" id="portalOne">
-        <a id="portalLink" href="BHM.html">
-          <div id="center" class>
-            <div class="spaceShort"></div>
-            <h1 id="portalTitle">Black History Month</h1>
-            <p id="portalText"><span style='color: white'>Tribute to unsung Black icons and histories</span></p>
-
-          </div>
-        </a>
-      </div>
-      <div class="space"></div>
-
-      <div class="portal" id="portalTwo">
-        <a id="portalLink" href="sections/educate/cheatSheet.html">
-          <div id="center">
-            <div class="spaceShort"></div>
-            <h1 id="portalTitle">BLM Cheat Sheet</h1>
-            <p id="portalText">Discover common words and phrases of the Black Lives Matter Movement</p>
-
-          </div>
-        </a>
-      </div>
-      <div class="space"></div>
-
-      <div class="portal" id="portalThree">
-        <a id="portalLink" href="juneteenth/juneteenth.html">
-          <div id="center">
-            <div class="space"></div>
-            <h1 id="portalTitle">Juneteenth</h1>
-            <p id="portalText">Action items and the history of holiday</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="space"></div>
-
-      <div class="portal" id="portalFour">
-        <a id="portalLink" href="MLKDay/mlk.html">
-          <div id="center">
-            <div class="space"></div>
-            <h1 id="portalTitle">MLK Day </h1>
-            <p id="portalText">Remembering MLK with unsung quotes</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="space"></div>
-
-      <div class="portal" id="portalFive">
-        <a id="portalLink" href="sections/educate/podcasts.html">
-          <div id="center">
-            <div class="space"></div>
-            <h1 id="portalTitle">Podcasts</h1>
-            <p id="portalText">Learn about Black stories in audio form</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="space"></div>
-
-      <div class="portal" id="portalSix">
-        <a id="portalLink" href="sections/donate/directAction.html">
-          <div id="center">
-            <div class="space"></div>
-            <h1 id="portalTitle">Direct Action</h1>
-            <p id="portalText">Mutual aid funds currently collecting donations</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="space"></div>
-
-      <div class="portal" id="portalSeven">
-        <a id="portalLink" href="sections/act/petitions.html">
-          <div id="center">
-            <div class="space"></div>
-            <h1 id="portalTitle">Petitions</h1>
-            <p id="portalText">Take action to make tangible change in our communities</p>
-          </div>
-        </a>
-      </div>
-
-    </div>
-
-    <div class="space"></div>
-
-    <div id="center">
-      <img id="bar" src="assets/bar.png">
-    </div>
-
-    <div class="space"></div>
-    <div class="space"></div>
-
-
-
-
-
-
-
-
-
-
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
   </div>
 
-</body>
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="#">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="education/movies.html">Movies</a>
+        <a href="#link2">Books</a>
+        <a href="#link3">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="#link1">Petitions</a>
+        <a href="#link2">Emails</a>
+        <a href="#link3">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="#link1">Organizations</a>
+        <a href="#link2">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="#link1">MLK Day</a>
+        <a href="#link1">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="#contact">About PBR</a>
+    <a class = "bgo" href="#contact">Contact</a>
+  </div>
 
+  <div id="mainDiv" class="center">
+    <h1 id="mainTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+    <div class="text-container">
+      <p class = "bgo" id="animatedText">Progress Building Resources</p>
+    </div>
+    <div class="button-container">
+      <a href="education/movies.html" class="button">Education</a>
+      <a href="link1.html" class="button">Action</a>
+      <a href="link3.html" class="button">Donation</a>
+      <a href="link3.html" class="button">Hubs</a>
+    </div>
+  </div>
+</body>
 </html>
