@@ -1,299 +1,266 @@
+/* General Styling */
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  background-color: #1E5631;
+}
+
+body {
+  align-items: center; /* Center vertically by default */
+}
+
 @font-face {
-  font-family: roundGothic;
-  src: url(assets/allRoundGothicDemi.ttf);
+  font-family: bgo;
+  src: url(assets/British-Green/British-Green-Oblique.ttf);
 }
 
-.nav-link:hover{
-  color: #e85d04;
+@font-face {
+  font-family: bgs;
+  src: url(assets/British-Green/British-Green-Script.ttf);
 }
 
-.nav-link:active{
-  color: #e85d04;
+@font-face {
+  font-family: bg;
+  src: url(assets/British-Green/British-Green.ttf);
 }
 
-#pageTitle{
-  color: black;
+.bgo {
+  font-family: bgo;
 }
 
-#center{
-  text-align: center;
-  font-family: roundGothic;
+.bgs {
+  font-family: bgs;
 }
 
-#red{
-  color: red;
+.bg {
+  font-family: bg;
 }
 
-#portalOne{
-  background-color: rgba(249, 195, 71, 0.7);
+
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 100;
 }
 
-#portalTwo{
-  background-color: rgba(245, 153, 60, 0.7);
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #FFD600;
 }
 
-#portalThree{
-  background-color: rgba(242, 124, 54, 0.7);
+.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-#portalFour{
-  background-color: rgba(238, 86, 43, 0.7);
+div.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: #1E5631; /* Change to your desired background color */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-#portalFive{
-  background-color: rgba(233, 52, 35, 0.7);
-}
-
-#portalSix{
-  background-color: rgba(230, 50, 30, 0.7);
-}
-
-#portalSeven{
-  background-color: rgba(184, 25, 7, 0.7);
-}
-
-#portalLink{
+.navbar a {
+  padding: 10px 15px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: 22px;
+  color: #FFD600;
+  display: block;
+  transition: 0.3s;
 }
 
-#portalTitle, #offcanvasNavbarLabel{
-  font-family: roundGothic;
+.navbar a:hover {
+  color: #f1f1f1;
 }
 
-#portalText, .dropdown-item, .nav-link, #def, #midText{
-  font-family: 'Work Sans', sans-serif;
+.dropdown {
+  display: block;
 }
 
-.midTitle{
-  color: #6a040f;
-  font-family: roundGothic;
-}
-
-#def{
-  color: #6a040f;
-}
-
-#remove{
-  text-decoration: none; 
-}
-
-.midText{
-  color: black;
-}
-
-.midText:hover{
-  color: black;
-}
-
-#topInfo{
-  font-family: roundGothic;
-}
-
-#orangeLink{
-  color: #e85d04;
-  text-decoration-color: #e85d04;
-}
-
-#subButton{
-  background-color: #e85d04;
-  border-radius: 12px;
+.dropbtn {
+  background-color: #1E5631; /* Match the navbar background color */
+  color: #FFD600;
+  padding: 10px;
   border: none;
-  color: white;
+  text-align: left;
+  width: 100%;
+  font-size: 22px; /* Match the font size of other navbar links */
+  cursor: pointer;
+  font-family: bgo;
+}
+
+.dropdown-content {
+  display: none;
+  position: static; /* Aligns dropdown content with other navbar items */
+  background-color: #1E5631; /* Match the navbar background color */
+  font-family: bgo;
+}
+
+.dropdown-content a {
+  color: #FFD600;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navTitle {
+  position: fixed;
+  top: 20px;
+  left: 60px; /* Adjust as needed to align with the hamburger menu */
+  font-size: 24px; /* Adjust size as needed */
+  color: #FFD600;
+  margin: 0;
+  z-index: 101; /* Ensure it's above other elements */
 }
 
 
-/* Responsive */
-@media screen and (min-width: 1001px) {
-  #topInfo{
-    font-size: 160%;
-    text-decoration: none;
-  }
-  #offcanvasNavbarLabel{
-    font-size: 300%;
-  }
-  .dropdown-item, .nav-link{
-    font-size: 150%;
-  }
-  #bigImg {
-    width: 60%;
-    height: auto;
-    margin-top: 7%;
-  }
-  #spacer{
-    margin: 7%;
-  }
-  .portal{
-    height: 190px;
-    border-radius: 215px;
-  }
-  #portalTitle{
-    font-size: 250%;
-  }
-  #portalText{
-    font-size: 150%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .specialSpace{
-     height: 80px; 
-  }
-  .space{
-    height: 50px;
-  }
-  .spaceShort{
-    height: 45px;
-  }
-  #pageTitle{
-    margin-top: 5%;
-    font-size: 400%;
-  }
-  .midTitle{
-    font-size: 300%;
-  }
-  #def{
-    font-size: 150%;
-  }
-  .midText{
-    font-size: 120%;
-  }
-  #bar{
-    width: 20%;
-    height: auto;
-  }
-  #posterImg{
-    width: 80%;
-    height: auto;
+#mainDiv {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Set height to auto */
+}
+
+#mainTitle {
+  font-size: 8vw; /* Responsive font size */
+  color: #FFD600;
+  margin: 0; /* Remove default margin */
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 600px) {
+  #mainTitle {
+    font-size: 12vw;
   }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 601px) {
+.text-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
- #topInfo{
-    font-size: 110%;
-    text-decoration: none;
+#animatedText {
+  font-size: 24px;
+  color: #FFD600;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Keyframes for fading in and out */
+@keyframes textFadeInOut {
+  0%, 100% {
+    opacity: 1;
   }
-  #offcanvasNavbarLabel{
-    font-size: 500%;
-  }
-  .dropdown-item, .nav-link{
-    font-size: 150%;
-  }
-  #bigImg {
-    width: 70%;
-    height: auto;
-    margin-top: 10%;
-  }
-  #spacer{
-    margin: 10%;
-  }
-  .portal{
-    height: 135px;
-    border-radius: 215px;
-  }
-  #portalTitle{
-    font-size: 200%;
-  }
-  #portalText{
-    font-size: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .space{
-    height: 35px;
-  }
-  .specialSpace{
-     height: 45px; 
-  }
-  .spaceShort{
-    height: 30px;
-  }
-  #pageTitle{
-    margin-top: 15%;
-    font-size: 400%;
-  }
-  .midTitle{
-    font-size: 250%;
-  }
-  #def{
-    font-size: 135%;
-  }
-  .midText{
-    font-size: 120%;
-  }
-  #bar{
-    width: 20%;
-    height: auto;
-  }
-  #posterImg{
-    width: 80%;
-    height: auto;
+  50% {
+    opacity: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #topInfo{
-    font-size: 95%;
-    text-decoration: none;
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons on mobile */
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: bg;
+  font-size: 2vw; /* Default font size */
+  text-decoration: none;
+  color: #FFD600; /* Default text color */
+  background-color: #1E5631; /* Default background color */
+  border: 3px solid #FFD600; /* Default border color */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; /* Prevent text from wrapping */
+  min-width: 150px; /* Minimum width to fit the longest word */
+  text-align: center; /* Center text in buttons */
+}
+
+.button:hover {
+  background-color: #FFD600; /* Change as needed */
+  color: #1E5631; /* Change as needed */
+}
+
+/* Position the title at the top center, but below the navbar */
+#title {
+  text-align: center; /* Center aligned */
+  width: 100%; /* Full width for center alignment */
+  margin-top: 60px; /* Adjust this value to position below the navbar */
+  position: relative; /* Relative to its normal position */
+}
+
+/* Position the smallerTitle below the title and left aligned */
+#smallerTitle, .smallerTitle {
+  text-align: left; /* Left aligned */
+  margin-left: 20px; /* Adjust left margin */
+  position: relative; /* Relative to its normal position */
+  margin-top: 20px; /* Space below the title */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start; /* Align to the top for mobile */
+    height: auto; /* Adjust height for mobile */
   }
-  #offcanvasNavbarLabel{
-    font-size: 300%;
+
+  #mainDiv {
+    margin-top: 120px; /* Increased top margin for more space */
+    height: auto; /* Ensure the div takes up only the necessary space */
   }
-  .dropdown-item, .nav-link{
-    font-size: 150%;
+
+  #mainTitle {
+    font-size: 12vw;
   }
-  #bigImg {
-    width: 90%;
-    height: auto;
-    margin-top: 20%;
+
+  #animatedText {
+    font-size: 22px; /* Smaller font size for mobile */
   }
-  #spacer{
-    margin: 7%;
+
+  .button {
+    font-size: 25px; /* Larger font size for buttons on mobile */
   }
-  .portal{
-    height: 100px;
-    margin-top: 10%;
-    border-radius: 215px;
-  }
-  #portalTitle{
-    font-size: 180%;
-  }
-  #portalText{
-    font-size: 80%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .specialSpace{
-     height: 30px; 
-  }
-  .space{
-    height: 25px;
-  }
-  .spaceShort{
-    height: 10px;
-  }
-  #pageTitle{
-    margin-top: 25%;
-    font-size: 300%;
-  }
-  .midTitle{
-    font-size: 200%;
-  }
-  #def{
-    font-size: 100%;
-  }
-  .midText{
-    font-size: 90%;
-  }
-  #bar{
-    width: 50%;
-    height: auto;
-  }
-  #posterImg{
-    width: 80%;
-    height: auto;
+  #navTitle {
+    left: 25px; /* Adjust for mobile if needed */
+    font-size: 18px; /* Adjust size for mobile */
   }
 }
 
-
-
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  .button-container {
+    flex-direction: row; /* Inline buttons on larger screens */
+    justify-content: center;
+  }
+}
