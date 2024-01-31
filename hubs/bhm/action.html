@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../../script.js" defer></script>
+  <script src="../../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../../education/movies.html">Movies</a>
+        <a href="../../education/books.html">Books</a>
+        <a href="../../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../../action/petitions.html">Petitions</a>
+        <a href="../../action/emails.html">Emails</a>
+        <a href="../../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../../donation/orgs.html">Organizations</a>
+        <a href="../../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="#">Black History Month</a>
+        <a href="../mlk/index.html">MLK Day</a>
+        <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../../about.html">About PBR</a>
+    <a class = "bgo" href="../../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>B</span>lack <span style='font-family: bgs'> H</span>istory<span style='font-family: bgs'> M</span>onth</h1>
+  
+  <div class="button-container">
+    <a href="index.html" id = "notActive" class="button">Home</a>
+    <a href="#" id = "active" class="button">Take Action</a>
+    <a href="figures.html" id = "notActive" class="button">Figures, Stories & Orgs Directory</a>
+  </div>
+
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  <br>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Email Your Education Agency —— Teach Black History in Every School</span></h1>
+
+    <p id = "regText" class="bg">Use our automatic email generator below to generate an email urging your state's Department of Education leader to prioritize teaching Black History in schools. Fill in your name and location to reflect that you are a constituent of the agency you're contacting, as well as a unique opening sentance to catch your representative's attention.</p>
+    
+
+
+    <div class = "center">
+      <label class = "smallerTitle" id = "stateLabel" for="states">Select your State: </label>
+      <select name="state" id="state" class = "selectDropdown">
+    </div> 
+      <option value = "Alabama">Alabama</option>
+      <option value = "Alaska">Alaska</option>
+      <option value = "Arizona">Arizona</option>
+      <option value = "Arkansas">Arkansas</option>
+      <option value = "California">California</option>
+      <option value = "Colorado">Colorado</option>
+      <option value = "Connecticut">Connecticut</option>
+      <option value = "Delaware">Delaware</option>
+      <option value = "Florida">Florida</option>
+      <option value = "Georgia">Georgia</option>
+      <option value = "Hawaii">Hawaii</option>
+      <option value = "Idaho">Idaho</option>
+      <option value = "Illinois">Illinois</option>
+      <option value = "Indiana">Indiana</option>
+      <option value = "Iowa">Iowa</option>
+      <option value = "Kansas">Kansas</option>
+      <option value = "Kentucky">Kentucky</option>
+      <option value = "Louisiana">Louisiana</option>
+      <option value = "Maine">Maine</option>
+      <option value = "Maryland">Maryland</option>
+      <option value = "Massachusetts">Massachusetts</option>
+      <option value = "Michigan">Michigan</option>
+      <option value = "Minnesota">Minnesota</option>
+      <option value = "Mississippi">Mississippi</option>
+      <option value = "Missouri">Missouri</option>
+      <option value = "Montana">Montana</option>
+      <option value = "Nebraska">Nebraska</option>
+      <option value = "Nevada">Nevada</option>
+      <option value = "New Hampshire">New Hampshire</option>
+      <option value = "New Jersey">New Jersey</option>
+      <option value = "New Mexico">New Mexico</option>
+      <option value = "New York">New York</option>
+      <option value = "North Carolina">North Carolina</option>
+      <option value = "North Dakota">North Dakota</option>
+      <option value = "Ohio">Ohio</option>
+      <option value = "Oklahoma">Oklahoma</option>
+      <option value = "Oregon">Oregon</option>
+      <option value = "Pennsylvania">Pennsylvania</option>
+      <option value = "Rhode Island">Rhode Island</option>
+      <option value = "South Carolina">South Carolina</option>
+      <option value = "South Dakota">South Dakota</option>
+      <option value = "Tennessee">Tennessee</option>
+      <option value = "Texas">Texas</option>
+      <option value = "Utah">Utah</option>
+      <option value = "Vermont">Vermont</option>
+      <option value = "Virginia">Virginia</option>
+      <option value = "Washington">Washington</option>
+      <option value = "West Virginia">West Virginia</option>
+      <option value = "Wisconsin">Wisconsin</option>
+      <option value = "Wyoming">Wyoming</option>
+    </select> 
+
+    <br>
+
+    <input class = "regInput" type="text" id="email" placeholder="Email" readonly></input>
+    <input class = "regInput" type="text" id="recipient" placeholder="Recipient" readonly></input>
+    <input class = "regInput" type="text" id="name" placeholder="Grace Hopper"></input>
+    <input class = "regInput" type="text" id="subject" placeholder="New York, NY"></input>
+    <input class = "regInput" type="text" id="sentence" placeholder="Teach Black History!"></input>
+    <button id="subButton" class = "actButt" onclick="sendEmail()">Submit</button>
+
+    <script>
+        var stateEmailMap = {
+            "Alabama": "superintendent@alsde.edu",
+            "Alaska": "eed.contact@alaska.gov",
+            "Arizona": "policyinbox@azed.gov",
+            "Arkansas": "Stacy.Smith@ade.arkansas.gov",
+            "California": "scheduler@cde.ca.gov",
+            "Colorado": "commissioner@cde.state.co.us",
+            "Connecticut": "SDE.StateBoard@ct.gov",
+            "Delaware": "dedoe@doe.k12.de.us",
+            "Florida": "Commissioner@fldoe.org",
+            "Georgia": "askdoe@gadoe.org",
+            "Hawaii": "doeinfo@k12.hi.us",
+            "Idaho": "info@sde.idaho.gov",
+            "Illinois": "support@isbe.net",
+            "Indiana": "webmaster@doe.in.gov",
+            "Iowa": "mckenzie.snow@iowa.gov",
+            "Kansas": "dfernkopf@ksde.org",
+            "Kentucky": "webmaster@education.ky.gov",
+            "Louisiana": "cade.brumley@la.gov",
+            "Maine": "commish.doe@maine.gov",
+            "Maryland": "stateboard.msde@maryland.gov",
+            "Massachusetts": "ESE.RAO@mass.gov",
+            "Michigan": "MDE-Office-of-the-Superintendent@michigan.gov",
+            "Minnesota": "mde.contactus@state.mn.us",
+            "Mississippi": "rellis@mdek12.org",
+            "Missouri": "Commissioner@dese.mo.gov",
+            "Montana": "Elsie.Arntzen@mt.gov ",
+            "Nebraska": "brian.maher@nebraska.gov",
+            "Nevada": "ndeinfo@doe.nv.gov",
+            "New Hampshire": "doe.info@doe.nh.gov",
+            "New Jersey": "stateboardoffice@doe.nj.gov",
+            "New Mexico": "ped.helpdesk@ped.nm.gov",
+            "New York": "emscurric@nysed.gov",
+            "North Carolina": "statesuperintendent@dpi.nc.gov",
+            "North Dakota": "dpi@nd.gov",
+            "Ohio": "contact.center@education.ohio.gov",
+            "Oklahoma": "curriculum.instruction@sde.ok.gov",
+            "Oregon": "meg.boyd@ode.oregon.gov",
+            "Pennsylvania": "ra-pdespecialed@pa.gov",
+            "Rhode Island": "Colleen.Brophy@ride.ri.gov",
+            "South Carolina": "info@ed.sc.gov",
+            "South Dakota": "doe@state.sd.us",
+            "Tennessee": "Commissioner.Education@tn.gov",
+            "Texas": "generalinquiry@tea.texas.gov",
+            "Utah": "angie.stallings@schools.utah.gov",
+            "Vermont": "aoe.edInfo@vermont.gov",
+            "Virginia": "Communications@doe.virginia.gov",
+            "Washington": "Randy.Spaulding@k12.wa.us",
+            "West Virginia": "comments.wvde@k12.wv.us",
+            "Wisconsin": "Media.Inquiries@dpi.wi.gov",
+            "Wyoming": "linda.finnerty@wyo.gov"
+        };
+
+
+        var stateRecipientMap = {
+            "Alabama": "Eric Mackey",
+            "Alaska": "Michael Johnson",
+            "Arizona": "Tom Horne",
+            "Arkansas": "Stacy Smith",
+            "California": "Tony Thurmond",
+            "Colorado": "Susana Córdova",
+            "Connecticut": "Connecticut Commissioner of Education",
+            "Delaware": "Delaware Secretary of Education",
+            "Florida": "Florida Commissioner of Education",
+            "Georgia": "Georgia Superintendent of Schools",
+            "Hawaii": "Hawaii Superintendent of Education",
+            "Idaho": "Idaho Superintendent of Public Instruction",
+            "Illinois": "Illinois Superintendent of Education",
+            "Indiana": "Indiana Secretary of Education",
+            "Iowa": "McKenzie Snow",
+            "Kansas": "Dr. David Fernkopf",
+            "Kentucky": "Kentucky Commissioner of Education",
+            "Louisiana": "Dr. Cade Brumley",
+            "Maine": "Pender Makin",
+            "Maryland": "Maryland State Superintendent of Schools",
+            "Massachusetts": "Massachusetts Commissioner of Elementary and Secondary Education",
+            "Michigan": "Dr. Michael F. Rice",
+            "Minnesota": "Minnesota Commissioner of Education",
+            "Mississippi": "Dr. Raymond C. Morgigno",
+            "Missouri": "Margie Vandeven",
+            "Montana": "Elsie Arntzen",
+            "Nebraska": "Brian Maher",
+            "Nevada": "Nevada Superintendent of Public Instruction",
+            "New Hampshire": "New Hampshire Commissioner of Education",
+            "New Jersey": "Diane Shoener",
+            "New Mexico": "New Mexico Secretary of Education",
+            "New York": "New York State Commissioner of Education",
+            "North Carolina": "Catherine Truitt",
+            "North Dakota": "North Dakota Superintendent of Public Instruction",
+            "Ohio": "Ohio Superintendent of Public Instruction",
+            "Oklahoma": "Oklahoma Superintendent of Public Instruction",
+            "Oregon": "Meg Boyd",
+            "Pennsylvania": "Pennsylvania Secretary of Education",
+            "Rhode Island": "Rhode Island Commissioner of Education",
+            "South Carolina": "South Carolina Superintendent of Education",
+            "South Dakota": "Dr. Joseph Graves",
+            "Tennessee": "Lizzette Reynolds",
+            "Texas": "Texas Commissioner of Education",
+            "Utah": "Angie Stallings",
+            "Vermont": "Vermont Secretary of Education",
+            "Virginia": "Virginia Superintendent of Public Instruction",
+            "Washington": "Randy Spaulding",
+            "West Virginia": "West Virginia State Superintendent of Schools",
+            "Wisconsin": "Jill K. Underly",
+            "Wyoming": "Linda Finnerty"
+        };
+
+        document.getElementById('state').addEventListener('change', function() {
+            updateFields(this.value);
+        });
+
+        function updateFields(state) {
+            var emailField = document.getElementById('email');
+            var recipientField = document.getElementById('recipient');
+
+            emailField.value = stateEmailMap[state] || ''; // Update email, clear if state is not in the map
+            recipientField.value = stateRecipientMap[state] || ''; // Update recipient
+        }
+
+        function sendEmail() {
+          var input = document.getElementById('name');
+          name = input.value;
+          var input = document.getElementById('email');
+          email = input.value;
+          var input = document.getElementById('subject');
+          subject = input.value;
+          var input = document.getElementById('sentence');
+          greeting = input.value;
+          var input = document.getElementById('recipient');
+          recipient = input.value;
+          topic = "Urgent Need for Comprehensive Black History Curriculum in Our Schools"
+          info = "I am writing to express a deep concern regarding the current state of Black history education in our schools. Recent research and expert opinions highlight the imperative need for a comprehensive and inclusive curriculum that encompasses Black history, civil rights events, and the contributions of Black authors and voices across all subjects."
+          info2 = "The teaching of Black history is not just a matter of representation but is crucial for fostering a complete understanding of American history and society. The USC Rossier School of Education emphasizes the importance of discussing ideologies like White supremacy, which has shaped our nation's course, yet is often overlooked in educational standards (USC Rossier School of Education, 2023). By omitting these critical aspects, we deny students a full grasp of the complexities and realities of our past and present."
+          info3 = "Moreover, the inclusion of Black history in education is essential for all students, not just those of African American descent. The Newark Trust for Education asserts that such an inclusive curriculum promotes empathy, understanding, and a deeper awareness of societal structures (The Newark Trust for Education, 2023). It's not just about teaching historical facts but about inspiring students to advocate for causes and understand their role in a diverse society."
+          info4 = "The importance of learning Black history is further highlighted by UCLA's insights, which stress that historical narratives have often omitted or watered down Black experiences. This erasure undermines the comprehensive understanding of American history and deprives all students, regardless of race, of the opportunity to see themselves reflected in the nation's story (UCLA, 2023)."
+          info5 = "The case of Philadelphia, as reported by Hidden City Philadelphia, serves as a powerful example of the transformative impact of a robust Black history curriculum. The city's mandate for Black history courses showcases the potential for such education to reshape understanding and challenge stereotypes (Hidden City Philadelphia, 2023)."
+          info6 = "However, challenges persist. As reported by Johns Hopkins Hub, many schools struggle to create curricula that are both representative and of high quality. The focus often remains on the negative aspects of African American life, omitting significant achievements and contributions (Johns Hopkins Hub, 2023). This incomplete portrayal reinforces stereotypes and fails to provide students with a rich, nuanced understanding of Black history."
+          info7 = "In light of these insights, I urge the State Department of Education to take decisive action. We need to ensure that our curriculum:"
+          info8 = "1. Incorporates comprehensive lessons on Black history and civil rights events."
+          info9 = "2. Includes Black authors and literary contributions in English curriculums."
+          info10 = "3. Integrates Black voices and perspectives across all subjects."
+          info11 = "4. Provides teachers with the necessary training and resources for effective and sensitive instruction."
+          info12 = "Our goal should be to provide an education that reflects the diversity of our society and prepares students to be informed, empathetic, and active citizens. I look forward to your response and hope to see meaningful changes in our educational system."
+          window.location.href = "mailto: " + email + "?subject=" + topic + " || " + name + " " + subject + "&body=" + recipient + "," + "%0D%0A" + "%0D%0A" + greeting + "%0D%0A" + "%0D%0A" + info + "%0D%0A" + "%0D%0A" + info2 + "%0D%0A" + "%0D%0A" + info3 + "%0D%0A" + "%0D%0A" + info4 + "%0D%0A" + "%0D%0A" + info5 + "%0D%0A" + "%0D%0A" + info6 + "%0D%0A" + "%0D%0A" + info7 + "%0D%0A" + info8 + "%0D%0A" + info9 + "%0D%0A" + info10 + "%0D%0A" + info11 +"%0D%0A" + "%0D%0A" + info12 +"%0D%0A" + "%0D%0A" + "Best," + "%0D%0A" + "%0D%0A" + name + " -- " + subject;
+        }
+    </script>
+
+
+    <br id="section3"><br> <br>
+
+    <div class="email-section">
+        <h1 id="smallerTitle" class="bgo"><span style='color: white'>Whats in the email: Urgent Need for Comprehensive Black History Curriculum in Our Schools</span></h1>
+        <p id = "regText" class="bg">I am writing to express a deep concern regarding the current state of Black history education in our schools. Recent research and expert opinions highlight the imperative need for a comprehensive and inclusive curriculum that encompasses Black history, civil rights events, and the contributions of Black authors and voices across all subjects.</p>
+        <p id = "regText" class="bg">The teaching of Black history is not just a matter of representation but is crucial for fostering a complete understanding of American history and society. The USC Rossier School of Education emphasizes the importance of discussing ideologies like White supremacy, which has shaped our nation's course, yet is often overlooked in educational standards (USC Rossier School of Education, 2023). By omitting these critical aspects, we deny students a full grasp of the complexities and realities of our past and present.</p>
+        <p id = "regText" class="bg">Moreover, the inclusion of Black history in education is essential for all students, not just those of African American descent. The Newark Trust for Education asserts that such an inclusive curriculum promotes empathy, understanding, and a deeper awareness of societal structures (The Newark Trust for Education, 2023). It's not just about teaching historical facts but about inspiring students to advocate for causes and understand their role in a diverse society.</p>
+        <p id = "regText" class="bg">The importance of learning Black history is further highlighted by UCLA's insights, which stress that historical narratives have often omitted or watered down Black experiences. This erasure undermines the comprehensive understanding of American history and deprives all students, regardless of race, of the opportunity to see themselves reflected in the nation's story (UCLA, 2023).</p>
+        <p id = "regText" class="bg">The case of Philadelphia, as reported by Hidden City Philadelphia, serves as a powerful example of the transformative impact of a robust Black history curriculum. The city's mandate for Black history courses showcases the potential for such education to reshape understanding and challenge stereotypes (Hidden City Philadelphia, 2023).</p>
+        <p id = "regText" class="bg">However, challenges persist. As reported by Johns Hopkins Hub, many schools struggle to create curricula that are both representative and of high quality. The focus often remains on the negative aspects of African American life, omitting significant achievements and contributions (Johns Hopkins Hub, 2023). This incomplete portrayal reinforces stereotypes and fails to provide students with a rich, nuanced understanding of Black history.</p>
+        <p id = "regText" class="bg">In light of these insights, I urge the State Department of Education to take decisive action. We need to ensure that our curriculum:</p>
+        <p id = "regText" class="bg">1. Incorporates comprehensive lessons on Black history and civil rights events.</p>
+        <p id = "regText" class="bg">2. Includes Black authors and literary contributions in English curriculums.</p>
+        <p id = "regText" class="bg">3. Integrates Black voices and perspectives across all subjects.</p>
+        <p id = "regText" class="bg">4. Provides teachers with the necessary training and resources for effective and sensitive instruction.</p>
+        <p id = "regText" class="bg">Our goal should be to provide an education that reflects the diversity of our society and prepares students to be informed, empathetic, and active citizens. I look forward to your response and hope to see meaningful changes in our educational system.</p>
+    </div>
+
+    <br><br>
+
+  </div>
+
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../../script.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="../../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../../education/movies.html">Movies</a>
+        <a href="../../education/books.html">Books</a>
+        <a href="../../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../../action/petitions.html">Petitions</a>
+        <a href="../../action/emails.html">Emails</a>
+        <a href="../../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../../donation/orgs.html">Organizations</a>
+        <a href="../../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="#">Black History Month</a>
+        <a href="../mlk/index.html">MLK Day</a>
+        <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../../about.html">About PBR</a>
+    <a class = "bgo" href="../../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>B</span>lack <span style='font-family: bgs'> H</span>istory<span style='font-family: bgs'> M</span>onth</h1>
+
+  <div class="button-container">
+    <a href="#" id = "active" class="button">Home</a>
+    <a href="action.html" id = "notActive" class="button">Take Action</a>
+    <a href="figures.html" id = "notActive" class="button">Figures, Stories & Orgs Directory</a>
+  </div>
+  
+  <div id = "box">
+        <p id = "regText" class="bg">In celebration of Black History Month at PBR, we are shining a spotlight on lesser-known and under-celebrated civil rights leaders and pivotal figures in black history, all while acknowledging the current figures who are actively shaping black history today. Discover fresh graphics featuring these remarkable individuals and other historical stories every week. A new organization making significant contributions in this arena will also be featured here, weekly.</p>
+        <p id = "regText" class="bg">To further honor the legacy of black history, you can utilize our "Take Action" tool, which allows you to advocate for comprehensive black history curriculum in your state by sending automated emails to your local state department of education. Happy Black History Month, let's continue to educate and uplift together!</p>
+  </div>
+
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section1">Figures of the Week</option>
+      <option value="section2">Story of the Week</option>
+      <option value="section3">Org of the Week</option>
+    </select>
+  </div>
+
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Figures of the Week</span></h1>
+    <img id="figure1" class = "storyIMG" src=""> 
+    <img id="figure2" class = "storyIMG" src="">
+    <img id="figure3" class = "storyIMG" src="">
+    <img id="figure4" class = "storyIMG"src="">
+
+
+    <br id="section1"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Story of the Week</span></h1>
+
+    <div class="container">
+        <div class="section narrower">
+            <img id="story1" src="">
+            <p id = "regText" class="bg">Download and Post</p>
+        </div>
+        <div class="section wider">
+            <img class= "widerIMG" id="story2" src="">
+        </div>
+        
+    </div>
+    <h1 class="bgo"><span style='color: white' id = "storyTitle">Title</span></h1>
+    <p id = "storyText" class = "regText" class="bg">Blurb</p>
+
+    <br id="section2"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Organization of the Week</span></h1>
+
+    <div class="container">
+        <div class="section narrower">
+            <img id="org1" src="">
+            <p id = "regText" class="bg">Download and Post</p>
+        </div>
+        <div class="section wider">
+            <img class= "widerIMG" id="org2" src="">
+        </div>
+    </div>
+    <h1  class="bgo"><span style='color: white' id = "orgTitle">Title</span></h1>
+    <p id = "orgText" class = "regText" class="bg">Blurb</p>
+
+
+    
+    <br><br>
+
+  </div>
+
+  
+  
+  
+</body>
+</html>

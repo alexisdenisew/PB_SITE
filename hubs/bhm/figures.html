@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../../script.js" defer></script>
+  <script src="../../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../../education/movies.html">Movies</a>
+        <a href="../../education/books.html">Books</a>
+        <a href="../../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../../action/petitions.html">Petitions</a>
+        <a href="../../action/emails.html">Emails</a>
+        <a href="../../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../../donation/orgs.html">Organizations</a>
+        <a href="../../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="#">Black History Month</a>
+        <a href="../mlk/index.html">MLK Day</a>
+        <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../../about.html">About PBR</a>
+    <a class = "bgo" href="../../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>B</span>lack <span style='font-family: bgs'> H</span>istory<span style='font-family: bgs'> M</span>onth</h1>
+
+  <div class="button-container">
+    <a href="index.html" id = "notActive" class="button">Home</a>
+    <a href="action.html" id = "notActive" class="button">Take Action</a>
+    <a href="#" id = "active" class="button">Figures, Stories & Orgs Directory</a>
+  </div>
+
+
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section">Figures Directory</option>
+      <option value="section1">Stories Directory</option>
+      <option value="section2">Organizations Directory</option>
+    </select>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Figures Directory</span></h1>
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Malcolm X</a></h1>
+    <p id = "regText" class="bg">Malcolm X was a prominent African American leader and influential figure in the Nation of Islam, who advocated for black empowerment and the promotion of Islam within the black community. His most impactful work includes his advocacy for black self-defense and self-determination. He should be recognized for his posthumous evolution from a controversial figure to a globally recognized advocate for human rights.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Ella Baker</a></h1>
+    <p id = "regText" class="bg">Ella Baker was a key civil rights and human rights activist. She is best known for her behind-the-scenes work in influential organizations like the NAACP, the Southern Christian Leadership Conference (SCLC), and the Student Nonviolent Coordinating Committee (SNCC). Baker's emphasis on grassroots organizing and leadership of the young people is a significant legacy that deserves more recognition.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Fred Hampton</a></h1>
+    <p id = "regText" class="bg">Fred Hampton was a charismatic leader in the Black Panther Party, known for his dynamic oratory and efforts to broker peace among gang members. He played a key role in the Party's Free Breakfast for Children program and health clinics. Hampton's dedication to fighting racial injustice and his efforts to build a "Rainbow Coalition" of various racial and ethnic groups deserves much more recognition.</p> <br>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank"><span style='color: white;'>Making Black History: </span> Coco Gauff</a></h1>
+    <p id = "regText" class="bg">Coco Gauff is a remarkable young American tennis player who made history at the age of 15 by defeating Venus Williams at Wimbledon in 2019. Gauff demonstrated prodigious talent from a young age, inspired by her athletic parents. Her remarkable journey includes becoming the world's No. 1 junior player, winning her first WTA title at the 2019 Linz Open, and claiming her first Grand Slam singles title at the US Open in 2023. Gauff's achievements at such a young age have made her a significant figure in both the tennis world and as a role model for aspiring athletes.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">James Baldwin</a></h1>
+    <p id = "regText" class="bg">James Baldwin was an acclaimed African American writer and social critic, known for his essays on racial, sexual, and class distinctions in Western societies. His most impactful works include "Go Tell It on the Mountain" and "The Fire Next Time." Baldwin's profound insights on race and identity in America, which remain deeply relevant today, should continue to be celebrated.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Angela Davis</a></h1>
+    <p id = "regText" class="bg">A prominent figure in the civil rights movement, Angela Davis is renowned for her work as a political activist, academic, and author. She gained national attention in the 1960s for her involvement with the Communist Party USA and her close relations with the Black Panther Party. Davis' advocacy for prison reform and racial justice has been pivotal. Her role in shaping feminist theory and her relentless pursuit of social justice across multiple fronts, beyond her iconic status, is a testament to her enduring influence and intellectual rigor.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Stokely Carmichael</a></h1>
+    <p id = "regText" class="bg">Stokely Carmichael, later known as Kwame Ture, was a significant figure in the American civil rights movement, initially rising to prominence as a leader of the Student Nonviolent Coordinating Committee (SNCC). He later became a prime advocate for the Black Power movement, coining and popularizing the term itself. Carmichael's contribution to shifting the conversation from civil rights to Black empowerment and his global activism, particularly in connecting the African-American struggle with anti-colonial movements worldwide, is a remarkable aspect of his legacy.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank"><span style='color: white;'>Making Black History: </span>Mikki Kendall</a></h1>
+    <p id = "regText" class="bg">Mikki Kendall is a celebrated author, activist, and cultural critic who has significantly influenced discussions on social justice and feminism. She is known for her impactful work on Twitter, creating hashtags like #SolidarityIsForWhiteWomen, which highlights racism in the feminist movement. Kendall's literary contributions include the graphic novel "Amazons, Abolitionists, and Activists" and her book "Hood Feminism," which critiques mainstream feminism for overlooking the struggles of women of color. Her essays and books underscore the importance of addressing issues like poverty, housing, and medical care within the feminist framework</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Huey P. Newton</a></h1>
+    <p id = "regText" class="bg">Co-founder of the Black Panther Party, Huey P. Newton was instrumental in its development into a significant political force in the 1960s. Known for advocating armed self-defense in response to police brutality, he also played a crucial role in initiating community-based programs like Free Breakfast for Children. Newton's deep commitment to intersectionality in social justice issues, often overlooked, showcases his forward-thinking approach to civil rights activism.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Claudette Colvin</a></h1>
+    <p id = "regText" class="bg">Months before Rosa Parks' more famous act of defiance, 15-year-old Claudette Colvin refused to give up her seat to a white passenger on a segregated bus in Montgomery, Alabama. Her courageous act was a pivotal moment in the civil rights movement. Often overshadowed by Parks, Colvin's bravery as a teenager and her role as a plaintiff in the landmark Browder v. Gayle case, which led to the desegregation of buses in Montgomery, merit greater recognition and celebration as a key part of civil rights history.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Katherine Johnson</a></h1>
+    <p id = "regText" class="bg">An exceptional mathematician, Katherine Johnson played a crucial role at NASA, where her calculations of orbital mechanics were critical to the success of the first and subsequent U.S. crewed spaceflights. Her story was popularized in the film "Hidden Figures." Beyond her mathematical genius, Johnson's determination to excel in a male-dominated field during a time of racial segregation is a striking example of breaking barriers that transcended both race and gender in science.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank"><span style='color: white;'>Making Black History: </span> Justin J. Pearson</a></h1>
+    <p id = "regText" class="bg">Justin J. Pearson is a dynamic community organizer and Tennessee House Representative for District 86, renowned for his environmental and social justice advocacy. His tenure in 2023 was marked by an unprecedented event where he, alongside other representatives, was expelled from the House following a protest for gun control laws, only to be reinstated and re-elected with overwhelming support. Pearson's dedication to justice and community welfare has made him a significant figure in contemporary Black history, emphasizing the power of grassroots activism in effecting change.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Ida B. Wells</a></h1>
+    <p id = "regText" class="bg">Ida B. Wells was a fearless journalist, educator, and early leader in the civil rights movement. She is best known for her work as an investigative journalist exposing the horrors of lynching in the United States. Wells was also a founder of the NAACP. Her unyielding commitment to justice, especially in journalism and political activism, set a formidable standard for truth-telling against oppressive systems, a legacy that resonates powerfully in today's social and political landscape.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Pauli Murray </a></h1>
+    <p id = "regText" class="bg">A civil rights activist, lawyer, Episcopal priest, and author, Pauli Murray was a pioneering figure in challenging racial and gender discrimination. Murray co-founded the National Organization for Women (NOW) and their legal arguments influenced landmark civil rights cases. Beyond these accomplishments, Murray's vision of embracing multiple aspects of identity and fighting for equality on several fronts simultaneously is a remarkably modern and progressive approach that continues to inspire activists and scholars.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Fannie Lou Hammer</a></h1>
+    <p id = "regText" class="bg">Fannie Lou Hamer rose from humble beginnings to become a powerful voice in the civil rights movement, known for her electrifying oratory skills and unflinching determination. As a leader in the Student Nonviolent Coordinating Committee (SNCC) and a co-founder of the Mississippi Freedom Democratic Party, Hamer played a pivotal role in fighting for voting rights. Her famous statement, "I am sick and tired of being sick and tired," is emblematic of her raw honesty and relentless pursuit of justice, attributes that make her an enduring symbol of grassroots activism.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank"><span style='color: white;'>Making Black History: </span> Quinta Brunson</a></h1>
+    <p id = "regText" class="bg">
+        Quinta Brunson is a groundbreaking actress and creator, renowned for her work on the acclaimed ABC sitcom "Abbott Elementary," which she created, wrote, and starred in. In 2024, she made history as the second Black woman to win the Primetime Emmy Award for Outstanding Lead Actress in a Comedy Series, a feat not achieved for 40 years since Isabel Sanford's win in 1981. Brunson's unique voice and perspective in comedy have made her a significant and influential figure in modern television and Black history.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Shirley Chisolm</a></h1>
+    <p id = "regText" class="bg">Shirley Chisholm was the first African American woman elected to the United States Congress and the first woman and African American to seek the nomination for president from one of the two major political parties. Her campaign motto, "Unbought and Unbossed," reflects her independent and trailblazing approach to politics. Chisholm's legacy is not just in her groundbreaking achievements but also in her fierce advocacy for education, women's rights, and minority communities, paving the way for future generations of leaders.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Audre Lorde</a></h1>
+    <p id = "regText" class="bg">Audre Lorde was a writer, feminist, womanist, librarian, and civil rights activist. As a poet, she expressed her anger and outrage at civil and social injustices she observed throughout her life. Lorde's work is celebrated for its exploration of the intersections of race, gender, and sexuality, which influenced the direction of the feminist movement. Her advocacy for the recognition of the 'erotic as power' and the celebration of differences among women are crucial contributions to feminist theory and practice, underscoring the importance of embracing diversity in the struggle for equality.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Muhamad Ali</a></h1>
+    <p id = "regText" class="bg">Widely regarded as one of the greatest boxers of all time, Muhammad Ali was not just a sports icon but also a significant figure in the civil rights movement. Known for his exceptional skills in the ring and his charismatic personality, Ali gained further prominence for his outspoken stance on racial injustice, his opposition to the Vietnam War, and his conversion to Islam. What deserves greater recognition is his humanitarian work and advocacy for social justice and racial equality, which continued long after his boxing career ended, reflecting his deep commitment to making a lasting impact beyond the sporting world. His life exemplifies the power of using one's platform for a broader societal change, making him a role model for athletes and activists alike.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank"><span style='color: white;'>Making Black History: </span> Marley Dias</a></h1>
+    <p id = "regText" class="bg">Marley Dias is an impressive young figure in Black history and activism, best known for launching the #1000BlackGirlBooks campaign at the age of 11. This initiative aimed to collect and donate children's books that featured Black girls as the main character, addressing the lack of diversity in children's literature. Her campaign not only garnered widespread attention but also successfully collected thousands of books, significantly impacting cultural representation in literature. Dias continues to be a vocal advocate for diversity and education, showing how young voices can lead significant societal change and inspire a new generation of readers and leaders.</p> <br>
+
+ 
+    <br id="section1"><br> <br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Stories Directory</span></h1>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Freedom Summer</a></h1>
+    <p id = "regText" class="bg">Freedom Summer was a significant campaign in the civil rights movement aimed at registering Black voters in Mississippi. A collaboration primarily between civil rights organizations like SNCC, CORE, and the NAACP, it brought hundreds of volunteers, predominantly white college students, to the South to aid in this effort. Freedom Summer also established Freedom Schools, which provided education and empowerment to Black youths in Mississippi, highlighting the integral role of education in the fight for civil rights.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Bloody Sunday</a></h1>
+    <p id = "regText" class="bg">Bloody Sunday refers to the brutal police attack on peaceful civil rights demonstrators on March 7, 1965, as they attempted to march from Selma to Montgomery, Alabama, to protest voting rights discrimination. This event was pivotal in galvanizing national support for the civil rights movement and led to the passage of the Voting Rights Act of 1965. The televised coverage of the event brought the brutality of the Jim Crow South into living rooms across America, significantly swaying public opinion.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Rainbow Coalition</a></h1>
+    <p id = "regText" class="bg">The Rainbow Coalition was an unprecedented alliance formed by Fred Hampton, leader of the Chicago chapter of the Black Panther Party. It included diverse groups like the Young Lords (a Puerto Rican organization) and the Young Patriots (of poor white Appalachians). This coalition transcended racial lines, uniting different communities to fight against economic injustice and police brutality. This coalition was one of the first of its kind to effectively bridge racial divides for a common cause in the United States.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Kneel-Ins</a></h1>
+    <p id = "regText" class="bg">Kneel-Ins were a form of protest used during the civil rights movement, where African Americans would attend predominantly white churches and kneel outside or in the pews to protest segregation within Christian congregations. These acts highlighted the hypocrisy of churches preaching love and inclusivity while practicing racial segregation. These protests not only challenged segregation in public spaces but also within religious institutions, playing a vital role in the broader struggle for integration.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">The Strike on Mine Mill</a></h1>
+    <p id = "regText" class="bg">The strike on Mine Mill was a significant labor movement event, primarily involving African American workers at mining and milling companies. These workers protested against discriminatory labor practices and poor working conditions. The event is notable for highlighting the intersection of civil rights and labor rights, demonstrating the double burden of racial and economic exploitation faced by Black workers. It helped pave the way for greater union representation and rights for African American workers in the industry.</p> <br>
+    
+    <br id="section2"><br> <br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Organizations Directory</span></h1>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">The Okra Project</a></h1>
+    <p id = "regText" class="bg">The Okra Project is a collective that addresses the nutritional needs within the Black Trans community. Named after the African comfort food, the project provides meals to Black Trans people, particularly those experiencing food insecurity. The organization hires Black Trans chefs to cook and deliver healthy, home-cooked, and culturally relevant meals. This approach not only addresses immediate food needs but also affirms and uplifts the dignity of the Black Trans community, combining support with empowerment.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Equal Justice Initiative</a></h1>
+    <p id = "regText" class="bg">Founded by Bryan Stevenson, the Equal Justice Initiative is a non-profit organization based in Montgomery, Alabama. It's dedicated to providing legal representation to people who have been illegally convicted, unfairly sentenced, or abused in state jails and prisons. EJI also challenges the death penalty and excessive punishment and provides re-entry assistance to formerly incarcerated people. Furthermore, EJI is involved in broader educational and memorial projects to address historical injustices, including the creation of The National Memorial for Peace and Justice, which commemorates the victims of lynching in the United States.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">Algorithmic Justice League</a></h1>
+    <p id = "regText" class="bg">The Algorithmic Justice League is an organization founded by Joy Buolamwini, which aims to challenge bias in decision-making software. AJL's work focuses on the social implications of artificial intelligence and algorithmic bias, particularly how these technologies can perpetuate racial and gender prejudices. By researching, raising awareness, and advocating for equitable and accountable AI, the AJL plays a crucial role in ensuring that technological advancements don't further marginalize the Black community and other underrepresented groups.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">15 Percent Pledge</a></h1>
+    <p id = "regText" class="bg">The 15 Percent Pledge is an economic equality initiative that urges major retailers to commit 15% of their shelf space to Black-owned businesses. The figure represents the approximate percentage of Black people in the United States. This pledge aims to create a more equitable market space and support Black-owned businesses, fostering economic empowerment within the Black community. By holding corporations accountable and advocating for structural changes in business practices, the pledge helps ensure more substantial and long-lasting economic opportunities for Black entrepreneurs.</p> <br>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank">The Bail Project</a></h1>
+    <p id = "regText" class="bg">The Bail Project is a national nonprofit organization that seeks to mitigate the impact of incarceration on low-income communities. It provides bail assistance to individuals in need, thereby preventing pretrial incarceration due to an inability to pay bail. The organization's work addresses the disproportionate impact of the bail system on Black communities and other marginalized groups. By helping people return home to their families and jobs while awaiting court dates, The Bail Project combats the injustices of the bail system and advocates for systemic change to end cash bail.</p> <br>
+    
+
+    
+    <br><br>
+
+  </div>
+
+  
+  
+  
+</body>
+</html>
