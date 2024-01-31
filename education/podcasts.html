@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../script.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="movies.html">Movies</a>
+        <a href="books.html">Books</a>
+        <a href="#">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../action/petitions.html">Petitions</a>
+        <a href="../action/emails.html">Emails</a>
+        <a href="../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../donation/orgs.html">Organizations</a>
+        <a href="../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="../hubs/bhm/index.html">Black History Month</a>
+        <a href="../hubs/mlk/index.html">MLK Day</a>
+        <a href="../hubs/blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../about.html">About PBR</a>
+    <a class = "bgo" href="../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>E</span>ducation</h1>
+  <div class="button-container">
+    <a href="movies.html" id = "notActive" class="button">Movies</a>
+    <a href="#" id = "active" class="button">Podcasts</a>
+    <a href="books.html" id = "notActive" class="button">Books</a>
+  </div>
+
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section1">Racial Justice</option>
+      <option value="section2">Reproductive Rights</option>
+      <option value="section3">Immigration</option>
+      <option value="section4">Climate Change</option>
+      <option value="section5">LGBTQ+ Rights</option>
+      <option value="section6">Free Palestine</option>
+    </select>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Racial Justice</span></h1>
+    
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://www.npr.org/podcasts/510312/codeswitch" target = "_blank">Code Switch</a></h1>
+    <p id = "regText" class="bg">The fearless conversations about race that you've been waiting for. Hosted by journalists of color, our podcast tackles the subject of race with empathy and humor. [We] explore how race affects every part of society — from politics and pop culture to history, food and everything in between.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://www.schoolcolorspodcast.com/" target = "_blank">School Colors</a></h1>
+    <p id = "regText" class="bg">A documentary podcast from Brooklyn Deep about how race, class, and power shape American cities and schools. [We] follow generations of parents and educators fighting for their children in a rapidly changing Black neighborhood in Brooklyn, New York.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://www.kqed.org/podcasts/onourwatch" target = "_blank">On Our Watch</a></h1>
+    <p id = "regText" class="bg">On Our Watch brings listeners into the rooms where officers are questioned and witnesses are interrogated to find out who this system is really protecting. Is it the officers, or the public they've sworn to serve?</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://serialpodcast.org/season-three" target = "_blank">Serial: Season Three</a></h1>
+    <p id = "regText" class="bg">Serial is heading back to court. This time, in Cleveland. Not for one extraordinary case; instead, Serial wanted to tackle the whole criminal justice system. To do that [we] figured [we’d] need to look at something different: ordinary cases.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://gimletmedia.com/shows/uncivil" target = "_blank">Uncivil</a></h1>
+    <p id = "regText" class="bg">A history podcast from Gimlet Media, where we go back to the time our divisions turned into a war, and bring you stories left out of the official history.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://www.nbcnews.com/southlake-podcast" target = "_blank">Southlake</a></h1>
+    <p id = "regText" class="bg">Southlake, Texas, seems to have it all: stately homes, intense civic pride, and above all, terrific schools. So when a video surfaced in 2018 showing Southlake high school students chanting the N-word — and when Black residents came forward to share stories of racist harassment and bullying — the school board vowed to make changes. But the unveiling of a Cultural Competence Action Plan set off a backlash that’s consumed Southlake, fueled by a growing national crusade against critical race theory.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://www.npr.org/podcasts/510357/louder-than-a-riot" target = "_blank">Louder Than a Riot</a></h1>
+    <p id = "regText" class="bg">Rhyme and punishment go hand in hand in America. Louder Than A Riot reveals the interconnected rise of hip-hop and mass incarceration. From Bobby Shmurda to Nipsey Hussle, each episode explores an artist's story to examine a different aspect of the criminal justice system that disproportionately impacts Black America.</p>
+
+    <h1 id="section1" class="bgo"><a id="smallerTitle" href = "https://www.theatlantic.com/podcasts/floodlines/" target = "_blank">Floodlines</a></h1>
+    <p id = "regText" class="bg">The story of an unnatural disaster.</p>
+
+    <br id="section2"><br>
+
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Reproductive Rights</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://sph.umich.edu/podcast/season5/abortion-access-and-reproductive-justice-part-1.html" target = "_blank">Abortion Access and Reproductive Justice - Population Healthy Podcast</a></h1>
+    <p id = "regText" class="bg">An episode from the University of Michigan School of Public Health discussing the importance of access to safe abortions and pregnancy-related health risks.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/for-the-love-of-roe/id1479080200" target = "_blank">For the Love of Roe</a></h1>
+    <p id = "regText" class="bg">Host Alison Case explores abortion access across the U.S. and the potential impacts of the overturning of Roe v. Wade.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/ordinary-equality/id1492330633" target = "_blank">Ordinary Equality: Reproductive Justice</a></h1>
+    <p id = "regText" class="bg">This podcast delves into the history of the Reproductive Justice movement, offering insights into its intersectional approach to reproductive freedom.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.reprosfightback.com/" target = "_blank">rePROs Fight Back</a></h1>
+    <p id = "regText" class="bg">Host Jennie Wetter discusses reproductive health, rights, and justice issues, featuring interviews with global experts on various topics.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.rethinkingreproductivehealth.com/podcast" target = "_blank">Rethinking Reproductive Health</a></h1>
+    <p id = "regText" class="bg">Hosts Mychal Shifrah and Sarah Ferguson discuss a range of topics including birth, systemic racism, and reproductive justice.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/tejana-feminist-talks/id1520241936" target = "_blank">Tejana Feminist Talks</a></h1>
+    <p id = "regText" class="bg">Host Leslie Lopez discusses social justice topics through a Reproductive Justice lens, interviewing young organizers and reviewing books.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/lk/podcast/the-darkest-light/id1544747725" target = "_blank">The Darkest Light</a></h1>
+    <p id = "regText" class="bg">Kanya D’Almeida explores birth and motherhood in Sri Lanka, pushing back against stereotypes and challenging cultural narratives.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/space-of-grace-podcast/id1512363147" target = "_blank">The Space of Grace</a></h1>
+    <p id = "regText" class="bg">This podcast focuses on reproductive justice from various perspectives, highlighting challenges and victories in social change movements.</p>
+
+    
+    <br id="section3"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Immigration</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.abetterlifepodcast.com/" target = "_blank">A Better Life?</a></h1>
+    <p id = "regText" class="bg">This podcast explores the impact of the COVID-19 pandemic on immigrants, with each episode focusing on different aspects of the immigrant experience during the pandemic.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/americas-dreamers/id1512310098" target = "_blank">America’s Dreamers</a></h1>
+    <p id = "regText" class="bg">Hosted by Emmy award-winning producer America Arias, this podcast shares inspiring stories of DACA recipients making significant contributions in various professional fields.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/beginner/id1189833635" target = "_blank">Beginner</a></h1>
+    <p id = "regText" class="bg">This series follows Misha, a 24-year-old Pakistani American, as she learns to navigate life in the United States after immigrating in 2003.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.kktplaw.com/immigration-review-podcast/" target = "_blank">Immigration Review</a></h1>
+    <p id = "regText" class="bg">This podcast provides updates and insights on immigration cases and policies, offering a blend of legal analysis and personal stories.</p>    
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://explore.thepublicsradio.org/mosaic-podcast/" target = "_blank">Mosaic</a></h1>
+    <p id = "regText" class="bg">Focusing on immigrant stories from Rhode Island and Massachusetts, this podcast presents a mix of interviews and reported pieces about factors shaping the immigrant experience.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/my-immigrant-life/id1463741510" target = "_blank">My Immigrant Life</a></h1>
+    <p id = "regText" class="bg">Hosted by Erica Hernandez, this podcast features personal stories from immigrants, aiming to break down stereotypes and showcase the diverse experiences of immigrants in the United States.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://bipartisanpolicy.org/podcast/this-week-in-immigration/" target = "_blank">This Week in Immigration</a></h1>
+    <p id = "regText" class="bg">This podcast offers informative discussions on immigration, featuring knowledgeable guests and covering a range of immigration issues.</p>
+    
+    
+    <br id="section4"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Climate Change</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.americaadapts.org/" target = "_blank">America Adapts</a></h1>
+    <p id = "regText" class="bg">Host Doug Parsons discusses climate adaptation and how communities worldwide are preparing for the impacts of climate change.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://emergencemagazine.org/podcast/" target = "_blank">Emergence Magazine Podcast</a></h1>
+    <p id = "regText" class="bg">This podcast centers Indigenous perspectives on climate issues, with interviews or essays by activists, authors, philosophers, and scientists on topics from environmental wisdom to alternative economic models.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://forwhatitsearth.podbean.com/" target = "_blank">For What It’s Earth</a></h1>
+    <p id = "regText" class="bg">Hosts Emma Brisdion and Lloyd Hopkins make complex topics like wildfires and fast fashion approachable and enjoyable, often inviting expert guests to discuss a variety of subjects.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://gimletmedia.com/shows/howtosaveaplanet" target = "_blank">How to Save a Planet</a></h1>
+    <p id = "regText" class="bg">Hosted by Dr. Ayana Elizabeth Johnson and journalist Alex Blumberg, covering foundational issues and more obscure topics like soil regeneration and kelp farming, fostering hope against narratives of doom and gloom.</p>    
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.mongabay.com/podcast/" target = "_blank">Mongabay Newscast</a></h1>
+    <p id = "regText" class="bg">Diving into climate change, wildlife, biodiversity, and Indigenous rights, featuring interviews with scientists, conservationists, and activists.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/the-climate-question/id1538415261" target = "_blank">The Climate Question</a></h1>
+    <p id = "regText" class="bg">Produced by the BBC, this podcast explores challenging questions related to climate change in roughly 30-minute episodes that are both interesting and accessible.</p>    
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://climate.mit.edu/tilclimate-podcast" target = "_blank">TILClimate</a></h1>
+    <p id = "regText" class="bg">Perfect for quickly understanding complex climate topics, each episode, lasting about 15 minutes, covers issues like carbon capture, clean technology, and energy efficiency.</p>
+
+
+    <br id="section5"><br>
+
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>LGBTQ+ Rights</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.historyisgaypodcast.com/" target = "_blank">History is Gay</a></h1>
+    <p id = "regText" class="bg">This podcast uncovers the overlooked and underappreciated queer narratives in history.</p>    
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.lgbtqpodcast.com/" target = "_blank">LGBTQ&A</a></h1>
+    <p id = "regText" class="bg">Jeffrey Masters interviews notable queer individuals, exploring diverse experiences within the LGBTQ community.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.wnycstudios.org/podcasts/nancy" target = "_blank">Nancy</a></h1>
+    <p id = "regText" class="bg">Hosts Kathy Tu and Tobin Low engage in stories and conversations about modern queer experiences.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://makinggayhistory.com/" target = "_blank">Making Gay History</a></h1>
+    <p id = "regText" class="bg">Brings to life the voices and stories of the people involved in the LGBTQ civil rights movement.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://soundcloud.com/onefromthevaultspodcast" target = "_blank">One From the Vaults</a></h1>
+    <p id = "regText" class="bg">A podcast that brings forward stories and history from the trans community.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://podcasts.apple.com/us/podcast/queery-with-cameron-esposito/id1268343859" target = "_blank">Queery with Cameron Esposito</a></h1>
+    <p id = "regText" class="bg">Intimate conversations with LGBTQ community celebrities and activists, hosted by comedian Cameron Esposito.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.thelogbooks.org/" target = "_blank">The Log Books</a></h1>
+    <p id = "regText" class="bg">Based on real log books from an LGBTQ+ advice line, it explores LGBTQ+ life in Britain over decades.</p>
+
+
+    
+    <br id="section6"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Free Palestine<sup> new</sup></span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.npr.org/transcripts/1197954284" target = "_blank">Code Switch: Two Palestinian American writers on being denied the "right to a story"</a></h1>
+    <p id = "regText" class="bg">On this Code Switch, we hear from two Palestinian American poets who talk about what it's like to be Palestinian American in the U.S. Fady Joudah and Tariq Luthun say the way their stories are told — or aren't told — has contributed to what they see as an erasure of their identities, and often of their humanity.</p>
+
+
+    <br><br>
+
+
+  </div>
+
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../script.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="movies.html">Movies</a>
+        <a href="#">Books</a>
+        <a href="podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../action/petitions.html">Petitions</a>
+        <a href="../action/emails.com">Emails</a>
+        <a href="../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../donation/orgs.html">Organizations</a>
+        <a href="../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="../hubs/bhm/index.html">Black History Month</a>
+        <a href="../hubs/mlk/index.html">MLK Day</a>
+        <a href="../hubs/blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../about.html">About PBR</a>
+    <a class = "bgo" href="../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>E</span>ducation</h1>
+  <div class="button-container">
+    <a href="movies.html" id = "notActive" class="button">Movies</a>
+    <a href="podcasts.html" id = "notActive" class="button">Podcasts</a>
+    <a href="#" id = "active" class="button">Books</a>
+  </div>
+
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section1">Racial Justice</option>
+      <option value="section2">Reproductive Rights</option>
+      <option value="section3">Immigration</option>
+      <option value="section4">Climate Change</option>
+      <option value="section5">LGBTQ+ Rights</option>
+      <option value="section6">Free Palestine</option>
+    </select>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Racial Justice</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/en/book/show/38561954" target = "_blank">American Prison</a></h1>
+    <p id = "regText" class="bg">An in-depth look into the American prison system, revealing its history and the economic forces that continue to shape it today.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/22292727-democracy-in-black?ref=nav_sb_ss_1_18" target = "_blank">Democracy in Black</a></h1>
+    <p id = "regText" class="bg">This book explores the racial crisis in America and how it has weakened the promise of American democracy.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/36687229-hood-feminism?from_search=true&from_srp=true&qid=sJVDzH2VzM&rank=1" target = "_blank">Hood Feminism</a></h1>
+    <p id = "regText" class="bg">A powerful critique of mainstream feminism, arguing for a more inclusive movement that addresses the basic needs of all women, particularly those marginalized by race and class.</p>    
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/229445.Killing_the_Black_Body?ref=nav_sb_ss_1_20" target = "_blank">Killing the Black Body</a></h1>
+    <p id = "regText" class="bg">A critical examination of how Black women's reproductive rights have been violated historically and in present times.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/28007953-policing-the-black-man?ref=nav_sb_ss_1_22" target = "_blank">Policing the Black Man</a></h1>
+    <p id = "regText" class="bg">An anthology that examines the various ways the criminal justice system impacts the lives of African American boys and men.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/25078.Savage_Inequalities?ref=nav_sb_ss_1_10" target = "_blank">Savage Inequalities</a></h1>
+    <p id = "regText" class="bg">A powerful examination of the education system in America and the stark disparities between schools in affluent areas and those in poorer communities.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/31522124-the-broken-ladder?ref=nav_sb_ss_1_15" target = "_blank">The Broken Ladder</a></h1>
+    <p id = "regText" class="bg">An insightful exploration of how income inequality affects societies and individuals psychologically and socially.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/32191706-the-color-of-law?ref=nav_sb_ss_1_16" target = "_blank">The Color of Law</a></h1>
+    <p id = "regText" class="bg">A revealing account of how American cities became racially divided through de jure segregation, supported by the government's public housing policies.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/6792458-the-new-jim-crow?ref=nav_sb_ss_1_11" target = "_blank">The New Jim Crow</a></h1>
+    <p id = "regText" class="bg">Michelle Alexander's groundbreaking book argues how the war on drugs has led to a racial caste system in America akin to the Jim Crow laws.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/33606119-why-i-m-no-longer-talking-to-white-people-about-race?ref=nav_sb_ss_1_52" target = "_blank">Why I'm No Longer Talking to White People About Race</a></h1>
+    <p id = "regText" class="bg">Reni Eddo-Lodge's compelling book discusses structural racism, white privilege, and how race shapes life in the UK and beyond.</p>
+
+
+    <br id="section2"><br>
+
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Reproductive Rights</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/846788.Bearing_Right?from_search=true&from_srp=true&qid=iamakZms0H&rank=1" target = "_blank">Bearing Right: How Conservatives Won the Abortion War</a></h1>
+    <p id = "regText" class="bg">William Saletan analyzes the political and strategic shifts in the abortion debate in America, focusing on the framing strategies of conservative activists.</p>    
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/55241772-new-handbook-for-a-post-roe-america?ref=nav_sb_ss_1_31" target = "_blank">Handbook for a Post-Roe America</a></h1>
+    <p id = "regText" class="bg">Robin Marty provides a resource for understanding and preparing for a future with limited or no access to legal abortion.</p>     
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/229445.Killing_the_Black_Body?ref=nav_sb_ss_1_22" target = "_blank">Killing the Black Body</a></h1>
+    <p id = "regText" class="bg">Dorothy Roberts explores the control and exploitation of Black women's bodies in America, offering a critical perspective on race and reproductive rights.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/20518909-pro?ref=nav_sb_ss_1_31" target = "_blank">Pro: Reclaiming Abortion Rights</a></h1>
+    <p id = "regText" class="bg">Katha Pollitt's powerful argument for viewing abortion as a moral right and social good, challenging the defensive stance of pro-choice advocates.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/34671451-reproductive-justice?ref=nav_sb_ss_1_37" target = "_blank">Reproductive Justice: An Introduction</a></h1>
+    <p id = "regText" class="bg">Loretta Ross and Rickie Solinger introduce the reproductive justice framework, offering historical and theoretical insights into reproductive rights activism.</p>    
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/39305474-shout-your-abortion?ref=nav_sb_ss_1_19" target = "_blank">Shout Your Abortion</a></h1>
+    <p id = "regText" class="bg">Edited by Amelia Bonow and Emily Nokes, this book is a collection of essays, photos, and creative works from the #ShoutYourAbortion movement, promoting open conversation about abortion.</p>      
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/25622271-the-birth-of-the-pill?ref=nav_sb_ss_1_21" target = "_blank">The Birth of the Pill</a></h1>
+    <p id = "regText" class="bg">Jonathan Eig's book tells the story of how the birth control pill was created, revolutionizing sex and reproductive rights, through the efforts of four visionary individuals.</p>
+
+
+    <br id="section3"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Immigration</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/15796700-americanah?ref=nav_sb_ss_1_10" target = "_blank">Americanah</a></h1>
+    <p id = "regText" class="bg">Chimamanda Ngozi Adichie's novel about a young Nigerian woman who emigrates to the United States, exploring themes of love, race, and identity.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/35259724-behold-the-dreamers?ref=nav_sb_ss_1_19" target = "_blank">Behold the Dreamers</a></h1>
+    <p id = "regText" class="bg">Imbolo Mbue's novel set against the 2008 financial crisis, following a Cameroonian couple's efforts to build a life in New York City.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/30688435-exit-west?ref=nav_sb_ss_1_9" target = "_blank">Exit West</a></h1>
+    <p id = "regText" class="bg">A novel by Mohsin Hamid that reflects on global migration through the story of a young couple escaping civil unrest through mystical doors to other parts of the world.</p>    
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/40245130-lost-children-archive?ref=nav_sb_ss_1_21" target = "_blank">Lost Children Archive</a></h1>
+    <p id = "regText" class="bg">Valeria Luiselli's novel inspired by the American immigration crisis, depicting a family’s journey across the U.S. as they confront the realities of immigration and child migrants.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/40603634-the-house-of-broken-angels?ref=nav_sb_ss_1_26" target = "_blank">The House of Broken Angels</a></h1>
+    <p id = "regText" class="bg">Luis Alberto Urrea's poignant tale of a Mexican-American family in San Diego, delving into the immigrant experience and family dynamics.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/33917.The_Namesake?ref=nav_sb_ss_1_12" target = "_blank">The Namesake</a></h1>
+    <p id = "regText" class="bg">Jhumpa Lahiri's moving story of Gogol Ganguli, a first-generation American of Indian descent, exploring identity, culture, and family.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/8171378-the-warmth-of-other-suns?ref=nav_sb_ss_1_24" target = "_blank">The Warmth of Other Suns</a></h1>
+    <p id = "regText" class="bg">Isabel Wilkerson's award-winning narrative of the Great Migration, portraying the movement of African Americans from the South to other parts of the U.S., and its profound impact on American history.</p>
+
+
+    <br id="section4"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Climate Change</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/31624481-drawdown?ref=nav_sb_ss_1_8" target = "_blank">Drawdown</a></h1>
+    <p id = "regText" class="bg">Edited by Paul Hawken, this book presents a comprehensive plan to mitigate climate change, detailing 100 solutions to collectively reverse global warming.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/80513.Field_Notes_from_a_Catastrophe?ref=nav_sb_ss_1_30" target = "_blank">Field Notes from a Catastrophe</a></h1>
+    <p id = "regText" class="bg">Elizabeth Kolbert offers an accessible overview of climate change, combining firsthand accounts with scientific research.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/7285904-storms-of-my-grandchildren?ref=nav_sb_ss_1_26" target = "_blank">Storms of My Grandchildren</a></h1>
+    <p id = "regText" class="bg">James Hansen's detailed analysis of climate change and its effects, with a call to action for mitigating future disasters.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/29362082-the-great-derangement?ref=nav_sb_ss_1_21" target = "_blank">The Great Derangement</a></h1>
+    <p id = "regText" class="bg">Amitav Ghosh explores the cultural and literary aspects of climate change, questioning the lack of serious engagement with the issue in modern literature and politics.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/17910054-the-sixth-extinction?ref=nav_sb_ss_1_20" target = "_blank">The Sixth Extinction</a></h1>
+    <p id = "regText" class="bg">Elizabeth Kolbert's Pulitzer Prize-winning book examines the ongoing human-driven extinction event and its profound effects on biodiversity and climate.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/41552709-the-uninhabitable-earth?ref=nav_sb_ss_1_23" target = "_blank">The Uninhabitable Earth</a></h1>
+    <p id = "regText" class="bg">David Wallace-Wells provides a stark exploration of climate change's potential impacts, blending scientific research with compelling narrative to depict a warming world.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/21913812-this-changes-everything?ref=nav_sb_ss_1_23" target = "_blank">This Changes Everything</a></h1>
+    <p id = "regText" class="bg">Naomi Klein's critical analysis of how capitalism contributes to environmental degradation and climate crisis, advocating for fundamental economic changes.</p>
+      
+
+    <br id="section5"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>LGBTQ+ Rights</span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/28212.And_the_Band_Played_On?ref=nav_sb_ss_1_22" target = "_blank">And the Band Played On</a></h1>
+    <p id = "regText" class="bg">Randy Shilts' influential work chronicling the early years of the AIDS epidemic, highlighting its profound impact on the LGBTQ community.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/52108.Gender_Outlaw?ref=nav_sb_ss_1_13" target = "_blank">Gender Outlaw</a></h1>
+    <p id = "regText" class="bg">Kate Bornstein's groundbreaking book that challenges traditional gender norms and advocates for broader gender diversity acceptance.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/28957268-queer?ref=nav_sb_ss_1_24" target = "_blank">Queer: A Graphic History</a></h1>
+    <p id = "regText" class="bg">An illustrated guide by Meg-John Barker and Julia Scheele, exploring the history and ideas behind queer theory and LGBTQ+ movements.</p>
+     
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/98480.Stonewall?ref=nav_sb_ss_4_9" target = "_blank">Stonewall</a></h1>
+    <p id = "regText" class="bg">David Carter's detailed recount of the Stonewall Riots of 1969, a seminal event in the history of LGBTQ rights.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/32951.Sister_Outsider?ref=nav_sb_ss_1_15" target = "_blank">Sister Outsider</a></h1>
+    <p id = "regText" class="bg">A collection of essays and speeches by Audre Lorde, exploring the intersections of race, gender, and sexuality.</p>    
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/52258.The_Price_of_Salt_or_Carol?ref=nav_sb_ss_1_17" target = "_blank">The Price of Salt</a></h1>
+    <p id = "regText" class="bg">Patricia Highsmith's novel, a pioneering work in lesbian literature, notable for its positive portrayal of a same-sex relationship.</p>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/2420983.Transgender_History?ref=nav_sb_ss_1_19" target = "_blank">Transgender History</a></h1>
+    <p id = "regText" class="bg">Susan Stryker's comprehensive overview of transgender history in the United States, from the mid-twentieth century to the present.</p>
+    
+    
+    
+    <br id="section6"><br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Free Palestine<sup> new</sup></span></h1>
+    
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/38683119-a-map-of-absence?ref=nav_sb_ss_1_16" target = "_blank">A Map of Absence</a></h1>
+    <p id = "regText" class="bg">An anthology of works from writers of Arab heritage, providing a poignant reflection on loss, belonging, and the Palestinian experience.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/846564.I_Saw_Ramallah?ref=nav_sb_ss_1_14" target = "_blank">I Saw Ramallah</a></h1>
+    <p id = "regText" class="bg">A memoir by Mourid Barghouti, capturing the dislocation and longing experienced by a Palestinian returning home after 30 years in exile.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/6692041-mornings-in-jenin?ref=nav_sb_ss_1_17" target = "_blank">Mornings in Jenin</a></h1>
+    <p id = "regText" class="bg">Susan Abulhawa's novel is a multigenerational story, tracing a Palestinian family's enduring love and resilience amid loss and displacement.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/57653182-rifqa?ref=nav_sb_ss_1_5" target = "_blank">Rifqa</a></h1>
+    <p id = "regText" class="bg">A historical novel by Mohammed El-Kurd, exploring the life of a Palestinian woman's journey through the complexities of love and war.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/30971664-salt-houses?ref=nav_sb_ss_1_11" target = "_blank">Salt Houses</a></h1>
+    <p id = "regText" class="bg">Hala Alyan's novel delves into the displacement and identity struggles of a Palestinian family over several generations.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/45894170-the-beauty-of-your-face?ref=nav_sb_ss_1_23" target = "_blank">The Beauty of Your Face</a></h1>
+    <p id = "regText" class="bg">Sahar Mustafah's novel tells the story of a Palestinian-American woman confronting her past and identity amidst a violent incident.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/57310413-the-book-of-ramallah?from_search=true&from_srp=true&qid=A2b3b7fVmb&rank=1" target = "_blank">The Book of Ramallah</a></h1>
+    <p id = "regText" class="bg">A collection of stories by various authors, depicting life in Ramallah with diverse narratives and perspectives.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.goodreads.com/book/show/130550.The_Butterfly_s_Burden?ref=nav_sb_ss_1_22" target = "_blank">The Butterfly's Burden</a></h1>
+    <p id = "regText" class="bg">A compilation of Mahmoud Darwish's poetry, reflecting the themes of love, exile, and the Palestinian condition.</p>
+    
+
+    <br><br>
+
+  </div>
+
+  
+  
+  
+</body>
+</html>
