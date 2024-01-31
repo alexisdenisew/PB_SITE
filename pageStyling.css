@@ -216,12 +216,49 @@ div.navbar {
   border-radius: 5px;
 }
 
+.regInput{
+  margin: 5px;
+  padding: 5px;
+  font-family: bgo;
+  font-size: 12px;
+  color: #FFD600;
+  background-color: #1E5631;
+  border: 2px solid #FFD600;
+  border-radius: 5px;
+}
 
-#regText, .regText {
+
+#regText, .regText{
   text-align: left; /* Left aligned */
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: #FFD600;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.section {
+  padding: 20px;
+  margin: 10px;
+}
+
+.wider {
+  flex: 2.5;  /* Adjusts the width of the wider section */
+  text-align: center;
+}
+
+.narrower {
+  flex: 0.5;  /* Adjusts the width of the narrower section */
+}
+
+.widerIMG{
+  width: 70%;
+  height: auto;
+}
+
+
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
@@ -232,7 +269,12 @@ div.navbar {
   }
 }
 
-#storyIMG{
+#storyIMG, .storyIMG{
   width: 22%;
+  height: auto;
+}
+
+#story1, #org1{
+  width: 100%;
   height: auto;
 }
