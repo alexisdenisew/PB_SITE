@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../../script.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="../../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../../education/movies.html">Movies</a>
+        <a href="../../education/books.html">Books</a>
+        <a href="../../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../../action/petitions.html">Petitions</a>
+        <a href="../../action/emails.html">Emails</a>
+        <a href="../../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../../donation/orgs.html">Organizations</a>
+        <a href="../../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="../bhm/index.html">Black History Month</a>
+        <a href="#">Prison Labor</a>
+        <a href="../mlk/index.html">MLK Day</a>
+        <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../../about.html">About PBR</a>
+    <a class = "bgo" href="../../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>P</span>rison <span style='font-family: bgs'> L</span>abor</h1>
+
+  <div class = "center">
+  <div class="search-container">
+    <input class = "subButton" type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()" class = "subButton">Search</button>
+  </div>
+  <div id="searchResult" class = "regText2"></div>
+</div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  
+  <div id = "box">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Boycott List</span></h1>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">Aramark</a></h1>
+    <p id = "regText" class="bg">Used inmates for dining services, facing criticism for poor food quality and accusations of not compensating inmates, leading to a lawsuit in 2019 for using "involuntary servitude."</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://marketrealist.com/p/companies-that-use-prison-labor/" target = "_blank">Avis</a></h1>
+    <p id = "regText" class="bg">Uses inmates to support its call centers and customer service needs, with call centers located in various state and federal prisons across the country.</p>
+    
+    <h1 class="bgo" id="smallerTitle"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">Compaq (now a subsidiary of Hewlett-Packard)</a></h1>
+    <p id = "regText" class="bg">Has been known to use prison labor for manufacturing circuit boards, a practice discovered over two decades ago with no sign of cessation.​</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://marketrealist.com/p/companies-that-use-prison-labor/" target = "_blank">Fidelity Investments</a></h1>
+    <p id = "regText" class="bg">Has been linked to funding organizations that promote inmate work.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://marketrealist.com/p/companies-that-use-prison-labor/" target = "_blank">IBM</a></h1>
+    <p id = "regText" class="bg">Circuit boards from the company have come from Texas prisoners.​</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://marketrealist.com/p/companies-that-use-prison-labor/" target = "_blank">JCPenny</a></h1>
+    <p id = "regText" class="bg">Have used inmate labor in Tennessee for making denim products</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://marketrealist.com/p/companies-that-use-prison-labor/" target = "_blank">Kmart</a></h1>
+    <p id = "regText" class="bg">Has used inmate labor in Tennessee for making denim products​.</p>
+
+    <h1 class="bgo" id="smallerTitle"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">McDonald’s</a></h1>
+    <p id = "regText" class="bg">The fast-food giant has used prison labor for preparing and packaging various food items, including beef for burgers and potatoes for fries. McDonald's has stated opposition to any form of forced or involuntary prison labor​.</p>
+
+    <h1 class="bgo" id="smallerTitle"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">Sprint</a></h1>
+    <p id = "regText" class="bg">The telecommunication company has employed inmates to provide customer service and support through call centers, with statements against involuntary or forced prison labor​.</p>
+
+    <h1 class="bgo" id="smallerTitle"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">Starbucks</a></h1>
+    <p id = "regText" class="bg">Has subcontracted coffee packaging jobs to Washington State Prison services, mainly during the holiday season for packaging holiday coffees. Starbucks’ supplier code of conduct emphasizes respecting the rights of individuals who work with them.</p>
+
+    <h1 class="bgo" id="smallerTitle"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">Walmart</a></h1>
+    <p id = "regText" class="bg">Inmates have been used for manufacturing tasks, cleaning products of UPC barcodes, and repackaging returned goods. Walmart claims to use voluntary prison labor and pays inmates prevailing wages to prepare them for reintegration by providing marketable skills and job training.</p>
+
+    <h1 class="bgo" id="smallerTitle"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">Wendy’s</a></h1>
+    <p id = "regText" class="bg">Similar to McDonald’s, Wendy's has utilized prison labor for processing beef. The company asserts that its suppliers should only use individuals who manufacture voluntarily​.</p>
+
+    <h1 class="bgo"><a id="smallerTitle" href = "https://marketrealist.com/p/companies-that-use-prison-labor/" target = "_blank">Whole Foods​</a></h1>
+    <p id = "regText" class="bg">Has sourced some cheese and fish products from prison labor​.</p>
+
+    <h1 class="bgo" id="smallerTitle"><a id="smallerTitle" href = "https://www.careeraddict.com/prison-labour-companies" target = "_blank">Verizon</a></h1>
+    <p id = "regText" class="bg">The telecommunication company has employed inmates to provide customer service and support through call centers, with statements against involuntary or forced prison labor​.</p>
+
+
+    <h1 class="bgo"><a id="smallerTitle" href = "" target = "_blank"></a></h1>
+    <p id = "regText" class="bg"></p>
+    
+
+  </div>
+
+  
+  
+  
+</body>
+</html>
