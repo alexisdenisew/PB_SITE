@@ -7,9 +7,9 @@ function updateImageSources() {
     const date = currentDate.getDate();
 
     let cycleNumber;
-    if (date >= 30 || date <= 3) {
+    if (date >= 30 || date <= 4) {
         cycleNumber = 1;
-    } else if (date >= 4 && date <= 10) {
+    } else if (date >= 5 && date <= 10) {
         cycleNumber = 2;
     } else if (date >= 11 && date <= 17) {
         cycleNumber = 3;
