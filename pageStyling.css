@@ -205,7 +205,7 @@ div.navbar {
   background-color: #FFD600; /* Transparent background */
 }
 
-.selectDropdown, #subButton{
+.selectDropdown, #subButton, .subButton{
   margin: 20px;
   padding: 10px;
   font-family: bgo;
@@ -233,6 +233,13 @@ div.navbar {
   font-size: 2.5vh;
   color: #FFD600;
 }
+
+.regText2{
+  margin-top: 2%;
+  font-size: 2.5vh;
+  color: #FFD600;
+}
+
 
 .container {
   display: flex;
