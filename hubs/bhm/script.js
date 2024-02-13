@@ -7,13 +7,13 @@ function updateImageSources() {
     const date = currentDate.getDate();
 
     let cycleNumber;
-    if (date >= 30 || date <= 15) {
+    if (date >= 30 || date <= 9) {
         cycleNumber = 1;
-    } else if (date >= 16 && date <= 17) {
+    } else if (date >= 9 && date <= 10) {
         cycleNumber = 2;
-    } else if (date >= 18 && date <= 19) {
+    } else if (date >= 11 && date <= 17) {
         cycleNumber = 3;
-    } else if (date >= 20 && date <= 24) {
+    } else if (date >= 18 && date <= 24) {
         cycleNumber = 4;
     } else if (date >= 25 && date <= 29) {
         cycleNumber = 5;
@@ -59,4 +59,18 @@ function updateImageSources() {
     document.getElementById('storyText').innerText = storyTexts[cycleNumber - 1];
     document.getElementById('orgTitle').innerText = orgTitles[cycleNumber - 1];
     document.getElementById('orgText').innerText = orgTexts[cycleNumber - 1];
+}
+
+
+function filterVideos() {
+    var selectedTopic = document.getElementById('scrollMenu').value;
+    var videos = document.querySelectorAll('iframe');
+
+    videos.forEach(function(video) {
+        if (selectedTopic === '' || video.getAttribute('data-topic') === selectedTopic) {
+            video.style.display = '';
+        } else {
+            video.style.display = 'none';
+        }
+    });
 }
