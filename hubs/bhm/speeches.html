@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+  <script src="../../script.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="../../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="../../education/movies.html">Movies</a>
+        <a href="../../education/books.html">Books</a>
+        <a href="../../education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="../../action/petitions.html">Petitions</a>
+        <a href="../../action/emails.html">Emails</a>
+        <a href="../../action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="../../donation/orgs.html">Organizations</a>
+        <a href="../../donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="#">Black History Month</a>
+        <a href="../mlk/index.html">MLK Day</a>
+        <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="../../about.html">About PBR</a>
+    <a class = "bgo" href="../../contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+
+  <h1 id="title" class="bgo"><span style='font-family: bgs'>B</span>lack <span style='font-family: bgs'> H</span>istory<span style='font-family: bgs'> M</span>onth</h1>
+
+  <div class="button-container">
+    <a href="index.html" id = "notActive" class="button">Home</a>
+    <a href="action.html" id = "notActive" class="button">Take Action</a>
+    <a href="#" id = "active" class="button">Find Speeches</a>
+    <a href="index.html" id = "notActive" class="button">Figures, Stories & Orgs Directory</a>
+  </div>
+
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  <br>
+  <br>
+
+  <div class = "center">
+    <h1 id="smallerTitle" class="bgo" style='text-align: center;'><span style='color: white;'>Speeches From the Civil Rights Movement</span></h1>
+    <p id = "regText" class="bg"style='text-align: center;' >Learn about the Civil Rights Movement from the leaders themselves.</p> <br>
+    
+    <select id="scrollMenu" class="selectDropdown" onchange="filterVideos()">
+        <option value="">Select a topic...</option>
+        <option value="voting-rights">Voting Rights</option>
+        <option value="revolution">Revolution</option>
+        <option value="democracy">Democracy</option>
+        <option value="communism">Communism</option>
+        <option value="black-identity">Black Identity</option>
+      </select>
+
+      <br>
+
+    <iframe data-topic="voting-rights" width="560" height="315" src="https://www.youtube.com/embed/agBzy3ATja0?si=N4EBwJn1r7-m_Mp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="revolution" width="560" height="315" src="https://www.youtube.com/embed/YEwv6-SgL0M?si=rPFp9iHNKdU5or4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="revolution" width="560" height="315" src="https://www.youtube.com/embed/PswGxMvi2ag?si=XPgf7gmH8qakApwh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="revolution" width="560" height="315" src="https://www.youtube.com/embed/Cv9fyyAnIOQ?si=nHLgNjQEN1060GRA&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="democracy" width="560" height="315" src="https://www.youtube.com/embed/qNfAFfu6VD0?si=CnHXekEmOvRWQyld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="voting-rights" width="560" height="315" src="https://www.youtube.com/embed/yPYiKTBdcVs?si=6xHzj4ETdX1PEWLP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="communism" width="560" height="315" src="https://www.youtube.com/embed/cGQCzP-dBvg?si=egphdpu84Rb51o_u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="democracy" width="560" height="315" src="https://www.youtube.com/embed/dOWDtDUKz-U?si=lK69DK7tGgc-RmUe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="democracy" width="560" height="315" src="https://www.youtube.com/embed/t96fnyLMihA?si=flwXxJ6yA4nmWqQj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="democracy" width="560" height="315" src="https://www.youtube.com/embed/8czyigTHcu4?si=SLeFKouIv782D7Mg&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="democracy" width="560" height="315" src="https://www.youtube.com/embed/xCO_qbgZ2ss?si=jD0HgB7Qtym2ERkS&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="black-identity" width="560" height="315" src="https://www.youtube.com/embed/NUBh9GqFU3A?si=JHfW7puAwvU_xlsx&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="black-identity" width="560" height="315" src="https://www.youtube.com/embed/_hdVFiANBTk?si=WLVVJlsvxv5_DRbL&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe data-topic="communism" width="560" height="315" src="https://www.youtube.com/embed/Jj9oaL9h5tM?si=zDwrdGMOljEWEpXO&amp;start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+  
+  
+  
+</body>
+</html>
