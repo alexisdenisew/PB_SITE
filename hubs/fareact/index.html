@@ -6,10 +6,18 @@
   <title>PBR</title>
   <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
   <script src="../../script.js" defer></script>
+
+  <link href="map/map.css" rel="stylesheet" type="text/css" />
+  <link href="progBar/bar.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
   <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+
 </head>
 <body>
   <div class="hamburger-menu" onclick="toggleNavbar()">
@@ -45,6 +53,8 @@
     <div class="dropdown">
       <button class="dropbtn">Hubs</button>
       <div class="dropdown-content">
+        <a href="#">The FARE Act</a>
+        <a href="../labor/index.html">Prison Labor</a>
         <a href="../bhm/index.html">Black History Month</a>
         <a href="../mlk/index.html">MLK Day</a>
         <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
@@ -60,8 +70,517 @@
   
 
   <div id = "box">
-    <p id = "regText" class="bg">Coming soon...</p>
+    <p id = "regText" class="bgo"><span style='color: white'>The FARE act is legislation requiring landlords to cover all broker fees unless the renter has specifically hired the broker. This move aims to alleviate the financial burden on renters, who often face high upfront costs when leasing apartments in NYC. If passed it would be there most transformative renters legislation in half a century, in the biggest city in the US.</span></p>
+    
+    <div class = "center">
+      <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+        <option value="">Select a section...</option>
+        <option value="section1">Progress Tracker</option>
+        <option value="section2">About the Bill</option>
+        <option value="section3">By the Numbers</option>
+        <option value="section4">Find Your Council Person</option>
+        <option value="section5">Contact Your Council Person</option>
+        <option value="section6">Email Template/ Call Script</option>
+        <option value="section7">Milestones</option>
+        <option value="section8">Stay Updated</option>
+      </select>
+    </div>
+
+    <br><br>
+  
+    <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+      ↑
+    </button>
+    
+    
+    <br><br><br><br>
+
+    <div id = "box">
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <div id="milestones-container">
+        <span class="marker" style="color: white; font-family: bgo; font-size: 115%; left: 5%;">Re-intro</span>
+        <span class="marker" style="color: white; font-family: bgo; font-size: 115%; left: 17%;">Rally</span>
+        <span class="marker" style="color: white; font-family: bgo; font-size: 115%; left: 28%;">Hearing</span>
+        <span class="marker" style="color: white; font-family: bgo; font-size: 115%; left: 50%;">Committee Vote</span>
+        <span class="marker" style="color: white; font-family: bgo; font-size: 115%; left: 71%;">Chamber Vote</span>
+        <span class="marker" style="color: white; font-family: bgo; font-size: 115%; left: 97%;">Signed</span>
+    </div>
+    <script src="progBar/bar.js"></script>
+
   </div>
+
+    <br><br><br><br><br><br id="section2">
+
+    <div class="container">
+      <div class="section wider">
+        <h1 id="smallerTitle" class="bgo"><span style='color: white'>About the Bill (Official Title Here)</span></h1>
+        <p id = "regText" class="bg"><span style='color: white'>The fine print:</span> This bill would require an individual who is a representative or an agent of a property owner or a prospective tenant in a residential rental real estate transaction to collect fees charged in the transaction from the party employing the individual.</p>
+        <p id = "regText" class="bg">AKA: If you higher the broker, you pay the broker fees.</p>
+        <p id = "regText" class="bg">☆ This legislation aims to alleviate the financial burden on renters by shifting the responsibility of broker fees from tenants to landlords, promoting a fairer and more equitable rental market.</p>
+        <p id = "regText" class="bg">☆ By mandating landlords to cover broker fees, the legislation simplifies the rental process for tenants, reducing upfront costs and making it easier for individuals and families to secure housing in New York City's competitive market.</p>
+        <p id = "regText" class="bg">☆ This legislation encourages a more transparent housing market by clearly delineating the costs associated with renting, thereby allowing renters to make more informed decisions without the surprise of additional fees.</p>
+        <p id = "regText" class="bg">☆ Young people get hit the hardest by moving costs including broker fees, this kind of legislation can take some pressure off of the demographic that often moves the most.</p>
+        <p id = "regText" class="bg">☆ Last year, nearly half of NYC council members supported the bill, and tens of thousands of dollars were spent by the real estate industry to prevent the chamber from voting on it.</p>
+        <p id = "regText" class="bg">☆ Over a dozen NYC unions support The FARE Act.</p>
+      
+      </div>
+      <div class="section narrower">
+        <h1 id="smallerTitle" class="bgo"><span style='color: white'>Chi Ossé</span></h1>
+        <p id = "regText" class="bg">(Official Bill Title Here) Sponsor</p>
+        <div style='text-align: center;'>
+          <img id = "slimPic" src="https://www.politico.com/dims4/default/d2db57a/2147483647/strip/true/crop/2000x2558+0+0/resize/630x806!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2Fc5%2Fee%2Fbb4cc3794eada341211d95cdf70f%2Fmag.McHugh.Osse.portrait.jpg" alt="Photo of Chi Ossé">
+        </div>
+        <p id = "regText" class="bg">
+          Chi Ossé is a New York City Council Member representing the 36th District. Elected in 2021, Ossé is known for his activism and advocacy on social justice, police reform, and housing affordability issues, bringing a progressive voice to city governance.</p>
+      </div>
+
+    </div>
+
+    <br><br id="section3">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>By the Numbers</span></h1>
+
+    <div class="containerOther">
+      <div class="columnOther">
+        <div class = "center">
+          <h1 id = "rand1" class="title">$50k</h1>
+          <p id = "regText" class="bg">New Yorkers to spend anywhere from $2-10k+ just to move residences within the city. Broker fees are a substantial part of these moving costs. This fee can range from one month's rent to 15% of the annual rent.</p>
+        </div>
+
+      </div>
+      <div class="columnOther">
+        <div class = "center">
+          <br><br>
+          <h1 id = "rand2" class="regText" style='text-align: center; font-size: 220%;'>Miami, FL</h1>
+          <h1 id = "rand2b" class="regText" style='text-align: center; font-size: 220%;'>San Francisco, CA</h1>
+          <p id = "regText" class="bg">These are just two cities where landlords paying the broker fees, instead of renters, is the norm.</p>
+
+          
+        </div>
+      </div>
+      <div class="columnOther">
+        <div class = "center">
+          <h1 id = "rand3" class="title">$1B</h1>
+          <p id = "regText" class="bg">Broker fees, traditionally paid by renters, represent a significant source of income for brokers and real estate agencies, with estimates suggesting that the industry collects around one billion dollars annually from these fees alone.</p>
+          
+        </div>
+
+      </div>
+    </div>  
+    
+    <br><br><br><br id="section4">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Find Your Council Person</span></h1>
+
+    <div class = "center">
+      <div id="mapid" style="width: auto; height: 400px;"></div>
+      <script src="map/map.js" ></script>
+    </div>
+
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 75%;'>Council Person:</span></h1>
+    <p id = "councilPerson" class="regText">Name (toggle the map)</p>
+
+    <p id = "phoneNumber" class="regText">Phone Number</p>
+
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 75%;'>District:</span></h1>
+    <p id = "district" class="regText">District Number</p>
+
+    <br><br id="section5">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Contact Your Council Person</span></h1>
+    <p id = "regText" class="bg">You must use the "Find Your Council Person" tool above to preload your council member's information. Any information you put in the form will no be stored.</p>
+
+    <div class = "center">
+      <input class = "regInput" type="text" id="email" placeholder="Email" readonly></input>
+      <input class = "regInput" type="text" id="recipient" placeholder="Recipient" readonly></input>
+      <input class = "regInput" type="text" id="name" placeholder="Your Name"></input>
+      <input class = "regInput" type="text" id="subject" placeholder="Your Street Address"></input>
+      <input class = "regInput" type="text" id="sentence" placeholder="Write an opener"></input>
+      <button id="subButton" class = "actButt" onclick="sendEmail()">Submit</button>
+
+    </div>
+
+    <br><br id="section6">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Email Template/ Phonecall Script:</span></h1>
+    <p id = "regText" class="bgo"><span style='color: white'>This email will populate with your unique information as you fill out the form in the tool above. The email template doubles as a script should you opt to call your representative to push for their support. Your council member's phone number:</span> <span id = "phoneNumber2">Phone Number</span>.</p>
+
+    <br>
+    <div id = "emailContent" class = "regText">
+      <p id = "regText" class="bgo">Dear Council Member [Council Member name],</p>
+      <p id = "regText" class="bgo">[Make your message unique, write an opener!]</p>
+      <p id = "regText" class="bgo">My name is [Your Name], and I am one of your constituents. The Fairness in Apartment Rental Expenses (FARE) Act has just been reintroduced. The bill is simple, requiring that whichever party hires a broker pays the broker fee in rental transactions. New York City needs this bill to become law. New York City is unique in tenants paying for a landlord’s broker fee. It’s time for that system to change, and you have the power to change it. I am calling on you to sign on as a co-sponsor of the FARE Act and vote it into law. The people of your district need you to act.</p>
+      <p id = "regText" class="bgo">Sincerely,</p>
+      <p id = "regText" class="bgo">[Your Name]</p>
+    </div>
+
+    <br><br><br><br id="section7">
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Milestones</span></h1>
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 85%;'>Re-Introduction</span><span style='color: #FFD600; font-family: bgo; font-size: 85%;'> [We are here]</span></h1>
+    <p id = "regText" class="bgo">The process of presenting a previously considered bill again to the New York City Council for deliberation and voting. Public pressure can highlight the importance of the bill to constituents, encouraging council members to reconsider and prioritize its re-introduction based on voter demand.</p>
+
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 85%;'>Rally</span></h1>
+    <p id = "regText" class="bgo">An event where supporters gather to demonstrate and advocate for the bill's passage, aiming to garner public and political support. Rallies can visibly demonstrate public support, swaying council members by showcasing the strength and unity behind the bill, making it harder to ignore.</p>
+
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 85%;'>Hearing</span></h1>
+    <p id = "regText" class="bgo">A formal meeting where council members, stakeholders, and the public discuss the bill, providing testimonies and opinions for or against it. Outreach to council members before hearings can influence the discourse, ensuring that the perspectives and concerns of constituents are addressed, potentially shaping the committee's stance.</p>
+
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 85%;'>Voted out of Committee</span></h1>
+    <p id = "regText" class="bgo">The stage where a specialized committee within the council votes in favor of the bill, moving it forward to the full council for a final vote. Contacting committee members can emphasize the bill's significance to their constituents, pushing them towards a favorable vote to reflect the public's interests.</p>
+
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 85%;'>Voted in the Chamber</span></h1>
+    <p id = "regText" class="bgo">The action where the entire New York City Council votes on the bill, deciding whether it passes or fails. Widespread public outreach can create a sense of urgency and accountability, persuading council members to vote in favor of the bill due to constituent expectations and potential electoral implications.</p>
+
+    <h1 class ="smallerTitle"><span style='color: white; font-family: bgo; font-size: 85%;'>Signed into Law by Mayor Eric Adams</span></h1>
+    <p id = "regText" class="bgo">The final approval stage where Mayor Eric Adams can either veto or sign the passed bill, officially enacting it into law.  Public campaigns and direct appeals to the Mayor can underline the community's support for the bill, encouraging the Mayor to sign it into law to align with public sentiment and fulfill political commitments.</p>
+
+    <script>
+      var districtEmailMap = {
+          "1": "District1@council.nyc.gov",
+          "2": "District2@council.nyc.gov",
+          "3": "District3@council.nyc.gov",
+          "4": "KPowers@council.nyc.gov",
+          "5": "District5@council.nyc.gov",
+          "6": "District6@council.nyc.gov",
+          "7": "District7@council.nyc.gov",
+          "8": "District8@council.nyc.gov",
+          "9": "District9@council.nyc.gov",
+          "10": "District10@council.nyc.gov",
+          "11": "dinowitz@council.nyc.gov",
+          "12": "District12@council.nyc.gov",
+          "13": "District13@council.nyc.gov",
+          "14": "District14@council.nyc.gov",
+          "15": "District15@council.nyc.gov",
+          "16": "District16@council.nyc.gov",
+          "17": "salamanca@council.nyc.gov",
+          "18": "District18@council.nyc.gov",
+          "19": "District19@council.nyc.gov",
+          "20": "District20@council.nyc.gov",
+          "21": "",
+          "22": "District22@council.nyc.gov",
+          "23": "District23@council.nyc.gov",
+          "24": "District24@council.nyc.gov",
+          "25": "District25@council.nyc.gov",
+          "26": "",
+          "27": "District27@council.nyc.gov",
+          "28": "SpeakerAdams@council.nyc.gov",
+          "29": "District29@council.nyc.gov",
+          "30": "District30@council.nyc.gov",
+          "31": "District31@council.nyc.gov",
+          "32": "District32@council.nyc.gov",
+          "33": "District33@council.nyc.gov",
+          "34": "District34@council.nyc.gov",
+          "35": "District35@council.nyc.gov",
+          "36": "District36@council.nyc.gov",
+          "37": "District37@council.nyc.gov",
+          "38": "District38@council.nyc.gov",
+          "39": "District39@council.nyc.gov",
+          "40": "District40@council.nyc.gov",
+          "41": "District41@council.nyc.gov",
+          "42": "District42@council.nyc.gov",
+          "43": "District43@council.nyc.gov",
+          "44": "AskKalman@council.nyc.gov",
+          "45": "District45@council.nyc.gov",
+          "46": "District46@council.nyc.gov",
+          "47": "AskJB@council.nyc.gov",
+          "48": "IVernikov@council.nyc.gov",
+          "49": "District49@council.nyc.gov",
+          "50": "DCarr@council.nyc.gov",
+          "51": "borelli@council.nyc.gov"
+      };
+
+
+      var districtRecipientMap = {
+        "1": "Christopher Marte",
+        "2": "Carlina Rivera",
+        "3": "Erik Bottcher",
+        "4": "Keith Powers",
+        "5": "Julie Menin",
+        "6": "Gale A. Brewer",
+        "7": "Shaun Abreu",
+        "8": "Diana Ayala",
+        "9": "Yusef Salaam",
+        "10": "Carmen De La Rosa",
+        "11": "Eric Dinowitz",
+        "12": "Kevin C. Riley",
+        "13": "Kristy Marmorato",
+        "14": "Pierina Ana Sanchez",
+        "15": "Oswald Feliz",
+        "16": "Althea Stevens",
+        "17": "Rafael Salamanca Jr.",
+        "18": "Amanda Farías",
+        "19": "Vickie Paladino",
+        "20": "Sandra Ung",
+        "21": "Francisco Moya",
+        "22": "Tiffany Cabán",
+        "23": "Linda Lee",
+        "24": "James F. Gennaro",
+        "25": "Shekar Krishnan",
+        "26": "Julie Won",
+        "27": "Nantasha Williams",
+        "28": "Adrienne E. Adams",
+        "29": "Lynn Schulman",
+        "30": "Robert F. Holden",
+        "31": "Selvena N. Brooks-Powers",
+        "32": "Joann Ariola",
+        "33": "Lincoln Restler",
+        "34": "Jennifer Gutiérrez",
+        "35": "Crystal Hudson",
+        "36": "Chi Ossé",
+        "37": "Sandy Nurse",
+        "38": "Alexa Avilés",
+        "39": "Shahana Hanif",
+        "40": "Rita Joseph",
+        "41": "Darlene Mealy",
+        "42": "Chris Banks",
+        "43": "Susan Zhuang",
+        "44": "Kalman Yeger",
+        "45": "Farah N. Louis",
+        "46": "Mercedes Narcisse",
+        "47": "Justin Brannan",
+        "48": "Inna Vernikov",
+        "49": "Kamillah Hanks",
+        "50": "David Carr",
+        "51": "Joseph C. Borelli"
+      };
+
+      var supportMap = {
+        "1": "yes",
+        "2": "no",
+        "3": "yes",
+        "4": "yes",
+        "5": "no",
+        "6": "no",
+        "7": "no",
+        "8": "no",
+        "9": "no",
+        "10": "yes",
+        "11": "no",
+        "12": "no",
+        "13": "no",
+        "14": "yes",
+        "15": "yes",
+        "16": "yes",
+        "17": "yes",
+        "18": "yes",
+        "19": "no",
+        "20": "no",
+        "21": "no",
+        "22": "yes",
+        "23": "no",
+        "24": "yes",
+        "25": "yes",
+        "26": "yes",
+        "27": "no",
+        "28": "no",
+        "29": "no",
+        "30": "yes",
+        "31": "yes",
+        "32": "no",
+        "33": "no",
+        "34": "yes",
+        "35": "no",
+        "36": "yes",
+        "37": "yes",
+        "38": "yes",
+        "39": "yes",
+        "40": "yes",
+        "41": "no",
+        "42": "no",
+        "43": "no",
+        "44": "no",
+        "45": "yes",
+        "46": "no",
+        "47": "no",
+        "48": "no",
+        "49": "yes",
+        "50": "no",
+        "51": "no"
+    };
+
+    var phoneNumberMap = {
+      "1": "2124421563",
+      "2": "2127887366",
+      "3": "2127886979",
+      "4": "2127887393",
+      "5": "2128601950",
+      "6": "9295025640",
+      "7": "2127887007",
+      "8": "2127886960",
+      "9": "2127887397",
+      "10": "2127887053",
+      "11": "2127887080",
+      "12": "2127886873",
+      "13": "2127887375",
+      "14": "2127887074",
+      "15": "2127886966",
+      "16": "2127886856",
+      "17": "2127887384",
+      "18": "2127886853",
+      "19": "2127887250",
+      "20": "7188888747",
+      "21": "2127886862",
+      "22": "7182744500",
+      "23": "2127887075",
+      "24": "2127886956",
+      "25": "2127887066",
+      "26": "7183839566",
+      "27": "2127887084",
+      "28": "2124826731",
+      "29": "2127886981",
+      "30": "2127887381",
+      "31": "2127887216",
+      "32": "2127887069",
+      "33": "7188755200",
+      "34": "2127887095",
+      "35": "7182609191",
+      "36": "2127887354",
+      "37": "2127887284",
+      "38": "2127887372",
+      "39": "2127886969",
+      "40": "2127887352",
+      "41": "2127887387",
+      "42": "2127886957",
+      "43": "2127887045",
+      "44": "2127887357",
+      "45": "2127886859",
+      "46": "2127887286",
+      "47": "2127887363",
+      "48": "2127887360",
+      "49": "2127886972",
+      "50": "2127887390",
+      "51": "2127886989"
+  };
+
+
+
+      document.getElementById('district').addEventListener('change', function() {
+          updateFields(this.value);
+      });
+
+      function updateDistrictInfo(districtNumber) {
+        currentDistrictNumber = districtNumber;
+
+        // Update the HTML content with the district number
+        document.getElementById('district').innerText = districtNumber;
+
+        // Update the HTML content with the council person's number
+        var councilPersonNum = phoneNumberMap[districtNumber];
+          if (councilPersonNum) {
+              // Format the phone number as XXX-XXX-XXXX
+              var formattedNum = councilPersonNum.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+              // Update the HTML to make the number a clickable link
+              document.getElementById('phoneNumber').innerHTML = `<a href="tel:${councilPersonNum}" style='color: #FFD600;'>${formattedNum}</a>`;
+              document.getElementById('phoneNumber2').innerHTML = `<a href="tel:${councilPersonNum}" style='color: #FFD600;'>${formattedNum}</a>`;
+          } else {
+              document.getElementById('phoneNumber').innerText = 'Unknown';
+          }
+
+
+        // Update the HTML content with the council person's name
+        var councilPersonName = districtRecipientMap[districtNumber];
+        document.getElementById('councilPerson').innerText = councilPersonName || 'Unknown';
+
+        // Update the form inputs with the email and recipient
+        var emailField = document.getElementById('email');
+        var recipientField = document.getElementById('recipient');
+
+        emailField.value = districtEmailMap[districtNumber] || ''; // Update email, clear if state is not in the map
+        recipientField.value = councilPersonName || ''; // Update recipient with council person's name
+    }
+      function sendEmail() {
+        var input = document.getElementById('name');
+        name = input.value;
+        var input = document.getElementById('email');
+        email = input.value;
+        var input = document.getElementById('subject');
+        subject = input.value;
+        var input = document.getElementById('sentence');
+        greeting = input.value;
+        var input = document.getElementById('recipient');
+        recipient = input.value;
+        topic = "Sign on to the FARE Act!";
+
+        // Determine which content to use based on supportMap
+        var info;
+        if (supportMap[currentDistrictNumber] === "yes") {
+            info = ", and I am one of your constituents. Last year, you signed on as a co-sponsor of the Fairness in Apartment Rental Expenses (FARE) Act. The bill is simple, requiring that whichever party hires a broker pays the broker fee in rental transactions. New York City needs this bill to become law. I am grateful that you co-sponsored the bill in the previous session, and I am writing to implore you to sign on again now that the FARE Act has been reintroduced. The people of your district need you to act.";
+        } else if (supportMap[currentDistrictNumber] === "no") {
+            info = ", and I am one of your constituents. The Fairness in Apartment Rental Expenses (FARE) Act has just been reintroduced. The bill is simple, requiring that whichever party hires a broker pays the broker fee in rental transactions. New York City needs this bill to become law. New York City is unique in tenants paying for a landlord’s broker fee. It’s time for that system to change, and you have the power to change it. I am calling on you to sign on as a co-sponsor of the FARE Act and vote it into law. The people of your district need you to act.";
+        } else {
+            info = ", and I am one of your constituents. The Fairness in Apartment Rental Expenses (FARE) Act has just been reintroduced. The bill is simple, requiring that whichever party hires a broker pays the broker fee in rental transactions. New York City needs this bill to become law. New York City is unique in tenants paying for a landlord’s broker fee. It’s time for that system to change, and you have the power to change it. I am calling on you to sign on as a co-sponsor of the FARE Act and vote it into law. The people of your district need you to act.";
+        }
+
+        // Construct the email body
+        var emailBody = `Dear Council Member ${recipient},\n\n${greeting}\n\nMy name is ${name}${info}\n\nSincerely,\n\n${name}`;
+
+        // Encode the email body to include in the mailto link
+        var encodedEmailBody = encodeURIComponent(emailBody);
+
+        // Construct the mailto link
+        var mailtoLink = `mailto:${email}?subject=${topic} || ${name} ${subject}&body=${encodedEmailBody}`;
+
+        // Redirect to the mail client with the mailto link
+        window.location.href = mailtoLink;
+    }
+
+      // Assuming map click updates these elements correctly
+      document.getElementById('mapid').addEventListener('click', function() {
+        // Update email and recipient fields based on map click
+        // This part depends on how you're detecting which district was clicked
+        // For demonstration, let's assume the district number is set somewhere
+        let districtNumber = document.getElementById('district').innerText; // Assuming this gets updated correctly
+        let councilMemberName = districtRecipientMap[districtNumber];
+        let email = districtEmailMap[districtNumber];
+
+        document.getElementById('recipient').value = councilMemberName;
+        document.getElementById('email').value = email;
+        updateEmailContent();
+      });
+
+      // Function to update email content
+      function updateEmailContent() {
+        let name = document.getElementById('name').value;
+        let sentence = document.getElementById('sentence').value;
+        let memberName = document.getElementById('recipient').value;
+
+        var info;
+        if (supportMap[currentDistrictNumber] === "yes") {
+            info = ", and I am one of your constituents. Last year, you signed on as a co-sponsor of the Fairness in Apartment Rental Expenses (FARE) Act. The bill is simple, requiring that whichever party hires a broker pays the broker fee in rental transactions. New York City needs this bill to become law. I am grateful that you co-sponsored the bill in the previous session, and I am writing to implore you to sign on again now that the FARE Act has been reintroduced. The people of your district need you to act.";
+        } else if (supportMap[currentDistrictNumber] === "no") {
+            info = ", and I am one of your constituents. The Fairness in Apartment Rental Expenses (FARE) Act has just been reintroduced. The bill is simple, requiring that whichever party hires a broker pays the broker fee in rental transactions. New York City needs this bill to become law. New York City is unique in tenants paying for a landlord’s broker fee. It’s time for that system to change, and you have the power to change it. I am calling on you to sign on as a co-sponsor of the FARE Act and vote it into law. The people of your district need you to act.";
+        } else {
+            info = ", and I am one of your constituents. The Fairness in Apartment Rental Expenses (FARE) Act has just been reintroduced. The bill is simple, requiring that whichever party hires a broker pays the broker fee in rental transactions. New York City needs this bill to become law. New York City is unique in tenants paying for a landlord’s broker fee. It’s time for that system to change, and you have the power to change it. I am calling on you to sign on as a co-sponsor of the FARE Act and vote it into law. The people of your district need you to act.";
+        }
+        
+        let emailContent = `Dear Council Member ${memberName},\n\n${sentence}\n\n My name is ${name}${info}\n\nSincerely,\n\n${name}`;
+
+        document.getElementById('emailContent').innerText = emailContent;
+      }
+
+      // Attach event listeners to form inputs to update the email content dynamically
+      document.getElementById('name').addEventListener('input', updateEmailContent);
+      document.getElementById('sentence').addEventListener('input', updateEmailContent);
+
+
+
+  </script>
+  
+
+  </div>
+
+  <br><br id="section8">
+
+  <div class = "center" style='text-align: center;'>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCVToAIVeccbHTneh_88JUcge5jVa9DDbNz_8Y-XNYDxzuOw/viewform?usp=sf_link" target = "_blank" id = "notActive" class="button">Stay Updated on The Fare Act</a>
+    <p style='text-align: center;' id = "regText" class = "bgo"><span style='color: white; text-align: center;'>We'll lyk when there's something to know!</span></p>
+  </div>
+
+  <br><br><br><br>
 
 
 
