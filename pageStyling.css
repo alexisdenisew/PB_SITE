@@ -265,7 +265,7 @@ div.navbar {
 @media (max-width: 768px) {
   .section {
     padding: 5px;
-    margin: 1px;
+    margin: 3px;
 }
   .container {
     flex-direction: column; /* Stacks the sections vertically */
