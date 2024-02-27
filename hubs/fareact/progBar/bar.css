@@ -1,0 +1,66 @@
+#progress-container {
+    width: auto;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 12px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #FFD600;
+    width: 0%;
+    transition: width 2s ease-in-out; /* Smooth transition for the animation */
+    border-radius: 12px;
+}
+
+#milestones-container {
+    position: relative;
+    width: 100%;
+}
+
+.marker {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 14px; /* Adjust based on preference */
+}
+
+.marker:nth-child(odd) {
+    top: -50px;
+}
+
+.marker:nth-child(even) {
+    bottom: -40px;
+}
+
+@media screen and (max-width: 600px) {
+    .marker {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
+
+/* Completley other stuff honestly */
+
+.containerOther {
+    display: flex; /* Use flexbox to manage columns */
+    justify-content: space-between; /* Distribute space between columns */
+    align-items: stretch; /* Stretch columns to fill the container height */
+  }
+  
+  .columnOther {
+    flex: 1; /* Grow each column equally */
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0 10px; /* Add some margin between columns */
+  }
+  
+  /* Optional: Adjustments for smaller screens */
+  @media (max-width: 600px) {
+    .containerOther {
+      flex-direction: column; /* Stack columns vertically on small screens */
+    }
+    .columnOther {
+      margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+  }
+  
