@@ -264,8 +264,8 @@ div.navbar {
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .section {
-    padding: 5px;
-    margin: 3px;
+    padding: 7px;
+    margin: 5px;
 }
   .container {
     flex-direction: column; /* Stacks the sections vertically */
