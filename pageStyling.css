@@ -154,7 +154,7 @@ div.navbar {
 
 
 /* Position the title at the top center, but below the navbar */
-#title {
+#title, .title {
   text-align: center; /* Center aligned */
   margin-top: 80px;
   font-size: 7vh;
@@ -244,6 +244,7 @@ div.navbar {
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* Allows sections to wrap as needed */
 }
 
 .section {
@@ -252,16 +253,33 @@ div.navbar {
 }
 
 .wider {
-  flex: 2.5;  /* Adjusts the width of the wider section */
+  flex: 2;  /* Adjusts the width of the wider section */
   text-align: center;
 }
 
 .narrower {
-  flex: 0.5;  /* Adjusts the width of the narrower section */
+  flex: 1;  /* Adjusts the width of the narrower section */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacks the sections vertically */
+  }
+
+  .wider, .narrower {
+    flex: none; /* Resets the flex property to prevent stretching */
+    width: 90%; /* Makes each section take full width */
+  }
 }
 
 .widerIMG{
   width: 70%;
+  height: auto;
+}
+
+#slimPic{
+  width: 60%;
   height: auto;
 }
 
