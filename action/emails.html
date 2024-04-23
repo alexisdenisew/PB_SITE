@@ -67,55 +67,63 @@
   </div>
 
   <div id = "box">
-    <p id = "regText" class="bg">COLUMBIA/ BARNARD STUDENTS: Use this automated tool to send pre-filled emails to adims regarding: Urgent Concerns Regarding Disciplinary Actions On Students. More templates coming soon...</p>
+    <p id = "regText" class="bg">Take a stand on the issues important to you with our automated email tool. Engaging directly with decision-makers is crucial to amplify your voice. Personalize your message by adding your information to the form below—customize it for a specific campaign or keep it general for use across multiple initiatives. Don't forget to fill out the "write an opener" section to ensure your email stands out and avoids filters. <span style='color: white'>Stay tuned for more email templates coming soon.</span></p>
   </div>
 
   <div class = "center">
     <input class = "regInput" type="text" id="name" placeholder="Your Name"></input>
+    <input class = "regInput" type="text" id="status" placeholder="Student, Parent, Citizen, etc."></input>
     <input class = "regInput" type="text" id="sentence" placeholder="Write an opener"></input>
-    <button id="subButton" class = "actButt" onclick="sendEmail()">Submit</button>
-
+    
+    <!-- <button class = "actButt" onclick="sendEmail2()">Email 2</button> -->
+    
   </div>
 
+  <div id = "box">
 
-  <script>
-
-function sendEmail() {
-        var input = document.getElementById('name');
-        name = input.value;
-        var input = document.getElementById('sentence');
-        greeting = input.value;
-        topic = "Urgent Concerns Regarding Disciplinary Actions On Students";
-        email = "rosenbury@barnard.edu, lgrinage@barnard.edu";
-        subject = "";
-
-        // Determine which content to use based on supportMap
-        var info;
-        info = ` I am writing to express my profound disappointment and outrage at the recent unjust suspension and eviction of fifty-five of my fellow Barnard students. As a member of the Barnard community, I am appalled by the failure of the administration to uphold the values of fairness, justice, and academic freedom.\n\nIt is unacceptable that our peers, primarily women of color, are being subjected to such harsh treatment, including harassment, surveillance, and unjust punishment. This behavior is antithetical to the principles of a liberal arts institution, and it tarnishes the reputation of our college. Your actions are to blame and your silence is repugnant.\n\n
-I want to make it clear that I stand in solidarity with those who have been unfairly targeted, and I refuse to remain silent in the face of such injustice. I will not hesitate to voice my concerns to prospective students and donors, and I will actively discourage anyone from considering Barnard until these wrongful suspensions are revoked and all disciplinary actions dropped.\n\n
-Barnard was once my dream college, but now it has become a nightmare.\n\n`;
-
-        // Construct the email body
-        var emailBody = `Dear President Rosenbury and Dean Grinage,\n\n${greeting}\n\nMy name is ${name}${info}\n\nSincerely,\n\n${name}`;
-
-        // Encode the email body to include in the mailto link
-        var encodedEmailBody = encodeURIComponent(emailBody);
-
-        // Construct the mailto link
-        var mailtoLink = `mailto:${email}?subject=${topic} || ${name} ${subject}&body=${encodedEmailBody}`;
-
-        // Redirect to the mail client with the mailto link
-        window.location.href = mailtoLink;
-    }
-
-
-
-  </script>
-
-
-
+  <h1 id="smallerTitle" class="bgo"><span style='color: white'>NYC College Encampments</span></h1>
 
   
+    <p id = "regText" class="bg"><span style='color: white'>STUDENTS OF BARNARD:</span> express your disappointment and outrage at the suspension and eviction of fifty-five Barnard students. Criticize the administration for not adhering to the values of fairness, justice, and academic freedom. Condemn the treatment of students, particularly women of color, as contrary to the principles expected of a liberal arts institution. Pledge to stand in solidarity with the affected students, and to warn prospective students and donors about the college's actions until the suspensions and disciplinary actions are reversed.</p>
+    <button id="subButton" class = "actButt" onclick="sendEmail1()">Email Barnard Admins Now</button>
+
+    <p id = "regText" class="bg">Urge NYU to meet the demands of the Gaza Solidarity Encampment, which include divesting from weapons manufacturers, removing NYPD from campus, and protecting freedom of speech. Strongly condemn NYU for endangering students and faculty during an NYPD action on April 22nd, which restricted student access to housing and compromised safety. </p>
+    <button id="subButton" class = "actButt" onclick="sendEmail3()">Email NYU Admins Now</button>
+  
+    <br><br>
+  
+  </div>
+
+  <script>
+    function sendEmailTemplate(recipients, adressee, subject, contentTemplate) {
+      var name = document.getElementById('name').value;
+      var status = document.getElementById('status').value;
+      var greeting = document.getElementById('sentence').value;
+
+      var emailBody = `Dear ${adressee},\n\n${greeting}\n\nMy name is ${name} a concerned ${status}. ${contentTemplate}\n\nSincerely,\n\n${name}`;
+      var encodedEmailBody = encodeURIComponent(emailBody);
+      var mailtoLink = `mailto:${recipients}?subject=${subject} || ${name}&body=${encodedEmailBody}`;
+      window.location.href = mailtoLink;
+    }
+
+    function sendEmail1() {
+      var content = `I am writing to express my profound disappointment and outrage at the recent unjust suspension and eviction of fifty-five of my fellow Barnard students. As a member of the Barnard community, I am appalled by the failure of the administration to uphold the values of fairness, justice, and academic freedom.\n\nIt is unacceptable that our peers, primarily women of color, are being subjected to such harsh treatment, including harassment, surveillance, and unjust punishment. This behavior is antithetical to the principles of a liberal arts institution, and it tarnishes the reputation of our college. Your actions are to blame and your silence is repugnant.\n\n
+I want to make it clear that I stand in solidarity with those who have been unfairly targeted, and I refuse to remain silent in the face of such injustice. I will not hesitate to voice my concerns to prospective students and donors, and I will actively discourage anyone from considering Barnard until these wrongful suspensions are revoked and all disciplinary actions dropped.\n\n
+Barnard was once my dream college, but now it has become a nightmare.\n\n`;
+      sendEmailTemplate("rosenbury@barnard.edu, lgrinage@barnard.edu", "Barnard Admins", "Urgent Concerns Regarding Disciplinary Actions On Students", content);
+    }
+
+    // function sendEmail2() {
+    //   var content = " Specific content for email 2.";
+    //   sendEmailTemplate("email2@example.com", "people", "Subject for Email 2", content);
+    // }
+
+    function sendEmail3() {
+      var content = `I am calling to urge you to meet the demands set by the Gaza Solidarity Encampment on this campus. The demands are as follows: 1. disclose and divest finances and endowments from weapons manufacturers, 2. cut ties with Tel Aviv University and shut down Tel Aviv Campus, 3. remove standing presence of NYPD on campus, 4. protect freedom of speech and academic freedom on campus.\n\nAdditionally, I want to strongly condemn NYU's atrocious endangerment of students and faculty on the evening of 4/22. On April 22nd, during and after the NYPD sweep of the Gaza encampment, the NYPD brutalized multiple students and community members. The police utilized pepper spray and physically attacked protestors. I am calling on NYU to address the danger inflicted by bringing the NYPD onto campus. Lastly, I am highly concerned about the endangerment to students in the closure of NYU buildings following the protests. Students were barred from entering their housing and placed in unsafe circumstances. NYU did the opposite of protecting student safety tonight, and I am ashamed of the admin at this university.\n\n`;
+      sendEmailTemplate("linda.mills@nyu.edu, evan.chesler@nyu.edu, jason.pina@nyu.edu, martin.dorph@nyu.edu, t13589@nyu.edu, wrb2029@nyu.edu, Flw2@nyu.edu, president@nyu.edu", "NYU Admins", "Subject for Email 3", content);
+    }
+  </script>
+
   
   
 </body>
