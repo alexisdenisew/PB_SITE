@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Ballot Measures</title>
+    <script src="vote.js" defer></script>
+    <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+    <script src="../../script.js" defer></script>
+    <style>
+        #ballotMeasures h2 {
+            text-align: left; /* Left aligned */
+            font-size: 2vh;
+            color: white;
+            font-family: bgo;
+    }
+
+    #ballotMeasures p {
+        text-align: left; /* Left aligned */
+        font-size: 1.5vh;
+        color: #FFD600;
+        font-family: bgo;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #ddd;
+        margin: 20px 0;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="hamburger-menu" onclick="toggleNavbar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+    <div class="navbar" id="navbar">
+        <a class = "bgo" href="../index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Education</button>
+          <div class="dropdown-content">
+            <a href="../../education/movies.html">Movies</a>
+            <a href="../../education/books.html">Books</a>
+            <a href="../../education/podcasts.html">Podcasts</a>
+          </div>
+        </div> <div class="dropdown">
+          <button class="dropbtn">Action</button>
+          <div class="dropdown-content">
+            <a href="../../action/petitions.html">Petitions</a>
+            <a href="../../action/emails.html">Emails</a>
+            <a href="../../action/calls.html">Calls</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Donation</button>
+          <div class="dropdown-content">
+            <a href="../../donation/orgs.html">Organizations</a>
+            <a href="../../donation/directAction.html">Direct Action</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Hubs</button>
+          <div class="dropdown-content">
+            <a href="../fareact/index.html">The FARE Act</a>
+            <a href="../labor/index.html">Prison Labor</a>
+            <a href="../bhm/index.html">Black History Month</a>
+            <a href="#">MLK Day</a>
+            <a href="../blmCheatSheet.html">BLM Cheat Sheet</a>
+          </div>
+        </div> 
+        <a class = "bgo" href="../../about.html">About PBR</a>
+        <a class = "bgo" href="../../contact.html">Contact</a>
+      </div>
+
+    <div id = "box">
+
+    <h1 id="title" class="bgo">2024 Ballot Measures</h1>
+    <label id = "regText" for="stateSelect"><span style='color: white'>Select your state:</span></label>
+    <select class="selectDropdown" id="stateSelect">
+        <option value="">-- Select State --</option>
+        <option value="alabama">Alabama</option>
+        <option value="alaska">Alaska</option>
+        <option value="arizona">Arizona</option>
+        <option value="arkansas">Arkansas</option>
+        <option value="california">California</option>
+        <option value="colorado">Colorado</option>
+        <option value="connecticut">connecticut</option>
+        <option value="florida">Florida</option>
+        <option value="georgia">Georgia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="idaho">Idaho</option>
+        <option value="illinois">Illinois</option>
+        <option value="indiana">Indiana</option>
+        <option value="iowa">Iowa</option>
+        <option value="kentucky">Kentucky</option>
+        <option value="louisiana">Louisiana</option>
+        <option value="maine">Maine</option>
+        <option value="maryland">Maryland</option>
+        <option value="massachusetts">Massachusetts</option>
+        <option value="missouri">Missouri</option>
+        <option value="montana">Montana</option>
+        <option value="nebraska">Nebraska</option>
+        <option value="nevada">Nevada</option>
+        <option value="newHampshire">New Hampshire</option>
+        <option value="newMexico">New Mexico</option>
+        <option value="newYork">New York</option>
+        <option value="northCarolina">North Carolina</option>
+        <option value="northDakota">North Dakota</option>
+        <option value="ohio">Ohio</option>
+        <option value="oklahoma">Oklahoma</option>
+        <option value="oregon">Oregon</option>
+        <option value="rhodeIsland">Rhode Island</option>
+        <option value="southCarolina">South Carolina</option>
+        <option value="southDakota">South Dakota</option>
+        <option value="utah">Utah</option>
+        <option value="virginia">Virginia</option>
+        <option value="washington">Washington</option>
+        <option value="westVirginia">West Virginia</option>
+        <option value="wisconsin">Wisconsin</option>
+        <option value="wyoming">Wyoming</option>
+    </select>
+    <br>
+
+    <!-- Search Input -->
+    <label id = "regText" for="searchInput"><span style='color: white'>Search ballot measures:</span></label>
+    <input type="text" class="selectDropdown" id="searchInput" placeholder="Search ballot measures...">
+
+    <div id="ballotMeasures"></div>
+
+    </div>
+</body>
+</html>
