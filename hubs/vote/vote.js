@@ -1490,36 +1490,25 @@ const ballotMeasures = {
             opinionLink: "https://ballotpedia.org/Wyoming_Property_Tax_on_Residential_Property_and_Owner-Occupied_Primary_Residences_Amendment_(2024)"  
                        
         }
+    ],
+    State: [
+        { 
+            
+        }
+    ],
+    State: [
+        { 
+            
+        }
     ]
 };
 
 // Function to display ballot measures based on state selection
 document.getElementById('stateSelect').addEventListener('change', function() {
     const selectedState = this.value;
-    const ballotDiv = document.getElementById('ballotMeasures');
-    ballotDiv.innerHTML = ''; // Clear previous content
-
-    if (selectedState && ballotMeasures[selectedState]) {
-        const measures = ballotMeasures[selectedState];
-        let content = `<h2>Ballot Measures for ${this.options[this.selectedIndex].text}</h2>`;
-        measures.forEach(measure => {
-            content += `
-                <div>
-                    <p><strong>Title:</strong> ${measure.title}</p>
-                    <p><strong>Description:</strong> ${measure.description}</p>
-                    <p><strong>Overview:</strong> ${measure.overview}</p>
-                    <p><strong>Yes Vote:</strong> ${measure.yesVote}</p>
-                    <p><strong>No Vote:</strong> ${measure.noVote}</p>
-                    <p><strong>Opinion:</strong> <a href="${measure.opinionLink}" target="_blank">Read Opinion</a></p>
-                </div>
-                <hr>
-            `;
-        });
-        ballotDiv.innerHTML = content;
-    } else {
-        ballotDiv.innerHTML = '<p>No ballot measures available for the selected state.</p>';
-    }
+    filterAndDisplayBallotMeasures(selectedState, document.getElementById('searchInput').value);
 });
+
 
 // Function to filter ballot measures based on search input
 document.getElementById('searchInput').addEventListener('input', function() {
@@ -1532,7 +1521,10 @@ document.getElementById('searchInput').addEventListener('input', function() {
 function filterAndDisplayBallotMeasures(state, searchTerm) {
     const ballotDiv = document.getElementById('ballotMeasures');
     ballotDiv.innerHTML = ''; // Clear previous content
-    
+
+    // List of states for the special case
+    const specialStates = ['michigan', 'mississippi', 'newJersey', 'pennsylvania', 'tennessee', 'vermont'];
+
     if (state && ballotMeasures[state]) {
         const measures = ballotMeasures[state].filter(measure => 
             measure.title.toLowerCase().includes(searchTerm) || 
@@ -1557,7 +1549,23 @@ function filterAndDisplayBallotMeasures(state, searchTerm) {
         } else {
             ballotDiv.innerHTML = '<p>No matching ballot measures found for the selected state.</p>';
         }
+    } else if (state && specialStates.includes(state)) {
+        // Conditional for the special states
+        ballotDiv.innerHTML = `<p>Zero statewide ballot measures were certified to appear on the ballot in ${state.charAt(0).toUpperCase() + state.slice(1)} on November 5, 2024.</p>`;
+    } else if (state) {
+        // Default message for other states not listed in ballotMeasures
+        ballotDiv.innerHTML = `<p>In ${state.charAt(0).toUpperCase() + state.slice(1)}, citizens do not have the power to initiate statewide initiatives or referendums. Voters rejected a constitutional amendment to provide for the initiative and referendum process in 1914. As of 2024, the state allowed charter cities to have an initiative process for local ballot measures.</p>`;
     } else {
         ballotDiv.innerHTML = '<p>Please select a state and search for ballot measures.</p>';
     }
 }
+
+
+
+
+
+
+
+
+
+
