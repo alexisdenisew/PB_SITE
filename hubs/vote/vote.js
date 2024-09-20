@@ -1554,7 +1554,7 @@ function filterAndDisplayBallotMeasures(state, searchTerm) {
         ballotDiv.innerHTML = `<p>Zero statewide ballot measures were certified to appear on the ballot in ${state.charAt(0).toUpperCase() + state.slice(1)} on November 5, 2024.</p>`;
     } else if (state) {
         // Default message for other states not listed in ballotMeasures
-        ballotDiv.innerHTML = `<p>In ${state.charAt(0).toUpperCase() + state.slice(1)}, citizens do not have the power to initiate statewide initiatives or referendums. Voters rejected a constitutional amendment to provide for the initiative and referendum process in 1914. As of 2024, the state allowed charter cities to have an initiative process for local ballot measures.</p>`;
+        ballotDiv.innerHTML = `<p>In ${state.charAt(0).toUpperCase() + state.slice(1)}, citizens do not have the power to initiate statewide initiatives or referendums.</p>`;
     } else {
         ballotDiv.innerHTML = '<p>Please select a state and search for ballot measures.</p>';
     }
