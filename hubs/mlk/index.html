@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PBR</title>
+  <link href="../../pageStyling.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="../../script.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="../../senatorsScript.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+</head>
+<body>
+  <div class="hamburger-menu" onclick="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <a class = "bgo" href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Education</button>
+      <div class="dropdown-content">
+        <a href="education/movies.html">Movies</a>
+        <a href="education/books.html">Books</a>
+        <a href="education/podcasts.html">Podcasts</a>
+      </div>
+    </div> <div class="dropdown">
+      <button class="dropbtn">Action</button>
+      <div class="dropdown-content">
+        <a href="action/petitions.html">Petitions</a>
+        <a href="action/emails.html">Emails</a>
+        <a href="action/calls.html">Calls</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Donation</button>
+      <div class="dropdown-content">
+        <a href="donation/orgs.html">Organizations</a>
+        <a href="donation/directAction.html">Direct Action</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Hubs</button>
+      <div class="dropdown-content">
+        <a href="hubs/fareact/index.html">The FARE Act</a>
+        <a href="hubs/labor/index.html">Prison Labor</a>
+        <a href="hubs/bhm/index.html">Black History Month</a>
+        <a href="hubs/mlk/index.html">MLK Day</a>
+        <a href="hubs/blmCheatSheet.html">BLM Cheat Sheet</a>
+      </div>
+    </div> 
+    <a class = "bgo" href="about.html">About PBR</a>
+    <a class = "bgo" href="contact.html">Contact</a>
+  </div>
+
+  <h1 id ="navTitle" class="bgo"><span style='font-family: bgs'>P</span>b <span style='font-family: bgs'>R</span>esources</h1>
+  <div class="splash-container">
+    <img src="assets/splashPhotos/mlk2.jpg" alt="Splash Image" class="splash-image">
+    <div class="splash-text">
+      <h1><span style='font-family: bgs'>M</span>artin <span style='font-family: bgs'>L</span>uther <span style='font-family: bgs'>K</span>ing <span style='font-family: bgs'>D</span>ay</h1>
+    </div>
+  </div>
+  
+  <div class = "center">
+    <select id="scrollMenu" class="selectDropdown" onchange="scrollToSection()">
+      <option value="">Select a section...</option>
+      <option value="section1">About</option>
+      <option value="section2">Share on Socials</option>
+      <option value="section3">Media Gallery</option>
+      <option value="section4">Join a Union</option>
+      <option value="section5">Support a Union</option>
+      <option value="section6">Shop Black Businesses</option>
+    </select>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  <div id = "box">
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Economic Prosperity for All</span></h1>
+    <p id = "regText" class="bg">Every January, we celebrate Martin Luther King Jr. Day to honor the life and legacy of one of America’s most transformative leaders. While Dr. King is best known for his leadership in the Civil Rights Movement and his iconic “I Have a Dream” speech, his fight for justice went beyond racial equality. In his later years, he increasingly focused on economic reform, believing that addressing America’s deep wealth disparities was essential to achieving true racial equity. His Poor People’s Campaign called for systemic changes, including fair wages, housing access, and economic opportunity for all.</p>
+    <p id = "regText" class="bg">As economic inequality continues to grow, Dr. King’s vision feels more urgent than ever. This year, PBR highlights his underrepresented ideologies around economic justice and his belief in prosperity for all as a foundation for equity. By revisiting his legacy, we hope to inspire meaningful conversations and actions to confront the challenges of today’s economic disparities with the same courage and conviction he embodied.</p>
+    <br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Share on Socials</span></h1>
+    <p id = "regText" class="bg">Every MLK Day, social media is flooded with quotes that often sanitize Dr. King’s powerful and transformative message, focusing on unity while overlooking his radical calls for systemic change and economic justice. This year, let’s bring his true vision to the forefront. Save and share the graphics below to honor a fuller picture of his legacy—one that fearlessly challenged racial and economic inequality and continues to inspire action today.</p>
+    <div class="image-section">
+      <div class="image-container">
+        <img src="assets/stories/mlk1.png" alt="Image 1" class="inline-image">
+      </div>
+      <div class="image-container">
+        <img src="assets/stories/mlk2.png" alt="Image 2" class="inline-image">
+      </div>
+      <div class="image-container">
+        <img src="assets/stories/mlk3.png" alt="Image 3" class="inline-image">
+      </div>
+    </div>
+    
+    
+    
+    <br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Media Gallery</span></h1>
+    <p id = "regText" class="bg">The best way to push back against the rewriting of Dr. King’s ideologies is to hear his words directly. Scroll through the media gallery below to watch and listen to his speeches, many of which are preserved on video from not so long ago. Here, we specifically highlight the numerous times Dr. King emphasized the urgency of addressing economic issues as a fundamental step toward justice and equality.</p>
+    <br>
+
+    <div class="media-container">
+        <div class="media-card">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/fmauhsmcY2c?si=y9T2whD2qNg95Z-F&amp;controls=0"
+              frameborder="0"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
+          <div class="media-info">
+            <h4 class="media-title">The Economic Problem Is the Most Serious Problem</h4>
+            <p class="media-description"> Martin Luther King Jr. talks to Belafonte about what is needed to achieve true civil rights.</p>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/u4sAGQIQDN0?si=Rgx8vWolpPser7cM&amp;controls=0"
+              frameborder="0"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
+          <div class="media-info">
+            <h4 class="media-title">The Cost for Real Equality</h4>
+            <p class="media-description">Martin Luther King, Jr. on Income Inequality.</p>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/AaqilKOW324?si=N56Hn9Xftrjk3Gzr&amp;controls=0"
+              frameborder="0"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
+          <div class="media-info">
+            <h4 class="media-title">Planning the Selma of Economic Issues</h4>
+            <p class="media-description">Martin Luther King, Jr, talks about Vietnam and economic issues in 1967.</p>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/zgVrlx68v-0?si=UZDuRIBkwfteUZ1M&amp;controls=0"
+              frameborder="0"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
+          <div class="media-info">
+            <h4 class="media-title">I've Been to the Mountaintop</h4>
+            <p class="media-description">The speech primarily concerns the Memphis Sanitation Strike. King calls for unity, economic actions, boycotts, and nonviolent protest, while challenging the United States to live up to its ideals.</p>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/RkmJcCGfuzo?si=4aDOEmOMR89AEEP1&amp;controls=0"
+              frameborder="0"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
+          <div class="media-info">
+            <h4 class="media-title">Black Economic Empowerment</h4>
+            <p class="media-description">MLK promoting boycotts against racist companies like Coca Cola and promoting invesment in black owned businesses.</p>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="smallerTitle" class="bgo"><span style='color: white'>Union Strong</span></h1>
+      <p id = "regText" class="bg">On MLK Day, we’re highlighting the work of unions in America because they are the backbone of workers’ rights and a critical pathway to achieving economic equality. Dr. King was a staunch supporter of unions, often advocating for their role in empowering workers and addressing systemic inequities. He famously stood with striking sanitation workers in Memphis, Tennessee, during his final days, emphasizing the dignity of labor and the need for fair wages and conditions.</p>
+      <p id = "regText" class="bg">Unionizing is imperative because it gives workers a collective voice to demand better pay, benefits, and protections—tools that not only improve individual livelihoods but also help close the wealth gap and build a more equitable society. Supporting local unions strengthens communities and ensures that workers’ rights remain a priority in the fight for economic justice.</p>
+      <br>
+    </div>
+
+      <div class="splash-container">
+        <img src="assets/splashPhotos/mlk3.jpg" alt="Splash Image" class="splash-image">
+      </div>
+    
+      <br>
+    <div id = "box">
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Join a Union</span></h1>
+    <select id="job-sector" onchange="showOrganizations()">
+      <option value="">Select a sector</option>
+      <option value="construction">Technology</option>
+      <option value="healthcare">Healthcare</option>
+      <option value="education">Education</option>
+    </select>
+    <div id="organization-list">
+      <p id = "regText" class="bg"><span style='color: #366643'>Information will appear here.</span></p>
+    </div>
+    <br>
+    <br>
+
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Support and Learn About Your Local Unions</span></h1>
+      <select id="state-dropdown" onchange="showStateOrganizations()">
+        <option value="">Select a state</option>
+        <option value="alabama">Alabama</option>
+        <option value="alaska">Alaska</option>
+        <option value="arizona">Arizona</option>
+        <option value="arkansas">Arkansas</option>
+        <option value="california">California</option>
+        <option value="colorado">Colorado</option>
+        <option value="connecticut">Connecticut</option>
+        <option value="delaware">Delaware</option>
+        <option value="florida">Florida</option>
+        <option value="georgia">Georgia</option>
+        <option value="hawaii">Hawaii</option>
+        <option value="idaho">Idaho</option>
+        <option value="illinois">Illinois</option>
+        <option value="indiana">Indiana</option>
+        <option value="iowa">Iowa</option>
+        <option value="kansas">Kansas</option>
+        <option value="kentucky">Kentucky</option>
+        <option value="louisiana">Louisiana</option>
+        <option value="maine">Maine</option>
+        <option value="maryland">Maryland</option>
+        <option value="massachusetts">Massachusetts</option>
+        <option value="michigan">Michigan</option>
+        <option value="minnesota">Minnesota</option>
+        <option value="mississippi">Mississippi</option>
+        <option value="missouri">Missouri</option>
+        <option value="montana">Montana</option>
+        <option value="nebraska">Nebraska</option>
+        <option value="nevada">Nevada</option>
+        <option value="new_hampshire">New Hampshire</option>
+        <option value="new_jersey">New Jersey</option>
+        <option value="new_mexico">New Mexico</option>
+        <option value="new_york">New York</option>
+        <option value="north_carolina">North Carolina</option>
+        <option value="north_dakota">North Dakota</option>
+        <option value="ohio">Ohio</option>
+        <option value="oklahoma">Oklahoma</option>
+        <option value="oregon">Oregon</option>
+        <option value="pennsylvania">Pennsylvania</option>
+        <option value="rhode_island">Rhode Island</option>
+        <option value="south_carolina">South Carolina</option>
+        <option value="tennessee">Tennessee</option>
+        <option value="texas">Texas</option>
+        <option value="utah">Utah</option>
+        <option value="vermont">Vermont</option>
+        <option value="virginia">Virginia</option>
+        <option value="washington">Washington</option>
+        <option value="west_virginia">West Virginia</option>
+        <option value="wisconsin">Wisconsin</option>
+        <option value="wyoming">Wyoming</option>
+        <!-- ... -->
+      </select>
+    
+      <div id="state-organization-list">
+        <p id = "regText" class="bg"><span style='color: #366643'>Information will appear here.</span></p>
+      </div>
+      <br>
+      <br>
+
+    <h1 id="smallerTitle" class="bgo"><span style='color: white'>Shop Black Businesses</span></h1>
+    <p id = "regText" class="bg">Our Shop Black Business tool is designed to make supporting Black-owned businesses simple. Despite Black Americans contributing over $1.6 trillion to the U.S. economy annually, less than 2% of that spending goes to Black-owned businesses. This stark disparity underscores the importance of intentional support for these businesses. Be part of the movement for lasting change.</p>
+
+
+    <div class="search-container">
+      <script src="shop.js"></script>
+      <input type="text" id="search-bar" placeholder="Search for a product or category..." />
+      <button id="search-button">Go</button>
+      <div id="results-container"></div>
+    </div>    
+    
+
+    <div class="space"></div>
+    
+  </div>
+
+
+
+  
+  
+  
+</body>
+</html>
+

@@ -1,0 +1,221 @@
+/* Container for the splash image */
+.splash-container {
+    width: 100%; /* Full width of the viewport */
+    height: auto; /* Adjusts dynamically */
+    position: relative; /* Allows absolute positioning for overlay text */
+    overflow: hidden; /* Hides any part of the image that exceeds bounds */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* The splash image */
+  .splash-image {
+    width: 100%; /* Stretches the image across the entire width of the page */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    display: block; /* Removes any inline spacing issues */
+  }
+  
+  /* Overlay text container */
+  .splash-text {
+    position: absolute;
+    top: 20%; /* Adjusts placement higher on the splash image */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -20%); /* Adjust positioning dynamically */
+    text-align: center; /* Center the text */
+    font-family: Arial, sans-serif; /* Example font */
+    z-index: 2; /* Ensure text appears above the image */
+    color: #FFD600; /* Ensure visibility */
+  }
+  
+  /* Example styling for the title and subtitle */
+  .splash-text h1 {
+    font-family: bgo;
+    font-size: 3vw; /* Dynamically adjusts size based on window width */
+    margin: 0;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .splash-text {
+      top: 55%; /* Adjust text higher for smaller screens */
+    }
+  
+    .splash-text h1 {
+      font-size: 1.15rem; /* Smaller font size for smaller screens */
+    }
+  }
+  
+
+  /* Parent container for the image section */
+.image-section {
+  display: flex; /* Arrange images horizontally */
+  justify-content: center; /* Center images in the container */
+  gap: 20px; /* Add spacing between images */
+  padding: 20px; /* Add padding around the section */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+
+/* Container for each image */
+.image-container {
+  flex: 0 0 auto; /* Prevent shrinking or growing */
+  max-width: 30%; /* Limit the size of each image container */
+  text-align: center; /* Center images in their container */
+}
+
+/* Individual images */
+.inline-image {
+  width: 100%; /* Image takes the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  transition: transform 0.3s ease; /* Optional: Add hover effect */
+}
+
+/* Hover effect for images */
+.inline-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+  
+
+.org-link, .state-org-link, .state-org-title{
+    text-align: left; /* Left aligned */
+    font-size: 3vh;
+    color: white;
+    font-family: bgo;
+    margin-top: 5px;
+  }
+  
+  .state-org-title a {
+    color: white !important; /* Force the color to black */
+    text-decoration: none !important; /* Remove underline */
+  }
+  
+  #organization-list, #state-organization-list{
+    border: 2px solid #366643; /* Creates a black border */
+    padding: 15px; /* Adds some spacing inside the border */
+    margin-top: 20px; /* Adds space above the div */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+  }
+  
+  .state-org-description, .org-description{
+    font-family: bgo;
+  }
+  
+  #job-sector, #state-dropdown, #search-bar, #search-button {
+    margin: 5px;
+    padding: 10px;
+    font-family: bgo;
+    font-size: 16px;
+    color: #FFD600;
+    background-color: #1E5631;
+    border: 2px solid #FFD600;
+    border-radius: 5px;
+  }
+
+   #search-button {
+    margin: 5px;
+    padding: 10px;
+    font-family: bgo;
+    font-size: 16px;
+    color: #FFD600;
+    background-color: #1E5631;
+    border: 2px solid #FFD600;
+    border-radius: 5px;
+  }
+  
+  /* All the media section stuff */
+  
+  .media-container, .custom-media-container {
+    background-color: #1E5631;
+    display: flex;
+    gap: 15px; /* Space between media cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 30px; /* Add padding for alignment */
+    margin: 0;
+    scroll-behavior: smooth;
+    white-space: nowrap; /* Prevent wrapping */
+    margin-top: 20px; /* Space above the media section */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  .media-container::-webkit-scrollbar, #results-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
+  
+  
+  .media-card, .custom-media-card {
+    flex: 0 0 300px; /* Fixed width for media cards */
+    background-color: #346645;
+    border: 1px solid #346645;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+  }
+  
+  .media-card:hover, .custom-media-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+  }
+  
+  .video-container, .custom-image-container {
+    flex: 2; /* Larger space for the video */
+    overflow: hidden;
+    background-color: #000; /* Default background for the video area */
+  }
+  
+  .video, .custom-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .media-info, .custom-media-info {
+    flex: 1; /* Smaller space for text */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .media-title, .custom-media-title, .custom-media-title a {
+    font-size: 18px;
+    color: #FFD600;
+    font-family: bgo;
+    font-weight: bold;
+    margin: 0 0 5px;
+    white-space: normal; /* Allow wrapping */
+    overflow: hidden; /* Prevent overflowing */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .media-description, .custom-media-description, .custom-no-results {
+    font-size: 12px;
+    color: #a5bbac;
+    font-family: bg;
+    margin: 0;
+    white-space: normal; /* Allow wrapping */
+    overflow: hidden; /* Prevent overflowing */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+  }
+
+  .space{
+    height: 200px;
+  }
+
+ 
+  
+    
