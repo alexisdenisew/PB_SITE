@@ -38,11 +38,11 @@
   /* Media query for smaller screens */
   @media (max-width: 768px) {
     .splash-text {
-      top: 55%; /* Adjust text higher for smaller screens */
+      top: 45%; /* Adjust text higher for smaller screens */
     }
   
     .splash-text h1 {
-      font-size: 1.15rem; /* Smaller font size for smaller screens */
+      font-size: 1rem; /* Smaller font size for smaller screens */
     }
   }
   
